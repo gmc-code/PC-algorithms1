@@ -1,18 +1,32 @@
 ==========================
-Sequence
-=====e=====================
+Instructions
+==========================
 
 | See: https://www.bbc.co.uk/bitesize/guides/z3bq7ty/revision/2
 
-Instructions
---------------------
+----
 
 | An instruction is a unit of code. There are two types: definitions and statements.
+
+----
+
+Definitions
+--------------------------
+
 | A definition is an instruction that assigns a value to a variable.
+
+.. code-block:: python
+
+    a = 7
+   
+----
+
+Statements
+--------------------------
 
 | A statement is a single line of code that performs an action.
 
 
 .. code-block:: python
 
-   
+   print(a)

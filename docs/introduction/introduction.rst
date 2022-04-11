@@ -2,12 +2,12 @@
 Introduction
 ====================================================
 
-PC-Senior_SD documentation!
+PC-techniques documentation!
 ------------------------------
 
-These docs will help you with your python coding.
+| These docs will help you with your python coding.
+| Pseudocode
 
-If you are using a trackpad, navigate to various sections and pages by clicking on a heading and then use the arrow keys to move up and down.
 
 | Home page:
 | https://pc-python.readthedocs.io/en/latest/index.html
@@ -19,4 +19,6 @@ Key references:
 
 https://www.w3schools.com/python/
 
+----
 
+If you are using a trackpad, navigate to various sections and pages by clicking on a heading and then use the arrow keys to move up and down.
