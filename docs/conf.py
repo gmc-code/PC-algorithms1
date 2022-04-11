@@ -5,8 +5,8 @@
 import os
 import sys
 import sphinx_rtd_theme
-project = 'PC-Python'
-copyright = '2021-2, GMC'
+project = 'PC-techniques'
+copyright = '2022-3, GMC'
 author = 'GMC'
 
 sys.path.insert(0, os.path.abspath('../../'))
@@ -22,7 +22,6 @@ extensions = [
     'sphinx_copybutton',
     'sphinx.ext.todo',
     'sphinx.ext.autodoc',
-    'jupyter_sphinx',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -66,7 +65,7 @@ html_theme = 'sphinx_rtd_theme'
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 #html_title = None
-html_title = "PC-Python"
+html_title = "PC-techniques"
 
 # Use custom css
 html_css_files = ["css/custom.css"]
@@ -198,7 +197,7 @@ latex_elements['maketitle'] = r'''
         \centering
 
         \vspace*{40mm} %%% * is used to force space from top since first time is normally ignored
-        \textbf{\color{NavyBlue} \Huge {PC-Python}}
+        \textbf{\color{NavyBlue} \Huge {PC-techniques}}
 
         \vspace{10mm}
         \begin{figure}[!h]
@@ -279,7 +278,7 @@ latex_toplevel_sectioning = 'chapter'
 
 # for manual can use report
 latex_documents = [
-    (master_doc, 'PC-Python.tex', 'PC-Python',
+    (master_doc, 'PC-techniques.tex', 'PC-techniques',
     'GMC', 'manual'),
 ]
 
