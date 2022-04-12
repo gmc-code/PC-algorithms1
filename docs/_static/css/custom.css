@@ -199,7 +199,7 @@ a.copybtn > img {
 }
 */
 
-.highlight-default .highlight {
+.highlight-default.highlight {
         background: #ccf734 !important;
 }
 .rst-content div[class^=highlight] pre {
