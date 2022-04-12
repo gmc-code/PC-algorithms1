@@ -17,13 +17,15 @@ Definitions
 
 .. code-block:: python
 
-    a = 7
+    num = 7
 
 
 | **Pseudocode**. Assignment uses a left point arrow in pseudocode.
 | The equivalent pseudocode is:
 
-.. literalinclude:: pythonfiles/assignment_pseudo.txt
+.. code-block::
+
+    num <- 7
 
 
 ----
@@ -40,27 +42,19 @@ Statements
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. literalinclude:: pythonfiles/statement_pseudo.txt
+.. code-block::
+
+    OUTPUT a
+
 
 ----
 
 .. admonition:: Tasks
 
-    #. Write pseudocode for ``num = 2``.
-    #. Write pseudocode for ``print(a * 2)``.
-    #. Write pseudocode for:
+    #. Write pseudocode for ``year = 2022``.
+    #. Write pseudocode for ``input("Enter your age in years: ")``.
+    #. Write python for this pseudocode: ``OUTPUT "Melbourne"
+    #. Write python for this pseudocode: ``game <- "table tennis"``
 
-    .. code-block:: python
-    
-        a = 5
-        b = 6
-        print(a * b)
 
-    #. Write python for this pseudocode::
-    
-        INPUT a number between 1 and 10
-        Multiply by 3 
-        Add 18
-        Multiply by 3
-        OUTPUT all the digits but 1
 
