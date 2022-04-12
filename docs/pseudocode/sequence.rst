@@ -12,7 +12,7 @@ Sequence
    name = input("Enter your name?")
    print("Hello, " + name + ". Nice to meet you.")
 
-| The equivalent pseudocode is:
+| **Pseudocode**. The equivalent pseudocode is:
 
 .. literalinclude:: pythonfiles/sequence_pseudo.txt
 

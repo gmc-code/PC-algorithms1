@@ -20,7 +20,7 @@ Definitions
     a = 7
 
 
-| Assignment uses a left point arrow in pseudocode.
+| **Pseudocode**. Assignment uses a left point arrow in pseudocode.
 | The equivalent pseudocode is:
 
 .. literalinclude:: pythonfiles/assignment_pseudo.txt
@@ -38,7 +38,7 @@ Statements
 
    print(a)
 
-| The equivalent pseudocode is:
+| **Pseudocode**. The equivalent pseudocode is:
 
 .. literalinclude:: pythonfiles/statement_pseudo.txt
 
