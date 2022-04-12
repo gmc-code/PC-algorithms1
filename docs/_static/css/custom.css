@@ -190,3 +190,14 @@ a.copybtn > img {
     transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
     transition-delay: .5s;
 }
+
+/* ========================================== */
+/** for inlcuing pseudocode text files
+* .rst-content div[class^=highlight-default] pre {
+    background: #fffce2;
+}
+*/
+
+.highlight-default pre {
+        background: #fffce2;
+}
