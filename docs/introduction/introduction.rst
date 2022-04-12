@@ -7,16 +7,19 @@ PC-algorithms
 
 | These docs will help you with your python coding.
 
-
 | Home page:
-| https://pc-python.readthedocs.io/en/latest/index.html
+| https://pc-algorithms.readthedocs.io/en/latest/
 
 ----
 
 Key references:
 --------------------
 
-https://www.w3schools.com/python/
+| https://www.w3schools.com/python/
+| https://pc-python.readthedocs.io/en/latest/index.html
+| https://pc-microbit-micropython.readthedocs.io/en/latest/index.html
+| https://pc-microbit-extension.readthedocs.io/en/latest/index.html
+
 
 ----
 

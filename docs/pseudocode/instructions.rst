@@ -42,3 +42,9 @@ Statements
 
 .. literalinclude:: pythonfiles/statement_pseudo.txt
 
+----
+
+.. admonition:: Tasks
+
+    #. Write pseudocode for ``num = 2``.
+    #. Write pseudocode for ``print(a * 2)``.  

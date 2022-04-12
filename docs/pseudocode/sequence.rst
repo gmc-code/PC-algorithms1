@@ -14,6 +14,13 @@ Sequence
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. literalinclude:: pythonfiles/sequence_pseudo.txt
+.. literalinclude:: pythonfiles/sequence_pseudo.
 
+.. code-block::
+
+   BEGIN
+      OUTPUT "What is your name?"
+      name <- INPUT ("Enter your name?")
+      OUTPUT "Hello, " + name + ". Nice to meet you."
+   END
 
