@@ -31,5 +31,5 @@ If you are using a trackpad, navigate to various sections and pages by clicking 
     pseudocode/pseudocode.rst
     pseudocode/instructions.rst
     pseudocode/sequence.rst
-    pseudocode/flowcharts.rst
- 
+    pseudocode/selection.rst
+    pseudocode/iteration.rst

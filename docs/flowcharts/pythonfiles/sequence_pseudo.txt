@@ -1,0 +1,5 @@
+BEGIN
+	PRINT "What is your name?"
+	name <- INPUT ("Enter your name?")
+	PRINT "Hello, " + name + ". Nice to meet you."
+END
