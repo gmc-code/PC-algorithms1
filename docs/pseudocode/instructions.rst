@@ -21,6 +21,7 @@ Definitions
 
 
 | Assignment uses a left point arrow in pseudocode.
+| The equivalent pseudocode is:
 
 .. literalinclude:: pythonfiles/assignment_pseudo.txt
 
@@ -37,6 +38,7 @@ Statements
 
    print(a)
 
+| The equivalent pseudocode is:
 
 .. literalinclude:: pythonfiles/statement_pseudo.txt
 
