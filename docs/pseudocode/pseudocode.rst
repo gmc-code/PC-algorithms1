@@ -2,9 +2,8 @@
 Pseudocode
 ==========================
 
-| Pseudocode is an informal way of writing a program.  
-| It is not a computer program. 
-| It represents the the steps of the program in natural language and mathematical notation. 
+| Pseudocode is a way of writing a program that generalizes it for interpretation in any coding language.  
+| Pseudocode represents the the steps of the program in natural language and mathematical notation. 
 
 ----
 
@@ -14,7 +13,7 @@ Python to Pseudocode Summary
 | Pseudocode typically satrts with **BEGIN** and ends with **END**.
 | The table below has the typical pseudocode for common keywords and operators in python.
 
-.. list-table:: Title
+.. list-table:: Pseudocode Summary
    :widths: 75 250
    :header-rows: 1
 
