@@ -48,3 +48,7 @@ Statements
 
     #. Write pseudocode for ``num = 2``.
     #. Write pseudocode for ``print(a * 2)``.  
+    #. Write pseudocode for 
+           ``a = 5``
+           ``b = 6``
+           ``print(a * b)``
