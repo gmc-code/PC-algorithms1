@@ -193,12 +193,16 @@ a.copybtn > img {
 }
 
 /* ========================================== */
-/** snew update for inlcuing pseudocode text files
-* .rst-content div[class^=highlight-default] pre {
-    background: #fffce2;
-}
+/** to override text  file background
 */
 
 div.highlight-default div.highlight {
     background: #eef5ff;
+}
+
+/** to override table padding from 8 and 16
+*/
+
+.rst-content table.docutils td, .rst-content table.docutils th, .rst-content table.field-list td, .rst-content table.field-list th, .wy-table td, .wy-table th {
+    padding: 4px 8px;
 }

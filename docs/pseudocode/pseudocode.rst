@@ -12,7 +12,7 @@ Python to Pseudocode Summary
 ----------------------------------
 
 | Pseudocode typically satrts with **BEGIN** and ends with **END**.
-| The table belwo has the typical pseudocode for common keywords and operators in python.
+| The table below has the typical pseudocode for common keywords and operators in python.
 
 .. list-table:: Title
    :widths: 75 250
