@@ -21,10 +21,12 @@ Definitions
 
 
 .. literalinclude:: pythonfiles/assignment.py
-   :text:
-   
-   .. literalinclude:: pythonfiles/assignment_pseudo.txt
-   :text:
+
+
+
+.. literalinclude:: pythonfiles/assignment_pseudo.txt
+
+
 
 ----
 
@@ -38,5 +40,6 @@ Statements
 
    print(a)
 
+
 .. literalinclude:: pythonfiles/statement_pseudo.txt
-   :text:
+

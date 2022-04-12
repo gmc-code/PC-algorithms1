@@ -1,6 +1,6 @@
 ==========================
 Sequence
-=====e=====================
+==========================
 
 | See: https://www.bbc.co.uk/bitesize/guides/z3bq7ty/revision/2
 
@@ -15,4 +15,4 @@ Instructions
 
 .. code-block:: python
 
-   
+   hi
