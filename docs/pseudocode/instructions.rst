@@ -55,6 +55,14 @@ Statements
         b = 6
         print(a * b)
 
+    #. Write pseudocode for:
+
+        .. code-block:: python
+        
+            a = 5
+            b = 6
+            print(a * b)
+
     #. Write python for this pseudocode::
     
         INPUT a number between 1 and 10
