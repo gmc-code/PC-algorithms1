@@ -1,0 +1,5 @@
+BEGIN
+	OUTPUT "What is your name?"
+	name <- INPUT ("Enter your name?")
+	OUTPUT "Hello, " + name + ". Nice to meet you."
+END

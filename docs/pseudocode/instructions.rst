@@ -20,12 +20,9 @@ Definitions
     a = 7
 
 
-.. literalinclude:: pythonfiles/assignment.py
-
-
+| Assignment uses a left point arrow in pseudocode.
 
 .. literalinclude:: pythonfiles/assignment_pseudo.txt
-
 
 
 ----

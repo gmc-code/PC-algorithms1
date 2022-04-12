@@ -2,17 +2,17 @@
 Sequence
 ==========================
 
-| See: https://www.bbc.co.uk/bitesize/guides/z3bq7ty/revision/2
-
-Instructions
---------------------
-
-| An instruction is a unit of code. There are two types: definitions and statements.
-| A definition is an instruction that assigns a value to a variable.
-
-| A statement is a single line of code that performs an action.
+| A sequence is a set of instructions like a recipe. 
+| Every line of code in the sequence is run in the order that it is written.
 
 
 .. code-block:: python
 
-   hi
+   print("What is your name?")
+   name = input("Enter your name?")
+   print("Hello, " + name + ". Nice to meet you.")
+
+
+.. literalinclude:: pythonfiles/sequence_pseudo.txt
+
+
