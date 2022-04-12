@@ -1,14 +1,14 @@
-.. PC-Python documentation master file.
+.. PC-algorithms master file.
 
 ====================================================
-PC-techniques documentation!
+PC-algorithms
 ====================================================
 
 If you are using a trackpad, navigate to various sections and pages by clicking on a heading and then using the arrow keys.
 
 
 | Home page:
-| https://pc-techniques.readthedocs.io/en/latest/#
+| https://pc-algorithms.readthedocs.io/en/latest/#
 
 | Key references:
 | https://www.w3schools.com/python/
