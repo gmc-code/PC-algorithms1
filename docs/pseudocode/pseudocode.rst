@@ -4,7 +4,7 @@ Pseudocode
 
 | Pseudocode is a way of writing a program that generalizes it for interpretation in any coding language.  
 | Pseudocode represents the the steps of the program in natural language and mathematical notation. 
-| The keywords below are in uppercase, but some users use Title case and set font style to **bold**.
+| The keywords below are in UPPERCASE, but some users use Titlecase and set font style to **bold**.
 
 ----
 
@@ -42,8 +42,6 @@ Python to Pseudocode Summary
      - ENDFOR
    * - while 
      - WHILE
-   * - until 
-     - UNTIL
    * - end of while 
      - ENDWHILE
    * - def 
