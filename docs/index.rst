@@ -28,8 +28,8 @@ If you are using a trackpad, navigate to various sections and pages by clicking 
     :caption: Pseudocode
     :numbered:
 
+    pseudocode/pseudocode.rst
     pseudocode/instructions.rst
     pseudocode/sequence.rst
-    pseudocode/pseudocode.rst
     pseudocode/flowcharts.rst
  

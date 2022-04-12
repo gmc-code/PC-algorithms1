@@ -2,11 +2,10 @@
 Introduction
 ====================================================
 
-PC-techniques documentation!
+PC-algorithms
 ------------------------------
 
 | These docs will help you with your python coding.
-| Pseudocode
 
 
 | Home page:
