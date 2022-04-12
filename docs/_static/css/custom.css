@@ -137,9 +137,10 @@ a.copybtn {
     user-select: none;
 }
 
+}
 div.highlight  {
     position: relative;
-}
+    background: #fffdef;}
 
 a.copybtn > img {
     vertical-align: top;
@@ -198,9 +199,6 @@ a.copybtn > img {
 }
 */
 
-.highlight-default pre {
-        background: #fffce2;
-}
-.rst-content div[class^=highlight-default] pre {
-    background: #fffce2;
+.highlight-default {
+        background: #eef5ff;
 }
