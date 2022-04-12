@@ -22,10 +22,14 @@ If you are using a trackpad, navigate to various sections and pages by clicking 
 
     introduction/introduction.rst
 
+
 .. toctree::
     :maxdepth: 2
-    :caption: Python
+    :caption: Pseudocode
     :numbered:
 
+    pseudocode/instructions.rst
     pseudocode/sequence.rst
+    pseudocode/pseudocode.rst
+    pseudocode/flowcharts.rst
  
