@@ -18,7 +18,14 @@ Definitions
 .. code-block:: python
 
     a = 7
+
+
+.. literalinclude:: pythonfiles/assignment.py
+   :text:
    
+   .. literalinclude:: pythonfiles/assignment_pseudo.txt
+   :text:
+
 ----
 
 Statements
@@ -30,3 +37,6 @@ Statements
 .. code-block:: python
 
    print(a)
+
+.. literalinclude:: pythonfiles/statement_pseudo.txt
+   :text:
