@@ -2,7 +2,8 @@
 Pseudocode
 ==========================
 
-| Pseudocode is a way of writing a program that generalizes it for interpretation in any coding language.  
+| Pseudocode is known as Structured English.
+| Pseudocode is a way of writing a program that generalizes it for convertion into a programming language.  
 | Pseudocode represents the the steps of the program in natural language and mathematical notation. 
 | The keywords below are in UPPERCASE, but some users use Titlecase and set font style to **bold**.
 
@@ -15,7 +16,7 @@ Python to Pseudocode Summary
 | The table below has the typical pseudocode for common keywords and operators in python.
 
 .. list-table:: Pseudocode Summary
-   :widths: 75 250
+   :widths: 125 250
    :header-rows: 1
 
    * - Python
@@ -25,9 +26,9 @@ Python to Pseudocode Summary
    * - =
      - <-
    * - print
-     - OUTPUT or PRINT
+     - OUTPUT or PRINT or DISPLAY
    * - input 
-     - INPUT             
+     - INPUT or GET           
    * - if
      - IF ....THEN
    * - elif 
@@ -54,6 +55,12 @@ Python to Pseudocode Summary
      - OR 
    * - and 
      - AND 
+   * - not 
+     - NOT 
+   * - True 
+     - TRUE 
+   * - False 
+     - FALSE 
    * - try 
      - TRY
    * - except 
@@ -66,8 +73,11 @@ Python to Pseudocode Summary
      - ENDCLASS
    * - import 
      - IMPORT   
-
-
-
+   * - open # a file
+     - OPEN  
+   * - read # a file
+     - READ  
+   * - write # to a file 
+     - WRITE  
 
 
