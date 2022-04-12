@@ -199,6 +199,6 @@ a.copybtn > img {
 }
 */
 
-.highlight-default {
-        background: #eef5ff;
+.highlight-default .notranslate {
+        background: #eef5ff !important;
 }
