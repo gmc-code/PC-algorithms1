@@ -199,8 +199,8 @@ a.copybtn > img {
 }
 */
 
-div.highlight-default .highlight {
-        background: #eef5ff !important;
+.highlight-default .highlight {
+        background: #ccf734 !important;
 }
 .rst-content div[class^=highlight] pre {
     background: #e1f53e !important;
