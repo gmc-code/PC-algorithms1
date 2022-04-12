@@ -19,8 +19,8 @@ Sequence
 .. code-block::
 
    BEGIN
-      OUTPUT "What is your name?"
+      PRINT "What is your name?"
       name <- INPUT ("Enter your name?")
-      OUTPUT "Hello, " + name + ". Nice to meet you."
+      PRINT "Hello, " + name + ". Nice to meet you."
    END
 
