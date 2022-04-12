@@ -140,7 +140,8 @@ a.copybtn {
 }
 div.highlight  {
     position: relative;
-    background: #fffdef;}
+    background: #fffdef !important;
+}
 
 a.copybtn > img {
     vertical-align: top;
@@ -199,6 +200,6 @@ a.copybtn > img {
 }
 */
 
-.highlight-default .notranslate {
+div.highlight-default .notranslate div.highlight {
         background: #eef5ff !important;
 }
