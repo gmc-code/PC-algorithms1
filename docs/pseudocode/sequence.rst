@@ -14,7 +14,8 @@ Sequence
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. literalinclude:: pythonfiles/sequence_pseudo.
+.. literalinclude:: pythonfiles/sequence_pseudo.txt
+
 
 .. code-block::
 
