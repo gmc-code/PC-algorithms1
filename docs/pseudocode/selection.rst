@@ -109,7 +109,7 @@ If, elif, else
                OUTPUT "Bring Umbrella and jacket."
             ELSEIF is_raining AND NOT(is_cold) THEN
                OUTPUT "Bring Umbrella."
-            ELSEIF not(is_raining) AND is_cold THEN
+            ELSEIF NOT(is_raining) AND is_cold THEN
                OUTPUT "Bring Jacket."
             ELSE
                OUTPUT "Wear a sun hat."
@@ -149,7 +149,7 @@ Nested if
 | **Pseudocode**. The equivalent pseudocode is:
 
 .. code-block::
-   
+
    BEGIN
       scoreA <- 120
       scoreB <- 55
