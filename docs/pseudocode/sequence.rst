@@ -2,7 +2,7 @@
 Sequence
 ==========================
 
-| A sequence is a control structure that consists if a set of instructions like a recipe.
+| A sequence is a control structure that consists of a set of instructions like a recipe.
 | Every line of code in the sequence is run in the order that it is written.
 
 | The code below prompts the suer to enter their name then prints a greeting.
@@ -39,8 +39,10 @@ Sequence
 
       .. code-block:: 
             
-         INPUT a number between 1 and 10
-         Multiply by 3 
-         Add 18
-         Multiply by 3
-         OUTPUT all the digits but 1
+         BEGIN
+            INPUT a number between 1 and 10
+            Multiply by 3 
+            Add 18
+            Multiply by 3
+            OUTPUT all the digits but 1
+         END

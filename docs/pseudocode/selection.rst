@@ -97,6 +97,109 @@ If, elif, else
             ENDIF
          END
 
+----
+
+And, or, not
+----------------------------
+
+| The ``and`` keyword is a logical operator used to combine conditional statements.
+| The return value will be **True** if **all** of the statements are **True**.
+| ``if is_raining and is_cold`` returns True if **both** are True.
+| If will return **False** if **any** of the statements are **False**.
+| ``if is_raining and is_cold`` returns False if **either** are False.
+
+.. code-block:: python
+
+   is_raining = True
+   is_cold = True
+   print("Good Morning")
+   if is_raining and is_cold:
+      print("Bring Umbrella and jacket.")
+   else:
+      print("Umbrella and jacket are optional.")
+
+| **Pseudocode**. The equivalent pseudocode is:
+
+.. code-block::
+
+   BEGIN
+      is_raining <- TRUE
+      is_cold <- TRUE
+      OUTPUT "Good Morning"
+      IF is_raining AND is_cold THEN
+         OUTPUT "Bring Umbrella and jacket."
+      ELSE
+         OUTPUT "Umbrella and jacket are optional."
+      ENDIF
+   END
+
+----
+
+| The ``or`` keyword is a logical operator used to combine conditional statements.
+| The return value will be **True** if **one** is **True**.
+| ``if is_raining or is_cold`` returns True if **either** is True.
+| If will return **False** if **all** of the statements are **False**.
+| ``if is_raining or is_cold`` returns False if **both** are False.
+
+.. code-block:: python
+
+   is_raining = False
+   is_cold = False
+   print("Good Morning")
+   if is_raining or is_cold:
+      print("Bring Umbrella or jacket or both.")
+   else:
+      print("Wear a sun hat.")
+
+| **Pseudocode**. The equivalent pseudocode is:
+
+.. code-block::
+
+   BEGIN
+      is_raining <- FALSE
+      is_cold <- FALSE
+      OUTPUT "Good Morning"
+      IF is_raining OR is_cold THEN
+         OUTPUT "Bring Umbrella or jacket or both."
+      ELSE
+         OUTPUT "Wear a sun hat."
+      ENDIF
+   END
+
+----
+
+| The ``not`` keyword is a logical operator.
+| It changes True to False, and False to True.
+
+.. code-block:: python
+
+   is_raining = False
+   is_cold = False
+   print("Good Morning")
+   if is_raining and is_cold:
+      print("Bring Umbrella and jacket.")
+   elif is_raining and not(is_cold):
+      print("Bring Umbrella.")
+
+| **Pseudocode**. The equivalent pseudocode is:
+
+.. code-block::
+
+   BEGIN
+      is_raining <- FALSE
+      is_cold <- FALSE
+      OUTPUT "Good Morning"
+      IF is_raining AND is_cold THEN
+         OUTPUT "Bring Umbrella AND jacket."
+      ELSEIF is_raining AND NOT (is_cold) THEN
+         OUTPUT "Bring Umbrella."
+      ENDIF
+   END
+
+----
+
+.. admonition:: Tasks
+
    #. Write python code for the following pseudocode on preparing for the weather.
 
       .. code-block::
@@ -117,12 +220,9 @@ If, elif, else
          END
 
 
-
-    #. Add the variables ``teamA`` and ``teamB`` and assign team names for them. Modify the code to scroll the team name instead of 'A' or 'B'. Write both the python code and pseudocode.
-
 ----
 
-Nested if 
+Nested if
 ----------------------------
 
 | Nesting is the inclusion of other ``if`` statements within ``if`` statements.
