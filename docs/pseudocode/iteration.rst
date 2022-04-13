@@ -20,21 +20,39 @@ For loops
 -------------
 
 | A ``for`` loop can be used to do an action a specific number of times.
-| The range function below, ``range (1,4)``, can be used to assign values of 1, 2, and 3 to i as the for loop runs.
+| The range function below, ``range (4)``, can be used to assign values of 0, 1, 2, and 3 to i as the for loop runs.
 
 .. code-block:: python
 
-    for i in range (1,4):
+    for i in range(4):
         print(i)
 
-Nested For loops
------------------
+| **Pseudocode**. The equivalent pseudocode is:
+
+.. code-block::
+
+    BEGIN
+        FOR i <- 0 TO 3
+            OUTPUT i
+        NEXT
+    END
+
+----
 
 .. code-block:: python
 
-    for x in range(0, 5):
-        for y in range(0, 5):
-            print(x, y)
+    for i in range(4, 9):
+        print(i)
+
+| **Pseudocode**. The equivalent pseudocode is:
+
+.. code-block::
+ 
+    BEGIN
+        FOR i <- 4 TO 8
+            OUTPUT i
+        ENDFOR
+    END
 
 | The outer loop: ``for x in range(0,5):`` will execute the loop five times
  substituting ``x`` for consecutive values from ``0`` to ``4`` each time. 
@@ -47,25 +65,48 @@ Nested For loops
 While loops
 ------------------
 
-| One of the most common things you might want to do with a ``while`` loop is to do something forever. 
+| ``while`` loops can do something forever.
 | ``while True:`` loops repeat forever, or until the program is stopped.
 
 .. code-block:: python
 
     while True:
-        print("can't stop me ")
+        print("Can't stop me.")
+
+| **Pseudocode**. The equivalent pseudocode is:
+
+.. code-block::
+
+    BEGIN
+        WHILE TRUE
+            OUTPUT "Can't stop me."
+        ENDWHILE
+    END
 
 ----
 
-While looops can test a condition and only do an action while that condition is True?
+| While loops test a condition and only run the indented code in the while block while that condition is True.
+| The code below prints the numbers 1 to 9.
 
 .. code-block:: python
 
-    while (temperature() < 18):
-        display.scroll(Image.SAD)
-        sleep(1000)
+    num = 1
+    while num < 10:
+        print(num)
+        num = num + 1
 
-    display.show(Image.HAPPY)
+| **Pseudocode**. The equivalent pseudocode is:
+
+.. code-block::
+
+    BEGIN
+        num <- 1
+        WHILE num < 10
+            OUTPUT num
+            num <- num + 1
+        ENDWHILE
+    END
+
 
 ----
 
