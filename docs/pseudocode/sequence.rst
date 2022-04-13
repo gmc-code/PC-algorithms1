@@ -2,6 +2,7 @@
 Sequence
 ==========================
 
+| Sequence is one of the three basic control structures.
 | A sequence is a control structure that consists of a set of instructions like a recipe.
 | Every line of code in the sequence is run in the order that it is written.
 
