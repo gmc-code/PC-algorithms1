@@ -2,13 +2,13 @@
 Sequence
 ==========================
 
-| A sequence is a set of instructions like a recipe.
+| A sequence is a control structure that consists if a set of instructions like a recipe.
 | Every line of code in the sequence is run in the order that it is written.
 
+| The code below prompts the suer to enter their name then prints a greeting.
 
 .. code-block:: python
 
-   print("What is your name?")
    name = input("Enter your name?")
    print("Hello, " + name + ". Nice to meet you.")
 
@@ -17,7 +17,6 @@ Sequence
 .. code-block::
 
    BEGIN
-      PRINT "What is your name?"
       name <- INPUT ("Enter your name?")
       PRINT "Hello, " + name + ". Nice to meet you."
    END
