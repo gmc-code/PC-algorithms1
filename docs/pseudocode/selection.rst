@@ -130,21 +130,22 @@ Nested if
 
 .. code-block:: python
 
-    scoreA = 120
-    scoreB = 55
-    while True:
-        if scoreA > scoreB:
-            if scoreA - scoreB > 60:
-                display.scroll("A won easily")
-            else:
-                display.scroll("A won")
-        elif scoreB > scoreA:
-            if scoreB - scoreA > 60:
-                display.scroll("B won easily")
-            else:
-                display.scroll("B won")
-        else:
-            display.scroll("A drew with B")
+   scoreA = 120
+   scoreB = 55
+   while True:
+      if scoreA > scoreB:
+         if scoreA - scoreB > 60:
+            print("A won easily")
+         else:
+            print("A won")
+      elif scoreB > scoreA:
+         if scoreB - scoreA > 60:
+            print("B won easily")
+         else:
+            print("B won")
+      else:
+         print("A drew with B")
+
 
 | **Pseudocode**. The equivalent pseudocode is:
 
@@ -156,18 +157,18 @@ Nested if
       WHILE TRUE DO
          IF scoreA > scoreB THEN
             IF scoreA - scoreB > 60 THEN
-                  display.scroll("A won easily")
+                  OUTPUT "A won easily"
             ELSE
-                  display.scroll("A won")
+                  OUTPUT "A won"
             ENDIF
          ELSEIF scoreB > scoreA THEN
             IF scoreB - scoreA > 60 THEN
-                  display.scroll("B won easily")
+                  OUTPUT "B won easily"
             ELSE
-                  display.scroll("B won")
+                  OUTPUT "B won"
             ENDIF
          ELSE
-            display.scroll("A drew with B")
+            OUTPUT "A drew with B"
          ENDIF
       ENDWHILE
    END
