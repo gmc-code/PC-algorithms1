@@ -93,7 +93,7 @@ If, elif, else
          ELSE
             OUTPUT "Ride the bike."
          ENDIF
-         
+
    #. Write python code for the following pseudocode on preparing for the weather.
 
       .. code-block::

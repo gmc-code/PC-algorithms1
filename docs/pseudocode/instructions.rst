@@ -54,7 +54,7 @@ Statements
     #. Write pseudocode for ``year = 2022``.
     #. Write pseudocode for ``input("Enter your age in years: ")``.
     #. Write python for this pseudocode: ``OUTPUT "Melbourne"
-    #. Write python for this pseudocode: ``game <- "table tennis"``
+    #. Write python for this pseudocode: ``game \<- "table tennis"``.
 
 
 
