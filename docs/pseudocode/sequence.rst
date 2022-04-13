@@ -25,20 +25,22 @@ Sequence
 
 .. admonition:: Tasks
 
-    #. Write pseudocode for ``num = 2``.
-    #. Write pseudocode for ``print(a * 2)``.
-    #. Write pseudocode for:
+   #. Write pseudocode for ``num = 2``.
+   #. Write pseudocode for ``print(a * 2)``.
+   #. Write pseudocode for:
 
-    .. code-block:: python
-    
-        a = 5
-        b = 6
-        print(a * b)
+      .. code-block:: python
 
-    #. Write python for this pseudocode::
-    
-        INPUT a number between 1 and 10
-        Multiply by 3 
-        Add 18
-        Multiply by 3
-        OUTPUT all the digits but 1
+         a = 5
+         b = 6
+         print(a * b)
+
+   #. Write python for this pseudocode:
+
+      .. code-block:: 
+            
+         INPUT a number between 1 and 10
+         Multiply by 3 
+         Add 18
+         Multiply by 3
+         OUTPUT all the digits but 1
