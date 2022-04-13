@@ -24,7 +24,7 @@ Key references:
 | https://www.w3schools.com/python/
 
 | https://pc-python.readthedocs.io/en/latest/index.html
-| https://readthedocs.org/projects/pc-app-development/
+| https://pc-app-development.readthedocs.io/en/latest/index.html
 
 | https://pc-microbit-micropython.readthedocs.io/en/latest/index.html
 | https://pc-microbit-extension.readthedocs.io/en/latest/index.html
