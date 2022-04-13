@@ -19,11 +19,10 @@ If, else
 
    score = 65
    cut_off_score = 60
-   while True:
-      if score >= cut_off_score:
-         print("Suitable standard.")
-      else:
-         print("Do a retest.")
+   if score >= cut_off_score:
+      print("Suitable standard.")
+   else:
+      print("Do a retest.")
 
 | **Pseudocode**. The equivalent pseudocode is:
 
@@ -32,13 +31,11 @@ If, else
    BEGIN
       score <- 65
       cut_off_score <- 60
-      WHILE TRUE
-         IF score >= cut_off_score THEN
-            OUTPUT "Suitable standard."
-         ELSE
-            OUTPUT "Do a retest."
-         ENDIF
-      ENDWHILE
+      IF score >= cut_off_score THEN
+         OUTPUT "Suitable standard."
+      ELSE
+         OUTPUT "Do a retest."
+      ENDIF
    END
 
 ----
@@ -61,13 +58,12 @@ If, elif, else
 
    scoreA = 88
    scoreB = 85
-   while True:
-      if scoreA > scoreB:
-         print("A won.")
-      elif scoreB > scoreA:
-         print("B won.")
-      else:
-         print("A drew with B.")
+   if scoreA > scoreB:
+      print("A won.")
+   elif scoreB > scoreA:
+      print("B won.")
+   else:
+      print("A drew with B.")
 
 | **Pseudocode**. The equivalent pseudocode is:
 
@@ -76,15 +72,13 @@ If, elif, else
    BEGIN
       scoreA <- 88
       scoreB <- 85
-      WHILE TRUE
-         IF scoreA > scoreB THEN
-            OUTPUT "A won."
-         ELSEIF scoreB > scoreA THEN
-            OUTPUT "B won."
-         ELSE
-            OUTPUT "A drew with B."
-         ENDIF
-      ENDWHILE
+      IF scoreA > scoreB THEN
+         OUTPUT "A won."
+      ELSEIF scoreB > scoreA THEN
+         OUTPUT "B won."
+      ELSE
+         OUTPUT "A drew with B."
+      ENDIF
    END
 
 ----
@@ -272,19 +266,18 @@ Nested if
 
    scoreA = 120
    scoreB = 55
-   while True:
-      if scoreA > scoreB:
-         if scoreA - scoreB > 60:
-            print("A won easily.")
-         else:
-            print("A won.")
-      elif scoreB > scoreA:
-         if scoreB - scoreA > 60:
-            print("B won easily.")
-         else:
-            print("B won.")
+   if scoreA > scoreB:
+      if scoreA - scoreB > 60:
+         print("A won easily.")
       else:
-         print("A drew with B.")
+         print("A won.")
+   elif scoreB > scoreA:
+      if scoreB - scoreA > 60:
+         print("B won easily.")
+      else:
+         print("B won.")
+   else:
+      print("A drew with B.")
 
 
 | **Pseudocode**. The equivalent pseudocode is:
@@ -294,23 +287,21 @@ Nested if
    BEGIN
       scoreA <- 120
       scoreB <- 55
-      WHILE TRUE DO
-         IF scoreA > scoreB THEN
-            IF scoreA - scoreB > 60 THEN
-                  OUTPUT "A won easily."
-            ELSE
-                  OUTPUT "A won."
-            ENDIF
-         ELSEIF scoreB > scoreA THEN
-            IF scoreB - scoreA > 60 THEN
-                  OUTPUT "B won easily."
-            ELSE
-                  OUTPUT "B won."
-            ENDIF
+      IF scoreA > scoreB THEN
+         IF scoreA - scoreB > 60 THEN
+               OUTPUT "A won easily."
          ELSE
-            OUTPUT "A drew with B."
+               OUTPUT "A won."
          ENDIF
-      ENDWHILE
+      ELSEIF scoreB > scoreA THEN
+         IF scoreB - scoreA > 60 THEN
+               OUTPUT "B won easily."
+         ELSE
+               OUTPUT "B won."
+         ENDIF
+      ELSE
+         OUTPUT "A drew with B."
+      ENDIF
    END
 
 ----
