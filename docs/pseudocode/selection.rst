@@ -2,7 +2,7 @@
 Selection
 ==========================
 
-| Selection is one of the three basic control structures:
+| Selection is one of the three basic control structures.
 | Selection provides alternatives or branching using ``if`` ... ``elif`` ... ``else``)
 
 ----
@@ -26,7 +26,7 @@ If, else
       else:
          print("Do a retest.")
 
-| The equivalent pseudocode is:
+| **Pseudocode**. The equivalent pseudocode is:
 
 .. code-block::
 
@@ -34,11 +34,11 @@ If, else
       score <- 65
       cut_off_score <- 60
       WHILE TRUE
-      IF score >= cut_off_score THEN
-         OUTPUT "Suitable standard."
-      ELSE
-         OUTPUT "Do a retest."
-      ENDIF
+         IF score >= cut_off_score THEN
+            OUTPUT "Suitable standard."
+         ELSE
+            OUTPUT "Do a retest."
+         ENDIF
       ENDWHILE
    END
 
@@ -47,10 +47,7 @@ If, else
 If, elif, else
 ----------------------------
 
-| ``if`` is used with a condition that results in ``True`` or ``False``.
-| When the condition is True, the code indented below the ``if`` statement is executed.
 | Alternatives can be provided using ``elif`` with a condition.
-| If all conditions are ``False``, ``else:`` can be used to execute other code.
 | Note that there must be a colon, ``:``, at the end of each ``if``, ``elif`` and ``else`` statement.
 
 .. code-block:: python
@@ -65,7 +62,7 @@ If, elif, else
       else:
          print("A drew with B")
 
-| The equivalent pseudocode is:
+| **Pseudocode**. The equivalent pseudocode is:
 
 .. code-block::
 
@@ -108,11 +105,11 @@ If, elif, else
             is_raining <- False
             is_cold <- False
             OUTPUT "Good Morning."
-            IF is_raining and is_cold THEN
+            IF is_raining AND is_cold THEN
                OUTPUT "Bring Umbrella and jacket."
-            ELSEIF is_raining and not(is_cold) THEN
+            ELSEIF is_raining AND NOT(is_cold) THEN
                OUTPUT "Bring Umbrella."
-            ELSEIF not(is_raining) and is_cold THEN
+            ELSEIF not(is_raining) AND is_cold THEN
                OUTPUT "Bring Jacket."
             ELSE
                OUTPUT "Wear a sun hat."
@@ -128,11 +125,10 @@ If, elif, else
 Nested if 
 ----------------------------
 
-| Nesting is the inclusion of other ``if`` statements have within ``if`` statements.
-| Both the ``if`` and the ``elif`` have a nested ``if`` and ``else`` that are used when their condition is true. 
+| Nesting is the inclusion of other ``if`` statements within ``if`` statements.
+| Both the ``if`` and the ``elif`` below have a nested ``if`` and ``else`` that are used when their condition is true. 
 
 .. code-block:: python
-
 
     scoreA = 120
     scoreB = 55
@@ -150,37 +146,38 @@ Nested if
         else:
             display.scroll("A drew with B")
 
+| **Pseudocode**. The equivalent pseudocode is:
+
+.. code-block::
+   
+   BEGIN
+      scoreA <- 120
+      scoreB <- 55
+      WHILE TRUE DO
+         IF scoreA > scoreB THEN
+            IF scoreA - scoreB > 60 THEN
+                  display.scroll("A won easily")
+            ELSE
+                  display.scroll("A won")
+            ENDIF
+         ELSEIF scoreB > scoreA THEN
+            IF scoreB - scoreA > 60 THEN
+                  display.scroll("B won easily")
+            ELSE
+                  display.scroll("B won")
+            ENDIF
+         ELSE
+            display.scroll("A drew with B")
+         ENDIF
+      ENDWHILE
+   END
 
 ----
 
 .. admonition:: Tasks
 
-    #. Add the variables ``teamA`` and ``teamB`` and set team names for them. Modify the code to scroll the team name instead of 'A' or 'B'. Hint: To join text use a plus symbol. e.g (myteam + " my text")
-    #. Modify the code to scroll the winning margins. Use ``str(number)`` to convert numbers to text for joining with other text. Add the variables ``teamAwinby`` and ``teamBwinby``. Calculate those variables using the scoreA and scoreB. e.g ``teamAwinby = scoreA - scoreB``. Replace "A won easily" with code to output "A won easily by 65". Do similar replacements for the other scrolling text.
+    #. Using python code, add the variables ``teamA`` and ``teamB`` and set team names for them. Modify the code to scroll the team name instead of 'A' or 'B'. Hint: To join text use a plus symbol. e.g (myteam + " my text")
+    #. Using pseudocode, modify the code to scroll the winning margins. Use ``str(number)`` to convert numbers to text for joining with other text. e.g "A won easily by 65".
 
-
-----
-
-.. admonition:: Tasks
-
-    #. Write pseudocode for ``num = 2``.
-    #. Write pseudocode for ``print(a * 2)``.
-    #. Write pseudocode for:
-
-    .. code-block:: python
-    
-        a = 5
-        b = 6
-        print(a * b)
-
-    #. Write python for this pseudocode::
-    
-      BEGIN
-         INPUT a number between 1 and 10
-         Multiply by 3 
-         Add 18
-         Multiply by 3
-         OUTPUT all the digits but 1
-      END
 
 

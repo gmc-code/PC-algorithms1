@@ -27,7 +27,7 @@ Sequence
 
    #. Write pseudocode for ``num = 2``.
    #. Write pseudocode for ``print(a * 2)``.
-   #. Write pseudocode for:
+   #. Write pseudocode for this python sequence:
 
       .. code-block:: python
 
@@ -35,7 +35,7 @@ Sequence
          b = 6
          print(a * b)
 
-   #. Write python for this pseudocode:
+   #. Write python for this pseudocode sequence:
 
       .. code-block:: 
             
