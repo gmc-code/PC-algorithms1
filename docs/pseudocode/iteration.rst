@@ -62,8 +62,8 @@ For loops
 
 ----
 
-While loops
-------------------
+While loops: forever
+----------------------
 
 | ``while`` loops can do something forever.
 | ``while True:`` loops repeat forever, or until the program is stopped.
@@ -85,8 +85,22 @@ While loops
 
 ----
 
+While loops: pre-test
+----------------------
+
 | While loops test a condition and only run the indented code in the while block while that condition is True.
-| The code below prints the numbers 1 to 9.
+| If the condition is False, the code in the while block doesn't run.
+| The condition is tested **before** the rest of the while loop is run.
+
+| The general pattern is:
+
+.. code-block::
+
+    # pre-test loop
+    while <conditional>:
+        <statements>
+
+| Example python code:
 
 .. code-block:: python
 
@@ -107,6 +121,92 @@ While loops
         ENDWHILE
     END
 
+----
+
+Pseudocode: post-test REPEAT UNTIL
+--------------------------------------
+
+| The condition is tested **after** the rest of the while loop is run and so controls the exiting of the loop.
+| This guarantees that the while block is run at least once.
+| When the test condition is **True**, the loop is exited.
+
+| Example pseudocode:
+
+.. code-block::
+
+    BEGIN
+        num <- 1
+        REPEAT
+            OUTPUT num
+            num <- num + 2
+        UNTIL num > 9
+    END
+
+| There is no direct post-test syntax in python. A ``while True`` loop is run with a break if the condition is met.
+| The general pattern is:
+
+.. code-block::
+
+    # post-test loop
+    while True:
+        <statements>
+        if <conditional>:
+            break
+
+| The equivalent python code is:
+
+.. code-block:: python
+
+    num = 1
+    while True:
+        print(num)
+        num += 2
+        if num > 9:
+            break
+
+----
+
+Pseudocode: post-test DO WHILE
+-----------------------------------
+
+| The condition is tested **after** the rest of the while loop is run and so controls the exiting of the loop.
+| This guarantees that the while block is run at least once.
+| When the test condition is **False**, the loop is exited.
+
+| Example pseudocode:
+
+.. code-block::
+
+    BEGIN
+        num <- 1
+        DO
+            OUTPUT num
+            num <- num + 2
+        WHILE num < 10
+    END
+
+| There is no direct post-test syntax in python. A ``while True`` loop is run with a break if the condition is met.
+| The general pattern is:
+
+.. code-block::
+
+    # post-test loop
+    while True:
+        <statements>
+        if not <conditional>:
+            break
+
+| The equivalent python code is:
+
+.. code-block:: python
+
+    num = 1
+    while True:
+        print(num)
+        num += 2
+        if not(num > 9):
+            break
+
 
 ----
 
@@ -115,6 +215,6 @@ Practice Questions
 
 .. admonition:: Tasks
 
-    1. Display a different image depending on which side microbit is tilted in.
+    1. What is the expected output from the code above?
 
 
