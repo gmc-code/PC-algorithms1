@@ -51,8 +51,8 @@ Statements
 
 .. admonition:: Tasks
 
-    #. Write pseudocode for ``year = 2022``.
-    #. Write pseudocode for ``input("Enter your age in years: ")``.
+    #. Write pseudocode for the python assignment: ``year = 2022``.
+    #. Write pseudocode for the python statement: ``input("Enter your age in years: ")``.
     #. Write python for this pseudocode: ``OUTPUT "Melbourne"``.
     #. Write python for this pseudocode: ``game <- "table tennis"``.
 
