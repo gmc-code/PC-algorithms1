@@ -30,15 +30,17 @@ If, else
 
 .. code-block::
 
-   score <- 65
-   cut_off_score <- 60
-   WHILE TRUE
-   IF score >= cut_off_score THEN
-      OUTPUT "Suitable standard."
-   ELSE
-      OUTPUT "Do a retest."
-   ENDIF
-   ENDWHILE
+   BEGIN
+      score <- 65
+      cut_off_score <- 60
+      WHILE TRUE
+      IF score >= cut_off_score THEN
+         OUTPUT "Suitable standard."
+      ELSE
+         OUTPUT "Do a retest."
+      ENDIF
+      ENDWHILE
+   END
 
 ----
 
@@ -67,17 +69,19 @@ If, elif, else
 
 .. code-block::
 
-   scoreA <- 88
-   scoreB <- 85
-   WHILE TRUE
-      IF scoreA > scoreB THEN
-         OUTPUT "A won"
-      ELSEIF scoreB > scoreA THEN
-         OUTPUT "B won"
-      ELSE
-         OUTPUT "A drew with B"
-      ENDIF
-   ENDWHILE
+   BEGIN
+      scoreA <- 88
+      scoreB <- 85
+      WHILE TRUE
+         IF scoreA > scoreB THEN
+            OUTPUT "A won"
+         ELSEIF scoreB > scoreA THEN
+            OUTPUT "B won"
+         ELSE
+            OUTPUT "A drew with B"
+         ENDIF
+      ENDWHILE
+   END
 
 
 ----
@@ -88,28 +92,32 @@ If, elif, else
 
       .. code-block::
 
-         IF it is raining THEN
-            OUTPUT "Catch the bus."
-         ELSE
-            OUTPUT "Ride the bike."
-         ENDIF
+         BEGIN
+            IF it is raining THEN
+               OUTPUT "Catch the bus."
+            ELSE
+               OUTPUT "Ride the bike."
+            ENDIF
+         END
 
    #. Write python code for the following pseudocode on preparing for the weather.
 
       .. code-block::
 
-         is_raining <- False
-         is_cold <- False
-         OUTPUT "Good Morning."
-         IF is_raining and is_cold THEN
-            OUTPUT "Bring Umbrella and jacket."
-         ELSEIF is_raining and not(is_cold) THEN
-            OUTPUT "Bring Umbrella."
-         ELSEIF not(is_raining) and is_cold THEN
-            OUTPUT "Bring Jacket."
-         ELSE
-            OUTPUT "Wear a sun hat."
-         ENDIF
+         BEGIN
+            is_raining <- False
+            is_cold <- False
+            OUTPUT "Good Morning."
+            IF is_raining and is_cold THEN
+               OUTPUT "Bring Umbrella and jacket."
+            ELSEIF is_raining and not(is_cold) THEN
+               OUTPUT "Bring Umbrella."
+            ELSEIF not(is_raining) and is_cold THEN
+               OUTPUT "Bring Jacket."
+            ELSE
+               OUTPUT "Wear a sun hat."
+            ENDIF
+         END
 
 
 
@@ -167,10 +175,12 @@ Nested if
 
     #. Write python for this pseudocode::
     
-        INPUT a number between 1 and 10
-        Multiply by 3 
-        Add 18
-        Multiply by 3
-        OUTPUT all the digits but 1
+      BEGIN
+         INPUT a number between 1 and 10
+         Multiply by 3 
+         Add 18
+         Multiply by 3
+         OUTPUT all the digits but 1
+      END
 
 
