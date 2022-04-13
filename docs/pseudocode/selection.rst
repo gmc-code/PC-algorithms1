@@ -15,7 +15,6 @@ If, else
 | When the condition is True, the code indented below the ``if`` statement is executed.
 | If all conditions are ``False``, ``else:`` can be used to execute other code.
 
-
 .. code-block:: python
 
    score = 65
@@ -43,6 +42,14 @@ If, else
    END
 
 ----
+.. admonition:: Tasks
+
+   #. In the code above, is the condition in the if statement True or False?
+   #. Give a value for ``score`` in the code above such that the output is ``"Do a retest."``.
+   #. Assuming scores can only be integers from and including 0 to 100, how many different scores would result in the output of ``"Do a retest."``?
+   #. Assuming scores can only be integers from and including 0 to 100, how many different scores would result in the output of ``"Suitable standard."``?
+
+----
 
 If, elif, else
 ----------------------------
@@ -56,11 +63,11 @@ If, elif, else
    scoreB = 85
    while True:
       if scoreA > scoreB:
-         print("A won")
+         print("A won.")
       elif scoreB > scoreA:
-         print("B won")
+         print("B won.")
       else:
-         print("A drew with B")
+         print("A drew with B.")
 
 | **Pseudocode**. The equivalent pseudocode is:
 
@@ -71,15 +78,22 @@ If, elif, else
       scoreB <- 85
       WHILE TRUE
          IF scoreA > scoreB THEN
-            OUTPUT "A won"
+            OUTPUT "A won."
          ELSEIF scoreB > scoreA THEN
-            OUTPUT "B won"
+            OUTPUT "B won."
          ELSE
-            OUTPUT "A drew with B"
+            OUTPUT "A drew with B."
          ENDIF
       ENDWHILE
    END
 
+----
+
+.. admonition:: Tasks
+
+   #. In the code above, is the condition in the if statement True or False?
+   #. GIve a value for ``scoreB`` in the code above such that the output is ``"B won."``.
+   #. Give a value for ``scoreB`` in the code above such that the output is ``"A drew with B."``.
 
 ----
 
@@ -112,7 +126,7 @@ And, or, not
 
    is_raining = True
    is_cold = True
-   print("Good Morning")
+   print("Good Morning.")
    if is_raining and is_cold:
       print("Bring Umbrella and jacket.")
    else:
@@ -125,13 +139,22 @@ And, or, not
    BEGIN
       is_raining <- TRUE
       is_cold <- TRUE
-      OUTPUT "Good Morning"
+      OUTPUT "Good Morning."
       IF is_raining AND is_cold THEN
          OUTPUT "Bring Umbrella and jacket."
       ELSE
          OUTPUT "Umbrella and jacket are optional."
       ENDIF
    END
+
+----
+
+.. admonition:: Tasks
+
+   #. In the code above, is the condition in the if statement True or False?
+   #. What is the expected output from the code above?
+   #. Would changing ``is_raining`` to ``False`` result in a change in the output?
+   #. Would changing ``is_raining`` to ``False`` and ``is_cold`` to ``False`` result in a change from the original output?
 
 ----
 
@@ -145,7 +168,7 @@ And, or, not
 
    is_raining = False
    is_cold = False
-   print("Good Morning")
+   print("Good Morning.")
    if is_raining or is_cold:
       print("Bring Umbrella or jacket or both.")
    else:
@@ -158,7 +181,7 @@ And, or, not
    BEGIN
       is_raining <- FALSE
       is_cold <- FALSE
-      OUTPUT "Good Morning"
+      OUTPUT "Good Morning."
       IF is_raining OR is_cold THEN
          OUTPUT "Bring Umbrella or jacket or both."
       ELSE
@@ -168,14 +191,23 @@ And, or, not
 
 ----
 
+.. admonition:: Tasks
+
+   #. In the code above, is the condition in the if statement True or False?
+   #. What is the expected output from the code above?
+   #. Would changing ``is_raining`` to ``True`` result in a change in the output?
+   #. Would changing ``is_raining`` to ``True`` and ``is_cold`` to ``True`` result in a change from the original output?
+
+----
+
 | The ``not`` keyword is a logical operator.
 | It changes True to False, and False to True.
 
 .. code-block:: python
 
-   is_raining = False
+   is_raining = True
    is_cold = False
-   print("Good Morning")
+   print("Good Morning.")
    if is_raining and is_cold:
       print("Bring Umbrella and jacket.")
    elif is_raining and not(is_cold):
@@ -186,15 +218,23 @@ And, or, not
 .. code-block::
 
    BEGIN
-      is_raining <- FALSE
+      is_raining <- TRUE
       is_cold <- FALSE
-      OUTPUT "Good Morning"
+      OUTPUT "Good Morning."
       IF is_raining AND is_cold THEN
          OUTPUT "Bring Umbrella AND jacket."
       ELSEIF is_raining AND NOT (is_cold) THEN
          OUTPUT "Bring Umbrella."
       ENDIF
    END
+
+----
+
+.. admonition:: Tasks
+
+   #. In the code above, is the condition in the if statement True or False?
+   #. What is the expected output from the code above?
+   #. What change would be needed in the variable assignments to result in the output being ``"Bring Umbrella AND jacket."``?
 
 ----
 
@@ -235,16 +275,16 @@ Nested if
    while True:
       if scoreA > scoreB:
          if scoreA - scoreB > 60:
-            print("A won easily")
+            print("A won easily.")
          else:
-            print("A won")
+            print("A won.")
       elif scoreB > scoreA:
          if scoreB - scoreA > 60:
-            print("B won easily")
+            print("B won easily.")
          else:
-            print("B won")
+            print("B won.")
       else:
-         print("A drew with B")
+         print("A drew with B.")
 
 
 | **Pseudocode**. The equivalent pseudocode is:
@@ -257,18 +297,18 @@ Nested if
       WHILE TRUE DO
          IF scoreA > scoreB THEN
             IF scoreA - scoreB > 60 THEN
-                  OUTPUT "A won easily"
+                  OUTPUT "A won easily."
             ELSE
-                  OUTPUT "A won"
+                  OUTPUT "A won."
             ENDIF
          ELSEIF scoreB > scoreA THEN
             IF scoreB - scoreA > 60 THEN
-                  OUTPUT "B won easily"
+                  OUTPUT "B won easily."
             ELSE
-                  OUTPUT "B won"
+                  OUTPUT "B won."
             ENDIF
          ELSE
-            OUTPUT "A drew with B"
+            OUTPUT "A drew with B."
          ENDIF
       ENDWHILE
    END
