@@ -17,7 +17,7 @@ Match-case
 | The simple pattern in python is:
 
 .. code-block::
-    
+
     match subject:
         case <pattern_1>:
             <action_1>
@@ -85,8 +85,9 @@ Alternatives
 Wilcard
 --------------------------
 
-| If an exact match is not confirmed, the last case, a wildcard _, if provided, will be used as the matching case.
-| However, since an underscore will not work in an f-string, the wildcard can be given another variable name such as ``other``. 
+| If an exact match is not confirmed, the last case, if provided, will be used as the matching case.
+| If the wildcard ``_``, if often used as a variable that is not again used.
+| Another variable name, such as ``other``, is used if it is used in the case block code. 
 
 .. code-block:: python
 
