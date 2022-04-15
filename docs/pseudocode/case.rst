@@ -110,7 +110,7 @@ Wilcard
                 OUTPUT "Acceptable standard."
             "D+" | "D" | "NP" | "UG":
                 OUTPUT "Retest required."
-            other:
+            OTHERWISE:
                 OUTPUT f'{other} was entered'
         ENDCASE
     END
@@ -121,7 +121,7 @@ Wilcard
 Pseudocode alternatives
 --------------------------
 
-| The code for each case can be on hte same line in pseudocde.
+| In pseudocde, the code for each case can be on the same line as the case value.
 | The keywords: OF, OTHERS, can be used.
 | The OTHERS clause with its default sequence is optional.
 | The general pattern amy be:
