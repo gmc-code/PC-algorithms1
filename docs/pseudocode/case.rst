@@ -141,9 +141,27 @@ Example:
 
 .. code-block::
 
-    CASE  Title  OF
-            Mr   : OUTPUT "Mister"
-            Mrs  : OUTPUT "Missus"
-            Ms   : OUTPUT "Miss"
-            OTHERWISE OUTPUT "Form of address not recognised"
-    ENDCASE
+    BEGIN
+        CASE  Title  OF
+                Mr   : OUTPUT "Mister"
+                Mrs  : OUTPUT "Missus"
+                Ms   : OUTPUT "Miss"
+                OTHERWISE OUTPUT "Form of address not recognised"
+        ENDCASE
+    END
+
+| **Python**. The equivalent python is:
+
+.. code-block:: python
+
+    title = "Ms"
+    match title:
+        case "Mr":
+            print("Mister")
+        case "Mrs":
+            print("Missus")
+        case "Ms":
+            print("Miss")
+        case other:
+            print("Form of address not recognised")
+
