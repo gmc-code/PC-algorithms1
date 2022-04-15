@@ -54,7 +54,7 @@ Match-case
 Alternatives
 --------------------------
 
-| Several alternatives can be used in a single pattern using the pipe symbol for or: ``\|``
+| Several alternatives can be used in a single pattern using the pipe symbol for or: ``|``.
 
 .. code-block:: python
 
