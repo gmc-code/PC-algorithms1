@@ -93,7 +93,7 @@ Wilcard
 
     grade = "A-"
     match grade:
-        case  "A+" | "A" | "B+" |  "B" | "C+" | "C":
+        case "A+" | "A" | "B+" | "B" | "C+" | "C":
             print("Acceptable standard.")
         case "D+" | "D" | "NP" | "UG":
             print("Retest required.")
@@ -107,14 +107,51 @@ Wilcard
     BEGIN
         grade <- "A-"
         CASE grade:
-            "A+" | "A" | "B+" |  "B" | "C+" | "C":
-                OUTPUT "Acceptable standard."
-            "D+" | "D" | "NP" | "UG":
-                OUTPUT "Retest required."
-            OTHERWISE:
-                OUTPUT f'{other} was entered'
+            "A+" OR "A" OR "B+" OR  "B" OR "C+" OR "C": OUTPUT "Acceptable standard."
+            "D+" OR "D" OR "NP" OR "UG": OUTPUT "Retest required."
+            OTHERWISE OUTPUT f'{other} was entered'
         ENDCASE
     END
+
+
+----
+
+Macthing tuples for coordinates
+--------------------------------
+
+| Other objects, apart from strings can be matched. 
+
+.. code-block:: python
+
+    point = (2, 3)
+    match point:
+        case (0, 0):
+            print("Origin")
+        case (0, y):
+            print(f"{y} on Y axis")
+        case (x, 0):
+            print(f"{x} on X axis")
+        case (x, y):
+            print(f"{x} on X axis, {y} on Y axis")
+        case _:
+            print("Invalid point")
+
+
+| **Pseudocode**. The equivalent pseudocode is:
+
+.. code-block:: 
+
+    BEGIN
+        point <- (2, 3)
+        CASE point:
+            (0, 0): OUTPUT "Origin"
+            (0, y): OUTPUT f"{y} on Y axis"
+            (x, 0): OUTPUT f"{x} on X axis"
+            (x, y): OUTPUT f"{x} on X axis, {y} on Y axis"
+            OTHERWISE: OUTPUT "Invalid point"
+        ENDCASE
+    END
+
 
 
 ----
