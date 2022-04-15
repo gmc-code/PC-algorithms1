@@ -13,8 +13,17 @@ Control structures
 
 ----
 
+HOme pages:
+--------------------
+
 | PC-algorithms Home page:
 | https://pc-algorithms.readthedocs.io/en/latest/
+
+| https://pc-python.readthedocs.io/en/latest/index.html
+| https://pc-app-development.readthedocs.io/en/latest/index.html
+
+| https://pc-microbit-micropython.readthedocs.io/en/latest/index.html
+| https://pc-microbit-extension.readthedocs.io/en/latest/index.html
 
 ----
 
@@ -22,12 +31,6 @@ Key references:
 --------------------
 
 | https://www.w3schools.com/python/
-
-| https://pc-python.readthedocs.io/en/latest/index.html
-| https://pc-app-development.readthedocs.io/en/latest/index.html
-
-| https://pc-microbit-micropython.readthedocs.io/en/latest/index.html
-| https://pc-microbit-extension.readthedocs.io/en/latest/index.html
 
 
 ----

@@ -21,6 +21,7 @@ For loops
 
 | A ``for`` loop can be used to do an action a specific number of times.
 | The range function below, ``range (4)``, can be used to assign values of 0, 1, 2, and 3 to i as the for loop runs.
+| The last line in the pseudocode for a for loop can take two forms: ``ENDFOR`` or ``NEXT variable``.
 
 .. code-block:: python
 
@@ -34,8 +35,15 @@ For loops
     BEGIN
         FOR i <- 0 TO 3
             OUTPUT i
-        NEXT
+        NEXT i
     END
+
+----
+
+.. admonition:: Tasks
+
+    1. How many times does the loop run?
+
 
 ----
 
@@ -51,13 +59,8 @@ For loops
     BEGIN
         FOR i <- 4 TO 8
             OUTPUT i
-        ENDFOR
+        NEXT i
     END
-
-| The outer loop: ``for x in range(0,5):`` will execute the loop five times
- substituting ``x`` for consecutive values from ``0`` to ``4`` each time. 
-| The inner loop: ``for y in range(0,5):`` will run the loop five times
- substituting ``y`` for consecutive values in the range ``0`` to ``4`` each time.
 
 
 ----
@@ -217,4 +220,12 @@ Practice Questions
 
     1. What is the expected output from the code above?
 
+BEGIN
+    i = 0
+    WHILE (i <= 10)
+        print i
+        i = i + 21
+    ENDWHILE
+END
 
+How many times is the loop above executed?

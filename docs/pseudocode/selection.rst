@@ -311,5 +311,10 @@ Nested if
     #. Using python code, add the variables ``teamA`` and ``teamB`` and set team names for them. Modify the code to scroll the team name instead of 'A' or 'B'. Hint: To join text use a plus symbol. e.g (myteam + " my text")
     #. Using pseudocode, modify the code to scroll the winning margins. Use ``str(number)`` to convert numbers to text for joining with other text. e.g "A won easily by 65".
 
+----
+
+Case statements
+-----------------------
+
 
 

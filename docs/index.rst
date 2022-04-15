@@ -33,3 +33,6 @@ If you are using a trackpad, navigate to various sections and pages by clicking 
     pseudocode/sequence.rst
     pseudocode/selection.rst
     pseudocode/iteration.rst
+    pseudocode/case.rst
+
+
