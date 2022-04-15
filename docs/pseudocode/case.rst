@@ -2,8 +2,9 @@
 Case
 ==========================
 
-| Match-case statements are in python from 3.10. Python refers to this as structural pattern matching.
-| THey can be used for what is known as switch-case statements.
+| Match-case statements are in python from 3.10. 
+| Python refers to this as structural pattern matching.
+| Match-case statements can be used for what is known as switch-case statements in general use in other languages.
 | See: https://docs.python.org/3/whatsnew/3.10.html#pep-634-structural-pattern-matching
 | See: https://www.youtube.com/watch?v=-79HGfWmH_w
 
@@ -12,7 +13,8 @@ Case
 Match-case
 --------------------------
 
-| The general pattern in python is:
+| Multiple cases can be used.
+| The simple pattern in python is:
 
 .. code-block::
     
@@ -21,8 +23,6 @@ Match-case
             <action_1>
         case <pattern_2>:
             <action_2>
-        case <pattern_3>:
-            <action_3>
 
 | An example in python is:
 
