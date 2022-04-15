@@ -2,6 +2,11 @@
 Introduction
 ====================================================
 
+| Algorithms are Step-by-step procedures to solve a problem.
+| This section covers some key aspects of algorithms, including control structures and their pseudocode.
+
+----
+
 Control structures
 --------------------
 
@@ -10,6 +15,7 @@ Control structures
 | • 	sequence, which executes line by line in written order
 | • 	selection, which chooses between alternatives
 | • 	iteration, where looping determines how many times the instruction is executed.
+
 
 ----
 

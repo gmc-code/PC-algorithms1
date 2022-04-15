@@ -3,13 +3,16 @@ Case
 ==========================
 
 | Match-case statements are in python from 3.10. Python refers to this as structural pattern matching.
-| In other languages they are known as switch-case statements.
+| THey can be used for what is known as switch-case statements.
 | See: https://docs.python.org/3/whatsnew/3.10.html#pep-634-structural-pattern-matching
 | See: https://www.youtube.com/watch?v=-79HGfWmH_w
-| If an exact match is not confirmed, the last case, a wildcard _, if provided, will be used as the matching case.
 
+----
 
-THe general pattern is:
+Match-case
+--------------------------
+
+| The general pattern in python is:
 
 .. code-block::
     
@@ -20,9 +23,8 @@ THe general pattern is:
             <action_2>
         case <pattern_3>:
             <action_3>
-        case _:
-            <action_wildcard>
 
+| An example in python is:
 
 .. code-block:: python
 
@@ -33,10 +35,26 @@ THe general pattern is:
         case False:
             print("No entry until you reach 13 years of age.")
 
+| **Pseudocode**. The equivalent pseudocode is:
 
-| Several alternatives can be used in a single pattern using teh pipe symbol for or: ``\|``
+.. code-block:: 
 
-.. code-block:: python
+    BEGIN
+        age_flag <- FALSE
+        CASE age_flag:
+            TRUE:
+                OUTPUT "Entry permitted"
+            FALSE:
+                OUTPUT "No entry until you reach 13 years of age."
+        ENDCASE
+    END
+
+----
+
+Alternatives
+--------------------------
+
+| Several alternatives can be used in a single pattern using the pipe symbol for or: ``\|``
 
 .. code-block:: python
 
@@ -47,11 +65,66 @@ THe general pattern is:
         case "D+" | "D" | "NP" | "UG":
             print("Retest required.")
 
+| **Pseudocode**. The equivalent pseudocode is:
+
+.. code-block:: 
+
+    BEGIN
+        grade <- "A"
+        CASE grade:
+            "A+" | "A" | "B+" |  "B" | "C+" | "C":
+                OUTPUT "Acceptable standard."
+            "D+" | "D" | "NP" | "UG":
+                OUTPUT "Retest required."
+        ENDCASE
+    END
 
 
+----
 
-A CASE construct indicates a multiway branch based on conditions that are mutually exclusive. 
-Four keywords, CASE, OF, OTHERS, and ENDCASE, and conditions are used to indicate the various alternatives. The general form is:
+Wilcard
+--------------------------
+
+| If an exact match is not confirmed, the last case, a wildcard _, if provided, will be used as the matching case.
+| However, since an underscore will not work in an f-string, the wildcard can be given another variable name such as ``other``. 
+
+.. code-block:: python
+
+    grade = "A-"
+    match grade:
+        case  "A+" | "A" | "B+" |  "B" | "C+" | "C":
+            print("Acceptable standard.")
+        case "D+" | "D" | "NP" | "UG":
+            print("Retest required.")
+        case other:
+            print(f'{other} was entered')
+
+| **Pseudocode**. The equivalent pseudocode is:
+
+.. code-block:: 
+
+    BEGIN
+        grade <- "A-"
+        CASE grade:
+            "A+" | "A" | "B+" |  "B" | "C+" | "C":
+                OUTPUT "Acceptable standard."
+            "D+" | "D" | "NP" | "UG":
+                OUTPUT "Retest required."
+            other:
+                OUTPUT f'{other} was entered'
+        ENDCASE
+    END
+
+
+----
+
+Pseudocode alternatives
+--------------------------
+
+| The code for each case can be on hte same line in pseudocde.
+| The keywords: OF, OTHERS, can be used.
+| The OTHERS clause with its default sequence is optional.
+| The general pattern amy be:
 
 .. code-block::
 
@@ -60,41 +133,17 @@ Four keywords, CASE, OF, OTHERS, and ENDCASE, and conditions are used to indicat
       condition 2 : sequence 2
       ...
       condition n : sequence n
-      OTHERS:
-      default sequence
+      OTHERS : default sequence
    ENDCASE
 
-The OTHERS clause with its default sequence is optional. Conditions are normally numbers or characters
 
-indicating the value of "expression", but they can be English statements or some other notation that specifies the condition under which the given sequence is to be performed. A certain sequence may be associated with more than one condition.
-Example
-        CASE  Title  OF
-                Mr      : Print "Mister"
-                Mrs     : Print "Missus"
-                Miss    : Print "Miss"
-                Ms      : Print "Mizz"
-                Dr      : Print "Doctor"
-        ENDCASE
-Example
-        CASE  grade  OF
-                A       : points = 4
-                B       : points = 3
-                C       : points = 2
-                D       : points = 1
-                F       : points = 0
-        ENDCASE
+Example:
 
+.. code-block::
 
-
-CASE Day OF
-    1 : OUTPUT "Monday"
-    2 : OUTPUT "Tuesday"
-    3 : OUTPUT "Wednesday"
-    4 : OUTPUT "Thursday"
-    5 : OUTPUT "Friday"
-    6 : OUTPUT "Saturday"
-    7 : OUTPUT "Sunday"
-    OTHERWISE OUTPUT "Day invalid"
-ENDCASE
-
-
+    CASE  Title  OF
+            Mr   : OUTPUT "Mister"
+            Mrs  : OUTPUT "Missus"
+            Ms   : OUTPUT "Miss"
+            OTHERWISE OUTPUT "Form of address not recognised"
+    ENDCASE
