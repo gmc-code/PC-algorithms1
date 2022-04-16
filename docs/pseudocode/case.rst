@@ -14,6 +14,7 @@ Match-case
 --------------------------
 
 | Multiple cases can be used.
+| Each case is checked in order until a matching case is found.
 | The simple pattern in python is:
 
 .. code-block::
@@ -42,10 +43,8 @@ Match-case
     BEGIN
         age_flag <- FALSE
         CASE age_flag:
-            TRUE:
-                OUTPUT "Entry permitted"
-            FALSE:
-                OUTPUT "No entry until you reach 13 years of age."
+            TRUE: OUTPUT "Entry permitted"
+            FALSE: OUTPUT "No entry until you reach 13 years of age."
         ENDCASE
     END
 
@@ -72,10 +71,8 @@ Alternatives
     BEGIN
         grade <- "A"
         CASE grade:
-            "A+" | "A" | "B+" |  "B" | "C+" | "C":
-                OUTPUT "Acceptable standard."
-            "D+" | "D" | "NP" | "UG":
-                OUTPUT "Retest required."
+            "A+" | "A" | "B+" |  "B" | "C+" | "C": OUTPUT "Acceptable standard."
+            "D+" | "D" | "NP" | "UG": OUTPUT "Retest required."
         ENDCASE
     END
 
@@ -86,8 +83,8 @@ Wilcard
 --------------------------
 
 | If an exact match is not confirmed, the last case, if provided, will be used as the matching case.
-| If the wildcard ``_``, if often used as a variable that is not again used.
-| Another variable name, such as ``other``, is used if it is used in the case block code. 
+| The wildcard ``_`` is usually used when it is not referred to again in the code block.
+| Another variable name, such as ``other``, is used if it is referred to in the following case block code. 
 
 .. code-block:: python
 
@@ -97,8 +94,8 @@ Wilcard
             print("Acceptable standard.")
         case "D+" | "D" | "NP" | "UG":
             print("Retest required.")
-        case other:
-            print(f'{other} was entered')
+        case _:
+            print("Not a valid grade")
 
 | **Pseudocode**. The equivalent pseudocode is:
 
@@ -109,17 +106,19 @@ Wilcard
         CASE grade:
             "A+" OR "A" OR "B+" OR  "B" OR "C+" OR "C": OUTPUT "Acceptable standard."
             "D+" OR "D" OR "NP" OR "UG": OUTPUT "Retest required."
-            OTHERWISE OUTPUT f'{other} was entered'
+            OTHERWISE OUTPUT "Not a valid grade"
         ENDCASE
     END
 
 
 ----
 
-Macthing tuples for coordinates
+Matching tuples for coordinates
 --------------------------------
 
 | Other objects, apart from strings can be matched. 
+| An example with a tuple is below.
+
 
 .. code-block:: python
 
@@ -151,8 +150,6 @@ Macthing tuples for coordinates
             OTHERWISE: OUTPUT "Invalid point"
         ENDCASE
     END
-
-
 
 ----
 
