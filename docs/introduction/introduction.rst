@@ -19,7 +19,7 @@ Control structures
 
 ----
 
-HOme pages:
+Home pages:
 --------------------
 
 | PC-algorithms Home page:
