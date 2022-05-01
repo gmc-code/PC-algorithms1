@@ -20,7 +20,7 @@ Definitions
     num = 7
 
 
-| **Pseudocode**. Assignment uses a left point arrow in pseudocode.
+| **Pseudocode**. Assignment uses a left pointing arrow in pseudocode.
 | The equivalent pseudocode is:
 
 .. code-block::
