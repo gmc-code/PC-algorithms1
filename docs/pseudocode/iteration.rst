@@ -218,14 +218,17 @@ Practice Questions
 
 .. admonition:: Tasks
 
-    1. What is the expected output from the code above?
+    #. What is the expected output from the code above?
+    #. How many times is the loop below executed?
 
-BEGIN
-    i = 0
-    WHILE (i <= 10)
-        print i
-        i = i + 21
-    ENDWHILE
-END
+        .. code-block:: 
 
-How many times is the loop above executed?
+            BEGIN
+                i = 0
+                WHILE (i <= 10)
+                    print i
+                    i = i + 21
+                ENDWHILE
+            END
+
+            

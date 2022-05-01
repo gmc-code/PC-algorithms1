@@ -39,7 +39,7 @@ Sequence
    #. Write python for this pseudocode sequence:
 
       .. code-block:: 
-            
+
          BEGIN
             INPUT a number between 1 and 10
             Multiply by 3 
