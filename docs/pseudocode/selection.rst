@@ -39,6 +39,7 @@ If, else
    END
 
 ----
+
 .. admonition:: Tasks
 
    #. In the code above, is the condition in the if statement True or False?
