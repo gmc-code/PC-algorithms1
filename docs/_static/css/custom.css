@@ -204,17 +204,33 @@ button.copybtn {
     transition-delay: .5s;
 }
 
+
 /* ========================================== */
-/** to override text  file background
-*/
+/**  overrides */
+/* ========================================== */
+/** to override text  file background */
 
 div.highlight-default div.highlight {
     background: #eef5ff;
 }
 
-/** to override table padding from 8 and 16
-*/
+/** to override table padding from 8 and 16 */
 
 .rst-content table.docutils td, .rst-content table.docutils th, .rst-content table.field-list td, .rst-content table.field-list th, .wy-table td, .wy-table th {
     padding: 4px 8px;
 }
+
+/* override table width restrictions */ 
+.wy-table-responsive table td, .wy-table-responsive table th { 
+    white-space: normal; 
+} 
+ 
+.wy-table-responsive { 
+    margin-bottom: 24px; 
+    max-width: 100%; 
+    overflow: visible; 
+} 
+ 
+.wy-table-responsive th p { 
+    margin-bottom: unset; 
+} 
