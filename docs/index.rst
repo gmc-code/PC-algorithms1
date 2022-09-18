@@ -4,16 +4,6 @@
 PC-algorithms
 ====================================================
 
-If you are using a trackpad, navigate to various sections and pages by clicking on a heading and then using the arrow keys.
-
-
-| Home page:
-| https://pc-algorithms.readthedocs.io/en/latest/#
-
-| Key references:
-| https://www.w3schools.com/python/
-
-----
 
 .. toctree::
     :maxdepth: 2
