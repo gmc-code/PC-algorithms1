@@ -87,6 +87,36 @@ div.admonition-projects p.admonition-title {
 
 
 /* ========================================== */
+/* Custom dropdown light primary D4D4F7 F7F7FF */
+.sd-dropdown-container {
+    background-color: #F7F7FF; 
+}
+
+/* Custom dropdown reduce padding of dropdown */
+details.sd-dropdown summary {
+    padding: 0.2em;
+}
+
+/* Custom dropdown move arrow on right up 0.5em cf default */
+details.sd-dropdown .sd-summary-up, details.sd-dropdown .sd-summary-down {
+    top: 0.4em;
+}
+
+/* Custom dropdown lighten primary color 2E2FE3 7171FF */
+.sd-bg-primary {
+    background-color: #7171FF !important;
+}
+
+/* Custom dropdown reduce margin from 1em 1em */
+.sd-tab-set {
+    margin: 0.1em 0.1em;
+}
+
+.sd-card-body {
+    padding: 0.2rem 0.5rem;
+}
+
+/* ========================================== */
 /* Hide "Search" section from versions menu */
 div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(5) {
     display: none;
