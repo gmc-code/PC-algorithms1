@@ -3,6 +3,6 @@
     "restructuredtext.languageServer.disabled": false,
     "git.allowForcePush": true,
     "restructuredtext.preview.name": "sphinx",
-    "esbonio.sphinx.confDir": "",
+    "esbonio.sphinx.confDir": "${workspaceFolder}\\docs",
     "restructuredtext.confPath": "${workspaceFolder}\\docs",
 }
