@@ -1,8 +1,4 @@
-{
-    "python.pythonPath": "C:\\Users\\gmccarthy\\rtd_venv39\\Scripts\\python.exe",
-    "restructuredtext.languageServer.disabled": false,
-    "git.allowForcePush": true,
-    "restructuredtext.preview.name": "sphinx",
-    "esbonio.sphinx.confDir": "${workspaceFolder}\\docs",
-    "restructuredtext.confPath": "${workspaceFolder}\\docs",
-}
+{"workbench.colorCustomizations": {
+    "statusBar.background": "#fa7272"
+},}
+
