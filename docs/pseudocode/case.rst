@@ -79,7 +79,7 @@ Alternatives
 
 ----
 
-Wilcard
+Wildcard
 --------------------------
 
 | If an exact match is not confirmed, the last case, if provided, will be used as the matching case.
