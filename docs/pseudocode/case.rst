@@ -106,7 +106,7 @@ Wildcard
         CASE grade:
             "A+" OR "A" OR "B+" OR  "B" OR "C+" OR "C": OUTPUT "Acceptable standard."
             "D+" OR "D" OR "NP" OR "UG": OUTPUT "Retest required."
-            OTHERWISE OUTPUT "Not a valid grade"
+            OTHERWISE: OUTPUT "Not a valid grade"
         ENDCASE
     END
 
@@ -181,7 +181,7 @@ Example:
                 Mr   : OUTPUT "Mister"
                 Mrs  : OUTPUT "Missus"
                 Ms   : OUTPUT "Miss"
-                OTHERWISE OUTPUT "Form of address not recognised"
+                OTHERS : OUTPUT "Form of address not recognised"
         ENDCASE
     END
 
