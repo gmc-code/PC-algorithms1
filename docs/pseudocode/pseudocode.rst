@@ -3,7 +3,7 @@ Pseudocode
 ==========================
 
 | Pseudocode is known as Structured English.
-| Pseudocode is a way of writing a program that generalizes it for convertion into a programming language.  
+| Pseudocode is a way of writing a program that generalizes it for conversion into a programming language.  
 | Pseudocode represents the the steps of the program in natural language and mathematical notation.
 | Pseudocode describes the logic of the program or algorithm.
 | The keywords below are in UPPERCASE, but some users use Titlecase and set font style to **bold**.
@@ -76,11 +76,11 @@ Python to Pseudocode Summary
      - ENDCLASS
    * - import 
      - IMPORT   
-   * - open # a file
+   * - open a file
      - OPEN  
-   * - read # a file
+   * - read a file
      - READ  
-   * - write # to a file 
+   * - write to a file 
      - WRITE  
 
 

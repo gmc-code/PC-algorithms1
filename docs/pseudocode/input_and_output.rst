@@ -2,6 +2,24 @@
 Input and Output
 ==========================
 
+Input
+--------------------------
+
+| In pyhton, input returns strings.
+
+.. code-block:: python
+
+   name = input("enter your name:")
+
+| **Pseudocode**. The equivalent pseudocode is:
+
+.. code-block::
+
+    INPUT "enter your name:"
+
+
+----
+
 Output
 --------------------------
 
