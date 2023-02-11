@@ -19,7 +19,8 @@ PC-algorithms
     :numbered:
 
     pseudocode/pseudocode.rst
-    pseudocode/instructions.rst
+    pseudocode/assignment.rst
+    pseudocode/input_and_output.rst
     pseudocode/sequence.rst
     pseudocode/selection.rst
     pseudocode/iteration.rst
