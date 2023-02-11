@@ -27,8 +27,6 @@ Sequence
 
 .. admonition:: Tasks
 
-   #. Write pseudocode for ``num = 2``.
-   #. Write pseudocode for ``print(a * 2)``.
    #. Write pseudocode for this python sequence:
 
       .. code-block:: python
@@ -48,3 +46,43 @@ Sequence
             Multiply by 3
             OUTPUT all the digits but 1
          END
+
+      .. admonition:: Hint
+
+         random.sample(string, k) returns a random list of k characters from the string without replacement.
+
+
+   .. dropdown::
+      :icon: codescan
+      :color: primary
+      :class-container: sd-dropdown-container
+
+      .. tab-set::
+
+         .. tab-item:: Q1
+
+            Write pseudocode for the python sequence.
+
+            .. code-block::
+
+               a <- 5
+               b <- 6
+               OUTPUT (a * b)
+
+         .. tab-item:: Q2
+
+            Write python for the pseudocode sequence.
+
+            .. code-block:: python
+
+               import random
+
+               n = int(input("Enter a number between 1 and 10: "))
+               n = n * 3
+               n = n + 18
+               n = n * 3
+               n = str(n)
+               mixed_digits_list = random.sample(n, len(n) - 1)
+               digit_str = "".join(mixed_digits_list)
+               print(digit_str)
+
