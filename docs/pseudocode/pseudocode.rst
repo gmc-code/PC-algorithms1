@@ -15,7 +15,7 @@ Pseudocode
 Python to Pseudocode Summary
 ----------------------------------
 
-| Pseudocode typically satrts with **BEGIN** and ends with **END**.
+| Pseudocode typically starts with **BEGIN** and ends with **END**.
 | The table below has the typical pseudocode for common keywords and operators in python.
 
 .. list-table:: Pseudocode Summary

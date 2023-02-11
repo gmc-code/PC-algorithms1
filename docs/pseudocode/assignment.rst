@@ -1,0 +1,52 @@
+==========================
+Assignment
+==========================
+
+Assignment
+--------------------------
+
+| Assignment is an instruction that assigns a value to a variable.
+
+.. code-block:: python
+
+    num = 7
+
+
+| **Pseudocode**. Assignment uses a left pointing arrow in pseudocode.
+| The equivalent pseudocode is:
+
+.. code-block::
+
+    num <- 7
+
+----
+
+.. admonition:: Tasks
+
+    #. Write pseudocode for the python assignment: ``year = 2022``.
+    #. Write python for this pseudocode: ``game <- "table tennis"``.
+
+    .. dropdown::
+        :icon: codescan
+        :color: primary
+        :class-container: sd-dropdown-container
+
+        .. tab-set::
+
+            .. tab-item:: Q1
+
+                Write pseudocode for the python assignment: ``year = 2022``.
+
+                .. code-block::
+
+                    year <- 2022
+
+            .. tab-item:: Q2
+
+                Write python for this pseudocode: ``game <- "table tennis"``.
+
+                .. code-block:: python
+
+                    game = "table tennis"
+
+
