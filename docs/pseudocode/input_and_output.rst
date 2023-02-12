@@ -5,17 +5,17 @@ Input and Output
 Input
 --------------------------
 
-| In pyhton, input returns strings.
+| In python, input returns strings.
 
 .. code-block:: python
 
-   name = input("enter your name:")
+   name = input("Enter your name:")
 
 | **Pseudocode**. The equivalent pseudocode is:
 
 .. code-block::
 
-    INPUT "enter your name:"
+    INPUT "Enter your name:"
 
 
 ----
