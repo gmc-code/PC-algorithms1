@@ -35,7 +35,8 @@ Sequence
          b = 6
          print(a * b)
 
-   #. Write python for this pseudocode sequence:
+   #. Write python for this pseudocode sequence below.
+      Hint: random.sample(string, k) returns a random list of k characters from the string without replacement.
 
       .. code-block:: 
 
@@ -46,11 +47,6 @@ Sequence
             Multiply by 3
             OUTPUT all the digits but 1
          END
-
-      .. admonition:: Hint
-
-         random.sample(string, k) returns a random list of k characters from the string without replacement.
-
 
    .. dropdown::
       :icon: codescan
