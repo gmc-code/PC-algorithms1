@@ -21,66 +21,66 @@ Python to Pseudocode Summary
 | The quoted text in the python is not python. It is there to indicate the purpose.
 
 .. list-table:: Pseudocode Summary
-   :widths: 125 250
-   :header-rows: 1
+    :widths: 125 250
+    :header-rows: 1
 
-      * - Python
-     - Pseudocode
-   * - ==
-     - =
-   * - =
-     - <-
-   * - print
-     - output or print or display
-   * - input 
-     - input or get           
-   * - if
-     - if ....then
-   * - elif 
-     - elseif   ....then
-   * - else 
-     - else
-   * - "end of if"
-     - endif
-   * - for
-     - for
-   * - "end of for"
-     - endfor
-   * - while 
-     - while
-   * - "end of while"
-     - endwhile
-   * - def 
-     - function
-   * - "end of def" 
-     - endfunction
-   * - return 
-     - return 
-   * - or 
-     - or 
-   * - and 
-     - and 
-   * - not 
-     - not 
-   * - True 
-     - true 
-   * - False 
-     - false 
-   * - try 
-     - try
-   * - except 
-     - except
-   * - pass 
-     - pass   
-   * - class 
-     - class
-   * - "end of class"
-     - endclass
-   * - import 
-     - import   
-   * - open "a file"
-     - open  
-   * - read "a file"
-     - read  
-   * - write "to a file"
-     - write
+	* - Python
+	- Pseudocode
+	* - ==
+	- =
+	* - =
+	- <-
+	* - print
+	- output or print or display
+	* - input 
+	- input or get           
+	* - if
+	- if ....then
+	* - elif 
+	- elseif   ....then
+	* - else 
+	- else
+	* - "end of if"
+	- endif
+	* - for
+	- for
+	* - "end of for"
+	- endfor
+	* - while 
+	- while
+	* - "end of while"
+	- endwhile
+	* - def 
+	- function
+	* - "end of def" 
+	- endfunction
+	* - return 
+	- return 
+	* - or 
+	- or 
+	* - and 
+	- and 
+	* - not 
+	- not 
+	* - True 
+	- true 
+	* - False 
+	- false 
+	* - try 
+	- try
+	* - except 
+	- except
+	* - pass 
+	- pass   
+	* - class 
+	- class
+	* - "end of class"
+	- endclass
+	* - import 
+	- import   
+	* - open "a file"
+	- open  
+	* - read "a file"
+	- read  
+	* - write "to a file"
+	- write
