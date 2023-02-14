@@ -31,9 +31,9 @@ Python to Pseudocode Summary
 	* - =
 	  - <-
 	* - print
-	  - output or print or display
+	  - **output** or **print** or **display**
 	* - input 
-	  - input or get           
+	  - **input** or **get**           
 	* - if
 	  - if ....then
 	* - elif 
