@@ -90,8 +90,8 @@ Sequence
                n = n * 3
                n = str(n)
                mixed_digits_list = random.sample(n, len(n) - 1)
-               digit_str = "".join(mixed_digits_list)
-               print(digit_str)
+               digits_str = "".join(mixed_digits_list)
+               print(digits_str)
 
 
 
