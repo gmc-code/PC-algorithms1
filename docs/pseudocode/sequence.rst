@@ -7,6 +7,10 @@ Sequence
 | Every line of code in the sequence is run in the order that it is written.
 | Pseudocode typically starts with ``BEGIN`` and ends with ``END``.
 
+.. list-table:: Python - Pseudocode equivalents
+   :widths: 125 250
+   :header-rows: 1
+
    * - Python
      - Pseudocode
    * - =
