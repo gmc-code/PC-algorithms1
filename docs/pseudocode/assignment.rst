@@ -64,7 +64,7 @@ Assignment
 
 .. admonition:: Tasks
 
-    #. Write python for the pseudocode:: ``age <- 14``.
+    #. Write python for the pseudocode: ``age <- 14``.
     #. Write python for the pseudocode: ``game <- "table tennis"``.
 
     .. dropdown::
@@ -76,7 +76,7 @@ Assignment
 
             .. tab-item:: Q1
 
-                Write python for the pseudocode:: ``age <- 14``..
+                Write python for the pseudocode: ``age <- 14``.
 
                 .. code-block:: python
 
