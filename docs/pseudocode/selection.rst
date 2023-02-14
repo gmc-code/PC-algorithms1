@@ -5,8 +5,36 @@ Selection
 | Selection is one of the three basic control structures.
 | Selection provides alternatives or branching using ``if`` ... ``elif`` ... ``else``.
 
-----
+.. list-table:: Python - Pseudocode equivalents
+   :widths: 125 250
+   :header-rows: 1
 
+   * - Python
+     - Pseudocode
+   * - =
+     - <-
+   * - if
+     - IF ....THEN
+   * - elif 
+     - ELSEIF   ....THEN
+   * - else 
+     - ELSE
+   * - end of if
+     - ENDIF
+   * - or 
+     - OR 
+   * - and 
+     - AND 
+   * - not 
+     - NOT 
+   * - True 
+     - TRUE 
+   * - False 
+     - FALSE
+
+
+
+----
 
 If, else
 ----------------------------
