@@ -45,7 +45,7 @@ Input and output
 
 .. admonition:: Tasks
 
-   #. Write pseudocode for this python sequence:
+   #. Write pseudocode for the python sequence below:
 
       .. code-block:: python
 
@@ -74,7 +74,7 @@ Input and output
 
 .. admonition:: Tasks
 
-   #. Write python for this pseudocode sequence below.
+   #. Write python for the pseudocode sequence below.
       Hint: random.sample(string, k) returns a random list of k characters from the string without replacement.
 
       .. code-block:: 
