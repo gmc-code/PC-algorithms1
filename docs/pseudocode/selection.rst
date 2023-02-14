@@ -150,7 +150,8 @@ If, elif, else
       .. code-block::
 
          BEGIN
-            IF it is raining THEN
+            is_raining <- TRUE
+            IF is_raining THEN
                OUTPUT "Catch the bus."
             ELSE
                OUTPUT "Ride the bike."
