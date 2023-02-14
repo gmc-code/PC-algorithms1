@@ -1,6 +1,6 @@
 ==========================
 Selection
-=========================.
+==========================
 
 | Selection is one of the three basic control structures.
 | Selection provides alternatives or branching using ``if`` ... ``elif`` ... ``else``.
