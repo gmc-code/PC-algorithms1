@@ -18,6 +18,7 @@ Python to Pseudocode Summary
 
 | Pseudocode typically starts with **BEGIN** and ends with **END**.
 | The table below has the typical pseudocode for common keywords and operators in python.
+| The quoted text in the python is not python. It is there to indicate the purpose.
 
 .. list-table:: Pseudocode Summary
    :widths: 125 250
@@ -77,9 +78,9 @@ Python to Pseudocode Summary
      - endclass
    * - import 
      - import   
-   * - open (a file)
+   * - open "a file"
      - open  
-   * - read (a file)
+   * - read "a file"
      - read  
-   * - write (to a file)
+   * - write "to a file"
      - write
