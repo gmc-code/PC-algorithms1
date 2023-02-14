@@ -2,6 +2,17 @@
 Assignment
 ==========================
 
+.. list-table:: Python - Pseudocode equivalents
+   :widths: 125 250
+   :header-rows: 1
+
+   * - Python
+     - Pseudocode
+   * - =
+     - <-
+
+----
+
 Assignment
 --------------------------
 
