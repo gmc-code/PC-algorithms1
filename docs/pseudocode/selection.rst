@@ -1,9 +1,12 @@
 ==========================
 Selection
-==========================
+=========================.
 
 | Selection is one of the three basic control structures.
 | Selection provides alternatives or branching using ``if`` ... ``elif`` ... ``else``.
+| Selection tests condition that evaluate to True or False.
+| The logical operators, ``and``, ``or``, and ``not`` increase the options for testing conditions.  
+
 
 .. list-table:: Python - Pseudocode equivalents
    :widths: 125 250
