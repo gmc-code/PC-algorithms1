@@ -19,7 +19,7 @@ Selection
      - ELSEIF   ....THEN
    * - else 
      - ELSE
-   * - end of if
+   * - "end of if"
      - ENDIF
    * - or 
      - OR 
