@@ -23,64 +23,64 @@ Python to Pseudocode Summary
 	:header-rows: 1
 
 	* - Python
-	- Pseudocode
+	  - Pseudocode
 	* - ==
-	- =
+	  - =
 	* - =
-	- <-
+	  - <-
 	* - print
-	- OUTPUT or PRINT or DISPLAY
+	  - OUTPUT or PRINT or DISPLAY
 	* - input 
-	- INPUT or GET           
+	  - INPUT or GET           
 	* - if
-	- IF ....THEN
+	  - IF ....THEN
 	* - elif 
-	- ELSEIF   ....THEN
+	  - ELSEIF   ....THEN
 	* - else 
-	- ELSE
+	  - ELSE
 	* - "end of if"
-	- ENDIF
+	  - ENDIF
 	* - for
-	- FOR
+	  - FOR
 	* - "end of for"
-	- ENDFOR
+	  - ENDFOR
 	* - while 
-	- WHILE
+	  - WHILE
 	* - "end of while"
-	- ENDWHILE
+	  - ENDWHILE
 	* - def 
-	- FUNCTION
+	  - FUNCTION
 	* - "end of def" 
-	- ENDFUNCTION
+	  - ENDFUNCTION
 	* - return 
-	- RETURN 
+	  - RETURN 
 	* - or 
-	- OR 
+	  - OR 
 	* - and 
-	- AND 
+	  - AND 
 	* - not 
-	- NOT 
+	  - NOT 
 	* - True 
-	- TRUE 
+	  - TRUE 
 	* - False 
-	- FALSE 
+	  - FALSE 
 	* - try 
-	- TRY
+	  - TRY
 	* - except 
-	- EXCEPT
+	  - EXCEPT
 	* - pass 
-	- PASS   
+	  - PASS   
 	* - class 
-	- CLASS
+	  - CLASS
 	* - "end of class"
-	- ENDCLASS
+	  - ENDCLASS
 	* - import 
-	- IMPORT   
+	  - IMPORT   
 	* - open "a file"
-	- OPEN  
+	  - OPEN  
 	* - read "a file"
-	- READ  
+	  - READ  
 	* - write "to a file" 
-	- WRITE  
+	  - WRITE  
 
 
