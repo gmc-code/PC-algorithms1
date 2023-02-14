@@ -2,6 +2,19 @@
 Input and Output
 ==========================
 
+.. list-table:: Python - Pseudocode equivalents
+   :widths: 125 250
+   :header-rows: 1
+
+   * - Python
+     - Pseudocode
+   * - print
+     - OUTPUT or PRINT or DISPLAY
+   * - input 
+     - INPUT or GET  
+
+----
+
 Input
 --------------------------
 
