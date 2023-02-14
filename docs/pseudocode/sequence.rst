@@ -20,6 +20,11 @@ Sequence
    * - input 
      - INPUT or GET  
 
+----
+
+Input and output
+-----------------
+
 | The code below prompts the user to enter their name, then prints a greeting.
 
 .. code-block:: python
