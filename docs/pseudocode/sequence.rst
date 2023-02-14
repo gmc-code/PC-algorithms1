@@ -35,6 +35,27 @@ Sequence
          b = 6
          print(a * b)
 
+   .. dropdown::
+      :icon: codescan
+      :color: primary
+      :class-container: sd-dropdown-container
+
+      .. tab-set::
+
+         .. tab-item:: Q1
+
+            Write pseudocode for the python sequence.
+
+            .. code-block::
+
+               a <- 5
+               b <- 6
+               OUTPUT (a * b)
+
+----
+
+.. admonition:: Tasks
+
    #. Write python for this pseudocode sequence below.
       Hint: random.sample(string, k) returns a random list of k characters from the string without replacement.
 
@@ -57,16 +78,6 @@ Sequence
 
          .. tab-item:: Q1
 
-            Write pseudocode for the python sequence.
-
-            .. code-block::
-
-               a <- 5
-               b <- 6
-               OUTPUT (a * b)
-
-         .. tab-item:: Q2
-
             Write python for the pseudocode sequence.
 
             .. code-block:: python
@@ -81,4 +92,7 @@ Sequence
                mixed_digits_list = random.sample(n, len(n) - 1)
                digit_str = "".join(mixed_digits_list)
                print(digit_str)
+
+
+
 
