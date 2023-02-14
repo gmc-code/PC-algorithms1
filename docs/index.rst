@@ -32,4 +32,4 @@ PC-algorithms
     :caption: Pseudocode for maths
     :numbered:
 
-    pseudocode/pseudocode_for_maths.rst
+    pseudocode_for_maths/pseudocode_for_maths.rst
