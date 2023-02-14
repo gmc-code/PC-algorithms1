@@ -27,3 +27,9 @@ PC-algorithms
     pseudocode/case.rst
 
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Pseudocode for maths
+    :numbered:
+
+    pseudocode/pseudocode_for_maths.rst

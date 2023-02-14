@@ -1,12 +1,14 @@
 ==========================
-Pseudocode
+Pseudocode for maths
 ==========================
 
 | Pseudocode is known as Structured English.
 | Pseudocode is a way of writing a program that generalizes it for conversion into a programming language.  
 | Pseudocode represents the the steps of the program in natural language and mathematical notation.
 | Pseudocode describes the logic of the program or algorithm.
-| The keywords below are in UPPERCASE.
+
+| For maths in Victoria, the convention is to use the keywords in **bold** lowercase.
+
 
 
 ----
@@ -21,65 +23,63 @@ Python to Pseudocode Summary
    :widths: 125 250
    :header-rows: 1
 
-   * - Python
+      * - Python
      - Pseudocode
    * - ==
      - =
    * - =
      - <-
    * - print
-     - OUTPUT or PRINT or DISPLAY
+     - output or print or display
    * - input 
-     - INPUT or GET           
+     - input or get           
    * - if
-     - IF ....THEN
+     - if ....then
    * - elif 
-     - ELSEIF   ....THEN
+     - elseif   ....then
    * - else 
-     - ELSE
+     - else
    * - "end of if"
-     - ENDIF
+     - endif
    * - for
-     - FOR
+     - for
    * - "end of for"
-     - ENDFOR
+     - endfor
    * - while 
-     - WHILE
+     - while
    * - "end of while"
-     - ENDWHILE
+     - endwhile
    * - def 
-     - FUNCTION
+     - function
    * - "end of def" 
-     - ENDFUNCTION
+     - endfunction
    * - return 
-     - RETURN 
+     - return 
    * - or 
-     - OR 
+     - or 
    * - and 
-     - AND 
+     - and 
    * - not 
-     - NOT 
+     - not 
    * - True 
-     - TRUE 
+     - true 
    * - False 
-     - FALSE 
+     - false 
    * - try 
-     - TRY
+     - try
    * - except 
-     - EXCEPT
+     - except
    * - pass 
-     - PASS   
+     - pass   
    * - class 
-     - CLASS
+     - class
    * - "end of class"
-     - ENDCLASS
+     - endclass
    * - import 
-     - IMPORT   
-   * - open a file
-     - OPEN  
-   * - read a file
-     - READ  
-   * - write to a file 
-     - WRITE  
-
-
+     - import   
+   * - open (a file)
+     - open  
+   * - read (a file)
+     - read  
+   * - write (to a file)
+     - write
