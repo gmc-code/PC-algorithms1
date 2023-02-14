@@ -84,9 +84,9 @@ If, else
 
          .. tab-item:: Q1
 
-            In the code above, is the condition in the if statement True or False?
-            ``if score >= cut_off_score`` becomes ``if 65 >= 60:``
-            This evaluates to True
+            | In the code above, is the condition in the if statement True or False?
+            | ``if score >= cut_off_score`` becomes ``if 65 >= 60:``
+            | This evaluates to True
 
          .. tab-item:: Q2
 
