@@ -7,6 +7,15 @@ Sequence
 | Every line of code in the sequence is run in the order that it is written.
 | Pseudocode typically starts with ``BEGIN`` and ends with ``END``.
 
+   * - Python
+     - Pseudocode
+   * - =
+     - <-
+   * - print
+     - OUTPUT or PRINT or DISPLAY
+   * - input 
+     - INPUT or GET  
+
 | The code below prompts the user to enter their name, then prints a greeting.
 
 .. code-block:: python
