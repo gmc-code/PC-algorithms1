@@ -25,62 +25,62 @@ Python to Pseudocode Summary
     :header-rows: 1
 
 	* - Python
-	- Pseudocode
+	  - Pseudocode
 	* - ==
-	- =
+	  - =
 	* - =
-	- <-
+	  - <-
 	* - print
-	- output or print or display
+	  - output or print or display
 	* - input 
-	- input or get           
+	  - input or get           
 	* - if
-	- if ....then
+	  - if ....then
 	* - elif 
-	- elseif   ....then
+	  - elseif   ....then
 	* - else 
-	- else
+	  - else
 	* - "end of if"
-	- endif
+	  - endif
 	* - for
-	- for
+	  - for
 	* - "end of for"
-	- endfor
+	  - endfor
 	* - while 
-	- while
+	  - while
 	* - "end of while"
-	- endwhile
+	  - endwhile
 	* - def 
-	- function
+	  - function
 	* - "end of def" 
-	- endfunction
+	  - endfunction
 	* - return 
-	- return 
+	  - return 
 	* - or 
-	- or 
+	  - or 
 	* - and 
-	- and 
+	  - and 
 	* - not 
-	- not 
+	  - not 
 	* - True 
-	- true 
+	  - true 
 	* - False 
-	- false 
+	  - false 
 	* - try 
-	- try
+	  - try
 	* - except 
-	- except
+	  - except
 	* - pass 
-	- pass   
+	  - pass   
 	* - class 
-	- class
+	  - class
 	* - "end of class"
-	- endclass
+	  - endclass
 	* - import 
-	- import   
+	  - import   
 	* - open "a file"
-	- open  
+	  - open  
 	* - read "a file"
-	- read  
+	  - read  
 	* - write "to a file"
-	- write
+	  - write
