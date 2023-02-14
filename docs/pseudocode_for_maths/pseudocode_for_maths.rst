@@ -21,8 +21,8 @@ Python to Pseudocode Summary
 | The quoted text in the python is not python. It is there to indicate the purpose.
 
 .. list-table:: Pseudocode Summary
-    :widths: 125 250
-    :header-rows: 1
+	:widths: 125 250
+	:header-rows: 1
 
 	* - Python
 	  - Pseudocode
