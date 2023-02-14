@@ -539,7 +539,7 @@ Nested if
                else:
                   print("The " + teamA + " drew with the " + teamB + ".")
 
-         .. tab-item:: Q1
+         .. tab-item:: Q2
 
             .. code-block::
 
