@@ -48,3 +48,5 @@ PC-algorithms
 ..    
     maths_python\quick_sort.rst
     maths_python\selection_sort.rst
+
+    
