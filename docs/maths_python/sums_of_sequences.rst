@@ -24,7 +24,7 @@ Listed numbers
         sum += num
     print(sum)
 
-| Maths style Pseudocode:
+| Pseudocode:
 
 .. code-block:: none
 
@@ -50,7 +50,7 @@ Range from 0
         sum += num
     print(sum)
 
-| Maths style Pseudocode:
+| Pseudocode:
 
 .. code-block:: none
 
@@ -79,7 +79,7 @@ Range: first and last
         sum += num
     print(sum)
 
-| Maths style Pseudocode:
+| Pseudocode:
 
 .. code-block:: none
 
@@ -111,7 +111,7 @@ Range: step size
         sum += num
     print(sum)
 
-| Maths style Pseudocode:
+| Pseudocode:
 
 .. code-block:: none
 
@@ -146,7 +146,7 @@ Arithmetic sequence formula 1
     sum = (n/2) * (2*a + (n-1)*d)
     print(sum)
 
-| Maths style Pseudocode:
+| Pseudocode:
 
 .. code-block:: none
 
@@ -178,7 +178,7 @@ Arithmetic sequence formula 2
     sum = (n/2) * (a + l)
     print(sum)
 
-| Maths style Pseudocode:
+| Pseudocode:
 
 .. code-block:: none
 
@@ -186,6 +186,6 @@ Arithmetic sequence formula 2
     n <- 5
     l <- 12
     sum <- (n/2) * (a + l)
-    **print** sum
+    print sum
 
 
