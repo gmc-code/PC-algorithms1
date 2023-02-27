@@ -180,7 +180,7 @@ Arithmetic sequence formula 2
 
 | Maths style Pseudocode:
 
-.. code-block:: algol
+.. code-block:: none
 
     a <- 4
     n <- 5
