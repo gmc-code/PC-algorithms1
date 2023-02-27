@@ -24,13 +24,13 @@ Listed numbers
         sum += num
     print(sum)
 
-.. code-block:: pseudocode
+.. code-block::
 
     nums <- [1, 2, 3, 4, 5]
     sum <- 0
-    for num in nums
-        sum += num
-    print(sum)
+    for each num in nums
+        sum <- sum + num
+    print sum
 
 ----
 
