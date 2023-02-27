@@ -24,6 +24,8 @@ Listed numbers
         sum += num
     print(sum)
 
+| Maths style Pseudocode:
+
 .. code-block::
 
     nums <- [1, 2, 3, 4, 5]
@@ -48,6 +50,17 @@ Range from 0
         sum += num
     print(sum)
 
+| Maths style Pseudocode:
+
+.. code-block::
+
+    nums <- list from 0 to 5
+    print nums
+    sum <- 0
+    for each num in nums
+        sum <- sum + num
+    print sum
+
 ----
 
 Range: first and last
@@ -65,6 +78,19 @@ Range: first and last
     for num in nums:
         sum += num
     print(sum)
+
+| Maths style Pseudocode:
+
+.. code-block::
+
+    start_num <- 4
+    end_num <- 12
+    nums <- list from start_num to end_num
+    print nums
+    sum <- 0
+    for each num in nums
+        sum <- sum + num
+    print sum
 
 ----
 
@@ -84,6 +110,20 @@ Range: step size
     for num in nums:
         sum += num
     print(sum)
+
+| Maths style Pseudocode:
+
+.. code-block::
+
+    start_num <- 4
+    end_num <- 12
+    step_size <- 2
+    nums <- list from start_num to end_num in steps of step_size
+    print nums
+    sum <- 0
+    for each num in nums
+        sum <- sum + num
+    print sum
 
 ----
 
@@ -106,6 +146,17 @@ Arithmetic sequence formula 1
     sum = (n/2) * (2*a + (n-1)*d)
     print(sum)
 
+| Maths style Pseudocode:
+
+.. code-block::
+
+    a <- 4
+    n <- 5
+    d <- 2
+    sum <- (n/2) * (2*a + (n-1)*d)
+    print sum
+
+
 ----
 
 Arithmetic sequence formula 2
@@ -127,3 +178,12 @@ Arithmetic sequence formula 2
     sum = (n/2) * (a + l)
     print(sum)
 
+| Maths style Pseudocode:
+
+.. code-block::
+
+    a <- 4
+    n <- 5
+    l <- 12
+    sum <- (n/2) * (a + l)
+    print sum
