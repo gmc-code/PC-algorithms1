@@ -26,7 +26,7 @@ Listed numbers
 
 | Maths style Pseudocode:
 
-.. code-block::
+.. code-block:: none
 
     nums <- [1, 2, 3, 4, 5]
     sum <- 0
@@ -52,7 +52,7 @@ Range from 0
 
 | Maths style Pseudocode:
 
-.. code-block::
+.. code-block:: none
 
     nums <- list from 0 to 5
     print nums
@@ -81,7 +81,7 @@ Range: first and last
 
 | Maths style Pseudocode:
 
-.. code-block::
+.. code-block:: none
 
     start_num <- 4
     end_num <- 12
@@ -113,7 +113,7 @@ Range: step size
 
 | Maths style Pseudocode:
 
-.. code-block::
+.. code-block:: none
 
     start_num <- 4
     end_num <- 12
@@ -148,7 +148,7 @@ Arithmetic sequence formula 1
 
 | Maths style Pseudocode:
 
-.. code-block::
+.. code-block:: none
 
     a <- 4
     n <- 5
