@@ -180,10 +180,10 @@ Arithmetic sequence formula 2
 
 | Maths style Pseudocode:
 
-.. code-block::
+::
 
     a <- 4
     n <- 5
     l <- 12
     sum <- (n/2) * (a + l)
-    print sum
+    **print** sum
