@@ -33,3 +33,18 @@ PC-algorithms
     :numbered:
 
     pseudocode_for_maths/pseudocode_for_maths.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python
+    :numbered:
+
+    maths_python/divisibility.rst
+    maths_python/highest_common_factor.rst
+    maths_python/prime_factors.rst
+    maths_python/sums_of_sequences.rst
+
+..    
+    maths_python\quick_sort.rst
+    maths_python\selection_sort.rst

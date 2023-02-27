@@ -44,7 +44,13 @@ Key references:
 
 ----
 
-If you are using a trackpad, navigate to various sections and pages by clicking on a heading and then use the arrow keys to move up and down.
+Online editors:
+------------------
+
+| https://www.w3schools.com/python/python_compiler.asp
+| https://replit.com/
+| https://www.online-python.com/
+
 
 
 
