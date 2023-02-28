@@ -26,13 +26,11 @@ Listed numbers
 
 | Pseudocode:
 
-.. code-block:: none
-
-    nums <- [1, 2, 3, 4, 5]
-    sum <- 0
-    for each num in nums
-        sum <- sum + num
-    print sum
+| nums <- [1, 2, 3, 4, 5]
+| sum <- 0
+| **for** each num in nums
+|     sum <- sum + num
+| **print** sum
 
 ----
 
@@ -52,14 +50,12 @@ Range from 0
 
 | Pseudocode:
 
-.. code-block:: none
-
-    nums <- list from 0 to 5
-    print nums
-    sum <- 0
-    for each num in nums
-        sum <- sum + num
-    print sum
+| nums <- list from 0 to 5
+| **print** nums
+| sum <- 0
+| **for** each num in nums
+|     sum <- sum + num
+| **print** sum
 
 ----
 
@@ -81,16 +77,14 @@ Range: first and last
 
 | Pseudocode:
 
-.. code-block:: none
-
-    start_num <- 4
-    end_num <- 12
-    nums <- list from start_num to end_num
-    print nums
-    sum <- 0
-    for each num in nums
-        sum <- sum + num
-    print sum
+| start_num <- 4
+| end_num <- 12
+| nums <- list from start_num to end_num
+| **print** nums
+| sum <- 0
+| **for** each num in nums
+|     sum <- sum + num
+| **print** sum
 
 ----
 
