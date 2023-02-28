@@ -113,17 +113,15 @@ Range: step size
 
 | Pseudocode:
 
-.. code-block:: none
-
-    start_num <- 4
-    end_num <- 12
-    step_size <- 2
-    nums <- list from start_num to end_num in steps of step_size
-    print nums
-    sum <- 0
-    for each num in nums
-        sum <- sum + num
-    print sum
+| start_num <- 4
+| end_num <- 12
+| step_size <- 2
+| nums <- list from start_num to end_num in steps of step_size
+| **print** nums
+| sum <- 0
+| **for** each num in nums
+|     sum <- sum + num
+| **print** sum
 
 ----
 
@@ -148,13 +146,11 @@ Arithmetic sequence formula 1
 
 | Pseudocode:
 
-.. code-block:: none
-
-    a <- 4
-    n <- 5
-    d <- 2
-    sum <- (n/2) * (2*a + (n-1)*d)
-    print sum
+| a <- 4
+| n <- 5
+| d <- 2
+| sum <- (n/2) * (2*a + (n-1)*d)
+| **print** sum
 
 
 ----
@@ -179,15 +175,6 @@ Arithmetic sequence formula 2
     print(sum)
 
 | Pseudocode:
-
-.. code-block:: none
-
-    a <- 4
-    n <- 5
-    l <- 12
-    sum <- (n/2) * (a + l)
-    print sum
-
 
 | a <- 4
 | n <- 5
