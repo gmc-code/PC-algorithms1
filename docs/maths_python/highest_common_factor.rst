@@ -10,8 +10,9 @@ See: https://en.wikipedia.org/wiki/Euclidean_algorithm
 
 | The **highest common factor** is known as the greatest common divisor, gcd.
 | The Euclidean algorithm is based on the principle that the **highest common factor** of two numbers does not change if the larger number is replaced by its difference with the smaller number. 
-| For example, 21 is the HCF of 48 and 18 (as 48 = 8 x 6 and 18 = 3 x 6), and the same number 6 is also the HCF of 18 and 30 (obtained by 48 - 18; taking 3 sixes from 8 sixes leaves 5 sixes). 
+| For example, 6 is the HCF of 48 and 18 (as 48 = 8 x 6 and 18 = 3 x 6), and the same number 6 is also the HCF of 18 and 30 (obtained by 48 - 18; taking 3 sixes from 8 sixes leaves 5 sixes). 
 | Since this replacement reduces the larger of the two numbers, repeating this process gives successively smaller pairs of numbers until the two numbers become equal. 
+| 48 and 18 becomes 30 and 18 which becomes 18 and 12 which becomes 12 and 6 which becomes 6 and 6.
 | When that occurs, they are the HCF of the original two numbers. 
 
 ----
@@ -39,7 +40,7 @@ HCF by repeated subtraction
 
 ----
 
-HCF by repeated getting remainders from division
+HCF by repeatedly getting remainders from division
 ---------------------------------------------------
 
 | Instead of repeated subtractions, a division can be used to get the remainder that would occur if all the possible subtractions of that number were be done at once.

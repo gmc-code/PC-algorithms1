@@ -79,7 +79,7 @@ Range: first and last
 
 | start_num <- 4
 | end_num <- 12
-| nums <- list from start_num to end_num
+| nums <- list of integers from start_num to end_num
 | **print** nums
 | sum <- 0
 | **for** each num in nums
@@ -110,7 +110,7 @@ Range: step size
 | start_num <- 4
 | end_num <- 12
 | step_size <- 2
-| nums <- list from start_num to end_num in steps of step_size
+| nums <- list of integers from start_num to end_num in steps of step_size
 | **print** nums
 | sum <- 0
 | **for** each num in nums
