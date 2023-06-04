@@ -4,7 +4,8 @@ Newton's method
 
 | Pseudocode for Newton's method is below.
 | Newton's method is an iterative method for finding the roots of a real-valued function. 
-| It starts with an initial guess for the root (x0) and iteratively refines this guess using the formula x1 = x0 - f(x0) / f'(x0) until a desired level of accuracy is achieved (as determined by the tol parameter). 
+| It starts with an initial guess for the root (x0) and iteratively refines this guess
+|  using the formula x1 = x0 - f(x0) / f'(x0) until a desired level of accuracy is achieved (as determined by the tol parameter). 
 
 | This pseudocode defines a function newton that takes five arguments: f(x), f'(x), x0, max_iter, and tol. 
 | The function initializes a loop counter i to 0 and enters a while loop that iterates max_iter times. 
