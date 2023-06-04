@@ -22,14 +22,16 @@ Square patterns
 --------------------
 
 .. image:: images/squares.png
-    :scale: 75 %
+    :scale: 25 %
     :align: center
 
 
 .. image:: images/squares_at_45.png
-    :scale: 75 %
+    :scale: 25 %
     :align: center
 
+
+|  Python code:
 
 .. literalinclude:: files/square_grid.py
    :linenos:
@@ -40,22 +42,32 @@ Hexagon patterns
 --------------------
 
 .. image:: images/hexagon_diamonds.png
-    :scale: 75 %
+    :scale: 25 %
     :align: center
+
+|  Python code:
 
 .. literalinclude:: files/hexagon_diamonds.py
    :linenos:
+  
+----
 
 .. image:: images/hexagon_tessalation.png
-    :scale: 75 %
+    :scale: 25 %
     :align: center
+
+|  Python code:
 
 .. literalinclude:: files/hexagon_tessalation.py
    :linenos:
 
+----
+
 .. image:: images/hexagons_overlap.png
-    :scale: 75 %
+    :scale: 25 %
     :align: center
+
+|  Python code:
 
 .. literalinclude:: files/hexagons_overlap.py
    :linenos:

@@ -34,8 +34,6 @@ PC-algorithms
 
     flowcharts/flowcharts.rst
     flowcharts/Selection.rst
-    flowcharts/For_loops.rst
-    flowcharts/For_loops_with_range.rst
     flowcharts/While_True_loops.rst
     flowcharts/While_loops.rst
 
