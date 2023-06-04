@@ -22,11 +22,10 @@ if
 
 .. code-block:: python
 
-    while True:
-        x = 10
-        if X > 0:
-            x = x - 1
-            print(x)
+    x = 10
+    if x > 0:
+        x = x - 1
+        print(x)
                                                                   
 ----
 
@@ -43,13 +42,12 @@ if - else
 
 .. code-block:: python
 
-    while True:
-        x = 10
-        if x > 0:
-            x = x - 1
-            print(x)
-        else:
-            print("blastoff!")
+    x = 10
+    if x > 0:
+        x = x - 1
+        print(x)
+    else:
+        print("blastoff!")
 
 ----
 
@@ -65,13 +63,12 @@ if - elif
 .. code-block:: python
 
     x = 10
-    while True:
-        if x > 0:
-            x = x - 1
-            print(x)
-        elif x == 0:
-            print("blastoff!")
-            x = 10
+    if x > 0:
+        x = x - 1
+        print(x)
+    elif x == 0:
+        print("blastoff!")
+        x = 10
 
 ----
 
@@ -87,14 +84,13 @@ If - elif - else
 .. code-block:: python
 
     x = 10
-    while True:
-        if x > 0:
-            x = x - 1
-            print(x)
-        elif x == 0:
-            print("blastoff!")
-        else:
-            x = 10
+    if x > 0:
+        x = x - 1
+        print(x)
+    elif x == 0:
+        print("blastoff!")
+    else:
+        x = 10
 
  
 ----
@@ -114,14 +110,13 @@ If - elif - elif - else
 
     x = 10
     y = 10
-    while True:
-        if x > 0 and y > 0:
-            x = x - 1
-            print(x)
-        elif x == 0:
-            print("blastoff!")
-        elif x == 0:
-            print("blastoff!")
-        else:
-            x = 10
+    if x > 0 and y > 0:
+        x = x - 1
+        print(x)
+    elif x == 0:
+        print("blastoff!")
+    elif x == 0:
+        print("blastoff!")
+    else:
+        x = 10
 

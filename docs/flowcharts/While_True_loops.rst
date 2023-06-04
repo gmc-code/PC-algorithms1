@@ -1,5 +1,5 @@
 ====================================================
-while True loops
+While True loops
 ====================================================
 
 | See: https://www.w3schools.com/python/python_while_loops.asp
