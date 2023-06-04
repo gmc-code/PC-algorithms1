@@ -14,7 +14,7 @@ Sequence
    * - Python
      - Pseudocode
    * - =
-     - <-
+     - ←
    * - print
      - OUTPUT or PRINT or DISPLAY
    * - input 
@@ -37,7 +37,7 @@ Input and output
 .. code-block::
 
    BEGIN
-      name <- INPUT ("Enter your name?")
+      name ← INPUT ("Enter your name?")
       PRINT "Hello, " + name + ". Nice to meet you."
    END
 
@@ -66,8 +66,8 @@ Input and output
 
             .. code-block::
 
-               a <- 5
-               b <- 6
+               a ← 5
+               b ← 6
                OUTPUT (a * b)
 
 ----

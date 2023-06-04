@@ -33,7 +33,7 @@ For loops
 .. code-block::
 
     BEGIN
-        FOR i <- 0 TO 3
+        FOR i ← 0 TO 3
             OUTPUT i
         NEXT i
     END
@@ -68,7 +68,7 @@ For loops
 .. code-block::
  
     BEGIN
-        FOR i <- 4 TO 8
+        FOR i ← 4 TO 8
             OUTPUT i
         NEXT i
     END
@@ -128,10 +128,10 @@ While loops: pre-test
 .. code-block::
 
     BEGIN
-        num <- 1
+        num ← 1
         WHILE num < 10
             OUTPUT num
-            num <- num + 1
+            num ← num + 1
         ENDWHILE
     END
 
@@ -149,10 +149,10 @@ Pseudocode: post-test REPEAT UNTIL
 .. code-block::
 
     BEGIN
-        num <- 1
+        num ← 1
         REPEAT
             OUTPUT num
-            num <- num + 2
+            num ← num + 2
         UNTIL num > 9
     END
 
@@ -192,10 +192,10 @@ Pseudocode: post-test DO WHILE
 .. code-block::
 
     BEGIN
-        num <- 1
+        num ← 1
         DO
             OUTPUT num
-            num <- num + 2
+            num ← num + 2
         WHILE num < 10
     END
 

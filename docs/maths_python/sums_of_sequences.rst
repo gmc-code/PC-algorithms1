@@ -29,10 +29,10 @@ Listed numbers
 
 | Pseudocode:
 
-| nums <- [1, 2, 3, 4, 5]
-| sum <- 0
+| nums ← [1, 2, 3, 4, 5]
+| sum ← 0
 | **for** each num in nums
-|     sum <- sum + num
+|     sum ← sum + num
 | **print** sum
 
 ----
@@ -53,11 +53,11 @@ Range from 0
 
 | Pseudocode:
 
-| nums <- list from 0 to 5
+| nums ← list from 0 to 5
 | **print** nums
-| sum <- 0
+| sum ← 0
 | **for** each num in nums
-|     sum <- sum + num
+|     sum ← sum + num
 | **print** sum
 
 ----
@@ -80,13 +80,13 @@ Range: first and last
 
 | Pseudocode:
 
-| start_num <- 4
-| end_num <- 12
-| nums <- list of integers from start_num to end_num
+| start_num ← 4
+| end_num ← 12
+| nums ← list of integers from start_num to end_num
 | **print** nums
-| sum <- 0
+| sum ← 0
 | **for** each num in nums
-|     sum <- sum + num
+|     sum ← sum + num
 | **print** sum
 
 ----
@@ -110,14 +110,14 @@ Range: step size
 
 | Pseudocode:
 
-| start_num <- 4
-| end_num <- 12
-| step_size <- 2
-| nums <- list of integers from start_num to end_num in steps of step_size
+| start_num ← 4
+| end_num ← 12
+| step_size ← 2
+| nums ← list of integers from start_num to end_num in steps of step_size
 | **print** nums
-| sum <- 0
+| sum ← 0
 | **for** each num in nums
-|     sum <- sum + num
+|     sum ← sum + num
 | **print** sum
 
 ----
@@ -143,10 +143,10 @@ Arithmetic sequence formula 1
 
 | Pseudocode:
 
-| a <- 4
-| n <- 5
-| d <- 2
-| sum <- (n/2) * (2*a + (n-1)*d)
+| a ← 4
+| n ← 5
+| d ← 2
+| sum ← (n/2) * (2*a + (n-1)*d)
 | **print** sum
 
 
@@ -173,10 +173,10 @@ Arithmetic sequence formula 2
 
 | Pseudocode:
 
-| a <- 4
-| n <- 5
-| l <- 12
-| sum <- (n/2) * (a + l)
+| a ← 4
+| n ← 5
+| l ← 12
+| sum ← (n/2) * (a + l)
 | **print** sum
 
 

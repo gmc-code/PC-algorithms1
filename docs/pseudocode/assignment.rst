@@ -9,7 +9,7 @@ Assignment
    * - Python
      - Pseudocode
    * - =
-     - <-
+     - ←
 
 ----
 
@@ -28,7 +28,7 @@ Assignment
 
 .. code-block::
 
-    num <- 7
+    num ← 7
 
 ----
 
@@ -50,7 +50,7 @@ Assignment
 
                 .. code-block::
 
-                    year <- 2022
+                    year ← 2022
 
             .. tab-item:: Q2
 
@@ -58,14 +58,14 @@ Assignment
 
                 .. code-block::
 
-                    name <- "Sylvia"
+                    name ← "Sylvia"
 
 ----
 
 .. admonition:: Tasks
 
-    #. Write python for the pseudocode: ``age <- 14``.
-    #. Write python for the pseudocode: ``game <- "table tennis"``.
+    #. Write python for the pseudocode: ``age ← 14``.
+    #. Write python for the pseudocode: ``game ← "table tennis"``.
 
     .. dropdown::
         :icon: codescan
@@ -76,7 +76,7 @@ Assignment
 
             .. tab-item:: Q1
 
-                Write python for the pseudocode: ``age <- 14``.
+                Write python for the pseudocode: ``age ← 14``.
 
                 .. code-block:: python
 
@@ -84,7 +84,7 @@ Assignment
 
             .. tab-item:: Q2
 
-                Write python for this pseudocode: ``game <- "table tennis"``.
+                Write python for this pseudocode: ``game ← "table tennis"``.
 
                 .. code-block:: python
 

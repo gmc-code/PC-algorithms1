@@ -12,8 +12,8 @@ else:
 
 
 # BEGIN
-# is_raining <- False
-# is_cold <- False
+# is_raining ← False
+# is_cold ← False
 # OUTPUT "Good Morning."
 # IF is_raining AND is_cold THEN
 #     OUTPUT "Bring Umbrella and jacket."

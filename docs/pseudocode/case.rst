@@ -41,7 +41,7 @@ Match-case
 .. code-block:: 
 
     BEGIN
-        age_flag <- FALSE
+        age_flag ← FALSE
         CASE age_flag:
             TRUE: OUTPUT "Entry permitted"
             FALSE: OUTPUT "No entry until you reach 13 years of age."
@@ -69,7 +69,7 @@ Alternatives
 .. code-block:: 
 
     BEGIN
-        grade <- "A"
+        grade ← "A"
         CASE grade:
             "A+" | "A" | "B+" |  "B" | "C+" | "C": OUTPUT "Acceptable standard."
             "D+" | "D" | "NP" | "UG": OUTPUT "Retest required."
@@ -102,7 +102,7 @@ Wildcard
 .. code-block:: 
 
     BEGIN
-        grade <- "A-"
+        grade ← "A-"
         CASE grade:
             "A+" OR "A" OR "B+" OR  "B" OR "C+" OR "C": OUTPUT "Acceptable standard."
             "D+" OR "D" OR "NP" OR "UG": OUTPUT "Retest required."
@@ -141,7 +141,7 @@ Matching tuples for coordinates
 .. code-block:: 
 
     BEGIN
-        point <- (2, 3)
+        point ← (2, 3)
         CASE point:
             (0, 0): OUTPUT "Origin"
             (0, y): OUTPUT f"{y} on Y axis"

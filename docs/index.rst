@@ -45,6 +45,8 @@ PC-algorithms
     :numbered:
 
     pseudocode_for_maths/pseudocode_for_maths.rst
+    maths_python/bisection.rst
+    maths_python/newtons_method.rst
 
 
 .. toctree::

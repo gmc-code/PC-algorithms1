@@ -15,7 +15,7 @@ Selection
    * - Python
      - Pseudocode
    * - =
-     - <-
+     - ←
    * - if
      - IF ....THEN
    * - elif 
@@ -60,8 +60,8 @@ If, else
 .. code-block::
 
    BEGIN
-      score <- 65
-      cut_off_score <- 60
+      score ← 65
+      cut_off_score ← 60
       IF score >= cut_off_score THEN
          OUTPUT "Suitable standard."
       ELSE
@@ -133,8 +133,8 @@ If, elif, else
 .. code-block::
 
    BEGIN
-      scoreA <- 88
-      scoreB <- 85
+      scoreA ← 88
+      scoreB ← 85
       IF scoreA > scoreB THEN
          OUTPUT "A won."
       ELSEIF scoreB > scoreA THEN
@@ -183,7 +183,7 @@ If, elif, else
       .. code-block::
 
          BEGIN
-            is_raining <- TRUE
+            is_raining ← TRUE
             IF is_raining THEN
                OUTPUT "Catch the bus."
             ELSE
@@ -234,8 +234,8 @@ And, or, not
 .. code-block::
 
    BEGIN
-      is_raining <- TRUE
-      is_cold <- TRUE
+      is_raining ← TRUE
+      is_cold ← TRUE
       OUTPUT "Good Morning."
       IF is_raining AND is_cold THEN
          OUTPUT "Bring Umbrella and jacket."
@@ -303,8 +303,8 @@ And, or, not
 .. code-block::
 
    BEGIN
-      is_raining <- FALSE
-      is_cold <- FALSE
+      is_raining ← FALSE
+      is_cold ← FALSE
       OUTPUT "Good Morning."
       IF is_raining OR is_cold THEN
          OUTPUT "Bring Umbrella or jacket or both."
@@ -369,8 +369,8 @@ And, or, not
 .. code-block::
 
    BEGIN
-      is_raining <- TRUE
-      is_cold <- FALSE
+      is_raining ← TRUE
+      is_cold ← FALSE
       OUTPUT "Good Morning."
       IF is_raining AND is_cold THEN
          OUTPUT "Bring Umbrella AND jacket."
@@ -407,7 +407,7 @@ And, or, not
          .. tab-item:: Q3
 
             | What change would be needed in the variable assignments to result in the output being ``"Bring Umbrella AND jacket."``?
-            | Change ``is_cold <- FALSE`` to ``is_cold <- TRUE``.
+            | Change ``is_cold ← FALSE`` to ``is_cold ← TRUE``.
 ``
 
 ----
@@ -419,8 +419,8 @@ And, or, not
       .. code-block::
 
          BEGIN
-            is_raining <- False
-            is_cold <- False
+            is_raining ← False
+            is_cold ← False
             OUTPUT "Good Morning."
             IF is_raining AND is_cold THEN
                OUTPUT "Bring Umbrella and jacket."
@@ -487,8 +487,8 @@ Nested if
 .. code-block::
 
    BEGIN
-      scoreA <-38
-      scoreB <- 35
+      scoreA ←38
+      scoreB ← 35
       IF scoreA > scoreB THEN
          IF scoreA - scoreB > 14 THEN
                OUTPUT "A won easily."
@@ -547,10 +547,10 @@ Nested if
             .. code-block::
 
                BEGIN
-                  teamA <- "Chiefs"
-                  teamB <- "Eagles" 
-                  scoreA <-38
-                  scoreB <- 35
+                  teamA ← "Chiefs"
+                  teamB ← "Eagles" 
+                  scoreA ←38
+                  scoreB ← 35
                   IF scoreA > scoreB THEN
                      margin = str(scoreA - scoreB)
                      IF scoreA - scoreB > 14 THEN

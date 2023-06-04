@@ -1,0 +1,80 @@
+=======================
+Newton's method
+=======================
+
+| Pseudocode for Newton's method is below.
+| Newton's method is an iterative method for finding the roots of a real-valued function. 
+| It starts with an initial guess for the root (x0) and iteratively refines this guess using the formula x1 = x0 - f(x0) / f'(x0) until a desired level of accuracy is achieved (as determined by the tol parameter). 
+
+| This pseudocode defines a function newton that takes five arguments: f(x), f'(x), x0, max_iter, and tol. 
+| The function initializes a loop counter i to 0 and enters a while loop that iterates max_iter times. 
+| The maximum number of iterations allowed is specified by the max_iter parameter.
+| In each iteration, the code calculates a new value for x1 using the formula x1 = x0 - f(x0) / f'(x0). 
+| It then checks if the absolute difference between x1 and x0 is less than tol. 
+| If it is, the function returns x1. 
+| Otherwise, the value of x0 is updated to be equal to x1 and the loop counter i is incremented by 1. 
+| After the loop has completed, the function returns the final value of x1.
+
+
+| Pseudocode:
+
+| **define** newton(f(x), f'(x), x0, max_iter, tol)
+|     i ← 0
+|     **while** i < max_iter
+|         x1 ← x0 - f(x0) / f'(x0)
+|         **if** abs(x1 - x0) < tol **then**
+|             **return** x1
+|         x0 ← x1
+|         i ← i + 1
+|     **return** x1
+
+
+
+| Python implementation:
+
+.. code-block:: python
+
+    def bisection(f, a, b, max_iter):
+        if f(a) * f(b) > 0:
+            return "Invalid interval"
+        i = 0
+        while i < max_iter:
+            mid = (a + b) / 2
+            if f(mid) == 0:
+                return mid
+            elif f(a) * f(mid) < 0:
+                b = mid
+            else:
+                a = mid
+            i += 1
+        return mid
+
+
+----
+
+Usage Example
+----------------
+
+| Here's an example of how you can use the newton function to find the root of the function y = x**3 - 2.
+| The output value is 1.2599210498953948.
+
+.. 
+code-block:: python
+
+    def newton(f, df, x0, max_iter, tol):
+        i = 0
+        while i < max_iter:
+            x1 = x0 - f(x0) / df(x0)
+            if abs(x1 - x0) < tol:
+                return x1
+            x0 = x1
+            i += 1
+        return x1
+
+    f = lambda x: x**3 - 2
+    df = lambda x: 3 * x**2
+
+    result = newton(f, df, 1.5, 100, 1e-6)
+    print(result)
+
+    # 1.2599210498953948

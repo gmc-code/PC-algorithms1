@@ -29,7 +29,7 @@ Python to Pseudocode Summary
 	* - ==
 	  - =
 	* - =
-	  - <-
+	  - ←
 	* - print
 	  - **output** or **print** or **display**
 	* - input 

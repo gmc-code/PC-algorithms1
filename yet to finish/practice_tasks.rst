@@ -32,8 +32,8 @@ printing out the name and date of birth of each person who can play in the event
 .. code-block::
 
     BEGIN
-        cutoff_date <- "2001-12-31"
-        FOR i <- 1 TO club_player_count
+        cutoff_date ← "2001-12-31"
+        FOR i ← 1 TO club_player_count
             IF date_of_birth[i] > cutoff_date THEN
                 OUTPUT name[i], date_of_birth[i]
             ENDIF
@@ -83,14 +83,14 @@ duplicate_count: 4
 
 function countDuplicates (inputArray)
 Begin
-    duplicate_count <- 0
-    counter <- 1
-    array_length <- Len (inputArray)
+    duplicate_count ← 0
+    counter ← 1
+    array_length ← Len (inputArray)
     While counter < array_length
         If inputArray[counter] = inputArray[counter + 1] then
-            duplicate_count <- duplicate_count + 1
+            duplicate_count ← duplicate_count + 1
         endIf
-        counter <- counter + 1
+        counter ← counter + 1
     endwhile
     print duplicate_count
 End
@@ -99,7 +99,7 @@ End
 ------------------------------------------------------------
 Before a customer can complete a purchase, there are two important checks that must be
 completed. The distance (delivery_distance) that the robot must travel for delivery must be less
-than or equal to 2.5 km and the order cannot include any fragile items (fragile <- false). If both of
+than or equal to 2.5 km and the order cannot include any fragile items (fragile ← false). If both of
 these conditions are met, the order will be processed as "order valid". If either of these conditions is
 not met, then the order will be considered "order invalid".
 The following pseudocode is used to check these conditions.
@@ -127,13 +127,13 @@ name and number.
 
 
 Begin
-    LowestEmployeeName <-""
-    LowestEmployeeNumber <- 100000
+    LowestEmployeeName ←""
+    LowestEmployeeNumber ← 100000
     While Not EndOfFile
         Read EmployeeName, EmployeeNumber
         If EmployeeNumber < LowestEmployeeNumber
-            LowestEmployeeName <- EmployeeName
-            LowestEmployeeNumber <- EmployeeNumber
+            LowestEmployeeName ← EmployeeName
+            LowestEmployeeNumber ← EmployeeNumber
         EndIF
     EndWhile
     Print LowestEmployeeName, LowestEmployeeNumber
@@ -157,28 +157,28 @@ Begin
 //store each digit as it is entered
 //initialise variables
 //note that dashes are ignored when characters are read
-counter <-  1
+counter ←  1
 Repeat
-creditnum[counter] <-  digit
-counter <- counter + 1
+creditnum[counter] ←  digit
+counter ← counter + 1
 Until digits fi nished
-validcard <- false
-creditnumtotal <- 0
-For counter <- 1 to len(creditnum) //not all credit cards are 16 digits
+validcard ← false
+creditnumtotal ← 0
+For counter ← 1 to len(creditnum) //not all credit cards are 16 digits
 If (counter mod 2) = 0 then
 //it is one of the every second digit
 If (2 * creditnum[counter]) <= 10 then
-creditnumtotal <- creditnumtotal + 2 * creditnum[counter]
+creditnumtotal ← creditnumtotal + 2 * creditnum[counter]
 Else
 //subtract the 9 as written in the algorithm
-creditnumtotal <- creditnumtotal + (2 * creditnum[counter] – 9)
+creditnumtotal ← creditnumtotal + (2 * creditnum[counter] – 9)
 EndIf
 EndIf
 EndFor
 If creditnumtotal mod 10 < 5 or creditnumtotal mod 10 > 7 then
-validcard <-  true
+validcard ←  true
 Else
-validcard <-  false
+validcard ←  false
 print “Warning”
 EndIf
 End
@@ -206,19 +206,19 @@ Managers to clients.
 BEGIN
     Case Category
         CRP: If accBalance >= 100000 Then
-                Manager <-  Rachael
+                Manager ←  Rachael
             Else
-                Manager <-  David
+                Manager ←  David
             EndIf
         RES: If accBalance >= 1000000 Then
-                Manager <-  José
+                Manager ←  José
             Else
-                Manager <-  David
+                Manager ←  David
             EndIf
         STK: If accBalance <= 60000 Then
-                Manager <-  Frederick
+                Manager ←  Frederick
             Else
-                Manager <-  Christine
+                Manager ←  Christine
             EndIf
     End Case
 END
