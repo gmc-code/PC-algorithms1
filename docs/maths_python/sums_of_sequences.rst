@@ -2,6 +2,9 @@
 Sums of sequences
 =======================
 
+
+| VCMNA254: Design and implement mathematical algorithms using a simple general purpose programming language
+
 * finding the sum of a set of consecutive numbers using a loop structure
 
 ----

@@ -1,4 +1,6 @@
 {"workbench.colorCustomizations": {
     "statusBar.background": "#fa7272"
-},}
+},
+"esbonio.sphinx.confDir": "${workspaceFolder}\\docs",
+}
 

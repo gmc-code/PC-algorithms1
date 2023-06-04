@@ -29,6 +29,20 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
+    :caption: Flowcharts
+    :numbered:
+
+    flowcharts/flowcharts.rst
+    flowcharts/Selection.rst
+    flowcharts/For_loops.rst
+    flowcharts/For_loops_with_range.rst
+    flowcharts/While_True_loops.rst
+    flowcharts/While_loops.rst
+
+
+
+.. toctree::
+    :maxdepth: 2
     :caption: Pseudocode for maths
     :numbered:
 
@@ -40,10 +54,13 @@ PC-algorithms
     :caption: Maths python
     :numbered:
 
+    maths_python/maths_python_intro.rst
+    maths_python/sums_of_sequences.rst
+    maths_python/geometric_patterns.rst
     maths_python/divisibility.rst
     maths_python/highest_common_factor.rst
     maths_python/prime_factors.rst
-    maths_python/sums_of_sequences.rst
+
 
 ..    
     maths_python\quick_sort.rst
