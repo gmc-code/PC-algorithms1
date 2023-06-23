@@ -55,6 +55,7 @@ PC-algorithms
     :numbered:
 
     maths_python/maths_python_intro.rst
+    maths_python/simple_stats.rst
     maths_python/sums_of_sequences.rst
     maths_python/geometric_patterns.rst
     maths_python/divisibility.rst
