@@ -9,7 +9,7 @@ Bisection
 | It's important to choose an appropriate initial interval or initial guess and to monitor the convergence of the method to ensure that it's providing accurate results.
 
 .. image:: images/bisection_cubic.png
-    :scale: 75 %
+    :width: 300
     :align: center
 
 | Pseudocode for the bisection method is below.
@@ -102,7 +102,7 @@ Example with sin function
 ----------------------------
 
 .. image:: images/bisection_sin.png
-    :scale: 75 %
+    :width: 300
     :align: center
 
 | Here's an example of how you can use the bisection function to find the root of the sin(x) function in the interval [2, 4] with a maximum of 5 iterations.
