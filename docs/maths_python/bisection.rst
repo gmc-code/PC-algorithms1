@@ -8,10 +8,6 @@ Bisection
 
 | It's important to choose an appropriate initial interval or initial guess and to monitor the convergence of the method to ensure that it's providing accurate results.
 
-.. image:: filees/bisection_cubic.png
-    :width: 300
-    :align: center
-
 ----
 
 Bisection with specified iterations
@@ -73,7 +69,7 @@ Bisection with specified iterations
 Cubic Example
 ----------------
 
-.. image:: filees/bisection_cubic.png
+.. image:: files/bisection_cubic.png
     :width: 300
     :align: center
 
@@ -110,7 +106,7 @@ Cubic Example
 Example with sin function
 ----------------------------
 
-.. image:: images/bisection_sin.png
+.. image:: files/bisection_sin.png
     :width: 300
     :align: center
 
@@ -156,7 +152,7 @@ Bisection with specified error tolerance
 Cubic Example
 ----------------
 
-.. image:: filees/bisection_cubic.png
+.. image:: files/bisection_cubic.png
     :width: 300
     :align: center
 
