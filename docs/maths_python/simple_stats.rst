@@ -53,13 +53,13 @@ Sort list
 Median
 ---------------------------------
 
-| The mean of a list can be found using `statistics.median(list)`.
 | The middle value is returned if there is an odd number of numbers in the list.
 | The average of the two middle values is returned if there is an even number of numbers in the list.
 
 .. code-block:: python
 
     mylist = [17, 13, 14, 16, 12, 12]
+    mylist.sort()
     n = len(mylist)
     if n % 2 == 0:
         # average of middle 2 for even number of numbers
@@ -71,7 +71,15 @@ Median
     print("Median:", mymedian)
     # 13.5
 
-| Alternatively, the mean of a list can be found using `statistics.median(list)`.
+| ``n = len(mylist)`` calculates the length of the list `mylist` using the `len` function and stores the result in a variable `n`.
+| ``if n % 2 == 0:`` checks if `n` is even by calculating the remainder of `n` divided by `2` using the modulo operator `%`. If the remainder is `0`, this means that `n` is even.
+| ``mymedian = (mylist[n//2 - 1] + mylist[n//2]) / 2`` calculate the median of the list `mylist` as the average of the two middle elements, if `n` is even. The two middle elements are accessed using indexing with the expression `n//2 - 1` and `n//2`. The average is calculated by adding these two elements and dividing by `2`. The result is stored in a variable `mymedian`.
+| ``mymedian = mylist[n//2]`` calculate the median of the list `mylist` as the middle element if n is odd. The middle element is accessed using indexing with the expression `n//2`. The result is stored in a variable `mymedian`.
+| It's important to note that this code assumes that the list `mylist` is already sorted in ascending order.
+
+----
+
+| Alternatively, the median of a list can be found using `statistics.median(list)`.
 
 .. code-block:: python
 
