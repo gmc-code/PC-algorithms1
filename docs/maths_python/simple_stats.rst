@@ -71,6 +71,7 @@ Median
     print("Median:", mymedian)
     # 13.5
 
+| ``mylist.sort()`` sorts the list in ascending order.
 | ``n = len(mylist)`` calculates the length of the list `mylist` using the `len` function and stores the result in a variable `n`.
 | ``if n % 2 == 0:`` checks if `n` is even by calculating the remainder of `n` divided by `2` using the modulo operator `%`. If the remainder is `0`, this means that `n` is even.
 | ``mymedian = (mylist[n//2 - 1] + mylist[n//2]) / 2`` calculate the median of the list `mylist` as the average of the two middle elements, if `n` is even. The two middle elements are accessed using indexing with the expression `n//2 - 1` and `n//2`. The average is calculated by adding these two elements and dividing by `2`. The result is stored in a variable `mymedian`.
