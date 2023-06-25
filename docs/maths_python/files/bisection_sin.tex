@@ -1,0 +1,36 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} % Set the compatibility mode to the latest version
+
+\def\xa{2}
+\pgfmathsetmacro{\ya}{sin(deg(2))}
+\def\xb{4}
+\pgfmathsetmacro{\yb}{sin(deg(4))}
+\def\xc{3}
+\pgfmathsetmacro{\yc}{sin(deg(3))}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = $x$,
+    ylabel = {$f(x)$},
+    ymin=-2,
+    ymax=2,
+]
+\addplot [
+    domain=-1:5,
+    samples=100,
+    color=blue,
+]
+{sin(deg(x))};
+\addplot[mark=*,only marks,mark size=1pt] coordinates {(\xa,\ya) (\xc,\yc) (\xb,\yb)};
+\node[label={180:{f(a)}},circle,fill,inner sep=1pt] at (axis cs:\xa,\ya) {};
+\node[label={90:{f(c)}},circle,fill,inner sep=1pt] at (axis cs:\xc,\yc) {};
+\node[label={270:{f(b)}},circle,fill,inner sep=1pt] at (axis cs:\xb,\yb) {};
+\draw[dotted] (axis cs:\xa,\ya) -- (axis cs:\xa,0);
+\draw[dotted] (axis cs:\xc,\yc) -- (axis cs:\xc,0);
+\draw[dotted] (axis cs:\xb,\yb) -- (axis cs:\xb,0);
+\end{axis}
+\end{tikzpicture}
+\end{document}

@@ -3,8 +3,11 @@
 
 from math import sin
 
+f = lambda x: sin(x)
+
 def bisection(f, a, b, max_iter):
     if f(a) * f(b) > 0:
+        #need one pos and one neg
         return "Invalid interval"
     i = 0
     while i < max_iter:
@@ -18,8 +21,8 @@ def bisection(f, a, b, max_iter):
         i += 1
     return mid
 
-bisec_value = bisection(sin,3,5,2) 
+bisec_value = bisection(f,2,4,5) 
 
 print(bisec_value)
-# 3.5
+# 3.1875
 
