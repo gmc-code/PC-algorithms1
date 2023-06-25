@@ -19,18 +19,15 @@ Newton's method
 
 | Pseudocode:
 
-.. code-block:: 
-
-    | **define** newton(f(x), f'(x), x0, max_iter, tol)
-    |     i ← 0
-    |     **while** i < max_iter
-    |         x1 ← x0 - f(x0) / f'(x0)
-    |         **if** abs(x1 - x0) < tol **then**
-    |             **return** x1
-    |         x0 ← x1
-    |         i ← i + 1
-    |     **return** x1
-
+| **define** newton(f(x), f'(x), x0, max_iter, tol)
+|     i ← 0
+|     **while** i < max_iter
+|         x1 ← x0 - f(x0) / f'(x0)
+|         **if** abs(x1 - x0) < tol **then**
+|             **return** x1
+|         x0 ← x1
+|         i ← i + 1
+|     **return** x1
 
 
 | Python implementation:
