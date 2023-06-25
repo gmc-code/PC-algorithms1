@@ -10,6 +10,7 @@ Mean
 ---------------------------------
 
 | The mean of a list can be found using the sum and len functions.
+| The average is found by dividing the sum by len of the list.
 
 .. code-block:: python
 
@@ -53,7 +54,7 @@ Sort list
 Median
 ---------------------------------
 
-| The middle value is returned if there is an odd number of numbers in the list.
+| For the median, the middle value is returned if there is an odd number of numbers in the list.
 | The average of the two middle values is returned if there is an even number of numbers in the list.
 
 .. code-block:: python
@@ -74,7 +75,7 @@ Median
 | ``mylist.sort()`` sorts the list in ascending order.
 | ``n = len(mylist)`` calculates the length of the list `mylist` using the `len` function and stores the result in a variable `n`.
 | ``if n % 2 == 0:`` checks if `n` is even by calculating the remainder of `n` divided by `2` using the modulo operator `%`. If the remainder is `0`, this means that `n` is even.
-| ``mymedian = (mylist[n//2 - 1] + mylist[n//2]) / 2`` calculate the median of the list `mylist` as the average of the two middle elements, if `n` is even. The two middle elements are accessed using indexing with the expression `n//2 - 1` and `n//2`. The average is calculated by adding these two elements and dividing by `2`. The result is stored in a variable `mymedian`.
+| ``mymedian = (mylist[n//2 - 1] + mylist[n//2]) / 2`` calculate the median of the list `mylist` as the average of the two middle elements, if `n` is even. The two middle elements are accessed using indexing with the expression `n//2 - 1` and `n//2`. ``n//2`` performs integer division (also known as floor division). The result of the division is rounded down to the nearest integer. The average is calculated by adding these two elements and dividing by `2`. The result is stored in a variable `mymedian`.
 | ``mymedian = mylist[n//2]`` calculate the median of the list `mylist` as the middle element if n is odd. The middle element is accessed using indexing with the expression `n//2`. The result is stored in a variable `mymedian`.
 | It's important to note that this code assumes that the list `mylist` is already sorted in ascending order.
 
