@@ -2,5 +2,9 @@
     "statusBar.background": "#fa7272"
 },
 "esbonio.sphinx.confDir": "${workspaceFolder}\\docs",
+"[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+},
+"python.formatting.provider": "none",
 }
 

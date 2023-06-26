@@ -8,7 +8,7 @@
 import random
 
 
-def div_by_7(num):
+def is_div_by_7(num):
     diff = repeated_diff_from_dbl_last(num)
     if diff in [0, 7, -7]:
         return True
@@ -30,4 +30,4 @@ def repeated_diff_from_dbl_last(num):
 
 
 num = random.randint(12, 300)
-print(num, div_by_7(num))
+print(num, is_div_by_7(num))

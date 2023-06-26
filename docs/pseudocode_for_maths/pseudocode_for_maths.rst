@@ -35,9 +35,9 @@ Python to Pseudocode Summary
 	* - input 
 	  - **input** or **get**           
 	* - **if**
-	  - **if** ....**then**
+	  - **if** ... **then**
 	* - elif 
-	  - **elseif**   ....**then**
+	  - **elseif** ... **then**
 	* - else 
 	  - **else**
 	* - "end of if"

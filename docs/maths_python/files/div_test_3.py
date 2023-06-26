@@ -1,7 +1,7 @@
 import random
 
 
-def div_by_3(num):
+def is_div_by_3(num):
     sum_of_digits = repeated_sum_digits(num)
     if sum_of_digits in [3, 6, 9]:
         return True
@@ -24,4 +24,4 @@ def repeated_sum_digits(num):
 
 
 num = random.randint(12, 300)
-print(num, div_by_3(num))
+print(num, is_div_by_3(num))

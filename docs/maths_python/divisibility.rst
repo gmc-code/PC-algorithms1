@@ -2,7 +2,9 @@
 Divisibility
 =======================
 
-* testing a number for divisibility
+| VCMNA282: Use algorithms and related testing procedures to identify and correct errors
+
+* Testing a number for divisibility
 
 ----------------------------------
 Prime number divisibility tests
@@ -22,7 +24,7 @@ Divibility by 2
     import random
 
 
-    def div_by_2(num):
+    def is_div_by_2(num):
         endings = ["0", "2", "4", "6", "8"]
         last_digit = str(num)[-1]
         if last_digit in endings:
@@ -32,23 +34,23 @@ Divibility by 2
 
 
     num = random.randint(10, 300)
-    print(num, div_by_2(num))
+    print(num, is_div_by_2(num))
 
 
 | Pseudocode:
 
-| function div_by_2(num)
+| **function** is_div_by_2(num)
 |     endings ← ["0", "2", "4", "6", "8"]
 |     last_digit ← str(num)[-1]
-|     if last_digit in endings then
-|         return True
-|     else
-|         return False
-|     endif
-| endfunction
+|     **if** last_digit in endings **then**
+|         **return** **true**
+|     **else**
+|         **return** **false**
+|     **endif**
+| **endfunction**
 | 
 | num ← random integer from 10 to 300
-| **print** num, div_by_2(num)
+| **print** num, is_div_by_2(num)
 
 
 ----
@@ -57,16 +59,15 @@ Divibility by 3
 -------------------
 
 | A number is divisible by 3 if the sum of the digits in the number is divisible by 3.
-| For example: 162 is divisible by 3 since the sum of the digits is 9 (1 + 6 + 2 = 9) and 9 is divisible 
-by 3.
-| The code below sums the digits of the number via **sum_digits**, and repeats summing the digits via **repeated_sum_digits** until there is just one digit, then, in **div_by_3**, checks if that sum is 3, 6, or 9.
+| For example: 162 is divisible by 3 since the sum of the digits is 9 (1 + 6 + 2 = 9) and 9 is divisible by 3.
+| The code below sums the digits of the number via **sum_digits**, and repeats summing the digits via **repeated_sum_digits** until there is just one digit, then, **is_div_by_3** checks if that sum is 3, 6, or 9.
 
 .. code-block:: python
 
     import random
 
 
-    def div_by_3(num):
+    def is_div_by_3(num):
         sum_of_digits = repeated_sum_digits(num)
         if sum_of_digits in [3, 6, 9]:
             return True
@@ -89,7 +90,7 @@ by 3.
 
 
     num = random.randint(12, 300)
-    print(num, div_by_3(num))
+    print(num, is_div_by_3(num))
 
 ----
 
@@ -106,7 +107,7 @@ Divibility by 5
     import random
 
 
-    def div_by_5(num):
+    def is_div_by_5(num):
         endings = ["0", "5"]
         last_digit = str(num)[-1]
         if last_digit in endings:
@@ -116,7 +117,7 @@ Divibility by 5
 
 
     num = random.randint(10, 300)
-    print(num, div_by_5(num))
+    print(num, is_div_by_5(num))
 
 
 ----
@@ -136,7 +137,7 @@ Divisibility by 7
     import random
 
 
-    def div_by_7(num):
+    def is_div_by_7(num):
         diff = repeated_diff_from_dbl_last(num)
         if diff in [0, 7, -7]:
             return True
@@ -158,5 +159,79 @@ Divisibility by 7
 
 
     num = random.randint(12, 300)
-    print(num, div_by_7(num))
+    print(num, is_div_by_7(num))
+
+----
+
+------------------------------------
+Non Prime number divisibility tests
+------------------------------------
+
+Divibility by 4
+-------------------
+
+| A number is divisible by 4 if the last 2 digits are divisible by 4.
+| The code below checks if the last digit to see if it is divisible by 2, then divides it by 2 and checks again for divisibility by 2.
+| To get the last 2 digits, the number is converted to a string, **str(num)**, then string indexing, **str(num)[-2:]**, gets the last 2 characters.
+
+.. code-block:: python
+
+    import random
+
+
+    def is_div_by_2(num):
+        endings = ["0", "2", "4", "6", "8"]
+        last_digit = str(num)[-1]
+        if last_digit in endings:
+            return True
+        else:
+            return False
+
+
+    def is_divisible_by_4(num):
+        last_two_digits = int(str(num)[-2:])
+        if is_div_by_2(last_two_digits):
+            half_last_two_digits = int(last_two_digits / 2)
+            if is_div_by_2(half_last_two_digits):
+                return True
+            else:
+                return False
+        else:
+            return False
+
+
+    # Test the function
+    for _ in range(10):
+        num = random.randrange(10, 300, 2)
+        print(num, is_divisible_by_4(num))
+
+
+| Pseudocode:
+
+| **function** is_div_by_2(num)
+|     endings ← ["0", "2", "4", "6", "8"]
+|     last_digit ← str(num)[-1]
+|     **if** last_digit in endings **then**
+|         **return** **true**
+|     **else**
+|         **return** **false**
+|     **endif**
+| **endfunction**
+|  
+| **function** is_divisible_by_4(num)
+|    last_two_digits ← int(str(num)[-2:])
+|    **if** is_div_by_2(last_two_digits) **then**
+|        half_last_two_digits ← int(last_two_digits / 2)
+|        **if** is_div_by_2(half_last_two_digits) then
+|            **return** **true**
+|        **else**
+|            **return** **false**
+|        **endif**
+|    **else**
+|        **return** **false**
+|     **endif**
+| **endfunction**
+| 
+| num ← random integer from 10 to 300
+| **print** num, is_divisible_by_4(num)
 

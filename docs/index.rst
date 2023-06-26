@@ -55,13 +55,20 @@ PC-algorithms
     :numbered:
 
     maths_python/maths_python_intro.rst
-    maths_python/simple_stats.rst
     maths_python/sums_of_sequences.rst
     maths_python/geometric_patterns.rst
     maths_python/divisibility.rst
     maths_python/highest_common_factor.rst
     maths_python/prime_factors.rst
+    maths_python/Sieve_of_Eratosthenes.rst
 
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python
+    :numbered:
+
+    maths_python/simple_stats.rst
 
 ..    
     maths_python\quick_sort.rst

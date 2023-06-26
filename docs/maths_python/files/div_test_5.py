@@ -1,7 +1,7 @@
 import random
 
 
-def div_by_5(num):
+def is_div_by_5(num):
     endings = ["0", "5"]
     last_digit = str(num)[-1]
     if last_digit in endings:
@@ -11,4 +11,4 @@ def div_by_5(num):
 
 
 num = random.randint(10, 300)
-print(num, div_by_5(num))
+print(num, is_div_by_5(num))
