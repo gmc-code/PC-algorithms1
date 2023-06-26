@@ -1,7 +1,7 @@
 """return text quotient and remainder from dividing dividend by divisor
     eg. 7/3 = 2 remainder 1.
     dividend is 7; divisor is 3; quotient is 2; remainder is 1
-of """
+"""
 
 def quotient_and_remainder(dividend, divisor):
     quotient = 0

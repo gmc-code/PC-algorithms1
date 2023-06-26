@@ -258,4 +258,25 @@ General Divisibility by repeated addition
     divisor = int(input("Type the number you want to see if it is divisible by: "))
     print(num, "can be divided by", divisor, is_div_by_divisor(num,divisor))
 
+----
+
+Division by repeated subtraction
+--------------------------------------------
+  
+| The code below returns the quotient and remainder from dividing a dividend by a divisor
+| eg. 7/3 = 2 remainder 1.
+| dividend is 7; divisor is 3; quotient is 2; remainder is 1
+
+.. code-block:: python
+
+    def quotient_and_remainder(dividend, divisor):
+        quotient = 0
+        remainder = dividend
+        while remainder >= divisor:
+            remainder -= divisor
+            quotient +=1
+        return f'{dividend}/{divisor} = {quotient} R{remainder}'
+
+    print(quotient_and_remainder(7, 3))
+    # 7/3 = 2 R1
 
