@@ -3,7 +3,7 @@ Introduction to maths python
 =============================
 
 | Examples of using python to implement mathematical algorithms are illustrated in the following pages.
-| Form the lsit below, those in bold are implemented here.
+| Form the list below, those in bold are implemented here.
 
 | 7	Design and implement mathematical algorithms using a simple general purpose programming language (VCMNA254)
 
