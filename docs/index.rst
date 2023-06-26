@@ -59,6 +59,7 @@ PC-algorithms
     maths_python/geometric_patterns.rst
     maths_python/simple_debugging.rst
     maths_python/divisibility.rst
+    maths_python/population_sampling.rst
 
 .. toctree::
     :maxdepth: 2

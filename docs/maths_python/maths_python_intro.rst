@@ -22,7 +22,7 @@ Introduction to maths python
 | 9	Apply set structures to solve real-world problems (VCMNA307)
 
 	* Using a sort algorithm to determine the median of a set of numbers
-	* Exploring variation in proportion and means of random samples, drawn from a population
+	* **Exploring variation in proportion and means of random samples, drawn from a population**
 
 | 10 Implement algorithms using data structures in a general-purpose programming language (VCMNA334) 
 
