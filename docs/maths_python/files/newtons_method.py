@@ -5,7 +5,7 @@ def newton(f, df, x0, max_iter, tol):
     i = 0
     while i < max_iter:
         x1 = x0 - f(x0) / df(x0)
-        if abs(x1 - x0) < tol:
+        if abs(x1 - x0) <= tol:
             return x1
         x0 = x1
         i += 1

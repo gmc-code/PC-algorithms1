@@ -16,7 +16,7 @@ Newton's method
 |     i ← 0
 |     **while** i < max_iter
 |         x1 ← x0 - f(x0) / f'(x0)
-|         **if** abs(x1 - x0) < tol **then**
+|         **if** abs(x1 - x0) <= tol **then**
 |             **return** x1
 |         x0 ← x1
 |         i ← i + 1
@@ -39,7 +39,7 @@ Newton's method
         i = 0
         while i < max_iter:
             x1 = x0 - f(x0) / df(x0)
-            if abs(x1 - x0) < tol:
+            if abs(x1 - x0) <= tol:
                 return x1
             x0 = x1
             i += 1
@@ -72,7 +72,7 @@ Usage Example
         i = 0
         while i < max_iter:
             x1 = x0 - f(x0) / df(x0)
-            if abs(x1 - x0) < tol:
+            if abs(x1 - x0) <= tol:
                 return x1
             x0 = x1
             i += 1
