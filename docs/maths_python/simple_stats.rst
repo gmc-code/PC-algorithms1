@@ -99,7 +99,7 @@ Median
 Mode
 ---------------------------------
 
-| The mode can be found by creating a dictionary that counts the number of occurances of each number.
+| The mode can be found by first creating a dictionary that counts the number of occurances of each number.
 
 .. code-block:: python
 
