@@ -12,7 +12,7 @@ Population_sampling
 | It then draws random samples of a given size from the population and calculates the sample means. 
 | Finally, it plots histograms of the sample means to visualize their variation.
 
-.. image:: images/sample_means 10 100 1000.png
+.. image:: images/sample_means_inc_samples.png
     :width: 600
     :align: center
 
