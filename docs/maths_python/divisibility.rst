@@ -164,7 +164,7 @@ Divisibility by 7
 ----
 
 ------------------------------------
-Non Prime number divisibility tests
+Other divisibility tests
 ------------------------------------
 
 Divibility by 4
@@ -234,4 +234,28 @@ Divibility by 4
 | 
 | num ← random integer from 10 to 300
 | **print** num, is_divisible_by_4(num)
+
+----
+
+General Divisibility by repeated addition
+--------------------------------------------
+
+| A general divisibility test can be done by counting up in steps equal to the divisor until the number to test is reached.
+
+.. code-block:: python
+
+    def is_div_by_divisor(num,divisor):
+        total = 0
+        while total < num:
+            total = total + divisor
+        if total == num:
+            return True
+        else:
+            return False
+
+
+    num = int(input("Type the number to test: "))
+    divisor = int(input("Type the number you want to see if it is divisible by: "))
+    print(num, "can be divided by", divisor, is_div_by_divisor(num,divisor))
+
 
