@@ -8,9 +8,33 @@ Population_sampling
 
 ----
 
+Population mean
+---------------------
+
+| Population mean :math:`\mu` = :math:`\frac{sum of all population values}{population size}`
+| To get the population mean, collect numerical data about every object in a population and calculate the
+mean using the formula above. 
+| It is usually impractical or costly to be able to determine the population mean exactly.
+
+----
+
+Sample Mean
+----------------
+
+| Sample mean :math:`\bar{x}` = :math:`\frac{sum of all sample values}{sample size}`
+
+
+| The sample mean is found by selecting a sample from the population and determining its mean instead.
+| The sample mean will vary from sample to sample.
+| The more representative the sample is of the population or the larger the size of the sample,
+the more likely the sample mean will provide a good estimate of the population mean.
+
+----
+
 Sample Means: Increasing samples
 ----------------------------------------
 
+| What is the effect of increasing the number of samples taken on the estimate of the population mean?
 | The code below generates a population of 10000 individuals with a mean of 50 and a standard deviation of 10. 
 | It then draws random samples of a given size from the population and calculates the sample means. 
 | Finally, it plots histograms of the sample means to visualize their variation.
@@ -35,6 +59,7 @@ Sample Means: Increasing samples
 Sample Means: Increasing sample size
 ----------------------------------------
 
+| What is the effect of increasing the sample size on the estimate of the population mean?
 | The code below generates a population of 10000 individuals with a mean of 50 and a standard deviation of 10. 
 | It then draws random samples of a given size from the population and calculates the sample means. 
 | Finally, it plots histograms of the sample means to visualize their variation.
