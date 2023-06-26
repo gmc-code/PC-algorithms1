@@ -13,6 +13,10 @@ Bisection
 
 | It's important to choose an appropriate initial interval or initial guess and to monitor the convergence of the method to ensure that it's providing accurate results.
 
+.. image:: files/bisection_quadratic.png
+    :width: 300
+    :align: center
+
 ----
 
 Bisection with specified Iterations

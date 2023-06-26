@@ -2,14 +2,14 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18} % Set the compatibility mode to the latest version
 
-\newcommand{\cubic}[1]{(#1)^3 - 6.5*(#1)^2 + 10*(#1) - 1.5}
-\def\cubicequ{x^3 - 6.5*x^2 + 10*x - 1.5}
-\def\xa{1}
-\pgfmathsetmacro{\ya}{\cubic{\xa}}
-\def\xb{3}
-\pgfmathsetmacro{\yb}{\cubic{\xb}}
-\def\xc{2}
-\pgfmathsetmacro{\yc}{\cubic{\xc}}
+\newcommand{\quadratic}[1]{(#1)^2 - 4*(#1) + 2}
+\def\quadraticequ{x^2 - 4*x + 2}
+\def\xa{2.5}
+\pgfmathsetmacro{\ya}{\quadratic{\xa}}
+\def\xb{4}
+\pgfmathsetmacro{\yb}{\quadratic{\xb}}
+\def\xc{3.25}
+\pgfmathsetmacro{\yc}{\quadratic{\xc}}
 
 \begin{document}
 \begin{tikzpicture}
@@ -18,18 +18,18 @@
     xlabel = $x$,
     ylabel = {$f(x)$},
     ymin=-4,
-    ymax=4,
+    ymax=8,
 ]
 \addplot [
     domain=-1:5,
     samples=100,
     color=blue,
 ]
-{\cubicequ};
+{\quadraticequ};
 \addplot[mark=*,only marks,mark size=1pt] coordinates {(\xa,\ya) (\xc,\yc) (\xb,\yb)};
-\node[label={90:{f(a)}},circle,fill,inner sep=1pt] at (axis cs:\xa,\ya) {};
-\node[label={0:{f(c)}},circle,fill,inner sep=1pt] at (axis cs:\xc,\yc) {};
-\node[label={270:{f(b)}},circle,fill,inner sep=1pt] at (axis cs:\xb,\yb) {};
+\node[label={270:{f(a)}},circle,fill,inner sep=1pt] at (axis cs:\xa,\ya) {};
+\node[label={315:{f(c)}},circle,fill,inner sep=1pt] at (axis cs:\xc,\yc) {};
+\node[label={0:{f(b)}},circle,fill,inner sep=1pt] at (axis cs:\xb,\yb) {};
 \draw[dotted] (axis cs:\xa,\ya) -- (axis cs:\xa,0);
 \draw[dotted] (axis cs:\xc,\yc) -- (axis cs:\xc,0);
 \draw[dotted] (axis cs:\xb,\yb) -- (axis cs:\xb,0);

@@ -3,11 +3,11 @@
 \pgfplotsset{compat=1.18} % Set the compatibility mode to the latest version
 
 \def\xa{2}
-\pgfmathsetmacro{\ya}{sin(deg(2))}
+\pgfmathsetmacro{\ya}{sin(deg(\xa))}
 \def\xb{4}
-\pgfmathsetmacro{\yb}{sin(deg(4))}
+\pgfmathsetmacro{\yb}{sin(deg(\xb))}
 \def\xc{3}
-\pgfmathsetmacro{\yc}{sin(deg(3))}
+\pgfmathsetmacro{\yc}{sin(deg(\xc))}
 
 \begin{document}
 \begin{tikzpicture}
@@ -25,8 +25,8 @@
 ]
 {sin(deg(x))};
 \addplot[mark=*,only marks,mark size=1pt] coordinates {(\xa,\ya) (\xc,\yc) (\xb,\yb)};
-\node[label={180:{f(a)}},circle,fill,inner sep=1pt] at (axis cs:\xa,\ya) {};
-\node[label={90:{f(c)}},circle,fill,inner sep=1pt] at (axis cs:\xc,\yc) {};
+\node[label={90:{f(a)}},circle,fill,inner sep=1pt] at (axis cs:\xa,\ya) {};
+\node[label={30:{f(c)}},circle,fill,inner sep=1pt] at (axis cs:\xc,\yc) {};
 \node[label={270:{f(b)}},circle,fill,inner sep=1pt] at (axis cs:\xb,\yb) {};
 \draw[dotted] (axis cs:\xa,\ya) -- (axis cs:\xa,0);
 \draw[dotted] (axis cs:\xc,\yc) -- (axis cs:\xc,0);
