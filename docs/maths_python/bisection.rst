@@ -24,9 +24,9 @@ Bisection with specified Iterations
 
 | Pseudocode for the bisection method is below.
 | This code defines a function bisection that takes four arguments: f, a, b, and max_iter. 
-| The function checks if the product of f(a) and f(b) is greater than 0 and returns "Invalid interval" if it is. 
+| The function checks if the product of f(a) and f(b) is greater than 0. If it is, it returns "Invalid interval". 
 | Otherwise, it enters a while loop that iterates max_iter times. 
-| In each iteration, the code calculates the midpoint between a and b and checks if f(mid) is equal to 0. 
+| During each iteration, the code calculates the midpoint between a and b and checks if f(mid) is equal to 0. 
 | If it is, the function returns mid. 
 | If not, the code checks if the product of f(a) and f(mid) is less than 0. 
 | If it is, the value of b is updated to be equal to mid. 

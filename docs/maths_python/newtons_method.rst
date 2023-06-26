@@ -4,8 +4,11 @@ Newton's method
 
 | Pseudocode for Newton's method is below.
 | Newton's method is an iterative method for finding the roots of a real-valued function. 
-| It starts with an initial guess for the root (x0) and iteratively refines this guess
-|  using the formula x1 = x0 - f(x0) / f'(x0) until a desired level of accuracy is achieved (as determined by the tol parameter). 
+| It starts with an initial guess for the root (x0) and iteratively refines this guess using the formula x1 = x0 - f(x0) / f'(x0) until a desired level of accuracy is achieved (as determined by the tol parameter). 
+
+.. image:: files/newtons_quadratic.png
+    :width: 300
+    :align: center
 
 | This pseudocode defines a function newton that takes five arguments: f(x), f'(x), x0, max_iter, and tol. 
 | The function initializes a loop counter i to 0 and enters a while loop that iterates max_iter times. 
@@ -34,26 +37,25 @@ Newton's method
 
 .. code-block:: python
 
-    def bisection(f, a, b, max_iter):
-        if f(a) * f(b) > 0:
-            return "Invalid interval"
+    def newton(f, df, x0, max_iter, tol):
         i = 0
         while i < max_iter:
-            mid = (a + b) / 2
-            if f(mid) == 0:
-                return mid
-            elif f(a) * f(mid) < 0:
-                b = mid
-            else:
-                a = mid
+            x1 = x0 - f(x0) / df(x0)
+            if abs(x1 - x0) < tol:
+                return x1
+            x0 = x1
             i += 1
-        return mid
+        return x1
 
 
 ----
 
 Usage Example
 ----------------
+
+.. image:: files/newtons_cubic.png
+    :width: 300
+    :align: center
 
 | Here's an example of how you can use the newton function to find the root of the function y = x**3 - 2.
 | The output value is 1.2599210498953948.
