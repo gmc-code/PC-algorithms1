@@ -11,7 +11,7 @@ Population_sampling
 Population mean
 -------------------
 
-| Population mean :math:`\mu` = :math:`\frac{sum of all population values}{population size}`
+| Population mean :math:`\mu` = :math:`\displaystyle \frac{\text{sum of all population values}}{\text{population size}}`
 | To get the population mean, collect numerical data about every object in a population and calculate the mean using the formula above. 
 | It is usually impractical or costly to be able to determine the population mean exactly.
 
@@ -20,7 +20,7 @@ Population mean
 Sample Mean
 ----------------
 
-| Sample mean :math:`\bar{x}` = :math:`\frac{sum of all sample values}{sample size}`
+| Sample mean :math:`\bar{x}` = :math:`\displaystyle \frac{\text{sum of all sample values}}{\text{sample size}}`
 
 
 | The sample mean is found by selecting a sample from the population and determining its mean instead.
