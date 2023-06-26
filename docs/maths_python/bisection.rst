@@ -17,8 +17,6 @@ Bisection
 
 | It's important to choose an appropriate initial interval or initial guess and to monitor the convergence of the method to ensure that it's providing accurate results.
 
-
-
 ----
 
 Bisection with specified Iterations
@@ -158,11 +156,11 @@ Bisection with specified error tolerance
 ------------------------------------------
 
 | The bisection method can check how close the y value is to zero when estimating the root of the equation and stop when a certain tolerance has been reached.
-| A print statement can be added which outputs the x and y values at each Iteration.
+| A print statement is included to output the x and y values at each Iteration.
 
 | Pseudocode:
 
-| **define** bisection (f(x), a, b, max_diff)
+| **define** bisection (f(x), a, b, max_iter, max_diff)
 |     **if** f(a) x f(b) > 0 **then**		
 |         **return** "Invalid interval"
 |     i ← 0 
