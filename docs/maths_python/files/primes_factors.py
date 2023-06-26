@@ -17,6 +17,7 @@ def get_prime_factors(num):
     return prime_factors
 
 
-num = random.randint(12, 300)
-fact  = get_prime_factors(num)
-print(num, fact)
+for _ in range(10):
+    num = random.randint(12, 300)
+    fact  = get_prime_factors(num)
+    print(num, fact)

@@ -44,7 +44,7 @@ HCF by repeatedly getting remainders from division
 ---------------------------------------------------
 
 | Instead of repeated subtractions, a division can be used to get the remainder that would occur if all the possible subtractions of that number were be done at once.
-| Starting wiht 48 and 18, instead of subtracting 18 from 48, subtract the largest multiple of 18 that is less than 48. 
+| Starting with 48 and 18, instead of subtracting 18 from 48, subtract the largest multiple of 18 that is less than 48. 
 | 48 - 2*18 = 12. Note that 48//18 gives 2. **//** is floor division, rounding down to an integer.
 
 | The code below runs the while loop until **b** equals 0.

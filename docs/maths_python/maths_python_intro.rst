@@ -16,7 +16,7 @@ Introduction to maths python
 | 8	Use algorithms and related testing procedures to identify and correct errors (VCMNA282)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA282
 
-	* Debugging search and sort programs
+	* **Debugging search and sort programs**
 	* **Testing a number for divisibility**
 
 | 9	Apply set structures to solve real-world problems (VCMNA307)
