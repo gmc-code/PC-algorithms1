@@ -12,8 +12,7 @@ Population mean
 -------------------
 
 | Population mean :math:`\mu` = :math:`\frac{sum of all population values}{population size}`
-| To get the population mean, collect numerical data about every object in a population and calculate the
-mean using the formula above. 
+| To get the population mean, collect numerical data about every object in a population and calculate the mean using the formula above. 
 | It is usually impractical or costly to be able to determine the population mean exactly.
 
 ----

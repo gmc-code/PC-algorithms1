@@ -408,7 +408,7 @@ And, or, not
 
             | What change would be needed in the variable assignments to result in the output being ``"Bring Umbrella AND jacket."``?
             | Change ``is_cold ← FALSE`` to ``is_cold ← TRUE``.
-``
+
 
 ----
 
