@@ -10,6 +10,7 @@ Newton's method
     :width: 600
     :align: center
 
+| 
 | Pseudocode:
 
 | **define** newton(f(x), f'(x), x0, max_iter, tol)
@@ -55,17 +56,6 @@ Usage Example
     :width: 600
     :align: center
 
-| Here's an example of how you can use the newton function to find the root of the function y = x**3 - 2.
-| The output value is 1.2599210498953948.
-| This code defines the newton function as described in the pseudocode. 
-| It then defines two lambda functions: f and df. 
-| The f function calculates the value of x**3 - 2 for a given value of x, while the df function calculates the derivative of f, which is 3 * x**2. 
-| The code then calls the newton function with f set to the f lambda function, df set to the df lambda function, x0 set to an initial guess of 1.5, max_iter set to 100, and tol set to 1e-6. 
-| The result of this call is stored in the variable result and printed.
-
-| When run, this code outputs a value of approximately 1.2599210498948732. 
-| This is an approximate root of the function y = x**3 - 2 found using Newton's method with an initial guess of 1.5, a maximum of 100 iterations, and a tolerance of 1e-6.
-
 .. code-block:: python
 
     def newton(f, df, x0, max_iter, tol):
@@ -84,4 +74,16 @@ Usage Example
     result = newton(f, df, 1.5, 100, 1e-6)
     print(result)
     # 1.2599210498953948
+
+| 
+| This is an example of how you can use the newton's method 
+| to find the root of the function y = x**3 - 2.
+
+
+| The f function calculates the value of x**3 - 2 for a given value of x.
+| The df function calculates the derivative of f, which is 3 * x**2. 
+| The code then calls the newton function with f set to the f lambda function, df set to the df lambda function, x0 set to an initial guess of 1.5, max_iter set to 100, and tol set to 1e-6. 
+
+| The output value of 1.2599210498953948 is an approximate root of the function `y = x**3 - 2` found using Newton's method with an initial guess of 1.5, a maximum of 100 iterations, and a tolerance of 1e-6.
+
 
