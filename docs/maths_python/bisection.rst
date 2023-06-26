@@ -7,7 +7,8 @@ Bisection
 .. image:: files/bisection_quadratic.png
     :width: 600
     :align: center
-    
+
+|      
 | The bisection method works by repeatedly dividing an interval in half and checking which half contains a root. 
 | The method starts with an interval `[a,b]` such that `f(a)` and `f(b)` have opposite signs, which means that there must be at least one root in the interval. 
 | The midpoint of the interval is calculated as `c = (a + b) / 2`, and the function is evaluated at this point. 
@@ -81,7 +82,8 @@ Cubic Example
 .. image:: files/bisection_cubic.png
     :width: 600
     :align: center
-
+    
+|    
 | Here's an example of how you can use the bisection function to find the root of a cubic function in the interval [1, 3] with a maximum of 10 Iterations.
 | The output value is 2.123046875.
 
