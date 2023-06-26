@@ -4,12 +4,14 @@
 
 \newcommand{\quadratic}[1]{(#1)^2 - 4*(#1) + 2}
 \def\quadraticequ{x^2 - 4*x + 2}
-\def\xa{2.5}
+\def\xa{2.4}
 \pgfmathsetmacro{\ya}{\quadratic{\xa}}
 \def\xb{4}
 \pgfmathsetmacro{\yb}{\quadratic{\xb}}
-\def\xc{3.25}
+\def\xc{3.2}
 \pgfmathsetmacro{\yc}{\quadratic{\xc}}
+\def\xd{3.6}
+\pgfmathsetmacro{\yd}{\quadratic{\xd}}
 
 \begin{document}
 \begin{tikzpicture}
@@ -28,11 +30,13 @@
 {\quadraticequ};
 \addplot[mark=*,only marks,mark size=1pt] coordinates {(\xa,\ya) (\xc,\yc) (\xb,\yb)};
 \node[label={270:{f(a)}},circle,fill,inner sep=1pt] at (axis cs:\xa,\ya) {};
-\node[label={315:{f(c)}},circle,fill,inner sep=1pt] at (axis cs:\xc,\yc) {};
+\node[label={360:{f(c)}},circle,fill,inner sep=1pt] at (axis cs:\xc,\yc) {};
 \node[label={0:{f(b)}},circle,fill,inner sep=1pt] at (axis cs:\xb,\yb) {};
+\node[label={180:{f(d)}},circle,fill,inner sep=1pt] at (axis cs:\xd,\yd) {};
 \draw[dotted] (axis cs:\xa,\ya) -- (axis cs:\xa,0);
 \draw[dotted] (axis cs:\xc,\yc) -- (axis cs:\xc,0);
 \draw[dotted] (axis cs:\xb,\yb) -- (axis cs:\xb,0);
+\draw[dotted] (axis cs:\xd,\yd) -- (axis cs:\xd,0);
 \end{axis}
 \end{tikzpicture}
 \end{document}
