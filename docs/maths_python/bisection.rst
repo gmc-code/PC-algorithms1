@@ -82,7 +82,7 @@ Cubic Example
     :width: 300
     :align: center
 
-| Here's an example of how you can use the bisection function to find the root of a cubic function in the interval [1, 3] with a maximum of 10 | :literal: 'Iteration  s.
+| Here's an example of how you can use the bisection function to find the root of a cubic function in the interval [1, 3] with a maximum of 10 | Iteration    s.
 | The output value is 2.123046875.
 
 .. code-block:: python
@@ -119,7 +119,7 @@ Example with sin function
     :width: 300
     :align: center
 
-| Here's an example of how you can use the bisection function to find the root of the sin(x) function in the interval [2, 4] with a maximum of 5 | :literal: 'Iteration  s.
+| Here's an example of how you can use the bisection function to find the root of the sin(x) function in the interval [2, 4] with a maximum of 5 | Iteration    s.
 | The output value is 3.1875.
 
 .. code-block:: python
@@ -239,21 +239,23 @@ Cubic Example
     print(bisec_value)
     # 2.12353515625
 
+.. parsed-literal::
+
 | Table of values:
-| :literal: 'Iteration    0: a=1.0000000000, b=3.0000000000, mid=2.0000000000, y=0.5000000000'
-| :literal: 'Iteration    1: a=2.0000000000, b=3.0000000000, mid=2.5000000000, y=-1.5000000000'
-| :literal: 'Iteration    2: a=2.0000000000, b=2.5000000000, mid=2.2500000000, y=-0.5156250000'
-| :literal: 'Iteration    3: a=2.0000000000, b=2.2500000000, mid=2.1250000000, y=-0.0058593750'
-| :literal: 'Iteration    4: a=2.0000000000, b=2.1250000000, mid=2.0625000000, y=0.2482910156'
-| :literal: 'Iteration    5: a=2.0625000000, b=2.1250000000, mid=2.0937500000, y=0.1214294434'
-| :literal: 'Iteration    6: a=2.0937500000, b=2.1250000000, mid=2.1093750000, y=0.0578269958'
-| :literal: 'Iteration    7: a=2.1093750000, b=2.1250000000, mid=2.1171875000, y=0.0259928703'
-| :literal: 'Iteration    8: a=2.1171875000, b=2.1250000000, mid=2.1210937500, y=0.0100688338'
-| :literal: 'Iteration    9: a=2.1210937500, b=2.1250000000, mid=2.1230468750, y=0.0021052286'
-| :literal: 'Iteration   10: a=2.1230468750, b=2.1250000000, mid=2.1240234375, y=-0.0018769512'
-| :literal: 'Iteration   11: a=2.1230468750, b=2.1240234375, mid=2.1235351562, y=0.0001141696'
-| :literal: 'Iteration   12: a=2.1235351562, b=2.1240234375, mid=2.1237792969, y=-0.0008813832'
-| :literal: 'Iteration   13: a=2.1235351562, b=2.1237792969, mid=2.1236572266, y=-0.0003836049'
-| :literal: 'Iteration   14: a=2.1235351562, b=2.1236572266, mid=2.1235961914, y=-0.0001347172'
-| :literal: 'Iteration   15: a=2.1235351562, b=2.1235961914, mid=2.1235656738, y=-0.0000102737'
+| Iteration  0: a=1.0000000000, b=3.0000000000, mid=2.0000000000, y=0.5000000000
+| Iteration  1: a=2.0000000000, b=3.0000000000, mid=2.5000000000, y=-1.5000000000
+| Iteration  2: a=2.0000000000, b=2.5000000000, mid=2.2500000000, y=-0.5156250000
+| Iteration  3: a=2.0000000000, b=2.2500000000, mid=2.1250000000, y=-0.0058593750
+| Iteration  4: a=2.0000000000, b=2.1250000000, mid=2.0625000000, y=0.2482910156
+| Iteration  5: a=2.0625000000, b=2.1250000000, mid=2.0937500000, y=0.1214294434
+| Iteration  6: a=2.0937500000, b=2.1250000000, mid=2.1093750000, y=0.0578269958
+| Iteration  7: a=2.1093750000, b=2.1250000000, mid=2.1171875000, y=0.0259928703
+| Iteration  8: a=2.1171875000, b=2.1250000000, mid=2.1210937500, y=0.0100688338
+| Iteration  9: a=2.1210937500, b=2.1250000000, mid=2.1230468750, y=0.0021052286
+| Iteration 10: a=2.1230468750, b=2.1250000000, mid=2.1240234375, y=-0.0018769512
+| Iteration 11: a=2.1230468750, b=2.1240234375, mid=2.1235351562, y=0.0001141696
+| Iteration 12: a=2.1235351562, b=2.1240234375, mid=2.1237792969, y=-0.0008813832
+| Iteration 13: a=2.1235351562, b=2.1237792969, mid=2.1236572266, y=-0.0003836049
+| Iteration 14: a=2.1235351562, b=2.1236572266, mid=2.1235961914, y=-0.0001347172
+| Iteration 15: a=2.1235351562, b=2.1235961914, mid=2.1235656738, y=-0.0000102737
 
