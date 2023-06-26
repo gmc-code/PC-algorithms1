@@ -1,4 +1,4 @@
-"""histograms that show that by increasing the number of samples, the better the samples means fit a normal distibution
+"""histograms increasing the sample size
 """
 from pathlib import Path
 import numpy as np
@@ -19,8 +19,7 @@ sample_size_list = [10, 100, 1000]
 number_of_samples = 100
 
 
-
-def output_sample_means(sample_size_list,number_of_samples):
+def inc_sample_size(sample_size_list,number_of_samples):
     fig, ax = plt.subplots(1, 3, figsize=(15, 5), sharex=True)
     # Generate the samples
     for i in range(len(sample_size_list)):
@@ -40,5 +39,5 @@ def output_sample_means(sample_size_list,number_of_samples):
     plt.savefig(filepath, dpi=600)
     plt.show()
 
-output_sample_means(sample_size_list,number_of_samples)
+inc_sample_size(sample_size_list,number_of_samples)
 
