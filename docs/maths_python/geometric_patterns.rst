@@ -1,7 +1,6 @@
 =======================
-Geomteric patterns
+Geometric patterns
 =======================
-
 
 | VCMNA254: Design and implement mathematical algorithms using a simple general purpose programming language
 
@@ -24,13 +23,13 @@ Square patterns
 | A grid of squares
 
 .. image:: images/squares.png
-    :scale: 33 %
+    :width: 500
     :align: center
 
 | Squares rotated 45 degrees.
 
 .. image:: images/squares_at_45.png
-    :scale: 33 %
+    :width: 500
     :align: center
 
 |  
@@ -47,7 +46,7 @@ Hexagon patterns
 | Aligned touching hexagons creating diamond gaps.
 
 .. image:: images/hexagon_diamonds.png
-    :scale: 33 %
+    :width: 500
     :align: center
 
 |  
@@ -61,7 +60,7 @@ Hexagon patterns
 | Staggered hexagons creating a tessalation with no overlap.
 
 .. image:: images/hexagon_tessalation.png
-    :scale: 33 %
+    :width: 500
     :align: center
 
 |  
