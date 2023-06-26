@@ -9,8 +9,8 @@ Simple stats
 Mean
 ---------------------------------
 
-| The mean of a list can be found using the sum and len functions.
-| The average is found by dividing the sum by len of the list.
+| The mean of a list can be found using the `sum` and `len` functions.
+| The average is found by dividing the `sum` by `len` of the list.
 
 .. code-block:: python
 
@@ -121,6 +121,17 @@ Mode
     mode_num = [num for num, cnt in num_counts.items() if cnt == mode_count]
     print("Mode:", mode_num)
     # [12]
+
+| Below is the output showing the frequencies of each number.
+
+.. parsed-literal::
+
+    Table of counts:
+    12: 2
+    13: 1
+    14: 1
+    16: 1
+    17: 1
 
 | Here's an explanation of how each line in the given Python code works:
 

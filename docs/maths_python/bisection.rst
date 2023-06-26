@@ -82,7 +82,7 @@ Cubic Example
 .. image:: files/bisection_cubic.png
     :width: 600
     :align: center
-    
+
 |    
 | Here's an example of how you can use the bisection function to find the root of a cubic function in the interval [1, 3] with a maximum of 10 Iterations.
 | The output value is 2.123046875.
@@ -157,7 +157,7 @@ Example with sin function
 Bisection with specified error tolerance
 ------------------------------------------
 
-| The bisection method can check how close the y value is to zero when estimating the root of the equation and stop when a certain tolerance has been reached.
+| The bisection method can check how close the y value is to zero when estimating the root of the equation and stop when a certain tolerance, max_diff, has been reached.
 | A print statement is included to output the x and y values at each Iteration.
 
 | Pseudocode:
@@ -204,10 +204,6 @@ Bisection with specified error tolerance
 
 Cubic Example
 ----------------
-
-.. image:: files/bisection_cubic.png
-    :width: 600
-    :align: center
 
 | Here's an example of how you can use the bisection function to find the root of a cubic function in the interval [1, 3] with a maximum error in the y value of 0.0001.
 | The output value is 2.12353515625.
