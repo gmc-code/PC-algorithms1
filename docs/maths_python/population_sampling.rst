@@ -30,7 +30,6 @@ Sample Means: Increasing samples
 | In other words, as the number of samples increase, the sample means are more likely to be close to the population mean, and the variation among the sample means decreases. 
 | This can be seen in the histograms above: as the number of samples increases, the histograms become taller and narrower, indicating that the sample means are becoming more concentrated around the population mean.
 
-
 ----
 
 Sample Means: Increasing sample size
