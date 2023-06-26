@@ -15,8 +15,11 @@ Sample Means: Increasing samples
 | It then draws random samples of a given size from the population and calculates the sample means. 
 | Finally, it plots histograms of the sample means to visualize their variation.
 
+.. literalinclude:: files/pop_mean_inc_samples.py
+    :linenos:
+
 .. image:: images/sample_means_inc_samples.png
-    :width: 800
+    :width: 600
     :align: center
 
 | Increasing the number of samples drawn from a population generally leads to more accurate estimates of the population mean. 
@@ -37,8 +40,11 @@ Sample Means: Increasing sample size
 | It then draws random samples of a given size from the population and calculates the sample means. 
 | Finally, it plots histograms of the sample means to visualize their variation.
 
+.. literalinclude:: files/pop_mean_inc_sample_size.py
+    :linenos:
+
 .. image:: images/sample_means_inc_size.png
-    :width: 800
+    :width: 600
     :align: center
 
 | Increasing the size of the samples drawn from a population generally leads to more accurate estimates of the population mean. 
@@ -47,7 +53,6 @@ Sample Means: Increasing sample size
 
 | As the sample size increases, the sample means are more likely to be close to the population mean, and the variation among the sample means decreases. 
 | This can be seen in histograms of the sample means: as the sample size increases, the histograms become taller and narrower, indicating that the sample means are becoming more concentrated around the population mean.
-
 
 | It's important to note that increasing the sample size has diminishing returns. 
 | As the sample size gets larger and larger, the improvement in accuracy becomes smaller and smaller. 
