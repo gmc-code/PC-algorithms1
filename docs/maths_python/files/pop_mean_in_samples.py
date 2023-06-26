@@ -17,11 +17,10 @@ population = np.random.normal(loc=population_mean, scale=population_std, size=po
 # Set the sample parameters
 sample_size = 100
 number_of_samples_list = [10, 100, 1000]
-sample_string = ' '.join(map(str, number_of_samples_list))
 
 
 def output_sample_means(sample_size,number_of_samples_list):
-    fig, ax = plt.subplots(1, 4, figsize=(15, 5))
+    fig, ax = plt.subplots(1, 3, figsize=(15, 5), sharex=True)
     # Generate the samples
     for i in range(len(number_of_samples_list)):
         samples = np.random.choice(population, size=(number_of_samples_list[i], sample_size))
@@ -32,8 +31,8 @@ def output_sample_means(sample_size,number_of_samples_list):
         ax[i].hist(sample_means)
         ax[i].set_title('Sample Means: ' + str(number_of_samples_list[i]) + " samples")
     # Plot the population histogram
-    ax[3].hist(population)
-    ax[3].set_title('Population')
+    # ax[3].hist(population)
+    # ax[3].set_title('Population')
 
     # Save the figure as a PNG image
     filepath = currfile_dir / ('sample_means_inc_samples.png')
