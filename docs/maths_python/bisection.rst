@@ -5,7 +5,7 @@ Bisection
 | Numerical methods are algorithms that can be used to approximate the roots of a function. 
 
 .. image:: files/bisection_quadratic.png
-    :width: 300
+    :width: 600
     :align: center
     
 | The bisection method works by repeatedly dividing an interval in half and checking which half contains a root. 
@@ -79,7 +79,7 @@ Cubic Example
 ----------------
 
 .. image:: files/bisection_cubic.png
-    :width: 300
+    :width: 600
     :align: center
 
 | Here's an example of how you can use the bisection function to find the root of a cubic function in the interval [1, 3] with a maximum of 10 Iterations.
@@ -116,7 +116,7 @@ Example with sin function
 ----------------------------
 
 .. image:: files/bisection_sin.png
-    :width: 300
+    :width: 600
     :align: center
 
 | Here's an example of how you can use the bisection function to find the root of the sin(x) function in the interval [2, 4] with a maximum of 5 Iterations.
@@ -204,7 +204,7 @@ Cubic Example
 ----------------
 
 .. image:: files/bisection_cubic.png
-    :width: 300
+    :width: 600
     :align: center
 
 | Here's an example of how you can use the bisection function to find the root of a cubic function in the interval [1, 3] with a maximum error in the y value of 0.0001.

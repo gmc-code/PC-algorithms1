@@ -7,7 +7,7 @@ Newton's method
 | It starts with an initial guess for the root (x0) and iteratively refines this guess using the formula to calculate a new x value closer to the root: x1 = x0 - f(x0) / f'(x0), until a desired level of accuracy is achieved. 
 
 .. image:: files/newtons_quadratic.png
-    :width: 300
+    :width: 600
     :align: center
 
 | Pseudocode:
@@ -52,7 +52,7 @@ Usage Example
 ----------------
 
 .. image:: files/newtons_cubic.png
-    :width: 300
+    :width: 600
     :align: center
 
 | Here's an example of how you can use the newton function to find the root of the function y = x**3 - 2.
