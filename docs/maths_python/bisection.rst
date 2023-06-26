@@ -4,20 +4,25 @@ Bisection
 
 | Numerical methods are algorithms that can be used to approximate the roots of a function. 
 
-| The bisection method works by repeatedly dividing an interval in half and checking which half contains a root. The method starts with an interval `[a,b]` such that `f(a)` and `f(b)` have opposite signs, which means that there must be at least one root in the interval. The midpoint of the interval is calculated as `c = (a + b) / 2`, and the function is evaluated at this point. If `f(c)` is zero, then `c` is a root of the function. Otherwise, the sign of `f(c)` is compared to the sign of `f(a)` and `f(b)`. If `f(c)` has the same sign as one of the endpoints, then the root must be in the other half of the interval, so the interval is updated accordingly. This process is repeated until a sufficiently accurate approximation of the root is found.
+| The bisection method works by repeatedly dividing an interval in half and checking which half contains a root. 
+| The method starts with an interval `[a,b]` such that `f(a)` and `f(b)` have opposite signs, which means that there must be at least one root in the interval. 
+| The midpoint of the interval is calculated as `c = (a + b) / 2`, and the function is evaluated at this point. 
+| If `f(c)` is zero, then `c` is a root of the function. Otherwise, the sign of `f(c)` is compared to the sign of `f(a)` and `f(b)`. 
+| If `f(c)` has the same sign as one of the endpoints, then the root must be in the other half of the interval, so the interval is updated accordingly. 
+| This process is repeated until a sufficiently accurate approximation of the root is found.
 
 | It's important to choose an appropriate initial interval or initial guess and to monitor the convergence of the method to ensure that it's providing accurate results.
 
 ----
 
-Bisection with specified | Iterations
+Bisection with specified Iterations
 ------------------------------------------
 
 | Pseudocode for the bisection method is below.
 | This code defines a function bisection that takes four arguments: f, a, b, and max_iter. 
 | The function checks if the product of f(a) and f(b) is greater than 0 and returns "Invalid interval" if it is. 
 | Otherwise, it enters a while loop that iterates max_iter times. 
-| In each | Iteration, the code calculates the midpoint between a and b and checks if f(mid) is equal to 0. 
+| In each iteration, the code calculates the midpoint between a and b and checks if f(mid) is equal to 0. 
 | If it is, the function returns mid. 
 | If not, the code checks if the product of f(a) and f(mid) is less than 0. 
 | If it is, the value of b is updated to be equal to mid. 
@@ -147,7 +152,51 @@ Bisection with specified error tolerance
 ------------------------------------------
 
 | The bisection method can check how close the y value is to zero when estimating the root of the equation and stop when a certain tolerance has been reached.
-| A print statement can be added which outputs the x and y values at each | Iteration.
+| A print statement can be added which outputs the x and y values at each Iteration.
+
+| Pseudocode:
+
+| **define** bisection (f(x), a, b, max_diff)
+|     **if** f(a) x f(b) > 0 **then**		
+|         **return** "Invalid interval"
+|     i ← 0 
+|     mid ← (a + b) / 2
+|     **while** abs(f(mid)) > max_diff
+|         mid ← (a + b) ÷ 2
+|         **print** ("Iteration i: a, b, mid, y")
+|         **if** f(mid) = 0 **then** 
+|             **return** mid 
+|         **else if** f(a) x f(mid) < 0 **then** 
+|             b ← mid 
+|         **else**
+|             a ← mid 
+|         i ← i + 1 
+|     **end while** 
+|     **return** mid 
+
+
+| Python implementation:
+
+.. code-block:: python
+
+    def bisection(f, a, b, max_diff):
+        if f(a) * f(b) > 0:
+            return "Invalid interval"
+        i = 0
+        mid = (a + b) / 2
+        while abs(f(mid)) > max_diff:
+            mid = (a + b) / 2
+            print(f'Iteration {i:2d}: a={a:.10f}, b={b:.10f}, mid={mid:.10f}, y={f(mid):.10f}')
+            if f(mid) == 0:
+                return mid
+            elif f(a) * f(mid) < 0:
+                b = mid
+            else:
+                a = mid
+            i += 1
+        return mid
+
+----
 
 Cubic Example
 ----------------
@@ -171,7 +220,7 @@ Cubic Example
         mid = (a + b) / 2
         while abs(f(mid)) > max_diff:
             mid = (a + b) / 2
-            print(f'| Iteration {i:2d}: a={a:.10f}, b={b:.10f}, mid={mid:.10f}, y={f(mid):.10f}')
+            print(f'Iteration {i:2d}: a={a:.10f}, b={b:.10f}, mid={mid:.10f}, y={f(mid):.10f}')
             if f(mid) == 0:
                 return mid
             elif f(a) * f(mid) < 0:
