@@ -8,7 +8,7 @@ def bisection(f, a, b, max_diff):
     mid = (a + b) / 2
     while abs(f(mid)) > max_diff:
         mid = (a + b) / 2
-        print(f'Iteration {i:2d}: a={a:.10f}, b={b:.10f}, mid={mid:.10f}, y={f(mid):.10f}')
+        print('Iteration {:2d}: a={:.10f}, b={:.10f}, mid={:.10f}, y={: .10f}'.format(i, a, b, mid, f(mid)))
         if f(mid) == 0:
             return mid
         elif f(a) * f(mid) < 0:
