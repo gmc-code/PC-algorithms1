@@ -9,7 +9,7 @@ Population_sampling
 ----
 
 Population mean
----------------------
+-------------------
 
 | Population mean :math:`\mu` = :math:`\frac{sum of all population values}{population size}`
 | To get the population mean, collect numerical data about every object in a population and calculate the
