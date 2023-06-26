@@ -36,7 +36,7 @@ def output_sample_means(sample_size,number_of_samples_list):
     ax[3].set_title('Population')
 
     # Save the figure as a PNG image
-    filepath = currfile_dir / ('sample_means ' + sample_string + '.png')
+    filepath = currfile_dir / ('sample_means_inc_samples.png')
     plt.savefig(filepath, dpi=600)
     plt.show()
 

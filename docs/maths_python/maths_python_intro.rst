@@ -26,11 +26,13 @@ Introduction to maths python
 	* **Exploring variation in proportion and means of random samples, drawn from a population**
 
 | 10 Implement algorithms using data structures in a general-purpose programming language (VCMNA334) 
+| See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA334
 
 	* Using two-dimensional arrays such as matrices to represent and implement sequences of transformations of sets of points in the plane
 	* Using pointers in algorithms
 
 | 10A Devise and use algorithms and simulations to solve mathematical problems (VCMNA358)
+| See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA358
 
 	* Applying a systematic guess-check-and-refine algorithm to identify an approximate value for the root of an equation in an interval
 	* Developing simulations for counter-intuitive problems in probability such as the Monty Hall problem or derangements
