@@ -10,14 +10,14 @@ Bisection
 
 ----
 
-Bisection with specified iterations
+Bisection with specified | Iterations
 ------------------------------------------
 
 | Pseudocode for the bisection method is below.
 | This code defines a function bisection that takes four arguments: f, a, b, and max_iter. 
 | The function checks if the product of f(a) and f(b) is greater than 0 and returns "Invalid interval" if it is. 
 | Otherwise, it enters a while loop that iterates max_iter times. 
-| In each iteration, the code calculates the midpoint between a and b and checks if f(mid) is equal to 0. 
+| In each | Iteration, the code calculates the midpoint between a and b and checks if f(mid) is equal to 0. 
 | If it is, the function returns mid. 
 | If not, the code checks if the product of f(a) and f(mid) is less than 0. 
 | If it is, the value of b is updated to be equal to mid. 
@@ -73,7 +73,7 @@ Cubic Example
     :width: 300
     :align: center
 
-| Here's an example of how you can use the bisection function to find the root of a cubic function in the interval [1, 3] with a maximum of 10 iterations.
+| Here's an example of how you can use the bisection function to find the root of a cubic function in the interval [1, 3] with a maximum of 10 | Iterations.
 | The output value is 2.123046875.
 
 .. code-block:: python
@@ -110,7 +110,7 @@ Example with sin function
     :width: 300
     :align: center
 
-| Here's an example of how you can use the bisection function to find the root of the sin(x) function in the interval [2, 4] with a maximum of 5 iterations.
+| Here's an example of how you can use the bisection function to find the root of the sin(x) function in the interval [2, 4] with a maximum of 5 | Iterations.
 | The output value is 3.1875.
 
 .. code-block:: python
@@ -147,7 +147,7 @@ Bisection with specified error tolerance
 ------------------------------------------
 
 | The bisection method can check how close the y value is to zero when estimating the root of the equation and stop when a certain tolerance has been reached.
-| A print statement can be added which outputs the x and y values at each iteration.
+| A print statement can be added which outputs the x and y values at each | Iteration.
 
 Cubic Example
 ----------------
@@ -171,7 +171,7 @@ Cubic Example
         mid = (a + b) / 2
         while abs(f(mid)) > max_diff:
             mid = (a + b) / 2
-            print(f'Iteration {i:2d}: a={a:.10f}, b={b:.10f}, mid={mid:.10f}, y={f(mid):.10f}')
+            print(f'| Iteration {i:2d}: a={a:.10f}, b={b:.10f}, mid={mid:.10f}, y={f(mid):.10f}')
             if f(mid) == 0:
                 return mid
             elif f(a) * f(mid) < 0:
@@ -187,21 +187,20 @@ Cubic Example
     # 2.12353515625
 
 | Table of values:
-
-Iteration  0: a=1.0000000000, b=3.0000000000, mid=2.0000000000, y=0.5000000000
-Iteration  1: a=2.0000000000, b=3.0000000000, mid=2.5000000000, y=-1.5000000000
-Iteration  2: a=2.0000000000, b=2.5000000000, mid=2.2500000000, y=-0.5156250000
-Iteration  3: a=2.0000000000, b=2.2500000000, mid=2.1250000000, y=-0.0058593750
-Iteration  4: a=2.0000000000, b=2.1250000000, mid=2.0625000000, y=0.2482910156 
-Iteration  5: a=2.0625000000, b=2.1250000000, mid=2.0937500000, y=0.1214294434 
-Iteration  6: a=2.0937500000, b=2.1250000000, mid=2.1093750000, y=0.0578269958 
-Iteration  7: a=2.1093750000, b=2.1250000000, mid=2.1171875000, y=0.0259928703 
-Iteration  8: a=2.1171875000, b=2.1250000000, mid=2.1210937500, y=0.0100688338 
-Iteration  9: a=2.1210937500, b=2.1250000000, mid=2.1230468750, y=0.0021052286 
-Iteration 10: a=2.1230468750, b=2.1250000000, mid=2.1240234375, y=-0.0018769512
-Iteration 11: a=2.1230468750, b=2.1240234375, mid=2.1235351562, y=0.0001141696
-Iteration 12: a=2.1235351562, b=2.1240234375, mid=2.1237792969, y=-0.0008813832
-Iteration 13: a=2.1235351562, b=2.1237792969, mid=2.1236572266, y=-0.0003836049
-Iteration 14: a=2.1235351562, b=2.1236572266, mid=2.1235961914, y=-0.0001347172
-Iteration 15: a=2.1235351562, b=2.1235961914, mid=2.1235656738, y=-0.0000102737
+| Iteration  0: a=1.0000000000, b=3.0000000000, mid=2.0000000000, y=0.5000000000
+| Iteration  1: a=2.0000000000, b=3.0000000000, mid=2.5000000000, y=-1.5000000000
+| Iteration  2: a=2.0000000000, b=2.5000000000, mid=2.2500000000, y=-0.5156250000
+| Iteration  3: a=2.0000000000, b=2.2500000000, mid=2.1250000000, y=-0.0058593750
+| Iteration  4: a=2.0000000000, b=2.1250000000, mid=2.0625000000, y=0.2482910156 
+| Iteration  5: a=2.0625000000, b=2.1250000000, mid=2.0937500000, y=0.1214294434 
+| Iteration  6: a=2.0937500000, b=2.1250000000, mid=2.1093750000, y=0.0578269958 
+| Iteration  7: a=2.1093750000, b=2.1250000000, mid=2.1171875000, y=0.0259928703 
+| Iteration  8: a=2.1171875000, b=2.1250000000, mid=2.1210937500, y=0.0100688338 
+| Iteration  9: a=2.1210937500, b=2.1250000000, mid=2.1230468750, y=0.0021052286 
+| Iteration 10: a=2.1230468750, b=2.1250000000, mid=2.1240234375, y=-0.0018769512
+| Iteration 11: a=2.1230468750, b=2.1240234375, mid=2.1235351562, y=0.0001141696
+| Iteration 12: a=2.1235351562, b=2.1240234375, mid=2.1237792969, y=-0.0008813832
+| Iteration 13: a=2.1235351562, b=2.1237792969, mid=2.1236572266, y=-0.0003836049
+| Iteration 14: a=2.1235351562, b=2.1236572266, mid=2.1235961914, y=-0.0001347172
+| Iteration 15: a=2.1235351562, b=2.1235961914, mid=2.1235656738, y=-0.0000102737
 
