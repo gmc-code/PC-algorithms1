@@ -4,6 +4,10 @@ Bisection
 
 | Numerical methods are algorithms that can be used to approximate the roots of a function. 
 
+.. image:: files/bisection_quadratic.png
+    :width: 300
+    :align: center
+    
 | The bisection method works by repeatedly dividing an interval in half and checking which half contains a root. 
 | The method starts with an interval `[a,b]` such that `f(a)` and `f(b)` have opposite signs, which means that there must be at least one root in the interval. 
 | The midpoint of the interval is calculated as `c = (a + b) / 2`, and the function is evaluated at this point. 
@@ -13,9 +17,7 @@ Bisection
 
 | It's important to choose an appropriate initial interval or initial guess and to monitor the convergence of the method to ensure that it's providing accurate results.
 
-.. image:: files/bisection_quadratic.png
-    :width: 300
-    :align: center
+
 
 ----
 
