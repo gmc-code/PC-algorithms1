@@ -25,8 +25,7 @@ Sample Mean
 
 | The sample mean is found by selecting a sample from the population and determining its mean instead.
 | The sample mean will vary from sample to sample.
-| The more representative the sample is of the population or the larger the size of the sample,
-the more likely the sample mean will provide a good estimate of the population mean.
+| The more representative the sample is of the population or the larger the size of the sample, the more likely the sample mean will provide a good estimate of the population mean.
 
 ----
 
@@ -38,9 +37,6 @@ Sample Means: Increasing samples
 | It then draws random samples of a given size from the population and calculates the sample means. 
 | Finally, it plots histograms of the sample means to visualize their variation.
 
-.. literalinclude:: files/pop_mean_inc_samples.py
-    :linenos:
-
 .. image:: images/sample_means_inc_samples.png
     :width: 600
     :align: center
@@ -49,9 +45,11 @@ Sample Means: Increasing samples
 | This is because as the number of samples increases, the distribution of sample means tends to become more tightly clustered around the true population mean. 
 | This phenomenon is known as the Central Limit Theorem.
 
-
 | In other words, as the number of samples increase, the sample means are more likely to be close to the population mean, and the variation among the sample means decreases. 
 | This can be seen in the histograms above: as the number of samples increases, the histograms become taller and narrower, indicating that the sample means are becoming more concentrated around the population mean.
+
+.. literalinclude:: files/pop_mean_inc_samples.py
+    :linenos:
 
 ----
 
@@ -62,9 +60,6 @@ Sample Means: Increasing sample size
 | The code below generates a population of 10000 individuals with a mean of 50 and a standard deviation of 10. 
 | It then draws random samples of a given size from the population and calculates the sample means. 
 | Finally, it plots histograms of the sample means to visualize their variation.
-
-.. literalinclude:: files/pop_mean_inc_sample_size.py
-    :linenos:
 
 .. image:: images/sample_means_inc_size.png
     :width: 600
@@ -81,5 +76,7 @@ Sample Means: Increasing sample size
 | As the sample size gets larger and larger, the improvement in accuracy becomes smaller and smaller. 
 | At some point, increasing the sample size further may not be worth the additional cost and effort.
 
+.. literalinclude:: files/pop_mean_inc_sample_size.py
+    :linenos:
 
 
