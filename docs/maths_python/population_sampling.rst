@@ -16,7 +16,7 @@ Sample Means: Increasing samples
 | Finally, it plots histograms of the sample means to visualize their variation.
 
 .. image:: images/sample_means_inc_samples.png
-    :width: 600
+    :width: 800
     :align: center
 
 | Increasing the number of samples drawn from a population generally leads to more accurate estimates of the population mean. 
@@ -38,7 +38,7 @@ Sample Means: Increasing sample size
 | Finally, it plots histograms of the sample means to visualize their variation.
 
 .. image:: images/sample_means_inc_size.png
-    :width: 600
+    :width: 800
     :align: center
 
 | Increasing the size of the samples drawn from a population generally leads to more accurate estimates of the population mean. 
