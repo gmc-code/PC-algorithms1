@@ -20,6 +20,7 @@ Introduction to maths python
 	* **Testing a number for divisibility**
 
 | 9	Apply set structures to solve real-world problems (VCMNA307)
+| See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA307
 
 	* Using a sort algorithm to determine the median of a set of numbers
 	* **Exploring variation in proportion and means of random samples, drawn from a population**
