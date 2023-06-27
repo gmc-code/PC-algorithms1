@@ -23,9 +23,9 @@ def inc_sample_means(sample_size,number_of_samples_list):
     # Generate the samples
     for i in range(len(number_of_samples_list)):
         samples = np.random.choice(population, size=(number_of_samples_list[i], sample_size))
-        # Calculate the sample means and proportions
+        # Calculate the sample means
         sample_means = samples.mean(axis=1)
-        # Plot the sample means and proportions
+        # Plot the sample means
         
         ax[i].hist(sample_means)
         ax[i].set_title('Sample Means: ' + str(number_of_samples_list[i]) + " samples")

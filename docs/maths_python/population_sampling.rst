@@ -88,6 +88,8 @@ Population Proportion
 | The population proportion is found by collecting categorical data about every object in a population and calculating the proportion with a trait. 
 | However, it isusually impractical or costly to be able to determine the population proportion exactly.
 
+----
+
 Sample Proportion
 ------------------------
 
@@ -96,5 +98,39 @@ Sample Proportion
 | The more representative the sample is of the population or the larger the sample size, the more likely the sample proportion will provide a good estimate of the population proportion.
 | The sample proportion can vary from sample to sample between 0 and 1.
 
+----
+
+Sample Proportion: Increasing samples
+----------------------------------------
+
+| What is the effect of increasing the number of samples taken on the estimate of the population proportion?
+| The population is made up of 100 blue balls and 400 red balls.
+| The proportion of blues balls in the population is 100 out 500 or 0.20.
+| Samples of 10 balls are taken in each sample.
+| The histograms compare the proprortions of blue balls in 3 attempts at taking 5 samples and 1 with 100 samples.
+
+.. image:: images/sample_proportions_inc_samples.png
+    :width: 600
+    :align: center
+
+.. literalinclude:: files/pop_proportions_inc_samples.py
+    :linenos:
 
 
+| The code line ``population = ['blue'] * 100 + ['red'] * 400`` creats a population list that contains 500 elements: 100 'blue' strings followed by 400 'red' strings. This represents a population of 500 balls, where 100 are blue and 400 are red.
+
+| The code line ``samples = [np.random.choice(population, size=sample_size, replace=False) for _ in range(number_of_samples_list[i])]`` generates a list of random samples from the `population` list. Each sample has a size of `sample_size` and is drawn without replacement.
+
+1. The `np.random.choice` function is used to generate a single random sample from the `population` list. The `size` parameter specifies the size of the sample, and the `replace` parameter specifies whether sampling should be done without replacement (i.e., whether the same element can be selected multiple times).
+2. The list comprehension `[np.random.choice(population, size=sample_size, replace=False) for _ in range(number_of_samples_list[i])]` applies this operation `number_of_samples_list[i]` times to generate a list of `number_of_samples_list[i]` random samples.
+3. After this line of code is executed, the `samples` list contains `number_of_samples_list[i]` random samples from the `population` list. Each sample is a list of `sample_size` elements drawn randomly from the `population` list without replacement.
+
+
+
+
+| The code line ``sample_proportions = [np.mean(sample == 'blue') for sample in samples]`` calculates the proportion of blue balls in each sample and stores the results in a list named `sample_proportions`.
+
+1. The expression `sample == 'blue'` creates a Boolean array that has the same shape as `sample` and contains `True` where the elements of `sample` are equal to `'blue'` and `False` elsewhere.
+2. The `np.mean` function calculates the mean of this Boolean array by treating `True` as `1` and `False` as `0`. This gives the proportion of blue balls in the sample.
+3. The list comprehension `[np.mean(sample == 'blue') for sample in samples]` applies this calculation to each sample in the list `samples` and stores the results in a new list named `sample_proportions`.
+4. After this line of code is executed, the `sample_proportions` list contains the proportion of blue balls in each sample.
