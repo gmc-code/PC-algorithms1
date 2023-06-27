@@ -79,4 +79,22 @@ Sample Means: Increasing sample size
 .. literalinclude:: files/pop_mean_inc_sample_size.py
     :linenos:
 
+----
+
+Population Proportion
+------------------------
+
+| Population proportion :math:`p` = :math:`\displaystyle \frac{\text{number of objects with trait in population}}{\text{population size}}`
+| The population proportion is found by collecting categorical data about every object in a population and calculating the proportion with a trait. 
+| However, it isusually impractical or costly to be able to determine the population proportion exactly.
+
+Sample Proportion
+------------------------
+
+| Sample proportion :math:`\hat{p}` = :math:`\displaystyle \frac{\text{number of objects with trait in sample}}{\text{sample size}}`
+| The sample proportion is found by selecting a sample of that population and determining the proportion with a trait. 
+| The more representative the sample is of the population or the larger the sample size, the more likely the sample proportion will provide a good estimate of the population proportion.
+| The sample proportion can vary from sample to sample between 0 and 1.
+
+
 

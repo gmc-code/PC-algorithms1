@@ -14,5 +14,9 @@ mylist = [12, 13, 14, 16, 12, 17]
 print(mylist, "sorted", check_sorted_list(mylist))
 # [12, 13, 14, 16, 12, 17] sorted False
 
+mylist = [12, 12, 13, 14, 16, 17]
+print(mylist, "sorted", check_sorted_list(mylist))
+# [12, 12, 13, 14, 16, 17] sorted True
+
 
 

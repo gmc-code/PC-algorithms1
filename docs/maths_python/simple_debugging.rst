@@ -16,6 +16,7 @@ Checking that a list has been sorted in ascending order
 | The list, [12, 13, 14, 16, 12, 17], is not sorted in ascending order.
 | The 12 at index 4 is out of order.
 | The function below can be used to indicate that the list was not sorted correctly.
+| A second list, that is sorted, is included as well.
 
 .. code-block:: python
 
@@ -30,4 +31,8 @@ Checking that a list has been sorted in ascending order
     mylist = [12, 13, 14, 16, 12, 17]
     print(mylist, "sorted", check_sorted_list(mylist))
     # [12, 13, 14, 16, 12, 17] sorted False
+
+    mylist = [12, 12, 13, 14, 16, 17]
+    print(mylist, "sorted", check_sorted_list(mylist))
+    # [12, 12, 13, 14, 16, 17] sorted True
 
