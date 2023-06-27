@@ -107,7 +107,7 @@ Sample Proportion: Increasing samples
 | The population is made up of 100 blue balls and 400 red balls.
 | The proportion of blues balls in the population is 100 out 500 or 0.20.
 | Samples of 10 balls are taken in each sample.
-| The histograms compare the proprortions of blue balls in 3 attempts at taking 5 samples and 1 with 100 samples.
+| The histograms compare the proportions of blue balls in 3 attempts at taking 5 samples and 1 with 100 samples.
 
 .. image:: images/sample_proportions_inc_samples.png
     :width: 600
@@ -134,3 +134,24 @@ Sample Proportion: Increasing samples
 2. The `np.mean` function calculates the mean of this Boolean array by treating `True` as `1` and `False` as `0`. This gives the proportion of blue balls in the sample.
 3. The list comprehension `[np.mean(sample == 'blue') for sample in samples]` applies this calculation to each sample in the list `samples` and stores the results in a new list named `sample_proportions`.
 4. After this line of code is executed, the `sample_proportions` list contains the proportion of blue balls in each sample.
+
+
+----
+
+Sample Proportion: Increasing sample size
+------------------------------------------
+
+| What is the effect of increasing the sample size on the estimate of the population proportion?
+| The population is made up of 100 blue balls and 400 red balls.
+| The proportion of blues balls in the population is 100 out 500 or 0.20.
+| Samples of 10, 20 and 40 balls are taken in each sample.
+| The histograms compare the proportions of blue balls taken for each sample size.
+
+.. image:: images/sample_proportions_inc_size.png
+    :width: 600
+    :align: center
+
+.. literalinclude:: files/pop_proportions_inc_sample_size.py
+    :linenos:
+
+
