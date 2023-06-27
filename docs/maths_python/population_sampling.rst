@@ -126,8 +126,6 @@ Sample Proportion: Increasing samples
 3. After this line of code is executed, the `samples` list contains `number_of_samples_list[i]` random samples from the `population` list. Each sample is a list of `sample_size` elements drawn randomly from the `population` list without replacement.
 
 
-
-
 | The code line ``sample_proportions = [np.mean(sample == 'blue') for sample in samples]`` calculates the proportion of blue balls in each sample and stores the results in a list named `sample_proportions`.
 
 1. The expression `sample == 'blue'` creates a Boolean array that has the same shape as `sample` and contains `True` where the elements of `sample` are equal to `'blue'` and `False` elsewhere.
@@ -144,7 +142,7 @@ Sample Proportion: Increasing sample size
 | What is the effect of increasing the sample size on the estimate of the population proportion?
 | The population is made up of 100 blue balls and 400 red balls.
 | The proportion of blues balls in the population is 100 out 500 or 0.20.
-| Samples of 10, 20 and 40 balls are taken in each sample.
+| Samples of 10, 20, 40 and 100 balls are taken in each sample.
 | The histograms compare the proportions of blue balls taken for each sample size.
 
 .. image:: images/sample_proportions_inc_size.png

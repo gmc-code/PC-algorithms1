@@ -55,6 +55,8 @@ PC-algorithms
     :numbered:
 
     maths_python/maths_python_intro.rst
+    maths_python/random_walks.rst
+    maths_python/highest_common_factor.rst
     maths_python/sums_of_sequences.rst
     maths_python/geometric_patterns.rst
     maths_python/simple_debugging.rst
@@ -69,7 +71,7 @@ PC-algorithms
 
     maths_python/prime_factors.rst
     maths_python/Sieve_of_Eratosthenes.rst
-    maths_python/highest_common_factor.rst
+
 
 .. toctree::
     :maxdepth: 2
