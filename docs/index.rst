@@ -56,6 +56,7 @@ PC-algorithms
 
     maths_python/maths_python_intro.rst
     maths_python/random_walks.rst
+    maths_python/sets_of_numbers.rst
     maths_python/highest_common_factor.rst
     maths_python/sums_of_sequences.rst
     maths_python/geometric_patterns.rst

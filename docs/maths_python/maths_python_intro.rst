@@ -11,7 +11,7 @@ Introduction to maths python
 | 5	Follow a mathematical algorithm involving branching and repetition (iteration) (VCMNA194)
 
 	* **simulating a simple random walk**
-	* manipulating sets of numbers using a given rule, for example, if a number is even halve it; if a number is odd, subtract 1 then halve it
+	* **manipulating sets of numbers using a given rule, for example, if a number is even halve it; if a number is odd, subtract 1 then halve it**
 
 ----
 
