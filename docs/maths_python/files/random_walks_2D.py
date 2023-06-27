@@ -49,7 +49,7 @@ def plot_results(y, x):
     plt.axhline(y=50, color="gray", linestyle="--")
     plt.xticks(range(0, max(walk_lengths) + 1, 2))
     plt.grid(axis="x")
-    save_plot(plt, "random_walks_2D.png")
+    save_plot(plt, "random_walks_2D_5.png")
     plt.show()
 
 
@@ -62,7 +62,7 @@ def save_plot(plot, filename):
 
 
 number_of_walks = 1000
-walk_lengths = range(31)
+walk_lengths = range(30)
 dist_to_home = 4
 percentages = simulate_walks(walk_lengths, number_of_walks, dist_to_home)
 plot_results(walk_lengths, percentages)

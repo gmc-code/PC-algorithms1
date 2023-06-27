@@ -12,7 +12,7 @@ Walking the plank
 ------------------------
 
 | Simulate walking the plank on a pirate ship.
-| Have 9 positions on the plank, form 1 to 9, with position 1 at the start of the plank and 9 at the end.
+| Have 9 positions on the plank, from 1 to 9, with position 1 at the start of the plank and 9 at the end.
 
 .. literalinclude:: files/random_walk_1D.py
     :linenos:
@@ -40,7 +40,7 @@ Walking the plank
 
 | The code below simulates a 2D random walk. 
 
-.. literalinclude:: files/random_walk_2D.py
+.. literalinclude:: files/random_walks_2D.py
     :linenos:
 
 | The `random_walk` function takes an argument `n` which represents the number of steps in the walk. 
