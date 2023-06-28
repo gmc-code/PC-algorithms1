@@ -9,7 +9,7 @@ import wand_pdf_to_png
 
 # a raw r string is used since backslashes are normally escape characters
 # paste in windows pdf full file path
-pasted_pdf_file_path = r"C:\PC_RTD_GITHUB\PC-algorithms\docs\maths_python\files\Sieve_of_Eratosthenes.pdf"
+pasted_pdf_file_path = r"C:\PC_RTD_GITHUB\PC-algorithms\docs\maths_python\files\flow_chart_add_fractions.pdf"
 
 # get file path object
 pdf_file_path = pathlib.PureWindowsPath(pasted_pdf_file_path)

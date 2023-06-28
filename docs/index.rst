@@ -58,6 +58,7 @@ PC-algorithms
     maths_python/random_walks.rst
     maths_python/sets_of_numbers.rst
     maths_python/prime_factors.rst
+    maths_python/flow_charts.rst
     maths_python/Sieve_of_Eratosthenes.rst
     maths_python/highest_common_factor.rst
     maths_python/sums_of_sequences.rst

@@ -19,7 +19,7 @@ Introduction to maths python
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA221
 
 	* **implementing algorithms such as the Euclidean division algorithm**
-	* devising flowcharts to represent algorithms for a common processes such as adding two fractions
+	* **devising flowcharts to represent algorithms for a common processes such as adding two fractions**
 
 ----
 
