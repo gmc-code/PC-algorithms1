@@ -8,12 +8,12 @@ Sums of sequences
 
 ----
 
-------------------------------
+-----------------------------
 Sum of consecutive numbers
-------------------------------
+-----------------------------
 
 Listed numbers
--------------------
+------------------
 
 | The code below uses a for loop which iterates over the **nums** list.
 | Each number, **num**, in the list, **nums**, is added to the **sum**.
