@@ -8,7 +8,7 @@ Adding fractions
 | The flow chart shows the main steps involved in adding 2 fractions.
 
 .. image:: files/flow_chart_add_fractions.png
-    :width: 300
+    :width: 200
     :align: center
 
 |   
@@ -26,4 +26,6 @@ Adding fractions
 
 .. literalinclude:: files/add_fractions.py
     :linenos:
+
+| The output is: 1/2 + 2/3 = 1 1/6
 

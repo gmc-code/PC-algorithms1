@@ -31,3 +31,4 @@ fraction1 = (1, 2)
 fraction2 = (2, 3)
 result = add_fractions(fraction1, fraction2)
 print(f"{fraction1[0]}/{fraction1[1]} + {fraction2[0]}/{fraction2[1]} = {result}")
+# 1/2 + 2/3 = 1 1/6
