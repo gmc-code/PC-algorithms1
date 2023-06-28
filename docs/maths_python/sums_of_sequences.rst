@@ -19,13 +19,8 @@ Listed numbers
 | The code below uses a for loop which iterates over the **nums** list.
 | Each number, **num**, in the list, **nums**, is added to the **sum**.
 
-.. code-block:: python
-
-    nums = [1, 2, 3, 4, 5]
-    sum = 0
-    for num in nums:
-        sum += num
-    print(sum)
+.. literalinclude:: files/sum_consec_num1.py
+    :linenos:
 
 | Pseudocode:
 
@@ -42,14 +37,8 @@ Range from 0
 
 | The code below uses the range function to provide a list of integers from 0 to 5.
 
-.. code-block:: python
-        
-    nums = list(range(6))
-    print(nums)
-    sum = 0
-    for num in nums:
-        sum += num
-    print(sum)
+.. literalinclude:: files/sum_consec_num2.py
+    :linenos:
 
 | Pseudocode:
 
@@ -67,16 +56,8 @@ Range: first and last
 
 | The code below uses the range function to provide a list of integers from **start_num** to **end_num**.
 
-.. code-block:: python
-
-    start_num = 4
-    end_num = 12
-    nums = list(range(start_num, end_num + 1))
-    print(nums)
-    sum = 0
-    for num in nums:
-        sum += num
-    print(sum)
+.. literalinclude:: files/sum_consec_num3.py
+    :linenos:
 
 | Pseudocode:
 
@@ -96,17 +77,8 @@ Range: step size
 
 | The code below uses the range function to provide a list of integers from **start_num** to **end_num** in steps of **step_size**. 
 
-.. code-block:: python
-
-    start_num = 4
-    end_num = 12
-    step_size = 2
-    nums = list(range(start_num, end_num + 1, step_size))
-    print(nums)
-    sum = 0
-    for num in nums:
-        sum += num
-    print(sum)
+.. literalinclude:: files/sum_consec_num4.py
+    :linenos:
 
 | Pseudocode:
 
@@ -133,13 +105,8 @@ Arithmetic sequence formula 1
 | a is the start number
 | d is the difference between numbers
 
-.. code-block:: python
-
-    a = 4
-    n = 5
-    d = 2
-    sum = (n/2) * (2*a + (n-1)*d)
-    print(sum)
+.. literalinclude:: files/sum_consec_num5.py
+    :linenos:
 
 | Pseudocode:
 
@@ -163,13 +130,8 @@ Arithmetic sequence formula 2
 | a is the start number
 | l is the last number
 
-.. code-block:: python
-
-    a = 4
-    n = 5
-    l = 12
-    sum = (n/2) * (a + l)
-    print(sum)
+.. literalinclude:: files/sum_consec_num6.py
+    :linenos:
 
 | Pseudocode:
 
