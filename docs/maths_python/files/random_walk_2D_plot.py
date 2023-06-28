@@ -65,7 +65,7 @@ def plot_walk(coords):
     plt.title(f"Random Walk ({len(coords)-1} steps)")
     plt.subplots_adjust(right=0.7)
     
-    save_plot(plt, f'random_walks_2D_{len(coords)-1} steps')
+    save_plot(plt, f'random_walks_2D_{len(coords)-1}_steps')
     
     plt.show()
 
