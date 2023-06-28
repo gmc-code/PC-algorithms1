@@ -22,7 +22,6 @@ def is_divisible_by_4(num):
         return False
 
 
-# Test the function
 for _ in range(10):
     num = random.randrange(10, 300, 2)
     print(num, num/4, is_divisible_by_4(num))

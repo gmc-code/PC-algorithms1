@@ -26,7 +26,6 @@ def is_divisible_by_8(num):
         return False
 
 
-# Test the function
 for _ in range(10):
     num = random.randrange(10, 300, 2)
     print(num, num/8, is_divisible_by_8(num))

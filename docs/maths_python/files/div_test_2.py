@@ -9,6 +9,7 @@ def is_div_by_2(num):
     else:
         return False
 
+
 for _ in range(10):
     num = random.randint(10, 300)
     print(num, num/2, is_div_by_2(num))
