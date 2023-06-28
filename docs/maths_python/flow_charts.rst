@@ -31,8 +31,8 @@ Adding fractions
 
 ----
 
-Adding fractions using fractions module
--------------------------------------------
+Adding fractions using the fractions module
+---------------------------------------------
 
 | The fractions module can be used to create fraction objects which allow easy addition.
 | Improper fractions results then have to be simplified.
