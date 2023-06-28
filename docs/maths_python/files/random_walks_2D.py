@@ -49,7 +49,7 @@ def plot_results(y, x):
     plt.axhline(y=50, color="gray", linestyle="--")
     plt.xticks(range(0, max(walk_lengths) + 1, 2))
     plt.grid(axis="x")
-    save_plot(plt, "random_walks_2D_5.png")
+    save_plot(plt, "random_walks_2D.png")
     plt.show()
 
 

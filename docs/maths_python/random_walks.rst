@@ -8,8 +8,34 @@ Random walks
 
 ----
 
-Walking the plank
+1D walk plot: Walking the plank
+---------------------------------
+
+| Simulate walking the plank on a pirate ship.
+| Have 9 positions on the plank, from 1 to 9, with position 1 at the start of the plank and 9 at the end.
+| Start at posiiton 3.
+
 ------------------------
+
+| The code below simulates a 1D random walk. 
+
+.. literalinclude:: files/random_walk_1D_plot.py
+    :linenos:
+
+| Examples 1D walks are below:
+
+.. image:: images/random_walk_1D.png
+    :width: 600
+    :align: center
+
+.. image:: images/random_walk_1D_multi.png
+    :width: 600
+    :align: center
+
+----
+
+Walking the plank analysis
+---------------------------
 
 | Simulate walking the plank on a pirate ship.
 | Have 9 positions on the plank, from 1 to 9, with position 1 at the start of the plank and 9 at the end.
@@ -35,7 +61,56 @@ Walking the plank
 
 ----
 
-2D walks
+2D walk plot
+------------------------
+
+| The code below simulates a 2D random walk. 
+
+.. literalinclude:: files/random_walk_2D_plot.py
+    :linenos:
+
+| Examples 2D walks are below:
+
+.. image:: images/random_walks_2D_10 steps.png
+    :width: 600
+    :align: center
+
+.. image:: images/random_walks_2D_50 steps.png
+    :width: 600
+    :align: center
+
+.. image:: images/random_walks_2D_100 steps.png
+    :width: 600
+    :align: center
+
+.. image:: images/random_walks_2D_1000 steps.png
+    :width: 600
+    :align: center
+
+----
+
+| The code below simulates a mulitple 2D random walks suitable for 2 to 6 walks. 
+
+.. literalinclude:: files/random_walk_2D_multiplot.py
+    :linenos:
+
+| Examples multi 2D walks are below:
+
+.. image:: images/random_walks_2D_multi_20 steps.png
+    :width: 600
+    :align: center
+
+.. image:: images/random_walks_2D_multi_50 steps.png
+    :width: 600
+    :align: center
+
+.. image:: images/random_walks_2D_multi_1000 steps.png
+    :width: 600
+    :align: center
+
+----
+
+2D walks analysis
 ------------------------
 
 | The code below simulates a 2D random walk. 

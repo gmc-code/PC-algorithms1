@@ -16,8 +16,8 @@ def random_walk_1d(start=3):
     x = start
     x_positions = [x]
     while x > 0 and x < 10:
-        step = random.randint(0, 1)
-        if step:
+        step = random.choice([-1, 1])
+        if step == 1:
             x += 1
         else:
             x -= 1
@@ -47,7 +47,7 @@ def plot_random_walk_1d(y, x):
     Plots the percentage of safe walks for each starting position.
     `y` is a list of starting positions and `x` is a list of percentages.
     """
-    plt.plot(y, x, marker='o')
+    plt.plot(y, x, marker="o")
     plt.title("Random walks 1D")
     plt.xlabel("Starting Position")
     plt.ylabel("Percentage of Safe Walks")
@@ -55,8 +55,8 @@ def plot_random_walk_1d(y, x):
         plt.axhline(y=i, color="gray", linestyle=":")
     for i in range(0, max(start_poss) + 2):
         plt.axvline(x=i, color="gray", linestyle=":")
-    for i,j in zip(y,x):
-        plt.annotate(str(j),xy=(i,j+2), color='darkblue')
+    for i, j in zip(y, x):
+        plt.annotate(str(j), xy=(i, j + 2), color="darkblue")
     save_plot(plt, "random_walks_1D.png")
     plt.show()
 
