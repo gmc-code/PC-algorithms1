@@ -58,7 +58,6 @@ Walking the plank analysis
     :width: 600
     :align: center
 
-
 ----
 
 2D walk plot
