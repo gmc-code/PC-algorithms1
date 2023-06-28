@@ -8,6 +8,7 @@ while p * p <= n:
     if prime[p]:
         for i in range(p * p, n + 1, p):
             prime[i] = False
+    p += 1
     while not prime[p]:
         p += 1
 

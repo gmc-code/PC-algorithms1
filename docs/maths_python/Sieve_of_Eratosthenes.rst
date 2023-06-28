@@ -10,7 +10,7 @@ Sieve of Eratosthenes
 
 ----
 
-Primes below 100
+Sieve_v1: Primes below 100
 ------------------------------
 
 | This code creates a list of boolean values representing the numbers from 0 to n (in this case, n is 100). 
@@ -21,9 +21,18 @@ Primes below 100
 
 .. literalinclude:: files/Sieve_of_Eratosthenes.py
 
+| The output is: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+
+----
+
+Sieve_v2: Primes below 100
+------------------------------
+
 | This can be improved such that p is incremented until the next lowest prime is found. 
 | In this version of the code, after marking all multiples of p as not prime, we enter a while loop that increments p until a True value is found. 
 | This ensures that we only consider prime numbers as potential values for p.
 
 .. literalinclude:: files/Sieve_of_Eratosthenes2.py
     :linenos:
+
+| The output is: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
