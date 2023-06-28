@@ -18,6 +18,6 @@ def get_prime_factors(num):
 
 for num in range(2, 101):
     fact  = get_prime_factors(num)
-    if len(fact) > 2:
+    if len(set(fact)) > 2:
         print(num, fact)
 
