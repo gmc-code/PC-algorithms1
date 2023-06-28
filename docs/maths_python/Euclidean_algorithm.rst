@@ -19,23 +19,8 @@ See: https://en.wikipedia.org/wiki/Euclidean_algorithm
 HCF by repeated subtraction
 ------------------------------------------------
 
-.. code-block:: python
-
-    import random
-
-
-    def hcf_sub(a, b):
-        while a != b:
-            if a > b:
-                a = a - b
-            else:
-                b = b - a
-        return a
-
-    a = 48
-    b = 18
-    hcf = hcf_sub(a, b)
-    print(a, b, hcf)
+.. literalinclude:: files/hcf_sub.py
+    :linenos:
 
 ----
 
@@ -50,43 +35,14 @@ HCF by repeatedly getting remainders from division
 | **b** is stored in **t** so b can be calculated, then **a** is set to **t**.
 | An example of **b = a - (a // b) * b** is **b = 48 - (48//19)*18**, which is b = 48 - 36 = 12.
 
-.. code-block:: python
+.. literalinclude:: files/hcf_div.py
+    :linenos:
 
-    import random
+| The line, **b = a - (a // b) * b**, can be replaced by **b = a % b**, which finds the remainder from division.
 
-
-    def hcf_div(a, b):
-        while b != 0:
-            t = b
-            b = a - (a // b) * b
-            a = t
-        return a
+.. literalinclude:: files/hcf_mod.py
+    :linenos:
 
 
-    a = 48
-    b = 18
-    hcf = hcf_div(a, b)
-    print(a, b, hcf)
-
-
-| The line above, **b = a - (a // b) * b**, can be replaced by **b = a % b**, which finds the remainder from division.
-
-.. code-block:: python
-
-    import random
-
-        
-    def hcf_mod(a, b):
-        while b != 0:
-            t = b
-            b = a % b
-            a = t
-        return a
-
-
-    a = 48
-    b = 18
-    hcf = hcf_mod(a, b)
-    print(a, b, hcf)
 
 
