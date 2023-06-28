@@ -144,7 +144,7 @@ Levy flights
 
 | Levy flights are random walks with longer jumps.
 | They can simulate animals looking for food.
-| The code below creates soem longer jumps.
+| The code below creates some longer jumps.
 
 
 .. literalinclude:: files/random_walk_2D_plot_Levy.py
