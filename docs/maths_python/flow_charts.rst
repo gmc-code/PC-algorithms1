@@ -11,7 +11,7 @@ Adding fractions
     :width: 300
     :align: center
 
-
+|   
 | The code below carries out these steps for adding two fractions:
 
 1. The `add_fractions` function takes two fractions as input, represented as tuples of the form `(numerator, denominator)`.
