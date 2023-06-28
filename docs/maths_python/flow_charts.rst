@@ -29,3 +29,14 @@ Adding fractions
 
 | The output is: 1/2 + 2/3 = 1 1/6
 
+----
+
+Adding fractions using fractions module
+-------------------------------------------
+
+| The fractions module can be used to create fraction objects which allow easy addition.
+| Improper fractions results then have to be simplified.
+
+.. literalinclude:: files/add_fractions_using_fractions.py
+    :linenos:
+
