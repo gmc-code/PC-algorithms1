@@ -105,6 +105,14 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
+    :caption: Maths python 10
+    :numbered:
+
+    maths_python/pointers.rst
+
+
+.. toctree::
+    :maxdepth: 2
     :caption: Maths python Y7
     :numbered:
 
