@@ -8,7 +8,7 @@ Adding fractions
 | The flow chart shows the main steps involved in adding 2 fractions.
 
 .. image:: files/flow_chart_add_fractions.png
-    :width: 500
+    :width: 300
     :align: center
 
 
