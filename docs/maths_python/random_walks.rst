@@ -70,19 +70,19 @@ Walking the plank analysis
 
 | Examples 2D walks are below:
 
-.. image:: images/random_walks_2D_10 steps.png
+.. image:: images/random_walks_2D_10_steps.png
     :width: 600
     :align: center
 
-.. image:: images/random_walks_2D_50 steps.png
+.. image:: images/random_walks_2D_50_steps.png
     :width: 600
     :align: center
 
-.. image:: images/random_walks_2D_100 steps.png
+.. image:: images/random_walks_2D_100_steps.png
     :width: 600
     :align: center
 
-.. image:: images/random_walks_2D_1000 steps.png
+.. image:: images/random_walks_2D_1000_steps.png
     :width: 600
     :align: center
 
@@ -95,15 +95,15 @@ Walking the plank analysis
 
 | Examples multi 2D walks are below:
 
-.. image:: images/random_walks_2D_multi_20 steps.png
+.. image:: images/random_walks_2D_multi_20_steps.png
     :width: 600
     :align: center
 
-.. image:: images/random_walks_2D_multi_50 steps.png
+.. image:: images/random_walks_2D_multi_50_steps.png
     :width: 600
     :align: center
 
-.. image:: images/random_walks_2D_multi_1000 steps.png
+.. image:: images/random_walks_2D_multi_1000_steps.png
     :width: 600
     :align: center
 
