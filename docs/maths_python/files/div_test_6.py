@@ -41,4 +41,4 @@ def is_div_by_6(num):
 
 for _ in range(10):
     num = random.randint(12, 300)
-    print(num, is_div_by_6(num))
+    print(num, num/6, is_div_by_6(num))

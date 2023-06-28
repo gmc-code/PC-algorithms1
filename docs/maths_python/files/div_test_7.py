@@ -31,4 +31,4 @@ def repeated_diff_from_dbl_last(num):
 
 for _ in range(10):
     num = random.randint(12, 300)
-    print(num, is_div_by_7(num))
+    print(num, num/7, is_div_by_7(num))

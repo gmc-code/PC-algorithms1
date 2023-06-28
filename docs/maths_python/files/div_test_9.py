@@ -1,9 +1,9 @@
 import random
 
 
-def is_div_by_3(num):
+def is_div_by_9(num):
     sum_of_digits = repeated_sum_digits(num)
-    if sum_of_digits in [3, 6, 9]:
+    if sum_of_digits in [9]:
         return True
     else:
         return False
@@ -24,5 +24,6 @@ def repeated_sum_digits(num):
 
 
 for _ in range(10):
-    num = random.randint(12, 300)
-    print(num, num/3, is_div_by_3(num))
+    num = random.randrange(12, 300, 3)
+    print(num, num/9, is_div_by_9(num))
+

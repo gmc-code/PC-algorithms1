@@ -150,6 +150,29 @@ Divibility by 4
 
 ----
 
+Divibility by 8
+-------------------
+
+| A number is divisible by 8 if the last 3 digits are divisible by 8.
+| The code below checks if the last digit to see if the last 3 digits are divisible by 2, then divides it by 2 and checks again for divisibility by 2, then divides it by 2 and checks again for divisibility by 2.
+| To get the last 3 digits, the number is converted to a string, **str(num)**, then string indexing, **str(num)[-3:]**, gets the last 3 characters.
+
+.. literalinclude:: files/div_test_8.py
+    :linenos:
+
+----
+
+Divibility by 9
+-------------------
+
+| A number is divisible by 9 if the sum of all digits is divisible by 9.
+| The code below sums the digits of the number via **sum_digits**, and repeats summing the digits via **repeated_sum_digits** until there is just one digit, then, **is_div_by_9** checks if that sum is 9.
+
+.. literalinclude:: files/div_test_9.py
+    :linenos:
+
+----
+
 General Divisibility by repeated addition
 --------------------------------------------
 

@@ -12,4 +12,4 @@ def is_div_by_10(num):
 
 for _ in range(10):
     num = random.randint(10, 300)
-    print(num, is_div_by_10(num))
+    print(num, num/10, is_div_by_10(num))
