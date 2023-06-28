@@ -2,7 +2,6 @@
 Sums of sequences
 =======================
 
-
 | VCMNA254: Design and implement mathematical algorithms using a simple general purpose programming language
 
 * finding the sum of a set of consecutive numbers using a loop structure
@@ -140,5 +139,6 @@ Arithmetic sequence formula 2
 | l ← 12
 | sum ← (n/2) * (a + l)
 | **print** sum
+
 
 
