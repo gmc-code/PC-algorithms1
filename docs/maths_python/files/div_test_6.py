@@ -37,7 +37,8 @@ def is_div_by_6(num):
         return True
     else:
         return False
-    
+
+
 for _ in range(10):
     num = random.randint(12, 300)
     print(num, is_div_by_6(num))

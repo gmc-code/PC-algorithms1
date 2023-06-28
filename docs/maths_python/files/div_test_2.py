@@ -9,6 +9,6 @@ def is_div_by_2(num):
     else:
         return False
 
-
-num = random.randint(10, 300)
-print(num, is_div_by_2(num))
+for _ in range(10):
+    num = random.randint(10, 300)
+    print(num, is_div_by_2(num))

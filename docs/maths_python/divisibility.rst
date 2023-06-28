@@ -96,6 +96,19 @@ Divibility by 6
 
 ----
 
+Divibility by 10
+-------------------
+
+| A number is divisible by 10 if the last digit is 0.
+| For example: 120 is divisible by 10 since its last digit is 0.
+| The code below checks if the last digit is a 0.
+| To get the last digit, the number is converted to a string, **str(num)**, then string indexing, **str(num)[-1]**, gets the last character.
+
+.. literalinclude:: files/div_test_10.py
+    :linenos:
+
+----
+
 Divibility by 4
 -------------------
 

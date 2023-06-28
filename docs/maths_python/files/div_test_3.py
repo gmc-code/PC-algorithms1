@@ -23,5 +23,6 @@ def repeated_sum_digits(num):
     return sum_of_digits
 
 
-num = random.randint(12, 300)
-print(num, is_div_by_3(num))
+for _ in range(10):
+    num = random.randint(12, 300)
+    print(num, is_div_by_3(num))
