@@ -6,7 +6,7 @@ Geometric patterns
 
 * constructing geometric patterns such as a honeycomb, using dynamic geometry functionality
 
-| The python turtle module can be used to generate patetrns of shapes.
+| The python turtle module can be used to generate patterns of shapes.
 
 ----
 
@@ -14,6 +14,17 @@ Turtle basics
 ----------------
 
 See: https://pc-python.readthedocs.io/en/latest/turtle/turtle_drawing.html
+
+----
+
+Tessellation (tiling)
+----------------------
+
+| A tessellation is a repeated pattern in the plane or on a surface where shapes completely fill all the space around a given point where their boundaries meet. 
+| For example, a honeycomb is a tessellation using hexagons. 
+| Tiling patterns are tessellations using rectangular tiles or brick pavers in paths, mosaics in buildings, quilts and art.
+| A regular tessellation is created by tessellating regular polygons. 
+| If more than one regular polygon is used, it is a semi-regular tessellation.
 
 ----
 
