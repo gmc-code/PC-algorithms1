@@ -75,7 +75,7 @@ PC-algorithms
     maths_python/Sieve_of_Eratosthenes.rst
     maths_python/prime_factors.rst
     
-    
+
 .. toctree::
     :maxdepth: 2
     :caption: Maths python 7
@@ -99,6 +99,7 @@ PC-algorithms
     :caption: Maths python 9
     :numbered:
 
+    maths_python/selection_sort.rst
     maths_python/population_sampling.rst
 
 
