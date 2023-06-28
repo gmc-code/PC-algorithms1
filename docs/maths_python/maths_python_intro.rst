@@ -37,7 +37,7 @@ Introduction to maths python
 
 	* **Debugging search and sort programs**
 	* **Testing a number for divisibility**
-	* 
+
 ----
 
 | 9	Apply set structures to solve real-world problems (VCMNA307)

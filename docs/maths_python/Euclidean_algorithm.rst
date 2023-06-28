@@ -1,5 +1,5 @@
 =======================
-Highest common factor
+Euclidean algorithm
 =======================
 
 Euclidean algorithm
@@ -7,8 +7,7 @@ Euclidean algorithm
 
 See: https://en.wikipedia.org/wiki/Euclidean_algorithm 
 
-
-| The **highest common factor** is known as the greatest common divisor, gcd.
+| The **highest common factor**, HCF, is known as the greatest common divisor, gcd.
 | The Euclidean algorithm is based on the principle that the **highest common factor** of two numbers does not change if the larger number is replaced by its difference with the smaller number. 
 | For example, 6 is the HCF of 48 and 18 (as 48 = 8 x 6 and 18 = 3 x 6), and the same number 6 is also the HCF of 18 and 30 (obtained by 48 - 18; taking 3 sixes from 8 sixes leaves 5 sixes). 
 | Since this replacement reduces the larger of the two numbers, repeating this process gives successively smaller pairs of numbers until the two numbers become equal. 
@@ -18,7 +17,7 @@ See: https://en.wikipedia.org/wiki/Euclidean_algorithm
 ----
 
 HCF by repeated subtraction
-------------------------------
+------------------------------------------------
 
 .. code-block:: python
 

@@ -31,7 +31,7 @@ Even numbers
 Sum numbers in sequence
 ------------------------
 
-| Return a list of numbers that are a running total as each member fo thte set is added to the running total.
+| Return a list of numbers that are a running total as each member of the set is added to the running total.
 
 .. literalinclude:: files/sets_of_numbers_sum.py
     :linenos:

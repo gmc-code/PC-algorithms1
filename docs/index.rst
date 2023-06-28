@@ -38,7 +38,6 @@ PC-algorithms
     flowcharts/While_loops.rst
 
 
-
 .. toctree::
     :maxdepth: 2
     :caption: Pseudocode for maths
@@ -51,26 +50,61 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python1
+    :caption: Maths python intro
     :numbered:
 
     maths_python/maths_python_intro.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python 5
+    :numbered:
+
     maths_python/random_walks.rst
     maths_python/sets_of_numbers.rst
-    maths_python/prime_factors.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python 6
+    :numbered:
+
+    maths_python/Euclidean_algorithm.rst
     maths_python/flow_charts.rst
     maths_python/Sieve_of_Eratosthenes.rst
-    maths_python/highest_common_factor.rst
+    maths_python/prime_factors.rst
+    
+    
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python 7
+    :numbered:
+
     maths_python/sums_of_sequences.rst
     maths_python/geometric_patterns.rst
+    
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python 8
+    :numbered:
+
     maths_python/simple_debugging.rst
     maths_python/divisibility.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python 9
+    :numbered:
+
     maths_python/population_sampling.rst
 
 
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python2
+    :caption: Maths python Y7
     :numbered:
 
     maths_python/simple_stats.rst
