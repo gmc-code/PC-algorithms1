@@ -135,3 +135,28 @@ Walking the plank analysis
 .. image:: images/random_walks_2D.png
     :width: 600
     :align: center
+
+
+----
+
+Levy flights
+--------------------
+
+| Levy flights are random walks with longer jumps.
+| They can simulate animals looking for food.
+| The code below creates soem longer jumps.
+
+
+.. literalinclude:: files/random_walk_2D_plot_Levy.py
+    :linenos:
+
+
+.. image:: images/random_walk_Levy_every_100_of_1000.png
+    :width: 600
+    :align: center
+
+
+.. image:: images/random_walk_Levy_every_200_of_1000.png
+    :width: 600
+    :align: center
+
