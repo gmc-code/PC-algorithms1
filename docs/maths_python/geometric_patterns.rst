@@ -2,18 +2,17 @@
 Geometric patterns
 =======================
 
-| VCMNA254: Design and implement mathematical algorithms using a simple general purpose programming language
+| VCMNA254: level 7: Design and implement mathematical algorithms using a simple general purpose programming language
 
 * constructing geometric patterns such as a honeycomb, using dynamic geometry functionality
-
-| The python turtle module can be used to generate patterns of shapes.
 
 ----
 
 Turtle basics
 ----------------
 
-See: https://pc-python.readthedocs.io/en/latest/turtle/turtle_drawing.html
+| The python turtle module can be used to generate patterns of shapes.
+| See: https://pc-python.readthedocs.io/en/latest/turtle/turtle_drawing.html
 
 ----
 

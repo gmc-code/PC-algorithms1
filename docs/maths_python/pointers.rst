@@ -2,6 +2,15 @@
 Pointers
 =======================
 
+| VCMNA334: level 10: Implement algorithms using data structures in a general-purpose programming language
+
+* Using pointers in algorithms
+
+----
+
+Pointers
+----------------
+
 | Pointers are objects that store a memory address, which can be that of another value located in computer memory.
 | Using pointers significantly improves performance for repetitive operations, like traversing iterable data structures.
 | For example, the two pointers technique is a technique that involves using two pointers that traverse through an array or a list from different starting points or directions. 

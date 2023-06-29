@@ -2,6 +2,12 @@
 Euclidean algorithm
 =======================
 
+| VCMNA221: level 6: Design algorithms involving branching and iteration to solve specific classes of mathematical problems
+
+* implementing algorithms such as the Euclidean division algorithm
+
+----
+
 Euclidean algorithm
 ---------------------------
 

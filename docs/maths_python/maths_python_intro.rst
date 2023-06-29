@@ -8,14 +8,14 @@ Introduction to maths python
 
 ----
 
-| 5	Follow a mathematical algorithm involving branching and repetition (iteration) (VCMNA194)
+| level 5 Follow a mathematical algorithm involving branching and repetition (iteration) (VCMNA194)
 
 	* **simulating a simple random walk**
 	* **manipulating sets of numbers using a given rule, for example, if a number is even halve it; if a number is odd, subtract 1 then halve it**
 
 ----
 
-| 6	Design algorithms involving branching and iteration to solve specific classes of mathematical problems (VCMNA221)
+| level 6 Design algorithms involving branching and iteration to solve specific classes of mathematical problems (VCMNA221)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA221
 
 	* **implementing algorithms such as the Euclidean division algorithm**
@@ -23,7 +23,7 @@ Introduction to maths python
 
 ----
 
-| 7	Design and implement mathematical algorithms using a simple general purpose programming language (VCMNA254)
+| level 7 Design and implement mathematical algorithms using a simple general purpose programming language (VCMNA254)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA254
 
 
@@ -32,7 +32,7 @@ Introduction to maths python
 
 ----
 
-| 8	Use algorithms and related testing procedures to identify and correct errors (VCMNA282)
+| level 8 Use algorithms and related testing procedures to identify and correct errors (VCMNA282)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA282
 
 	* **Debugging search and sort programs**
@@ -40,7 +40,7 @@ Introduction to maths python
 
 ----
 
-| 9	Apply set structures to solve real-world problems (VCMNA307)
+| level 9 Apply set structures to solve real-world problems (VCMNA307)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA307
 
 	* **Using a sort algorithm to determine the median of a set of numbers**
@@ -48,18 +48,18 @@ Introduction to maths python
 
 ----
 
-| 10 Implement algorithms using data structures in a general-purpose programming language (VCMNA334) 
+| level 10 Implement algorithms using data structures in a general-purpose programming language (VCMNA334) 
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA334
 
-	* Using two-dimensional arrays such as matrices to represent and implement sequences of transformations of sets of points in the plane
+	* **Using two-dimensional arrays such as matrices to represent and implement sequences of transformations of sets of points in the plane**
 	* **Using pointers in algorithms**
 
 ----
 
-| 10A Devise and use algorithms and simulations to solve mathematical problems (VCMNA358)
+| level 10A Devise and use algorithms and simulations to solve mathematical problems (VCMNA358)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA358
 
-	* Applying a systematic guess-check-and-refine algorithm to identify an approximate value for the root of an equation in an interval
-	* Developing simulations for counter-intuitive problems in probability such as the Monty Hall problem or derangements
+	* **Applying a systematic guess-check-and-refine algorithm to identify an approximate value for the root of an equation in an interval**
+	* **Developing simulations for counter-intuitive problems in probability such as the Monty Hall problem or derangements**
 
 

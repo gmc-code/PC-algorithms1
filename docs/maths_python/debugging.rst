@@ -2,7 +2,15 @@
 Simple debugging
 =======================
 
-| Debugging Search and Sort Programs
+| VCMNA282: level 8: Use algorithms and related testing procedures to identify and correct errors
+
+* Debugging search and sort programs
+
+----
+
+Errors and debugging
+-----------------------
+
 | An error in code is called a bug. 
 | Correcting the errors in code is called debugging.
 | Debugging includes checking that the algorithm returns the correct output from a given input.

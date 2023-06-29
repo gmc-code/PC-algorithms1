@@ -2,7 +2,7 @@
 Sets of numbers
 =======================
 
-| VCMNA194: Follow a mathematical algorithm involving branching and repetition (iteration) 
+| VCMNA194: level 5: Follow a mathematical algorithm involving branching and repetition (iteration) 
 
 * manipulating sets of numbers using a given rule, for example, if a number is even halve it; if a number is odd, subtract 1 then halve it
 

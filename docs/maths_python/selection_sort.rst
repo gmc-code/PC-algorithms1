@@ -2,6 +2,12 @@
 Selection sort
 =======================
 
+| VCMNA307: level 9: Apply set structures to solve real-world problems
+
+* Using a sort algorithm to determine the median of a set of numbers
+
+----
+
 | The selection sort algorithm sorts an array by repeatedly finding the minimum element from unsorted part and putting it at the beginning. 
 
 Selection sort algorithm

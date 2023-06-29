@@ -2,6 +2,12 @@
 Flow charts
 =======================
 
+| VCMNA221: level 6: Design algorithms involving branching and iteration to solve specific classes of mathematical problems
+
+* devising flowcharts to represent algorithms for a common processes such as adding two fractions
+
+----
+
 Adding fractions
 ---------------------
 

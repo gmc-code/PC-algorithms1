@@ -44,7 +44,6 @@ PC-algorithms
     :numbered:
 
     pseudocode_for_maths/pseudocode_for_maths.rst
-    maths_python/bisection.rst
     maths_python/newtons_method.rst
 
 
@@ -58,7 +57,7 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python 5
+    :caption: Maths python level 5
     :numbered:
 
     maths_python/random_walks.rst
@@ -67,7 +66,7 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python 6
+    :caption: Maths python level 6
     :numbered:
 
     maths_python/Euclidean_algorithm.rst
@@ -78,7 +77,7 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python 7
+    :caption: Maths python level 7
     :numbered:
 
     maths_python/sums_of_sequences.rst
@@ -87,7 +86,7 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python 8
+    :caption: Maths python level 8
     :numbered:
 
     maths_python/simple_debugging.rst
@@ -96,7 +95,7 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python 9
+    :caption: Maths python level 9
     :numbered:
 
     maths_python/selection_sort.rst
@@ -105,11 +104,20 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python 10
+    :caption: Maths python level 10
     :numbered:
 
     maths_python/pointers.rst
     maths_python/matrix_transformations.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python level 10A
+    :numbered:
+
+    maths_python/bisection.rst
+    maths_python/monty_hall.rst
 
 
 .. toctree::

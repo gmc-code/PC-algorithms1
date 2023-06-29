@@ -2,14 +2,13 @@
 Divisibility
 =======================
 
-| VCMNA282: Use algorithms and related testing procedures to identify and correct errors
+| VCMNA282: level 8: Use algorithms and related testing procedures to identify and correct errors
 
 * Testing a number for divisibility
 
 ----------------------------------
 Prime number divisibility tests
 ----------------------------------
-
 
 Divibility by 2
 -------------------

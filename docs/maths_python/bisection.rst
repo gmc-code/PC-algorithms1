@@ -2,7 +2,16 @@
 Bisection
 =======================
 
-| Numerical methods are algorithms that can be used to approximate the roots of a function. 
+| VCMNA358: level 10A: Devise and use algorithms and simulations to solve mathematical problems
+
+* Applying a systematic guess-check-and-refine algorithm to identify an approximate value for the root of an equation in an interval
+
+----
+
+The Bisection method
+------------------------
+
+| The bisection method is an algorithms that can be used to approximate the roots of a function. 
 
 .. image:: files/bisection_quadratic.png
     :width: 600

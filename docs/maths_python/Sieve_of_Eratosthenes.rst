@@ -2,6 +2,12 @@
 Sieve of Eratosthenes
 =======================
 
+| VCMNA221: level 6: Design algorithms involving branching and iteration to solve specific classes of mathematical problems
+
+* implementing algorithms such as the Euclidean division algorithm
+
+----
+
 | This Python code snippet uses iteration to implement the Sieve of Eratosthenes algorithm to find all prime numbers below 100.
 
 .. image:: files/Sieve_of_Eratosthenes.png

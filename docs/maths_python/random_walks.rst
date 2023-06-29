@@ -2,7 +2,7 @@
 Random walks
 =======================
 
-| VCMNA194: Follow a mathematical algorithm involving branching and repetition (iteration) 
+| VCMNA194: level 5: Follow a mathematical algorithm involving branching and repetition (iteration) 
 
 * simulating a simple random walk
 
