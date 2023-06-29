@@ -53,8 +53,8 @@ Example
 
 ----
 
-Usage: find median
---------------------
+Usage: find the median
+------------------------
 
 | The sorted list can then be used to find the median.
 | In this example, the `find_median` function is called with a sorted list of 10 integers as input. Since 10 is an even number, the function calculates the median as the average of the two middle elements, which are 14 and 18. The average of these two numbers is 16, so the function returns 16 as the median.
@@ -111,8 +111,15 @@ life_expectancy = {
 
 Sorting this in ascending order by life expectancy gives this result: 
 
-{'Northern Territory': 76.3, 'Tasmania': 79.5, 'Queensland': 80.3, 'South Australia': 80.4, 'New South Wales': 80.7, 'Western Australia': 80.9, 'Victoria': 81.8, 'Australian Capital Territory': 82.7}
-
-
+{
+    "Northern Territory": 76.3,
+    "Tasmania": 79.5,
+    "Queensland": 80.3,
+    "South Australia": 80.4,
+    "New South Wales": 80.7,
+    "Western Australia": 80.9,
+    "Victoria": 81.8,
+    "Australian Capital Territory": 82.7,
+}
 
 
