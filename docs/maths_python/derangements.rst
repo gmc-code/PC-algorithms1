@@ -17,7 +17,7 @@ The number of derangements of n elements is denoted by !n and can be calculated 
 
 !n = n! * (1 - 1/1! + 1/2! - 1/3! + ... + (-1)^n / n!)
 
-The probability of a random permutation of n elements being a derangement is given by the limit of !n / n! as n approaches infinity, which is approximately 0.3679. This is also known as the **derangement constant**.
+The probability of a random permutation of n elements being a derangement is given by the limit of !n / n! as n approaches infinity, which is approximately 0.3679. This is also known as the **derangement constant**. It is equal to 1/e.
 
 ----
 

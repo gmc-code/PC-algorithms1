@@ -6,7 +6,7 @@ Newton's method
 | Newton's method is an iterative method for finding the roots of a real-valued function. 
 | It starts with an initial guess for the root (x0) and iteratively refines this guess using the formula to calculate a new x value closer to the root: x1 = x0 - f(x0) / f'(x0), until a desired level of accuracy is achieved. 
 
-.. image:: files/newtons_quadratic.png
+.. image:: images/newtons_quadratic.png
     :width: 600
     :align: center
 
@@ -52,7 +52,7 @@ Newton's method
 Usage Example
 ----------------
 
-.. image:: files/newtons_cubic.png
+.. image:: images/newtons_cubic.png
     :width: 600
     :align: center
 

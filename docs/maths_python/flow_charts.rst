@@ -13,7 +13,7 @@ Adding fractions
 
 | The flow chart shows the main steps involved in adding 2 fractions.
 
-.. image:: files/flow_chart_add_fractions.png
+.. image:: images/flow_chart_add_fractions.png
     :width: 200
     :align: center
 

@@ -13,7 +13,7 @@ The Bisection method
 
 | The bisection method is an algorithms that can be used to approximate the roots of a function. 
 
-.. image:: files/bisection_quadratic.png
+.. image:: images/bisection_quadratic.png
     :width: 600
     :align: center
 
@@ -88,7 +88,7 @@ Bisection with specified Iterations
 Cubic Example
 ----------------
 
-.. image:: files/bisection_cubic.png
+.. image:: images/bisection_cubic.png
     :width: 600
     :align: center
 
@@ -126,7 +126,7 @@ Cubic Example
 Example with sin function
 ----------------------------
 
-.. image:: files/bisection_sin.png
+.. image:: images/bisection_sin.png
     :width: 600
     :align: center
 

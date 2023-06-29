@@ -10,7 +10,7 @@ Sieve of Eratosthenes
 
 | This Python code snippet uses iteration to implement the Sieve of Eratosthenes algorithm to find all prime numbers below 100.
 
-.. image:: files/Sieve_of_Eratosthenes.png
+.. image:: images/Sieve_of_Eratosthenes.png
     :width: 600
     :align: center
 
