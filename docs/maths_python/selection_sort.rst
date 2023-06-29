@@ -98,28 +98,32 @@ Example: Life expectancy by state
 
 The life expectancy from birth for each state is given below as a dictionary.
 
-life_expectancy = {
-    'Victoria': 81.8,
-    'Australian Capital Territory': 82.7,
-    'Western Australia': 80.9,
-    'New South Wales': 80.7,
-    'South Australia': 80.4,
-    'Queensland': 80.3,
-    'Tasmania': 79.5,
-    'Northern Territory': 76.3
-}
+.. parsed-literal::
+
+    life_expectancy = {
+        'Victoria': 81.8,
+        'Australian Capital Territory': 82.7,
+        'Western Australia': 80.9,
+        'New South Wales': 80.7,
+        'South Australia': 80.4,
+        'Queensland': 80.3,
+        'Tasmania': 79.5,
+        'Northern Territory': 76.3
+    }
 
 Sorting this in ascending order by life expectancy gives this result: 
 
-{
-    "Northern Territory": 76.3,
-    "Tasmania": 79.5,
-    "Queensland": 80.3,
-    "South Australia": 80.4,
-    "New South Wales": 80.7,
-    "Western Australia": 80.9,
-    "Victoria": 81.8,
-    "Australian Capital Territory": 82.7,
-}
+.. parsed-literal::
+
+    {
+        "Northern Territory": 76.3,
+        "Tasmania": 79.5,
+        "Queensland": 80.3,
+        "South Australia": 80.4,
+        "New South Wales": 80.7,
+        "Western Australia": 80.9,
+        "Victoria": 81.8,
+        "Australian Capital Territory": 82.7,
+    }
 
 
