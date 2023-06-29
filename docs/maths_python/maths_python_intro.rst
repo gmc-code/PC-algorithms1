@@ -52,7 +52,7 @@ Introduction to maths python
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA334
 
 	* Using two-dimensional arrays such as matrices to represent and implement sequences of transformations of sets of points in the plane
-	* Using pointers in algorithms
+	* **Using pointers in algorithms**
 
 ----
 

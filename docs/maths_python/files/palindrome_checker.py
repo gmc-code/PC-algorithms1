@@ -17,5 +17,9 @@ def is_palindrome(string):
 
 
 word_to_check = "racecar"
-print(f"{word_to_check} is a plaindrome", is_palindrome(word_to_check))
+print(f"{word_to_check} is a plaindrome:", is_palindrome(word_to_check))
+# racecar is a plaindrome True
+word_to_check = "racecars"
+print(f"{word_to_check} is a plaindrome:", is_palindrome(word_to_check))
+# racecars is a plaindrome False
 
