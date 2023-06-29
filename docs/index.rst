@@ -118,6 +118,7 @@ PC-algorithms
 
     maths_python/bisection.rst
     maths_python/monty_hall.rst
+    maths_python/derangements.rst
 
 
 .. toctree::

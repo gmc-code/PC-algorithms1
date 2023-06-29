@@ -70,19 +70,3 @@ Monty Hall explanation
 
 | Out of three scenarios, switching wins twice and staying wins once. 
 | Therefore, switching has a 2/3 probability of winning and staying has a 1/3 probability of winning.
-
-Another way to see why switching is better is to use Bayes' theorem², which allows us to update our beliefs based on new evidence. Let A be the event that we win by switching, and B be the event that the host reveals a goat behind one of the unchosen doors. We want to find P(A|B), which is the probability of winning by switching given that the host reveals a goat. By Bayes' theorem,
-
-$$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
-
-We can calculate each term as follows:
-
-- P(B|A) is the probability that the host reveals a goat given that we win by switching. This is always 1, because if we win by switching, it means that we chose a goat initially and the host had no choice but to reveal another goat.
-- P(A) is the probability that we win by switching before any information from the host. This is 2/3, because there are two doors with goats and one with a car, and we are more likely to choose a goat than a car initially.
-- P(B) is the probability that the host reveals a goat regardless of whether we win by switching or not. This is also always 1, because by the rules of the game, the host always reveals a goat.
-
-Plugging these values into Bayes' theorem,
-
-$$P(A|B) = \frac{1 \times \frac{2}{3}}{1} = \frac{2}{3}$$
-
-Therefore, we have a 2/3 chance of winning by switching given that the host reveals a goat.
