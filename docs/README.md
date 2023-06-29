@@ -2,4 +2,5 @@
 PC-algorithms
 ==================================================
 
-These docs will help you with your python coding
+These docs cover some key aspects of algorithms, including control structures and their pseudocode.
+There are many examples of using python in maths.
