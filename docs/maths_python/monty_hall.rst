@@ -21,7 +21,7 @@ Monty Hall simulation
 
 | Long term chances are shown below:
 
-.. image:: images/monty_hall.png
+.. image:: images/monty_hall_200.png
     :width: 600
     :align: center
 
