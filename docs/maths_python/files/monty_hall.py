@@ -87,4 +87,4 @@ def save_plot(plot, filename):
     plot.savefig(filepath, dpi=600)
 
 
-monty_hall_simulation(200, "Monty_Hall.png")
+monty_hall_simulation(200, "monty_hall.png")
