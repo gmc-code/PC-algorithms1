@@ -1,5 +1,3 @@
-"""Simulates a 2D random walk
-"""
 from pathlib import Path
 import random
 import matplotlib.pyplot as plt

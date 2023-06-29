@@ -109,6 +109,7 @@ PC-algorithms
     :numbered:
 
     maths_python/pointers.rst
+    maths_python/matrix_transformations.rst
 
 
 .. toctree::
