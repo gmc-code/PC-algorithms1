@@ -3,6 +3,10 @@ Selection sort
 =======================
 
 | The selection sort algorithm sorts an array by repeatedly finding the minimum element from unsorted part and putting it at the beginning. 
+
+Selection sort algorithm
+------------------------------
+
 | The algorithm maintains two subarrays in a given array. 
 
 1. The subarray which is already sorted. 
@@ -15,8 +19,7 @@ Selection sort
 
 1. Check all items in the list for the smallest in the list.
 2. Put it into the first position
-3. Check all remaining items in the list the for the next smallest in
-the list
+3. Check all remaining items in the list the for the next smallest in the list
 4. Put it into the next position
 5. Repeat steps 3 and 4 until all items are sorted
 
@@ -54,6 +57,11 @@ Usage: find median
 --------------------
 
 | The sorted list can then be used to find the median.
+| In this example, the `find_median` function is called with a sorted list of 10 integers as input. Since 10 is an even number, the function calculates the median as the average of the two middle elements, which are 14 and 18. The average of these two numbers is 16, so the function returns 16 as the median.
+
+.. literalinclude:: files/median_in_list.py
+    :linenos:
+
 | Here is a summary of how the Python code calculates the median of a sorted list of integers:
 
 1. The `find_median` function takes a sorted list of integers as input.
@@ -63,7 +71,48 @@ Usage: find median
 5. If `n` is odd, the function calculates the median as the middle element in the sorted list, which is at index `n//2`. The function assigns this value to the `median` variable.
 6. The function returns the value of the `median` variable as the result.
 
-In this example, the `find_median` function is called with a sorted list of 10 integers as input. Since 10 is an even number, the function calculates the median as the average of the two middle elements, which are 14 and 18. The average of these two numbers is 16, so the function returns 16 as the median.
+----
 
-.. literalinclude:: files/median_in_list.py
+Selection sort of a dictionary
+---------------------------------
+
+| A dictionary can also be sorted by converting it to a list of tuples then converting the sorted list of tuples back to a dictionary.
+| Main steps:
+
+1. The input dictionary is first converted into a list of tuples using the `items()` method, where each tuple contains a key-value pair from the dictionary.
+2. The selection sort algorithm is then applied to this list of tuples. The algorithm works by iterating over the list and finding the minimum value in the unsorted portion of the list. This is done by comparing the second element of each tuple (i.e., the value in the key-value pair) using the condition `if numbers[j][1] < numbers[min_index][1]:`.
+3. Once the minimum value is found, it is swapped with the first element in the unsorted portion of the list using the line `numbers[i], numbers[min_index] = numbers[min_index], numbers[i]`.
+4. This process is repeated until the entire list is sorted in ascending order by value.
+5. Finally, the sorted list of tuples is converted back into a dictionary using the `dict()` constructor and returned as the output.
+
+
+| Python implementation:
+
+.. literalinclude:: files/selection_sort_dictionary.py
     :linenos:
+
+----
+
+Example: Life expectancy by state
+------------------------------------
+
+The life expectancy from birth for each state is given below as a dictionary.
+
+life_expectancy = {
+    'Victoria': 81.8,
+    'Australian Capital Territory': 82.7,
+    'Western Australia': 80.9,
+    'New South Wales': 80.7,
+    'South Australia': 80.4,
+    'Queensland': 80.3,
+    'Tasmania': 79.5,
+    'Northern Territory': 76.3
+}
+
+Sorting this in ascending order by life expectancy gives this result: 
+
+{'Northern Territory': 76.3, 'Tasmania': 79.5, 'Queensland': 80.3, 'South Australia': 80.4, 'New South Wales': 80.7, 'Western Australia': 80.9, 'Victoria': 81.8, 'Australian Capital Territory': 82.7}
+
+
+
+
