@@ -24,13 +24,6 @@ The probability of a random permutation of n elements being a derangement is giv
 Derangement simulation
 -----------------------
 
-
-
-| Python code for the simulation:
-
-.. literalinclude:: files/derangement.py
-    :linenos:
-
 | The result of multiples trials of derangement with 3, 4 and 100 elements is below:
 
 .. image:: images/derangement_3.png
@@ -44,3 +37,8 @@ Derangement simulation
 .. image:: images/derangement_100.png
     :width: 600
     :align: center
+
+| Python code for the simulation:
+
+.. literalinclude:: files/derangement.py
+    :linenos:
