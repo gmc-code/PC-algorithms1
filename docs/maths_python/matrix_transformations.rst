@@ -40,9 +40,25 @@ Translation of multiple points
 
 ----
 
-
 Reflections
 ---------------
+
+| The  reflection of multiple points in an axis is shown below.
+
+.. image:: images/matrix_reflection_x.png
+    :width: 600
+    :align: center
+
+.. image:: images/matrix_reflection_y.png
+    :width: 600
+    :align: center
+
+| Python code for a translation:
+
+.. literalinclude:: files/matrix_reflection_y.png
+    :linenos:
+
+----
 
 Dilation
 -------------
