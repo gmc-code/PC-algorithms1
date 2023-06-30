@@ -63,11 +63,11 @@ Reflections
     :width: 600
     :align: center
 
-.. image:: images/matrix_reflection_y=x.png
+.. image:: images/matrix_reflection_yx.png
     :width: 600
     :align: center
 
-.. image:: images/matrix_reflection_y=-x.png
+.. image:: images/matrix_reflection_ynegx.png
     :width: 600
     :align: center
 
