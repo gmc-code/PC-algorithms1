@@ -40,10 +40,20 @@ Translation of multiple points
 
 ----
 
+Transformations
+--------------------
+
+| Python code for a matrix transformation:
+
+.. literalinclude:: files/matrix_transformation.py
+    :linenos:
+
+----
+
 Reflections
 ---------------
 
-| The  reflection of multiple points in an axis is shown below.
+| Examples of the reflection of multiple points is shown below.
 
 .. image:: images/matrix_reflection_x.png
     :width: 600
@@ -53,16 +63,47 @@ Reflections
     :width: 600
     :align: center
 
-| Python code for a translation:
+.. image:: images/matrix_reflection_y=x.png
+    :width: 600
+    :align: center
 
-.. literalinclude:: files/matrix_reflection_y.png
-    :linenos:
+.. image:: images/matrix_reflection_y=-x.png
+    :width: 600
+    :align: center
+
+
+----
+
+Rotations
+-------------------
+
+| Examples of the rotation of multiple points is shown below.
+
+.. image:: images/matrix_rotation_90clock.png
+    :width: 600
+    :align: center
+
+.. image:: images/matrix_rotation_180clock.png
+    :width: 600
+    :align: center
+
+.. image:: images/matrix_rotation_270clock.png
+    :width: 600
+    :align: center
 
 ----
 
 Dilation
 -------------
 
+| An example of dilation of multiple points is shown below.
 
-Rotations
--------------------
+.. image:: images/matrix_dilation_05.png
+    :width: 600
+    :align: center
+
+.. image:: images/matrix_dilation_15.png
+    :width: 600
+    :align: center
+
+
