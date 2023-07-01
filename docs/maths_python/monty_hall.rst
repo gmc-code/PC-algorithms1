@@ -32,6 +32,19 @@ Monty Hall simulation
 
 ----
 
+| The average of several simulations can be graphed:
+
+.. image:: images/monty_hall_av.png
+    :width: 600
+    :align: center
+
+| Python code for the simulation:
+
+.. literalinclude:: files/monty_hall_av.py
+    :linenos:
+
+----
+
 Monty Hall explanation
 ------------------------
 

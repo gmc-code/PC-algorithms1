@@ -11,7 +11,7 @@ Derangements
 Derangements theory
 --------------------------
 
-A derangement is a **permutation** of a set of elements that leaves **no element** in its original position. For example, if the original set is {1, 2, 3}, then a derangement could be {2, 3, 1} or {3, 1, 2}, but not {1, 3, 2} or {2, 1, 3}.
+A derangement is a **permutation** of a set of elements that leaves **no element** in its original position. For example, if the original set is {1, 2, 3}, then a derangement could be {2, 3, 1} or {3, 1, 2}, but not {1, 3, 2} nor {2, 1, 3}.
 
 The number of derangements of n elements is denoted by !n and can be calculated by the formula:
 
