@@ -5,26 +5,11 @@ Matplotlib fonts
 | Matplotlib availbale fonts can be viewed via hte python script below.
 
 .. raw:: html
+    <span style='font-family:Adobe Devanagari; font-size: 24px;'>Adobe Devanagari</span>
+    <span style='font-family:Agency FB; font-size: 24px;'>Agency FB</span>
+    <span style='font-family:Algerian; font-size: 24px;'>Algerian</span>
+    <span style='font-family:Arial; font-size: 24px;'>Arial</span>
 
-    <p style='font-family:Adobe Devanagari; font-size: 24px;'>Adobe Devanagari</p>
-.. raw:: html
-
-    <p style='font-family:Agency FB; font-size: 24px;'>Agency FB</p>
-.. raw:: html
-
-    <p style='font-family:Algerian; font-size: 24px;'>Algerian</p>
-.. raw:: html
-
-    <p style='font-family:Arial; font-size: 24px;'>Arial</p>
-.. raw:: html
-
-    <p style='font-family:Arial Rounded MT Bold; font-size: 24px;'>Arial Rounded MT Bold</p>
-.. raw:: html
-
-    <p style='font-family:Bahnschrift; font-size: 24px;'>Bahnschrift</p>
-.. raw:: html
-
-    
 .. code-block:: python
 
     import matplotlib.font_manager

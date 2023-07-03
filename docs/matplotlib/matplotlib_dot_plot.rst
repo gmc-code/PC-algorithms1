@@ -9,19 +9,19 @@ Matplotlib dot plot
 Examples
 -------------
 
-.. image:: images/pets per household.png
+.. image:: images/pets_per_household.png
     :width: 600
     :align: center
 
-.. image:: images/vehicles per household.png
+.. image:: images/vehicles_per_household.png
     :width: 600
     :align: center
 
-.. image:: images/Normal distribution.png
+.. image:: images/Normal_distribution.png
     :width: 600
     :align: center
 
-.. image:: random distribution.png
+.. image:: images/Random_distribution.png
     :width: 600
     :align: center
 
