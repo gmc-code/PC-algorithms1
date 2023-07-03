@@ -45,6 +45,7 @@ PC-algorithms
 
     matplotlib/matplotlib_intro.rst
     matplotlib/matplotlib_dot_plot.rst
+    matplotlib/matplotlib_fonts.rst
 
 
 .. toctree::

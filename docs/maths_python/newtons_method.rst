@@ -55,6 +55,9 @@ Usage Example
 .. image:: images/newtons_cubic.png
     :width: 600
     :align: center
+    
+| 
+| 
 
 .. code-block:: python
 
