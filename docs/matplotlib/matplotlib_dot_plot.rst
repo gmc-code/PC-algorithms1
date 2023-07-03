@@ -17,12 +17,12 @@ Examples
     :width: 300
     :align: center
 
-.. image:: images/Normal_distribution.png
+.. image:: images/Random_distribution.png
     :width: 300
     :align: center
 
-.. image:: images/Random_distribution.png
-    :width: 300
+.. image:: images/Normal_distribution.png
+    :width: 600
     :align: center
 
 ----
