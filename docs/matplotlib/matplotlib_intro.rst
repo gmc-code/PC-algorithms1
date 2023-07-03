@@ -2,7 +2,7 @@
 Matplotlib basics
 ====================================================
 
-| Matplotlib is a pyhton library for creating static, animated, and interactive visualizations in Python.
+| Matplotlib is a python library for creating static, animated, and interactive visualizations in Python.
 
 ----
 

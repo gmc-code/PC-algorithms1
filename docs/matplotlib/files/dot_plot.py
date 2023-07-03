@@ -18,13 +18,11 @@ def dot_plot(data, title):
     """
     # get counts of each value
     values, counts = np.unique(data, return_counts=True)
-
     # Set formatting parameters based on data
     data_range = max(values)-min(values)
     width = 1 + data_range/2 if data_range<30 else 15
-    height = 1 + max(counts)/3 if data_range<30 else max(counts)/4
+    height = 1.2 + max(counts)/3 if data_range<30 else 2 + max(counts)/4
     marker_size = 10 if data_range<50 else np.ceil(30/(data_range//10))
-
     # Create dot plot with appropriate format
     fig, ax = plt.subplots(figsize=(width, height))
 
@@ -37,29 +35,23 @@ def dot_plot(data, title):
             color="tab:blue",
             ms=marker_size,
             linestyle="",
-        )
-        
+        )   
     for spine in ["top", "right", "left"]:
-        ax.spines[spine].set_visible(False)
-        
+        ax.spines[spine].set_visible(False)  
     ax.yaxis.set_visible(False)
     ax.set_ylim(-1, max(counts))
     ax.set_xticks(range(min(values), max(values) + 1))
-    
     # Adjust bottom margin to leave 1 cm of space for x labels
     cms = 0.5 * 1/2.54 # inches per cm
     plt.subplots_adjust(bottom=cms)
-    
     # Add a title
     title_str = title.title()
     plt.title(f"{title_str}", fontdict={"fontname": "Arial", "fontsize": 12})
-
     # Save figure (dpi 300 is good when saving so graph has high resolution)
     filepath = currfile_dir / (f"{title}.png")
     plt.savefig(filepath, dpi=600)
-
     # Show plot
-    # plt.show()
+    plt.show()
 
 
 
@@ -95,14 +87,12 @@ def random_data(min, max, n):
     Returns:
     numpy.ndarray: An array of n random integers between min and max, inclusive.
     """
-    # create a random number generator with a fixed seed
-    rng = np.random.default_rng(1) 
+    # create a random number generator without a fixed seed
+    rng = np.random.default_rng() 
     # generate an array of n random integers between min and max, inclusive
     data = rng.integers(min, max + 1, size=n)  
     # return the generated data
     return data
-
-
 
 
 # Call the main function if this file is run as a script
@@ -116,11 +106,6 @@ if __name__ == "__main__":
     data = norm_sample_data(5, 45, 25, 3, 50)
     title = "Normal distribution"
     dot_plot(data, title)
-    data = random_data(5, 15, 50)
+    data = random_data(1, 6, 20)
     title = "random distribution"
     dot_plot(data, title)
-
-    for i in range(5, 52, 10):
-        data = list(range(i))*2
-        title = str(i)
-        dot_plot(data, title)

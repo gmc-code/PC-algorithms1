@@ -40,6 +40,15 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
+    :caption: Matplotlib
+    :numbered:
+
+    matplotlib/matplotlib_intro.rst
+    matplotlib/matplotlib_dot_plot.rst
+
+
+.. toctree::
+    :maxdepth: 2
     :caption: Pseudocode for maths
     :numbered:
 
