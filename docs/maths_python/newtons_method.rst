@@ -77,13 +77,13 @@ Usage Example
 
 | 
 | This is an example of how you can use the newton's method 
-| to find the root of the function y = x**3 - 2.
+| to find the root of the function y = x\ :sup:`3` - 2.
 
 
-| The f function calculates the value of x**3 - 2 for a given value of x.
-| The df function calculates the derivative of f, which is 3 * x**2. 
+| The f function calculates the value of x\ :sup:`3` - 2 for a given value of x.
+| The df function calculates the derivative of f, which is 3x\ :sup:`a`. 
 | The code then calls the newton function with f set to the f lambda function, df set to the df lambda function, x0 set to an initial guess of 1.5, max_iter set to 100, and tol set to 1e-6. 
 
-| The output value of 1.2599210498953948 is an approximate root of the function `y = x**3 - 2` found using Newton's method with an initial guess of 1.5, a maximum of 100 iterations, and a tolerance of 1e-6.
+| The output value of 1.2599210498953948 is an approximate root of the function y = x\ :sup:`3` - 2 found using Newton's method with an initial guess of 1.5, a maximum of 100 iterations, and a tolerance of 1e-6.
 
 
