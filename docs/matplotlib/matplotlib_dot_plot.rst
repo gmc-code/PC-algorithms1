@@ -10,19 +10,19 @@ Examples
 -------------
 
 .. image:: images/pets_per_household.png
-    :width: 600
+    :width: 300
     :align: center
 
 .. image:: images/vehicles_per_household.png
-    :width: 600
+    :width: 300
     :align: center
 
 .. image:: images/Normal_distribution.png
-    :width: 600
+    :width: 300
     :align: center
 
 .. image:: images/Random_distribution.png
-    :width: 600
+    :width: 300
     :align: center
 
 ----
@@ -40,5 +40,6 @@ Examples
 
 | Below is code to create all 4 example images above.
 
-.. literalinclude:: files/sum_consec_num1.py
+
+.. literalinclude:: files/dot_plot.py
     :linenos:
