@@ -125,7 +125,7 @@ Hexagon patterns
 
     .. grid-item-card::
 
-        hexagons_overlap_1
+        hexagons_overlap_100
         ^^^
 
         .. figure:: images/hexagons_overlap_100.png
