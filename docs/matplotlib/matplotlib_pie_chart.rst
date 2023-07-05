@@ -74,7 +74,7 @@ Code explanation
 
 | The optional `loc` parameter specifies where on the axes the legend should be placed. In this case, it is set to `"upper right"`, which means that the legend will be placed in the upper-right corner of the bounding box.
 | The optional `bbox_to_anchor` parameter specifies a bounding box for the legend in normalized figure coordinates.
-In normalized figure coordinates, the bottom-left corner of the figure is represented by the coordinates (0, 0) and the top-right corner is represented by the coordinates (1, 1). In this case, it is set to `(1, 0, 0.5, 1)`, which means that the bounding box has its bottom-left corner at `(1, 0)` (the right edge of the figure), a width of `0.5`, and a height of `1`.
+| In normalized figure coordinates, the bottom-left corner of the figure is represented by the coordinates (0, 0) and the top-right corner is represented by the coordinates (1, 1). In this case, it is set to `(1, 0, 0.5, 1)`, which means that the bounding box has its bottom-left corner at `(1, 0)` (the right edge of the figure), a width of `0.5`, and a height of `1`.
 | Together, these two parameters cause the legend to be placed outside the plot area, to the right of the plot and aligned with its top edge.
 
  
@@ -83,3 +83,4 @@ In normalized figure coordinates, the bottom-left corner of the figure is repres
 | ``filepath = currfile_dir / (f"{filename}.png")`` creates a new Path object representing file path with filename equal to value of variable named `filename`. 
 | ``plt.savefig(filepath, dpi=600)`` saves the current figure as an image file at location specified by filepath with resolution specified by dpi value.
  
+
