@@ -45,7 +45,7 @@ Examples
     .. grid-item-card::  
         
       .. figure:: images/Normal_distribution.png
-         :width: 300
+         :width: 600
          :alt: images/Normal_distribution.png
          :figclass: align-center
 
