@@ -103,7 +103,7 @@ PC-algorithms
     :caption: Maths python level 8
     :numbered:
 
-    maths_python/simple_debugging.rst
+    maths_python/debugging.rst
     maths_python/divisibility.rst
 
 

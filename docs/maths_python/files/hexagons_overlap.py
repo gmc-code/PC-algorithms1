@@ -36,7 +36,7 @@ t = turtle.Turtle()
 t.speed(0)
 t.ht()
 
-hexagonal_overlap(t, 800, 600, 50, overlap_factor=0.75)
+hexagonal_overlap(t, 800, 600, 50, overlap_factor=0.67)
 
 s.update()
 s.exitonclick()

@@ -90,22 +90,22 @@ Hexagon patterns
 
     .. grid-item-card::  
 
-        hexagons_overlap_.5
+        hexagons_overlap_50
         ^^^
 
-        .. figure:: images/hexagons_overlap_.5.png
+        .. figure:: images/hexagons_overlap_50.png
             :width: 300
-            :alt: hexagons_overlap_.5
+            :alt: hexagons_overlap_50
             :figclass: align-center
 
     .. grid-item-card::
 
-        hexagons_overlap_.67
+        hexagons_overlap_67
         ^^^
 
-        .. figure:: images/hexagons_overlap_.67.png
+        .. figure:: images/hexagons_overlap_67.png
             :width: 300
-            :alt: hexagons_overlap_.67
+            :alt: hexagons_overlap_67
             :figclass: align-center
 
 .. grid:: 2
@@ -115,12 +115,12 @@ Hexagon patterns
 
     .. grid-item-card::  
 
-        hexagons_overlap_.75
+        hexagons_overlap_75
         ^^^
 
-        .. figure:: images/hexagons_overlap_.75.png
+        .. figure:: images/hexagons_overlap_75.png
             :width: 300
-            :alt: hexagons_overlap_.75
+            :alt: hexagons_overlap_75
             :figclass: align-center
 
     .. grid-item-card::
@@ -128,9 +128,9 @@ Hexagon patterns
         hexagons_overlap_1
         ^^^
 
-        .. figure:: images/hexagons_overlap_1.png
+        .. figure:: images/hexagons_overlap_100.png
             :width: 300
-            :alt: hexagons_overlap_1
+            :alt: hexagons_overlap_100
             :figclass: align-center
 
 |  
