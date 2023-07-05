@@ -66,9 +66,12 @@ Code explanation
 | The optional `size` parameter sets the font size to 18 points.
 
 | ``plt.legend(wedges, full_labels, title="Elements", loc="upper right", bbox_to_anchor=(1, 0, 0.5, 1))`` adds a legend to the plot.
+
 | The first parameter is an iterable containing artists whose labels we want to include in the legend (in this case, all wedges of pie chart).
+
 | The second parameter is an iterable containing strings specifying what label text to use for each artist (in this case, all full labels).
 | The optional `title` parameter specifies what text to use for legend's title (in this case `"Elements"`). 
+
 | The optional `loc` parameter specifies where on the axes the legend should be placed. In this case, it is set to `"upper right"`, which means that the legend will be placed in the upper-right corner of the bounding box.
 | The optional `bbox_to_anchor` parameter specifies a bounding box for the legend in normalized figure coordinates.
 In normalized figure coordinates, the bottom-left corner of the figure is represented by the coordinates (0, 0) and the top-right corner is represented by the coordinates (1, 1). In this case, it is set to `(1, 0, 0.5, 1)`, which means that the bounding box has its bottom-left corner at `(1, 0)` (the right edge of the figure), a width of `0.5`, and a height of `1`.
