@@ -39,6 +39,7 @@ Code explanation
 | ``colors = ['#ff9999', '#66b3ff', '#99ff99', '#ffcc99', '#c2c2f0']``  defines a list of colors to use for the pie chart. Each color is represented as a string containing a hexadecimal color code.
 
 | ``wedges, texts, autotexts = plt.pie(data, labels=labels, autopct=lambda pct: f"{pct:.0f}%", explode=explode, pctdistance=0.8, colors=colors, startangle = 90)`` creates a pie chart with the given data and labels. The optional parameters customize the appearance of the pie chart.
+
 - `wedges, texts, autotexts =` are returned as three lists: one containing the wedges of the pie chart, one containing their corresponding text labels, and one containing their corresponding percentage labels.
 - `data` specifies the data as a list or array of non-negative numbers each of which represents the value of one wedge of the pie chart.
 - `labels=labels` specifies the labels to use for each wedge of the pie chart. It should be a list or array of strings with the same length as `data`. Each string represents the label for one wedge of the pie chart.
@@ -64,8 +65,8 @@ Code explanation
 | The optional `y` parameter specifies how far above or below its default position to place the title. 1.08 means that the title will be placed slightly above its default position.
 | The optional `size` parameter sets the font size to 18 points.
 
-| ``plt.legend(wedges, full_labels, title="Elements", loc="upper right", bbox_to_anchor=(1, 0, 0.5, 1))`` adds a legend to the plot. 
-| The first parameter is an iterable containing artists whose labels we want to include in the legend (in this case, all wedges of pie chart). 
+| ``plt.legend(wedges, full_labels, title="Elements", loc="upper right", bbox_to_anchor=(1, 0, 0.5, 1))`` adds a legend to the plot.
+| The first parameter is an iterable containing artists whose labels we want to include in the legend (in this case, all wedges of pie chart).
 | The second parameter is an iterable containing strings specifying what label text to use for each artist (in this case, all full labels).
 | The optional `title` parameter specifies what text to use for legend's title (in this case `"Elements"`). 
 | The optional `loc` parameter specifies where on the axes the legend should be placed. In this case, it is set to `"upper right"`, which means that the legend will be placed in the upper-right corner of the bounding box.

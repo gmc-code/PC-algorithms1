@@ -47,7 +47,8 @@ Selection sort algorithm
 | ``return numbers`` returns the sorted list of integers.
 | ``numbers = [29, 10, 14, 37, 13, 25, 1, 67, 18, 9]`` creates a list named `numbers` containing 10 integers.
 | ``sorted_numbers = selection_sort(numbers)`` calls the `selection_sort` function with `numbers` as an argument and assigns the result to a variable named `sorted_numbers`. The result is a sorted version of the input list.
-| ``print(sorted_numbers)``prints the sorted list to the console.
+| ``print(sorted_numbers)`` prints the sorted list to the console.
+
 
 ----
 
