@@ -9,21 +9,45 @@ Matplotlib dot plot
 Examples
 -------------
 
-.. image:: images/pets_per_household.png
-    :width: 300
-    :align: center
+.. grid:: 3
+   :gutter: 0
+   :margin: 0
+   :padding: 0
 
-.. image:: images/vehicles_per_household.png
-    :width: 300
-    :align: center
+   .. grid-item-card::  
 
-.. image:: images/Random_distribution.png
-    :width: 300
-    :align: center
+      .. figure:: images/pets_per_household.png
+         :width: 300
+         :alt: images/pets_per_household.png
+         :figclass: align-center
 
-.. image:: images/Normal_distribution.png
-    :width: 600
-    :align: center
+   .. grid-item-card::  
+      
+      .. figure:: images/vehicles_per_household.png
+         :width: 200
+         :alt: images/vehicles_per_household.png
+         :figclass: align-center
+
+
+   .. grid-item-card::  
+
+      .. figure:: images/Random_distribution.png
+         :width: 300
+         :alt: images/Random_distribution.png
+         :figclass: align-center
+
+ 
+.. grid:: 1
+    :gutter: 0
+    :margin: 0
+    :padding: 0
+
+    .. grid-item-card::  
+        
+      .. figure:: images/Normal_distribution.png
+         :width: 300
+         :alt: images/Normal_distribution.png
+         :figclass: align-center
 
 ----
 

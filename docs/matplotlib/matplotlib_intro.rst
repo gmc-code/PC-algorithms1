@@ -38,7 +38,7 @@ Basic plots
     plt.plot(x2[5:], x2[5:]**2, 'r--')
 
     # Add a title (specify font parameters with fontdict)
-    plt.title('Lines Graph!', fontdict={'fontname': 'Comic Sans MS', 'fontsize': 24})
+    plt.title('Lines Graph!', fontdict={'fontname': 'Arial', 'fontsize': 24})
 
     # X and Y labels
     plt.xlabel('X Axis')

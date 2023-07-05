@@ -32,13 +32,13 @@ plt.plot(x, y, "b^--", label="2x")
 # plt.plot(x2[5:], x2[5:]**2, 'r--')
 
 # Add a title (specify font parameters with fontdict)
-plt.title("Lines Graph!", fontdict={"fontname": "Comic Sans MS", "fontsize": 24})
+plt.title("Lines Graph!", fontdict={"fontname": "Lucida Sans", "fontsize": 24})
 
 # X and Y labels
 plt.xlabel("X Axis")
 plt.ylabel("Y Axis")
 
-# X, Y axis Tickmarks (scale of your graph)
+# specify X, Y axis Tickmarks (will resize graph)
 plt.xticks([0, 1, 2, 3, 4, 5])
 # plt.yticks([0,2,4,6,8,10])
 
