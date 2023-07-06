@@ -79,11 +79,16 @@ Here is an explanation of each line of the code with all the syntax details:
 | This line calls the `xticks` function from the `pyplot` module to set the tick values for the x-axis of the current axes. The function is called with one argument: a list of tick values.
 
 | ``ax.set_aspect('equal')``
+
+::
+    ax.set_aspect('equal')
+
 | This line calls the `set_aspect` method of the Axes object stored in variable named `ax`. The method is called with one argument, `'equal'`, which specifies that the aspect ratio of the axes should be set to be equal.
 
-| ``for i in range(len(x)):``
-| \ \ \ \ ``plt.text(x[i]+0.1, y[i]-0.25, f"({x[i]}, {y[i]})", fontsize=12)``
-| | | |  ``plt.text(x[i]+0.1, y[i]-0.25, f"({x[i]}, {y[i]})", fontsize=12)``
+::
+    for i in range(len(x)):
+        plt.text(x[i]+0.1, y[i]-0.25, f"({x[i]}, {y[i]})", fontsize=12)
+
 | These lines use a `for` loop to iterate over each element in variable named `x`. Inside the loop, it calls the `text` function from the `pyplot` module to add text labels to each point on the graph. The function is called with four arguments: an x-coordinate, a y-coordinate, a string that specifies the text to display, and a keyword argument named `fontsize` that specifies the font size for the text.
 
 | ``plt.legend(title="Lines", loc='center left', bbox_to_anchor=(1.05, 0.5))``
