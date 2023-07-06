@@ -14,11 +14,11 @@ def plot_line_graph(title, equation, label):
     fig.subplots_adjust(right=0.7)
     # Plot the line graph
     ax.plot(x, y, "bo-", label=label)
-    # Add a x, y axis lines through the origin
+    # Add a x, y axis black solid lines through the origin
     ax.axhline(0, color="k", linestyle="-")
     ax.axvline(0, color="k", linestyle="-")
-    # add a grid
-    ax.grid(True)
+    # add a grid, grey as dots
+    ax.grid(True, color='grey', linestyle=':')
     # Add a title (specify font parameters with fontdict)
     ax.set_title(title, fontdict={"fontname": "Lucida Sans", "fontsize": 24})
     # X and Y labels
