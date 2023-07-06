@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def plot_line_graph(title, equation, label):
     # Define the range of x values
     x = np.arange(-1, 6)
-    # Calculate the corresponding y values
+    # Calculate the corresponding y values as a np array using the x values.
     y = eval(equation)
     # Resize the Graph (dpi specifies pixels per inch. When saving probably should use 300 if possible)
     fig, ax = plt.subplots(figsize=(8, 8), dpi=100)

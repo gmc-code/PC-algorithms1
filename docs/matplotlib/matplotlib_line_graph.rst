@@ -7,8 +7,8 @@ Matplotlib line graph
 
 ----
 
-Straight line graph
----------------------
+Straight line graph to scale
+--------------------------------
 
 .. image:: images/Line_Graph.png
     :width: 600
@@ -36,19 +36,19 @@ Here is an explanation of each line of the code with all the syntax details:
 
     from pathlib import Path
     
-| This line imports the `Path` class from the `pathlib` module. The `Path` class provides an object-oriented interface for working with file system paths.
+| This line imports the `Path` class from the `pathlib` module. The `Path` class will be used to make the file path for an image of the graph.
 
 ::
 
     import numpy as np
     
-| This line imports the `numpy` module and gives it the alias `np`. The `numpy` module provides a powerful array object and functions for working with arrays.
+| This line imports the `numpy` module and gives it the conventional alias `np`. The `numpy` module will be used to make arrays.
 
 ::
 
     import matplotlib.pyplot as plt
     
-| This line imports the `pyplot` module from the `matplotlib` library and gives it the alias `plt`. The `pyplot` module provides a collection of functions for creating static, animated, and interactive visualizations.
+| This line imports the `pyplot` module from the `matplotlib` library and gives it the conventional alias `plt`. The `pyplot` module provides a collection of functions for creating plots.
 
 ::
 
@@ -66,25 +66,32 @@ Here is an explanation of each line of the code with all the syntax details:
 
     y = eval(equation)
     
-| This line creates a new variable named `y` and assigns it the value returned by calling the built-in `eval` function. The `eval` function is called with one argument, `equation`, which is a string that specifies the equation to evaluate. The function evaluates the expression in the string and returns its value.
+| This line creates a new variable named `y` and assigns it a numpy array from evaluating the expression in the string using the numpy array of x values.
 
 ::
 
-    fig = plt.figure(figsize=(8, 8), dpi=100)
+    fig, ax = plt.subplots(figsize=(8, 8), dpi=100)
     
-| This line creates a new variable named `fig` and assigns it the value returned by calling the `figure` function from the `pyplot` module. The `figure` function is called with two keyword arguments, `figsize` and `dpi`, which specify the size and resolution of the figure in inches and dots per inch, respectively. The function returns a new figure object.
+| This line of code that uses the `subplots` function to create a new figure and one or more subplots and a new axes object. The function returns a tuple containing a figure object and an axes object. An axes object represents a single plot or graph within a figure. It contains all the elements that make up the plot, such as the data series, axes labels, tick marks, grid lines, and title. With a reference to an axes object, you can use its methods to plot data, add labels and titles, customize the appearance of the axes and tick marks, and perform other operations on the plot.
+| `figsize=(8, 8)` is a keyword argument that specifies the size of the figure in inches. In this case, it specifies that the figure should be 8 inches wide and 8 inches tall.
+| `dpi=100` is a keyword argument that specifies the resolution of the figure in dots per inch. In this case, it specifies that the figure should have a resolution of 100 dots per inch.
+| `fig, ax = ...` is an assignment statement that unpacks the tuple returned by the `subplots` function into two variables named `fig` and `ax`. The first element of the tuple, which is a figure object, is assigned to the variable named `fig`. The second element of the tuple, which is an axes object, is assigned to the variable named `ax`.
+| After this line of code is executed, you can use the `fig` variable to refer to the newly created figure object and the `ax` variable to refer to the newly created axes object.
 
 ::
 
     fig.subplots_adjust(right=0.7)
     
-| This line calls the `subplots_adjust` method of the figure object stored in the variable named `fig`. The method is called with one keyword argument, `right`, which specifies the right margin of the subplots in normalized figure coordinates. This adjusts the subplot parameters to make room for the legend.
+| This line calls the `subplots_adjust` method of the figure object stored in the variable named `fig`. right=0.7 is a keyword argument that specifies the right margin of the subplots in normalized figure coordinates. In this case, it specifies that the right margin should be 0.7, which means that the subplots will occupy 70% of the width of the figure from the left edge. This adjusts the subplot parameters to make room for the legend. 
 
 ::
 
-    plt.plot(x, y, "bo-", label=label)
+    ax.plot(x, y, "bo-", label=label)
     
-| This line calls the `plot` function from the `pyplot` module to plot a line graph of the data stored in variables named `x` and `y`. The function is called with four arguments: two arrays of data to plot, a format string that specifies how to format the data points, and a keyword argument named `label` that specifies the label for this data series in the legend.
+| This line calls the `plot` function from the `pyplot` module to plot a line graph of the data stored in variables named `x` and `y`. 
+| `x` and `y` are the first two arguments passed to the plot method. They are arrays of data that specify the x-coordinates and y-coordinates of the data points to plot. In this case, they are variables that contain the x and y values calculated earlier in the code.
+| `"bo-"` is the third argument passed to the plot method. It is a format string that specifies how to format the data points. In this case, it specifies that the data points should be plotted as blue circles connected by solid lines. The first character, "b", specifies the color of the data points (blue). The second character, "o", specifies the marker style for the data points (circle). The third character, "-", specifies the line style for connecting the data points (solid).
+| `label=label` It specifies the label for this data series in the legend. In this case, it is a variable that contains the label string specified earlier in the code.
 
 ::
 
@@ -106,26 +113,26 @@ Here is an explanation of each line of the code with all the syntax details:
 
 ::
 
-    plt.title(title, fontdict={"fontname": "Lucida Sans", "fontsize": 24})
+    ax.title(title, fontdict={"fontname": "Lucida Sans", "fontsize": 24})
     
 | This line calls the `title` function from the `pyplot` module to add a title to the current axes. The function is called with two arguments: a string that specifies the title text and a dictionary that specifies font properties for the title text.
 
 ::
 
-    plt.xlabel("X Axis")
+    ax.xlabel("X Axis")
     
 | This line calls the `xlabel` function from the `pyplot` module to add a label to the x-axis of the current axes. The function is called with one argument: a string that specifies the label text.
 
 ::
 
-    plt.ylabel("Y Axis")
+    ax.ylabel("Y Axis")
     
     
 | This line calls the `ylabel` function from the `pyplot` module to add a label to the y-axis of the current axes. The function is called with one argument: a string that specifies the label text.
 
 ::
 
-    plt.xticks(list(x))
+    ax.xticks(list(x))
     
 | This line calls the `xticks` function from the `pyplot` module to set the tick values for the x-axis of the current axes. The function is called with one argument: a list of tick values.
 
@@ -138,14 +145,14 @@ Here is an explanation of each line of the code with all the syntax details:
 :: 
 
     for i in range(len(x)):
-        plt.text(x[i]+0.1, y[i]-0.25, f"({x[i]}, {y[i]})", fontsize=12)
+        ax.text(x[i]+0.1, y[i]-0.25, f"({x[i]}, {y[i]})", fontsize=12)
 
     
 | These lines use a `for` loop to iterate over each element in variable named `x`. Inside the loop, it calls the `text` function from the `pyplot` module to add text labels to each point on the graph. The function is called with four arguments: an x-coordinate, a y-coordinate, a string that specifies the text to display, and a keyword argument named `fontsize` that specifies the font size for the text.
 
 ::
 
-    plt.legend(title="Lines", loc='center left', bbox_to_anchor=(1.05, 0.5))
+    ax.legend(title="Lines", loc='center left', bbox_to_anchor=(1.05, 0.5))
     
 | This line calls the `legend` function from the `pyplot` module to add a legend to the current axes. The function is called with three keyword arguments: a string that specifies the title for the legend, a string that specifies where to place the legend relative to its anchor point, and a tuple that specifies where to place its anchor point in normalized axes coordinates.
 
