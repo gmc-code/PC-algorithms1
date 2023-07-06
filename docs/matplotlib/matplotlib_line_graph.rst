@@ -81,11 +81,13 @@ Here is an explanation of each line of the code with all the syntax details:
 | ``ax.set_aspect('equal')``
 
 ::
+    
     ax.set_aspect('equal')
 
 | This line calls the `set_aspect` method of the Axes object stored in variable named `ax`. The method is called with one argument, `'equal'`, which specifies that the aspect ratio of the axes should be set to be equal.
 
-::
+:: 
+
     for i in range(len(x)):
         plt.text(x[i]+0.1, y[i]-0.25, f"({x[i]}, {y[i]})", fontsize=12)
 
