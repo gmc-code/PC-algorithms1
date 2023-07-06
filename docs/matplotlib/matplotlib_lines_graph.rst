@@ -31,29 +31,31 @@ Python code
 Code explanation
 -------------------
 
-Sure! Here's an explanation of each line of the code:
+
+Here is an explanation of each line of the code with all the syntax details:
 
 ::
 
-from pathlib import Path  # Import Path class from pathlib module
-
-This line imports the `Path` class from the `pathlib` module. The `Path` class provides an object-oriented way to handle filesystem paths.
-
-::
-
-import numpy as np  # Import numpy module as np
-
-This line imports the `numpy` module and gives it the alias `np`. `numpy` is a library for working with arrays of numerical data.
+    from pathlib import Path
+    
+| This line imports the `Path` class from the `pathlib` module. The `Path` class will be used to make the file path for an image of the graph.
 
 ::
 
-import matplotlib.pyplot as plt  # Import pyplot module from matplotlib as plt
-
-This line imports the `pyplot` module from the `matplotlib` library and gives it the alias `plt`. `pyplot` provides a convenient interface for creating plots and charts.
+    import numpy as np
+    
+| This line imports the `numpy` module and gives it the conventional alias `np`. The `numpy` module will be used to make arrays.
 
 ::
 
-def plot_line_graph(title, equations, labels):
+    import matplotlib.pyplot as plt
+    
+| This line imports the `pyplot` module from the `matplotlib` library and gives it the conventional alias `plt`. The `pyplot` module provides a collection of functions for creating plots.
+
+
+::
+
+    def plot_line_graph(title, equations, labels):
 
 This line defines a function named `plot_line_graph` that takes three arguments: `title`, `equations`, and `labels`. The function will plot line graphs of the given equations and label them with the given labels.
 
@@ -103,48 +105,48 @@ This line starts a for loop that iterates over each equation and label in parall
 
 ::
 
-        # Calculate the corresponding y values
-        y = eval(equation)
+    # Calculate the corresponding y values
+    y = eval(equation)
 
 This line calculates the y values for the current equation by evaluating the equation string using the `eval` function. The `eval` function takes a string argument and evaluates it as a Python expression, returning the result.
 
 ::
 
-        y_min = int(min(min(y),y_min))
-        y_max = int(max(max(y), y_max))
+    y_min = int(min(min(y),y_min))
+    y_max = int(max(max(y), y_max))
 
 These lines update the `y_min` and `y_max` variables to keep track of the minimum and maximum y values of all the plotted lines. The `min` and `max` functions are used to find the minimum and maximum values of the current line, and these values are compared to the current values of `y_min` and `y_max` to update them if necessary.
 
 ::
 
-        color = colors[i % len(colors)]
+    color = colors[i % len(colors)]
 
 This line selects a color for the current line from the color cycle. The index of the color is calculated using the modulo operator (`%`) to cycle through the colors in the color cycle.
 
 ::
 
-        plt.plot(x, y, label=label, color=color)
+    plt.plot(x, y, label=label, color=color)
 
 This line plots a line on the current figure using the `plot` function from the `pyplot` module. The x and y values for the line are passed as arguments, along with a label for the line and a color.
 
 ::
 
-        # Create a lambda function from the equation string
-        f = eval("lambda x: " + equation)
+    # Create a lambda function from the equation string
+    f = eval("lambda x: " + equation)
 
 This line creates a lambda function from the equation string using the `eval` function. A lambda function is an anonymous function that can be defined inline. In this case, a lambda function is created that takes a single argument `x` and returns the result of evaluating the equation string with that value of `x`.
 
 ::
 
-        # Label each point on the graph for x = -1 to 5 as integers
-        for j in range(-1, 6):
-            xi = j
-            yi = f(xi)
-            plt.plot(xi, yi, "o", color=color)
-            if int(yi) == yi:
-                plt.text(xi+0.1, yi-0.25, f"({xi}, {int(yi)})", fontsize=10)
-            else:
-                plt.text(xi+0.1, yi-0.25, f"({xi}, {yi:.2f})", fontsize=10)
+    # Label each point on the graph for x = -1 to 5 as integers
+    for j in range(-1, 6):
+        xi = j
+        yi = f(xi)
+        plt.plot(xi, yi, "o", color=color)
+        if int(yi) == yi:
+            plt.text(xi+0.1, yi-0.25, f"({xi}, {int(yi)})", fontsize=10)
+        else:
+            plt.text(xi+0.1, yi-0.25, f"({xi}, {yi:.2f})", fontsize=10)
 
 These lines label each point on the graph where x is an integer between -1 and 5. A nested for loop is used to iterate over these x values. For each x value, the corresponding y value is calculated using the lambda function created earlier. A point is plotted at this (x,y) location using the `plot` function with marker style `"o"` to indicate that a circle should be used as the marker. Then, text is added to label this point using the `text` function from the `pyplot` module. The text is positioned slightly to the right and below the point, and the text string is formatted using an f-string to include the x and y values. If the y value is an integer, it is displayed as an integer, otherwise it is displayed with two decimal places.
 
@@ -228,14 +230,14 @@ This line displays the plot on screen using the `show` function from the `pyplot
 
 ::
 
-def main():
-    plot_line_graph("Straight line and parabola", ["2 * x + 1", "(x-1)**2"], ["y = 2x + 1", r"y = (x-1)$^2$"])
+    def main():
+        plot_line_graph("Straight line and parabola", ["2 * x + 1", "(x-1)**2"], ["y = 2x + 1", r"y = (x-1)$^2$"])
 
 This line defines a `main` function that calls the `plot_line_graph` function with example arguments to plot a straight line and a parabola.
 
 ::
 
-if __name__ == '__main__':
-    main()
+    if __name__ == '__main__':
+        main()
 
 These lines check if this file is being run as a script (as opposed to being imported as a module) using the built-in `__name__` attribute. If this file is being run as a script, then the `main` function is called to execute it.
