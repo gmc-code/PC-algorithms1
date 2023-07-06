@@ -181,13 +181,15 @@ Here is an explanation of each line of the code with all the syntax details:
 
 ::
 
-    plot_line_graph("Line Graph", "2 * x + 1", "y = 2x + 1")
+    def main():
+        plot_line_graph("Line Graph", "2 * x + 1", "y = 2x + 1")
     
 | The main function will call plot_line_graph function with arguments "Line Graph", "2 * x + 1" and "y = 2x + 1" respectively.
 
 ::
 
     if __name__ == '__main__':
+        main()
     
 | These lines check if value of __name__ (a built-in variable representing name of current module) is '__main__' (which is true when script is run as main program as opposed to being imported as module) and if so calls main function.
 
