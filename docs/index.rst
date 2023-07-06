@@ -45,6 +45,7 @@ PC-algorithms
 
     matplotlib/matplotlib_intro.rst
     matplotlib/matplotlib_line_graph.rst
+    matplotlib/matplotlib_lines_graph.rst
     matplotlib/matplotlib_pie_chart.rst
     matplotlib/matplotlib_histogram.rst
     matplotlib/matplotlib_dot_plot.rst
