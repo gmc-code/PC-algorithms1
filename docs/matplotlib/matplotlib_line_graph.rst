@@ -1,5 +1,5 @@
 ====================================================
-Matplotlib line graph
+Matplotlib straight line graph
 ====================================================
 
     
@@ -10,7 +10,7 @@ Matplotlib line graph
 Straight line graph to scale
 --------------------------------
 
-.. image:: images/Line_Graph.png
+.. image:: images/Straight_line.png
     :width: 600
     :align: center
 
@@ -70,23 +70,16 @@ Here is an explanation of each line of the code with all the syntax details:
 
 ::
 
-    fig, ax = plt.subplots(figsize=(8, 8), dpi=100)
+    plt.figure(figsize=(8, 8), dpi=100)
     
-| This line of code that uses the `subplots` function to create a new figure and one or more subplots and a new axes object. The function returns a tuple containing a figure object and an axes object. An axes object represents a single plot or graph within a figure. It contains all the elements that make up the plot, such as the data series, axes labels, tick marks, grid lines, and title. With a reference to an axes object, you can use its methods to plot data, add labels and titles, customize the appearance of the axes and tick marks, and perform other operations on the plot.
+| This line of code that creates a new Figure object and returns it.
+| A Figure object is the top-level container for all plot elements. It represents the entire window in the user interface, including the plotting area, axes, labels, titles, and legends. A Figure object can contain multiple Axes objects, which are the individual plots within the figure.  
 | `figsize=(8, 8)` is a keyword argument that specifies the size of the figure in inches. In this case, it specifies that the figure should be 8 inches wide and 8 inches tall.
 | `dpi=100` is a keyword argument that specifies the resolution of the figure in dots per inch. In this case, it specifies that the figure should have a resolution of 100 dots per inch.
-| `fig, ax = ...` is an assignment statement that unpacks the tuple returned by the `subplots` function into two variables named `fig` and `ax`. The first element of the tuple, which is a figure object, is assigned to the variable named `fig`. The second element of the tuple, which is an axes object, is assigned to the variable named `ax`.
-| After this line of code is executed, you can use the `fig` variable to refer to the newly created figure object and the `ax` variable to refer to the newly created axes object.
 
 ::
 
-    fig.subplots_adjust(right=0.7)
-    
-| This line calls the `subplots_adjust` method of the figure object stored in the variable named `fig`. right=0.7 is a keyword argument that specifies the right margin of the subplots in normalized figure coordinates. In this case, it specifies that the right margin should be 0.7, which means that the subplots will occupy 70% of the width of the figure from the left edge. This adjusts the subplot parameters to make room for the legend. 
-
-::
-
-    ax.plot(x, y, "bo-", label=label)
+    plt.plot(x, y, "bo-", label=label)
     
 | This line calls the `plot` function from the `pyplot` module to plot a line graph of the data stored in variables named `x` and `y`. 
 | `x` and `y` are the first two arguments passed to the plot method. They are arrays of data that specify the x-coordinates and y-coordinates of the data points to plot. In this case, they are variables that contain the x and y values calculated earlier in the code.
@@ -95,64 +88,73 @@ Here is an explanation of each line of the code with all the syntax details:
 
 ::
 
-    ax.axhline(0, color="k", linestyle="-")
+    plt.axhline(0, color="k", linestyle="-")
     
-| This line calls the `axhline` function from the `pyplot` module to add a horizontal line at y=0 to the current axes. The function is called with three keyword arguments: a y-value at which to draw the horizontal line, a color for the line, and a linestyle for the line.
+| This line calls the `axhline` function from the `pyplot` module to add a horizontal line at y=0 to the current axes. The function is called with three keyword arguments: a y-value at which to draw the horizontal line (at y=0), a color for the line (black), and a (solid) linestyle for the line.
 
 ::
 
-    ax.axvline(0, color="k", linestyle="-")
+    plt.axvline(0, color="k", linestyle="-")
     
-| This line calls the `axvline` function from the `pyplot` module to add a vertical line at x=0 to the current axes. The function is called with three keyword arguments: an x-value at which to draw the vertical line, a color for the line, and a linestyle for the line.
+| This line calls the `axvline` function from the `pyplot` module to add a vertical line at x=0 to the current axes. The function is called with three keyword arguments: a y-value at which to draw the horizontal line (at y=0), a color for the line (black), and a (solid) linestyle for the line.
 
 ::
 
-    ax.grid(True)
+    plt.grid(True, color='grey', linestyle=':')
     
-| In this example, we call the grid method of the Axes object stored in variable named ax and pass it one argument, True, which specifies that a grid should be displayed. You can add this line of code after creating the Axes object and before calling the show method of the pyplot module to display the plot with a grid.
+| The grid method of the Axes object, ax, has 3 parameters here. True specifies that a grid should be displayed. The color for the line is the default grey, and the linestyle is dotted.
 
 ::
 
-    ax.title(title, fontdict={"fontname": "Lucida Sans", "fontsize": 24})
+    plt.title(title, fontdict={"fontname": "Lucida Sans", "fontsize": 24})
     
-| This line calls the `title` function from the `pyplot` module to add a title to the current axes. The function is called with two arguments: a string that specifies the title text and a dictionary that specifies font properties for the title text.
+| This line calls the `title` function from the `pyplot` module to add a title to the current axes. The function is called with two arguments: a string that specifies the title text and a dictionary that specifies font properties for the title text which includes Lucida Sans font at 24 pt.
 
 ::
 
-    ax.xlabel("X Axis")
+    plt.xlabel("X Axis")
     
-| This line calls the `xlabel` function from the `pyplot` module to add a label to the x-axis of the current axes. The function is called with one argument: a string that specifies the label text.
+| This line calls the `xlabel` function from the `pyplot` module to add a label to the x-axis of the current axes. The function is called with one argument: a string, "X Axis", that specifies the label text.
 
 ::
 
-    ax.ylabel("Y Axis")
+    plt.ylabel("Y Axis")
     
     
-| This line calls the `ylabel` function from the `pyplot` module to add a label to the y-axis of the current axes. The function is called with one argument: a string that specifies the label text.
+| This line calls the `ylabel` function from the `pyplot` module to add a label to the y-axis of the current axes. The function is called with one argument: a string, "Y Axis", that specifies the label text.
 
 ::
 
-    ax.xticks(list(x))
+    plt.xticks(list(x))
     
 | This line calls the `xticks` function from the `pyplot` module to set the tick values for the x-axis of the current axes. The function is called with one argument: a list of tick values.
 
 ::
 
-    ax.set_aspect('equal')
-    
-| This line calls the `set_aspect` method of the Axes object stored in variable named `ax`. The method is called with one argument, `'equal'`, which specifies that the aspect ratio of the axes should be set to be equal.
+    y_min = int(min(y))
+    y_max = int(max(y))
+    plt.set_yticks(range(y_min, y_max+1))
+
+| These set the `yticks` to a list of y values from the lowest to the highest needed for the previously given x values.
+
+::
+
+    plt.gca().set_aspect('equal')
+
+| The `plt.gca` function returns the current Axes object, so calling plt.gca().set_aspect('equal') sets the aspect ratio of the current Axes object to be equal.
+| This means that they have the same scale.
 
 :: 
 
     for i in range(len(x)):
-        ax.text(x[i]+0.1, y[i]-0.25, f"({x[i]}, {y[i]})", fontsize=12)
+        plt.text(x[i]+0.1, y[i]-0.25, f"({x[i]}, {y[i]})", fontsize=10)
 
     
-| These lines use a `for` loop to iterate over each element in variable named `x`. Inside the loop, it calls the `text` function from the `pyplot` module to add text labels to each point on the graph. The function is called with four arguments: an x-coordinate, a y-coordinate, a string that specifies the text to display, and a keyword argument named `fontsize` that specifies the font size for the text.
+| These lines mark in the coordinates of each point by using a `for` loop to iterate over each element in variable named `x`. Inside the loop, it calls the `text` function from the `pyplot` module to add text labels to each point on the graph. The function is called with four arguments: an x-coordinate `x[i]`, a y-coordinate `y[i]`, a string that specifies the text to display `f"({x[i]}, {y[i]})"`, and a keyword argument named `fontsize` that specifies the font size of `10` for the text.
 
 ::
 
-    ax.legend(title="Lines", loc='center left', bbox_to_anchor=(1.05, 0.5))
+    plt.legend(title="Line", loc='center left', bbox_to_anchor=(1.05, 0.5))
     
 | This line calls the `legend` function from the `pyplot` module to add a legend to the current axes. The function is called with three keyword arguments: a string that specifies the title for the legend, a string that specifies where to place the legend relative to its anchor point, and a tuple that specifies where to place its anchor point in normalized axes coordinates.
 
@@ -199,31 +201,4 @@ Here is an explanation of each line of the code with all the syntax details:
         main()
     
 | These lines check if value of __name__ (a built-in variable representing name of current module) is '__main__' (which is true when script is run as main program as opposed to being imported as module) and if so calls main function.
-
-----
-
-Straight line graph with parabola
-------------------------------------
-
-
-.. image:: images/Line_Graph_2.png
-    :width: 600
-    :align: center
-
-----
-
-Python code
--------------
-
-    
-| The python code is below.
-
-.. literalinclude:: files/line_graph_2.py
-    :linenos:
-
-----
-
-Code explanation
--------------------
-
 
