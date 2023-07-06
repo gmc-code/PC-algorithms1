@@ -15,8 +15,10 @@ def plot_line_graph(title, equation, label):
     # Plot the line graph
     ax.plot(x, y, "bo-", label=label)
     # Add a x, y axis lines through the origin
-    ax.axhline(0, color="gray", linestyle="--")
-    ax.axvline(0, color="gray", linestyle="--")
+    ax.axhline(0, color="k", linestyle="-")
+    ax.axvline(0, color="k", linestyle="-")
+    # add a grid
+    ax.grid(True)
     # Add a title (specify font parameters with fontdict)
     ax.set_title(title, fontdict={"fontname": "Lucida Sans", "fontsize": 24})
     # X and Y labels

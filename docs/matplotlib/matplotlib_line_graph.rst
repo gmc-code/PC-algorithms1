@@ -50,14 +50,12 @@ import matplotlib.pyplot as plt
 
 This line imports the `pyplot` module from the `matplotlib` library and gives it the alias `plt`. The `pyplot` module provides a collection of functions for creating static, animated, and interactive visualizations.
 
-```python
-def plot_line_graph(title, equation, label):
+```def plot_line_graph(title, equation, label):
 ```
 
 This line defines a new function named `plot_line_graph` that takes three arguments: `title`, `equation`, and `label`. The function is used to create a line graph of the specified equation with the specified title and label.
 
-```python
-    x = np.arange(-1, 6)
+```x = np.arange(-1, 6)
 ```
 
 This line creates a new variable named `x` and assigns it the value returned by calling the `arange` function from the `numpy` module. The `arange` function is called with two arguments, `-1` and `6`, which specify the start and stop values for the range of values to generate. The function returns an array of values from `-1` to `5` with a step size of `1`.
@@ -87,16 +85,22 @@ This line calls the `subplots_adjust` method of the figure object stored in the 
 This line calls the `plot` function from the `pyplot` module to plot a line graph of the data stored in variables named `x` and `y`. The function is called with four arguments: two arrays of data to plot, a format string that specifies how to format the data points, and a keyword argument named `label` that specifies the label for this data series in the legend.
 
 ```python
-    plt.axhline(0, color="gray", linestyle="--")
+    ax.axhline(0, color="k", linestyle="-")
 ```
-
+   
 This line calls the `axhline` function from the `pyplot` module to add a horizontal line at y=0 to the current axes. The function is called with three keyword arguments: a y-value at which to draw the horizontal line, a color for the line, and a linestyle for the line.
 
 ```python
-    plt.axvline(0, color="gray", linestyle="--")
+    ax.axvline(0, color="k", linestyle="-")
 ```
 
 This line calls the `axvline` function from the `pyplot` module to add a vertical line at x=0 to the current axes. The function is called with three keyword arguments: an x-value at which to draw the vertical line, a color for the line, and a linestyle for the line.
+
+```python
+    ax.grid(True)
+```
+
+In this example, we call the grid method of the Axes object stored in variable named ax and pass it one argument, True, which specifies that a grid should be displayed. You can add this line of code after creating the Axes object and before calling the show method of the pyplot module to display the plot with a grid.
 
 ```python
     plt.title(title, fontdict={"fontname": "Lucida Sans", "fontsize": 24})
