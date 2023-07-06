@@ -2,6 +2,7 @@
 Simple stats
 =======================
 
+| THe statistics module is part of the python standard library.
 | See: https://docs.python.org/3/library/statistics.html
 
 ----
