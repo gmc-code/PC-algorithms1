@@ -6,7 +6,7 @@ Matplotlib pie chart csv
 
 ----
 
-.. image:: docs/matplotlib/files/pie_chart_letters_combine.py
+.. image:: images/pie_chart_letters_combine.py
     :width: 600
     :align: center
 
