@@ -144,6 +144,19 @@ This line creates a lambda function from the equation string using the `eval` fu
 
 These lines label each point on the graph where x is an integer between -1 and 5. A nested for loop is used to iterate over these x values. For each x value, the corresponding y value is calculated using the lambda function created earlier. A point is plotted at this (x,y) location using the `plot` function with marker style `"o"` to indicate that a circle should be used as the marker. Then, text is added to label this point using the `text` function from the `pyplot` module. The text is positioned slightly to the right and below the point, and the text string is formatted using an f-string to include the x and y values. If the y value is an integer, it is displayed as an integer, otherwise it is displayed with two decimal places.
 
+    
+::
+
+    # Calculate the corresponding y values for both lines
+    y1 = eval(equations[0])
+    y2 = eval(equations[1])            
+    # Fill the area between the two lines
+    plt.fill_between(x, y1, y2, where=(y1 > y2), interpolate=True, color='green', alpha=0.2)
+    plt.fill_between(x, y1, y2, where=(y1 <= y2), interpolate=True, color='red', alpha=0.2)
+
+The `fill_between` function fills the area between two plotted lines. This code calculates the `y` values for both lines using the given equations and plots them. Then it uses the `fill_between` function to fill the area between the two lines with a color. The `where` parameter specifies a condition that determines which regions to fill. In this example, we fill the region where `y1 > y2` with green color and where `y1 <= y2` with red color. The `interpolate` parameter specifies whether to interpolate between the two lines to find the precise boundary of the filled region. The `alpha` parameter controls the transparency of the fill color.
+
+
 ::
 
     # Add a x, y axis lines through the origin

@@ -12,6 +12,8 @@ def plot_pie_chart(data, labels, full_labels, title):
     wedges, texts, autotexts = plt.pie(data, labels=labels, autopct=lambda pct: f"{pct:.0f}%", explode=explode, pctdistance=0.8, colors=colors, startangle = 90)
     # Set the font size  for the data labels
     plt.setp(texts, size=16)
+
+    plt.tight_layout()
     # Set the font size and weight for the data labels
     plt.setp(autotexts, size=12, weight="bold")
     # Set the aspect ratio of the plot to be equal
