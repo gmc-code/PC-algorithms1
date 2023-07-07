@@ -6,7 +6,7 @@ Matplotlib pie chart csv
 
 ----
 
-.. image:: images/pie_chart_letters_combine.py
+.. image:: images/Letter_frequency_sorted.png
     :width: 600
     :align: center
 
