@@ -6,7 +6,6 @@ from pathlib import Path
 def plot_pie_chart(data, labels, full_labels, title):
     # Create a list of values to determine how far each wedge of the pie chart should be offset from the center
     explode = [0 if x > 8 else 0.3 for x in data]
-    print(explode)
     # Define the colors to use for the pie chart
     colors = ['#ff9999', '#66b3ff', '#99ff99', '#ffcc99', '#c2c2f0']
     # Plot the pie chart with the given data, labels, and formatting options

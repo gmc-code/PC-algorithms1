@@ -21,7 +21,7 @@ Python code
 
 | The python code is below.
 
-.. literalinclude:: files/pie_chart.py
+.. literalinclude:: files/pie_chart_earth.py
     :linenos:
 
 ----

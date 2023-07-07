@@ -7,6 +7,16 @@ from pathlib import Path
 
 
 def plot_weather(title, url):
+    """Plots the weather data from the given url and gives it the given title.
+
+    Args:
+        title (str): The title of the plot.
+        url (str): The url of the API that provides weather data.
+
+    Returns:
+        None
+    """
+
     with urlopen(url) as response:
         source = response.read()
     data = json.loads(source)
