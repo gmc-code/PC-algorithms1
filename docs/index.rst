@@ -40,22 +40,6 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
-    :caption: Matplotlib
-    :numbered:
-
-    matplotlib/matplotlib_intro.rst
-    matplotlib/matplotlib_plot_1.rst
-    matplotlib/matplotlib_plot_2.rst
-    matplotlib/matplotlib_plot_json.rst
-    matplotlib/matplotlib_pie_chart.rst
-    matplotlib/matplotlib_histogram.rst
-    matplotlib/matplotlib_dot_plot.rst
-    matplotlib/matplotlib_box_plot.rst
-    matplotlib/matplotlib_fonts.rst
-
-
-.. toctree::
-    :maxdepth: 2
     :caption: Pseudocode for maths
     :numbered:
 
@@ -144,8 +128,26 @@ PC-algorithms
 
     maths_python/simple_stats.rst
 
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Matplotlib
+    :numbered:
+
+    matplotlib/matplotlib_intro.rst
+    matplotlib/matplotlib_plot_1.rst
+    matplotlib/matplotlib_plot_2.rst
+    matplotlib/matplotlib_plot_json.rst
+    matplotlib/matplotlib_pie_chart.rst
+    matplotlib/matplotlib_histogram.rst
+    matplotlib/matplotlib_dot_plot.rst
+    matplotlib/matplotlib_box_plot.rst
+    matplotlib/matplotlib_fonts.rst
+
+
+
 ..    
     maths_python/quick_sort.rst
     maths_python/selection_sort.rst
     maths_python/year_10_examples.rst
-    

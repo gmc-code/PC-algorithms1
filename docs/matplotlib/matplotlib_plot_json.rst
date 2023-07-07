@@ -1,5 +1,5 @@
 ====================================================
-Matplotlib plot josn
+Matplotlib plot json
 ====================================================
 
 | Matplotlib can be used to draw a graph of json data from the web.
@@ -10,8 +10,7 @@ Straight line graph with parabola
 ------------------------------------
 
 
-.. image
-:: images/Melb_Temp_forecast_Jul_2023.png
+.. image:: images/Melb_Temp_forecast_Jul_2023.png
     :width: 600
     :align: center
 
@@ -23,8 +22,7 @@ Python code
     
 | The python code is below.
 
-.. literalinclude
-:: files/plot_web_json.py
+.. literalinclude:: files/plot_web_json.py
     :linenos:
 
 ----
@@ -38,7 +36,7 @@ Here is an explanation of each line of the code with all the syntax details:
 
     import numpy as np
 
-- This imports the numpy library, which is used for working with arrays and matrices, and gives it the alias np for convenience.
+This imports the numpy library, which is used for working with arrays and matrices, and gives it the alias np for convenience.
 
 ::
 
