@@ -6,9 +6,8 @@ Matplotlib plot json
 
 ----
 
-Straight line graph with parabola
+Temperature forecast
 ------------------------------------
-
 
 .. image:: images/Melb_Temp_forecast_Jul_2023.png
     :width: 600
