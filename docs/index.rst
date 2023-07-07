@@ -44,8 +44,9 @@ PC-algorithms
     :numbered:
 
     matplotlib/matplotlib_intro.rst
-    matplotlib/matplotlib_line_graph.rst
-    matplotlib/matplotlib_lines_graph.rst
+    matplotlib/matplotlib_plot_1.rst
+    matplotlib/matplotlib_plot_2.rst
+    matplotlib/matplotlib_plot_json.rst
     matplotlib/matplotlib_pie_chart.rst
     matplotlib/matplotlib_histogram.rst
     matplotlib/matplotlib_dot_plot.rst

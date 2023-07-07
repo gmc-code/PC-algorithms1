@@ -1,8 +1,7 @@
 ====================================================
-Matplotlib 2 lines graph
+Matplotlib plot 2 lines
 ====================================================
 
-    
 | Matplotlib can be used to draw a graph with multiple lines.
 
 ----
@@ -23,7 +22,7 @@ Python code
     
 | The python code is below.
 
-.. literalinclude:: files/lines_graph.py
+.. literalinclude:: files/plot_2.py
     :linenos:
 
 ----

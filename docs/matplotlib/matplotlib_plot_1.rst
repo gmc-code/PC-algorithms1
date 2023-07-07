@@ -1,7 +1,6 @@
 ====================================================
-Matplotlib straight line graph
+Matplotlib plot 1 line
 ====================================================
-
     
 | Matplotlib can be used to draw a line graph.
 
@@ -22,7 +21,7 @@ Python code
     
 | The python code is below.
 
-.. literalinclude:: files/line_graph.py
+.. literalinclude:: files/plot_1.py
     :linenos:
 
 ----
@@ -70,11 +69,11 @@ Here is an explanation of each line of the code with all the syntax details:
 
 ::
 
-    plt.figure(figsize=(8, 8), dpi=100)
+    plt.figure(figsize=(7, 8), dpi=100)
     
 | This line of code that creates a new Figure object and returns it.
 | A Figure object is the top-level container for all plot elements. It represents the entire window in the user interface, including the plotting area, axes, labels, titles, and legends. A Figure object can contain multiple Axes objects, which are the individual plots within the figure.  
-| `figsize=(8, 8)` is a keyword argument that specifies the size of the figure in inches. In this case, it specifies that the figure should be 8 inches wide and 8 inches tall.
+| `figsize=(7, 8)` is a keyword argument that specifies the size of the figure in inches. In this case, it specifies that the figure should be 7 inches wide and 8 inches tall.
 | `dpi=100` is a keyword argument that specifies the resolution of the figure in dots per inch. In this case, it specifies that the figure should have a resolution of 100 dots per inch.
 
 ::
@@ -154,7 +153,7 @@ Here is an explanation of each line of the code with all the syntax details:
 
 ::
 
-    plt.legend(title="Line", loc='center left', bbox_to_anchor=(1.05, 0.5))
+    plt.legend(title="Line", loc='center left', bbox_to_anchor=(1.00, 0.5))
     
 | This line calls the `legend` function from the `pyplot` module to add a legend to the current axes. The function is called with three keyword arguments: a string that specifies the title for the legend, a string that specifies where to place the legend relative to its anchor point, and a tuple that specifies where to place its anchor point in normalized axes coordinates.
 

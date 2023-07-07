@@ -18,8 +18,8 @@ def plot_line_graph(title, equation, label):
     x = np.arange(-1, 6)
     # Calculate the corresponding y values as a np array using the x values.
     y = eval(equation)
-    # Resize the Graph (dpi specifies pixels per inch. When saving probably should use 300 if possible)
-    plt.figure(figsize=(8, 8), dpi=100)
+    # set size and resolution
+    plt.figure(figsize=(7, 8), dpi=100)
     # Plot the line graph
     plt.plot(x, y, "bo-", label=label)
     # Add a x, y axis black solid lines through the origin
@@ -44,7 +44,7 @@ def plot_line_graph(title, equation, label):
     for i in range(len(x)):
         plt.text(x[i]+0.1, y[i]-0.25, f"({x[i]}, {y[i]})", fontsize=10)
     # Place legend outside plot at top right, making extra room for it
-    plt.legend(title="Line", loc='center left', bbox_to_anchor=(1.05, 0.5))
+    plt.legend(title="Line", loc='center left', bbox_to_anchor=(1.00, 0.5))
     # Get the directory of the current file
     currfile_dir = Path(__file__).parent
     # Replace spaces in title with underscores to create filename for saving figure
