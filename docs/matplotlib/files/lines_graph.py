@@ -20,26 +20,27 @@ def plot_line_graph(title, equations, labels):
     fig = plt.figure(figsize=(8, 8), dpi=100)
     # Adjust subplot parameters to make room for the legend
     fig.subplots_adjust(right=0.75)
-    # Get the default color cycle
-    prop_cycle = plt.rcParams['axes.prop_cycle']
-    colors = prop_cycle.by_key()['color']
-    # Plot the line graphs
+    # set initial y_min and y_max that will be used for y ticks
     y_min = 0
     y_max = 0
     for i, (equation, label) in enumerate(zip(equations, labels)):
         # Calculate the corresponding y values
         y = eval(equation)
-        y_min = int(min(min(y),y_min))
+        # since y is an array, need to do min(y) first before combining with y_min
+        y_min = int(min(min(y), y_min))
         y_max = int(max(max(y), y_max))
-        color = colors[i % len(colors)]
+        # use default colours C0, C1...C9
+        color = f'C{i}'
+        # Plot the line graph
         plt.plot(x, y, label=label, color=color)
-        # Create a lambda function from the equation string
+        # Create a lambda function from the equation string to allow use of variable xi
         f = eval("lambda x: " + equation)
         # Label each point on the graph for x = -1 to 5 as integers
         for j in range(-1, 6):
             xi = j
             yi = f(xi)
             plt.plot(xi, yi, "o", color=color)
+            # test to see if value is an integer so y coordinates can avoid using decimals
             if int(yi) == yi:
                 plt.text(xi+0.1, yi-0.25, f"({xi}, {int(yi)})", fontsize=10)
             else:

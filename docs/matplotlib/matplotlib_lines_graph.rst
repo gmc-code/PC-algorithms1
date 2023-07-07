@@ -1,9 +1,9 @@
 ====================================================
-Matplotlib straight line and curved line graph
+Matplotlib 2 lines graph
 ====================================================
 
     
-| Matplotlib can be used to draw a graph wiht multiple lines.
+| Matplotlib can be used to draw a graph with multiple lines.
 
 ----
 
@@ -64,7 +64,7 @@ This line defines a function named `plot_line_graph` that takes three arguments:
     # Define the range of x values
     x = np.linspace(-1, 5, 100)
 
-This line creates an array of 100 evenly spaced values between -1 and 5 using the `linspace` function from the `numpy` library. This array represents the range of x values that will be used to plot the line graphs.
+This line creates an array of 100 evenly spaced values between -1 and 5. This array represents the range of x values that will be used to plot the line graphs. It is need to give  asmooth curve to the parabola.
 
 ::
 
@@ -78,19 +78,11 @@ This line creates a new figure with a size of 8 inches by 8 inches and a resolut
     # Adjust subplot parameters to make room for the legend
     fig.subplots_adjust(right=0.75)
 
-This line adjusts the subplot parameters of the figure to make room for the legend on the right side of the plot. The `right` parameter specifies the fraction of the figure width that is reserved for whitespace on the right side of the subplots.
+This line adjusts the subplot parameters of the figure to make room for the legend on the right side of the plot. The `right` parameter specifies the position of the right edge of the subplots, as a fraction of the figure width.
 
 ::
 
-    # Get the default color cycle
-    prop_cycle = plt.rcParams['axes.prop_cycle']
-    colors = prop_cycle.by_key()['color']
-
-These lines get the default color cycle from the `rcParams` dictionary and extract the colors into a list. The color cycle is a list of colors that are used to cycle through when plotting multiple lines on a single graph.
-
-::
-
-    # Plot the line graphs
+    # set initial y_min and y_max that will be used for y ticks
     y_min = 0
     y_max = 0
 
@@ -108,10 +100,11 @@ This line starts a for loop that iterates over each equation and label in parall
     # Calculate the corresponding y values
     y = eval(equation)
 
-This line calculates the y values for the current equation by evaluating the equation string using the `eval` function. The `eval` function takes a string argument and evaluates it as a Python expression, returning the result.
+This line calculates the y values for the current equation by evaluating the equation string using the `eval` function. The `eval` function takes a string argument and evaluates it as a Python expression, returning the result. It uses the x array as input to the equation to produce a y array.
 
 ::
-
+    
+    # since y is an array, need to do min(y) first before combining with y_min
     y_min = int(min(min(y),y_min))
     y_max = int(max(max(y), y_max))
 
@@ -119,22 +112,24 @@ These lines update the `y_min` and `y_max` variables to keep track of the minimu
 
 ::
 
-    color = colors[i % len(colors)]
+    # use default colours C0, C1...C9
+    color = f'C{i}'
 
-This line selects a color for the current line from the color cycle. The index of the color is calculated using the modulo operator (`%`) to cycle through the colors in the color cycle.
+This line selects a default colour from 0 to 9.
 
 ::
 
+    # Plot the line graph
     plt.plot(x, y, label=label, color=color)
 
-This line plots a line on the current figure using the `plot` function from the `pyplot` module. The x and y values for the line are passed as arguments, along with a label for the line and a color.
+This line plots a line on the current figure. The x and y values for the line are passed as arguments, along with a label for the line and a color.
 
 ::
 
     # Create a lambda function from the equation string
     f = eval("lambda x: " + equation)
 
-This line creates a lambda function from the equation string using the `eval` function. A lambda function is an anonymous function that can be defined inline. In this case, a lambda function is created that takes a single argument `x` and returns the result of evaluating the equation string with that value of `x`.
+This line creates a lambda function from the equation string using the `eval` function. The function, f, can now take xi as the parameter in place of x, as in f(xi). This allows the use of `yi = f(xi)` in the code below.
 
 ::
 
@@ -206,20 +201,20 @@ This line gets the directory of the current file using the `__file__` attribute 
     # Replace spaces in title with underscores to create filename for saving figure
     filename = title.replace(" ", "_") 
 
-This line creates a filename for saving the figure by replacing spaces in the title with underscores using the `replace` method of strings.
+This line creates a new variable named `filename` and assigns it value obtained by replacing all spaces in title with underscores using replace method of str objects.
 
 ::
 
     filepath = currfile_dir / (f"{filename}.png")
 
-This line creates a filepath for saving the figure by joining the directory of the current file with the filename using the `/` operator. The `/` operator is overloaded for `Path` objects to join paths in an operating system-independent way.
+This line creates new variable named filepath and assigns it value obtained by joining currfile_dir and f"{filename}.png" using / operator (which joins paths when used on Path objects).
 
 ::
 
     # Save figure (dpi 300 is good when saving so graph has high resolution)
     plt.savefig(filepath, dpi=600)
 
-This line saves the figure to a file using the `savefig` function from the `pyplot` module. The filepath and resolution are passed as arguments. A resolution of 600 pixels per inch is used to ensure that the saved image has high resolution.
+This line calls `savefig` method of pyplot module to save current figure as image file at location specified by `filepath` variable. It also passes `dpi=600` as second argument which specifies resolution of saved image in dots per inch.
 
 ::
 
@@ -233,7 +228,7 @@ This line displays the plot on screen using the `show` function from the `pyplot
     def main():
         plot_line_graph("Straight line and parabola", ["2 * x + 1", "(x-1)**2"], ["y = 2x + 1", r"y = (x-1)$^2$"])
 
-This line defines a `main` function that calls the `plot_line_graph` function with example arguments to plot a straight line and a parabola.
+This line defines a `main` function that calls the `plot_line_graph` function with three arguments: `title`, `equations`, and `labels` to plot a straight line and a parabola.
 
 ::
 

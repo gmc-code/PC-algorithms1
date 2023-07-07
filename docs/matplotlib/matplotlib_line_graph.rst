@@ -162,7 +162,7 @@ Here is an explanation of each line of the code with all the syntax details:
 
     currfile_dir = Path(__file__).parent
     
-| This line creates a new variable named `currfile_dir` and assigns it an object representing directory containing this script file. It does so by calling Path constructor with __file__ (a built-in variable representing path of this script file) as argument and then calling parent property of resulting Path object.
+| This line gets the directory of the current file using the `__file__` attribute and the `parent` attribute of a `Path` object. The `__file__` attribute is a built-in attribute that contains the path of the current file, and the `parent` attribute of a `Path` object returns a new `Path` object representing the parent directory of the original path.
 
 ::
 
