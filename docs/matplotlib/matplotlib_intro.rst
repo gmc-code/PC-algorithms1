@@ -70,17 +70,9 @@ Patch
     plt.legend(handles=legend_elements, title="Elements", loc="upper right", bbox_to_anchor=(1, 0, 0.5, 1))
 
 
-``legend_elements = [Patch(facecolor=color, label=label) for color, label in zip(colors, full_labels)]
-``
+A `Patch` object is a 2D artist in the `matplotlib` library. It represents a shape with a defined face color and edge color, which can be drawn on a plot. Patches are used to create various shapes, such as rectangles, circles, polygons, and more. In the context of creating a custom legend for a bar chart, `Patch` objects are used to create small colored squares that represent each bar in the chart.
 
-This line of code uses a list comprehension to create a list of `Patch` objects, one for each element in the `colors` and `full_labels` lists. The `zip` function is used to iterate over both lists simultaneously, so that each `color` and `label` pair corresponds to the same element in both lists.
+When creating a `Patch` object, you can specify various properties such as the face color, edge color, line style, and more. In the code you provided earlier, `Patch` objects were created with a specified `facecolor` and `label`. The `facecolor` argument sets the color of the patch, while the `label` argument sets the text that will be displayed next to the patch in the legend.
 
-For each pair of `color` and `label`, a new `Patch` object is created with the specified `facecolor` and `label`. The `facecolor` argument sets the color of the patch, while the `label` argument sets the text that will be displayed next to the patch in the legend.
+Once you have created a list of `Patch` objects, you can pass that list to the `handles` argument of the `plt.legend()` function to create a custom legend for your plot. Each patch in the list will be displayed in the legend along with its corresponding label.
 
-``python
-plt.legend(handles=legend_elements, title="Elements", loc="upper right", bbox_to_anchor=(1, 0, 0.5, 1))
-``
-
-This line of code calls the `plt.legend()` function to add a legend to the plot. The `handles` argument is set to the list of `Patch` objects created earlier, which means that each patch in the list will be displayed in the legend along with its corresponding label.
-
-The `title` argument sets the title of the legend to "Elements". The `loc` argument sets the location of the legend within the plot to "upper right", which means that it will be placed in the upper right corner of the plot area. The `bbox_to_anchor` argument specifies where within the plot area (in normalized coordinates) to place the legend. In this case, it is set to `(1, 0, 0.5, 1)`, which means that it will be placed halfway between the right edge of the plot area and its center along the x-axis, and at the top edge of the plot area along the y-axis.

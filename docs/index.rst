@@ -142,6 +142,7 @@ PC-algorithms
     matplotlib/matplotlib_pie_chart.rst
     matplotlib/matplotlib_pie_chart_csv.rst
     matplotlib/matplotlib_histogram.rst
+    matplotlib/matplotlib_bar_chart.rst
     matplotlib/matplotlib_dot_plot.rst
     matplotlib/matplotlib_box_plot.rst
     matplotlib/matplotlib_fonts.rst

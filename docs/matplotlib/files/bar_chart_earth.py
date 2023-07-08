@@ -40,7 +40,7 @@ def earth_elements():
     # Full labels for legend
     full_labels = ['Oxygen', 'Silicon', 'Aluminium', 'Iron', 'Others']
     # Title for plot and filename for saving figure
-    title = "Elements in the Earth's Crust"
+    title = "Elements in the Earth's Crust barchart"
     # Call the function to plot the data with given data, labels, title and full_labels
     plot_bar_chart(data, labels, full_labels, title)
 
