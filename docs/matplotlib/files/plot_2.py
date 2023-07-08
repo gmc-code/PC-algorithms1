@@ -45,15 +45,12 @@ def plot_line_graph(title, equations, labels):
                 plt.text(xi+0.1, yi-0.25, f"({xi}, {int(yi)})", fontsize=10)
             else:
                 plt.text(xi+0.1, yi-0.25, f"({xi}, {yi:.2f})", fontsize=10)
-
     # Calculate the corresponding y values for both lines
     y1 = eval(equations[0])
     y2 = eval(equations[1])            
     # Fill the area between the two lines
     plt.fill_between(x, y1, y2, where=(y1 > y2), interpolate=True, color='green', alpha=0.2, label="Line above")
     plt.fill_between(x, y1, y2, where=(y1 <= y2), interpolate=True, color='red', alpha=0.2, label="Curve above")
-
-    
     # Add a x, y axis lines through the origin
     plt.axhline(0, color="gray", linestyle="-")
     plt.axvline(0, color="gray", linestyle="-")

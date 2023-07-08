@@ -15,7 +15,7 @@ Python code
 -------------
 
 | The python code is below.
-| The code is heavily commented to indicate what each part is doing.
+| The code is commented to indicate what each part is doing.
 
 .. literalinclude:: files/histogram.py
     :linenos:
