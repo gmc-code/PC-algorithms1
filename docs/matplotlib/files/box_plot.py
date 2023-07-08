@@ -17,7 +17,7 @@ def box_plot(data, title):
     # Create a new figure with the specified size
     # plt.figure(figsize=(6, 6))
     # Plot the data
-    plt.boxplot(data        )
+    plt.boxplot(data)
     # Get the current Axes object
     ax = plt.gca()
     # Hide the top, right, and left spines of the plot
@@ -25,9 +25,6 @@ def box_plot(data, title):
         ax.spines[spine].set_visible(False)
     # Set the y-axis limits to include all of the data points
     ax.set_ylim(0, max(data)+ 2)
-    # Adjust the bottom margin of the plot to leave space for the x tick labels
-    cms = 0.5 * 1/2.54 # inches per cm
-    plt.subplots_adjust(bottom=cms)
     # Add a title to the plot with the specified text and formatting
     title_str = title.title()
     ax.set_title(f"{title_str}", fontdict={"fontname": "Arial", "fontsize": 12})

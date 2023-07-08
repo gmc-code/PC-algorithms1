@@ -66,17 +66,17 @@ Python code
 Version 1 of code
 ------------------
 
-| This version is simple to read, but can be simplifed to reduce repetive code.
+| This version is simple to read, but can be simplifed to reduce repetitive code.
 
 .. literalinclude:: files/box_plots_compared.py
     :linenos:
 
 ----
 
-Version 12 of code
+Version 2 of code
 ------------------
 
-| This version may be trickier to read at first go, but removes repetive code.
+| This version may be trickier to read at first go, but removes repetitive code.
 
 .. literalinclude:: files/box_plots_compared_v2.py
     :linenos:
