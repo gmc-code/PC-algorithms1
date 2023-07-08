@@ -46,8 +46,14 @@ def plot_weather_temperatures(title, url):
     # Set the bottom limit of the y-axis to the minimum of 0 and 2 units below the minimum temperature,
     # and set the top limit of the y-axis to 2 units above the maximum temperature
     plt.ylim(bottom=min(0, min(tmin) - 2), top=max(tmax) + 2)
+    # Set the y ticks to be every 2 units
+    ymin = min(0, min(tmin) - 2)
+    ymax = max(tmax) + 2
+    plt.yticks(np.arange(ymin, ymax, 2))
     # format dates so they are angled to fit
     plt.gcf().autofmt_xdate()
+    # Set the font size of the x-axis labels to 10 points
+    plt.tick_params(axis='x', labelsize=8)
     # add a grid
     plt.grid(True)
     # add axis title labels
