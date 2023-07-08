@@ -145,11 +145,12 @@ PC-algorithms
     matplotlib/matplotlib_bar_chart.rst
     matplotlib/matplotlib_dot_plot.rst
     matplotlib/matplotlib_box_plot.rst
+
+..    
     matplotlib/matplotlib_fonts.rst
 
 
 
 ..    
-    maths_python/quick_sort.rst
-    maths_python/selection_sort.rst
-    maths_python/year_10_examples.rst
+    quick_sort.rst
+    year_10_examples.rst
