@@ -47,8 +47,13 @@ def dot_plot(data, title):
     # Add a title
     title_str = title.title()
     plt.title(f"{title_str}", fontdict={"fontname": "Arial", "fontsize": 12})
+    # Get the directory of the current file
+    currfile_dir = Path(__file__).parent
+    # Replace spaces in title with underscores to create filename for saving figure
+    filename = title.replace(" ", "_")
+    # build the image file path
+    filepath = currfile_dir / (f"{filename}.png")
     # Save figure (dpi 300 is good when saving so graph has high resolution)
-    filepath = currfile_dir / (f"{title}.png")
     plt.savefig(filepath, dpi=600)
     # Show plot
     plt.show()
@@ -98,17 +103,17 @@ def random_data(min, max, n):
 # Call the main function if this file is run as a script
 if __name__ == "__main__":
     data = [1, 2, 3, 2, 0, 1, 0, 2, 5, 3, 2, 1, 2, 0, 2, 0, 1, 3, 2, 1]
-    title = "pets_per_household"
+    title = "pets per household"
     dot_plot(data, title)
 
     data = [2, 0, 3, 2, 1, 0, 2, 3, 4, 2, 2, 1, 0, 1, 3, 2, 1, 0, 0, 0, 2, 2, 3, 3]
-    title = "vehicles_per_household"
+    title = "vehicles per household"
     dot_plot(data, title)
 
     data = random_data(1, 6, 20)
-    title = "Random_distribution"
+    title = "Random distribution"
     dot_plot(data, title)
     
     data = norm_sample_data(5, 45, 25, 3, 50)
-    title = "Normal_distribution"
+    title = "Normal distribution"
     dot_plot(data, title)

@@ -26,8 +26,9 @@ def plot_pie_chart(data, labels, full_labels, title):
     currfile_dir = Path(__file__).parent
     # Replace spaces in title with underscores to create filename for saving figure
     filename = title.replace(" ", "_")
-    # Save figure (dpi 300 is good when saving so graph has high resolution)
+    # build the image file path
     filepath = currfile_dir / (f"{filename}.png")
+    # Save figure (dpi 300 is good when saving so graph has high resolution)
     plt.savefig(filepath, dpi=600)
     # Show plot
     plt.show()

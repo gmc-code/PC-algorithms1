@@ -34,10 +34,12 @@ def plot_pie_chart(data, labels, full_labels, title):
     last_text.set_position((x,y))
     last_text.set_size(12) # Set the font size to 10
     # Get the directory of the current file
-    currfile_dir = Path(__file__).parent# Replace spaces in title with underscores to create filename for saving figure
+    currfile_dir = Path(__file__).parent
+    # Replace spaces in title with underscores to create filename for saving figure
     filename = title.replace(" ", "_")
-    # Save figure (dpi 300 is good when saving so graph has high resolution)
+    # build the image file path
     filepath = currfile_dir / (f"{filename}.png")
+    # Save figure (dpi 300 is good when saving so graph has high resolution)
     plt.savefig(filepath, dpi=600)
     # Show plot
     plt.show()

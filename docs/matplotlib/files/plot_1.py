@@ -48,7 +48,8 @@ def plot_line_graph(title, equation, label):
     # Get the directory of the current file
     currfile_dir = Path(__file__).parent
     # Replace spaces in title with underscores to create filename for saving figure
-    filename = title.replace(" ", "_") 
+    filename = title.replace(" ", "_")
+    # build the image file path
     filepath = currfile_dir / (f"{filename}.png")
     # Save figure (dpi 300 is good when saving so graph has high resolution)
     plt.savefig(filepath, dpi=600)
