@@ -4,6 +4,17 @@ Matplotlib box plot
 
 | Matplotlib can be used to draw a box plot.
 
+| A box plot, also known as a box-and-whisker plot, is a graphical representation of a dataset that displays the distribution of the data using five summary statistics: the minimum, first quartile (Q1), median, third quartile (Q3), and maximum.
+
+Here are the different parts of a box plot and what they represent:
+
+- **Box**: The box represents the interquartile range (IQR), which is the range between the first quartile (Q1) and the third quartile (Q3) of the data. The height of the box is equal to the IQR and represents the middle 50% of the data.
+- **Median line**: The median line is drawn inside the box and represents the median value of the data. The median is the middle value when the data is sorted in ascending order. If there is an even number of observations, the median is calculated as the average of the two middle values.
+- **Whiskers**: The whiskers extend from the box to the smallest and largest observations that are not considered outliers. The length of the whiskers represents the range of the data within 1.5 times the IQR from Q1 or Q3.
+- **Outliers**: Outliers are observations that fall outside 1.5 times the IQR from Q1 or Q3. In a box plot, outliers are plotted as individual points outside the whiskers.
+- **Caps**: The caps are horizontal lines drawn at the ends of the whiskers. They represent the smallest and largest observations that are not considered outliers.
+
+
 ----
 
 Random box plot
