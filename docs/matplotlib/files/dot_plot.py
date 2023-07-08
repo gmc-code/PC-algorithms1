@@ -23,11 +23,10 @@ def dot_plot(data, title):
     height = 1.2 + max(counts)/3 if data_range<30 else 2 + max(counts)/4
     marker_size = 10 if data_range<50 else np.ceil(30/(data_range//10))
     # Create a new figure with the specified size
-    fig = plt.figure(figsize=(width, height))
-    ax = fig.add_subplot(111)
+    plt.figure(figsize=(width, height))
     # Plot the data as a series of dots, with one dot for each count of each value
     for value, count in zip(values, counts):
-        ax.plot(
+        plt.plot(
             [value] * count,
             list(range(count)),
             marker="o",
@@ -35,6 +34,8 @@ def dot_plot(data, title):
             ms=marker_size,
             linestyle="",
         )
+    # Get the current Axes object
+    ax = plt.gca()
     # Hide the top, right, and left spines of the plot
     for spine in ["top", "right", "left"]:
         ax.spines[spine].set_visible(False)
@@ -49,7 +50,7 @@ def dot_plot(data, title):
     plt.subplots_adjust(bottom=cms)
     # Add a title to the plot with the specified text and formatting
     title_str = title.title()
-    plt.title(f"{title_str}", fontdict={"fontname": "Arial", "fontsize": 12})
+    ax.set_title(f"{title_str}", fontdict={"fontname": "Arial", "fontsize": 12})
     # Get the directory of the current file
     currfile_dir = Path(__file__).parent
     # Replace spaces in title with underscores to create filename for saving figure
@@ -60,7 +61,6 @@ def dot_plot(data, title):
     plt.savefig(filepath, dpi=600)
     # Show the plot on the screen
     plt.show()
-
 
 
 def norm_sample_data(min, max, mu, sigma, n):
@@ -106,20 +106,33 @@ def random_data(min, max, n):
     return data
 
 
-# Call the main function if this file is run as a script
-if __name__ == "__main__":
+def dot_pets():
     data = [1, 2, 3, 2, 0, 1, 0, 2, 5, 3, 2, 1, 2, 0, 2, 0, 1, 3, 2, 1]
     title = "pets per household"
     dot_plot(data, title)
 
+
+def dot_vehicles():
     data = [2, 0, 3, 2, 1, 0, 2, 3, 4, 2, 2, 1, 0, 1, 3, 2, 1, 0, 0, 0, 2, 2, 3, 3]
     title = "vehicles per household"
     dot_plot(data, title)
 
+
+def dot_random():
     data = random_data(1, 6, 20)
     title = "Random distribution"
     dot_plot(data, title)
-    
+
+
+def dot_normal():   
     data = norm_sample_data(5, 45, 25, 3, 50)
     title = "Normal distribution"
     dot_plot(data, title)
+
+
+# Call the main function if this file is run as a script
+if __name__ == "__main__":
+    dot_pets()
+    dot_vehicles()
+    dot_random()
+    dot_normal()
