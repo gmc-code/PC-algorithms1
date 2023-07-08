@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-currfile_dir = Path(__file__).parent
 
 
 def dot_plot(data, title):
@@ -16,17 +15,17 @@ def dot_plot(data, title):
     Returns:
     None
     """
-    # get counts of each value
+    # Get the unique values in the data and their counts
     values, counts = np.unique(data, return_counts=True)
-    # Set formatting parameters based on data
+    # Set formatting parameters based on the range of the data
     data_range = max(values)-min(values)
     width = 1 + data_range/2 if data_range<30 else 15
     height = 1.2 + max(counts)/3 if data_range<30 else 2 + max(counts)/4
     marker_size = 10 if data_range<50 else np.ceil(30/(data_range//10))
-    # Create dot plot with appropriate format
-    fig, ax = plt.subplots(figsize=(width, height))
-
-    # The x-coordinates are [value] * count, which is a list of count copies of value. The y-coordinates are list(range(count)), which is a list of integers from 0 to count-1.
+    # Create a new figure with the specified size
+    fig = plt.figure(figsize=(width, height))
+    ax = fig.add_subplot(111)
+    # Plot the data as a series of dots, with one dot for each count of each value
     for value, count in zip(values, counts):
         ax.plot(
             [value] * count,
@@ -35,16 +34,20 @@ def dot_plot(data, title):
             color="tab:blue",
             ms=marker_size,
             linestyle="",
-        )   
+        )
+    # Hide the top, right, and left spines of the plot
     for spine in ["top", "right", "left"]:
-        ax.spines[spine].set_visible(False)  
+        ax.spines[spine].set_visible(False)
+    # Hide the y-axis
     ax.yaxis.set_visible(False)
+    # Set the y-axis limits to include all of the data points
     ax.set_ylim(-1, max(counts))
+    # Set the x tick locations to be at integer values from the minimum to the maximum value in the data
     ax.set_xticks(range(min(values), max(values) + 1))
-    # Adjust bottom margin to leave 1 cm of space for x labels
+    # Adjust the bottom margin of the plot to leave space for the x tick labels
     cms = 0.5 * 1/2.54 # inches per cm
     plt.subplots_adjust(bottom=cms)
-    # Add a title
+    # Add a title to the plot with the specified text and formatting
     title_str = title.title()
     plt.title(f"{title_str}", fontdict={"fontname": "Arial", "fontsize": 12})
     # Get the directory of the current file
@@ -55,7 +58,7 @@ def dot_plot(data, title):
     filepath = currfile_dir / (f"{filename}.png")
     # Save figure (dpi 300 is good when saving so graph has high resolution)
     plt.savefig(filepath, dpi=600)
-    # Show plot
+    # Show the plot on the screen
     plt.show()
 
 
@@ -74,9 +77,12 @@ def norm_sample_data(min, max, mu, sigma, n):
     Returns:
     numpy.ndarray: An array of n integers sampled from a normal distribution with mean mu and standard deviation sigma, clipped to the range [min, max].
     """
+    # Generate an array of n random values sampled from a normal distribution with mean mu and standard deviation sigma
     s = np.random.normal(mu, sigma, n)
-    s = np.clip(s, min, max)  # clip values outside the range [min, max]
-    s = s.astype(int)  # convert to integers
+    # clip values outside the range [min, max]
+    s = np.clip(s, min, max)  
+    # convert to integers
+    s = s.astype(int)  
     return s
 
 
