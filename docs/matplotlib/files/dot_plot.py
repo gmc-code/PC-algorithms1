@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 
-
 def dot_plot(data, title):
     """
     Create a dot plot of the given data with the specified title.

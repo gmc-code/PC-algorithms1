@@ -8,7 +8,7 @@ def plot_histogram(x, title, median):
     # Create a new figure with the specified size
     plt.figure(figsize=(10, 6))
     # Create a histogram plot of the data in x with the specified bin edges, line width, edge color, and fill color
-    counts, _, _ = plt.hist(x, bins=np.arange(min(x), max(x)+2), linewidth=0.5, edgecolor="white", color="lightblue")
+    counts, _, _ = plt.hist(x, bins=np.arange(min(x), max(x)+2), linewidth=0.5, edgecolor="blue", color="lightblue")
     # set the x and y tick locations and labels for the plot to display integer values along both axes, with an offset of 0.5 units for the x tick locations so hte tick is in the middle of each column
     ticks_offset = 0.5
     plt.xticks(np.arange(min(x), max(x)+1) + ticks_offset, np.arange(min(x), max(x)+1))
