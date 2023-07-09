@@ -4,7 +4,7 @@ from pathlib import Path
 from matplotlib.patches import Patch
 
 
-def plot_bar_chart(data, labels, full_labels, title):
+def plot_bar_chart(data, labels, legend_labels, title, xlabel, ylabel):
     # Define the colors to use for the bar chart
     colors = ['#ff9999', '#66b3ff', '#99ff99', '#ffcc99', '#c2c2f0']
     # Plot the bar chart with the given data, labels, and formatting options
@@ -12,14 +12,14 @@ def plot_bar_chart(data, labels, full_labels, title):
     # Add some space around the plot
     plt.subplots_adjust(left=0.1, right=0.70, top=0.85, bottom=0.1)
     # X and Y labels
-    plt.xlabel("Element", fontsize=14)
-    plt.ylabel("Percentage of crust (%)", fontsize=14)
+    plt.xlabel(xlabel, fontsize=14)
+    plt.ylabel(ylabel, fontsize=14)
     # Add a title to the plot
-    plt.title(title, y=1.08, size=18)
+    plt.title(title, y=1.08, size=16)
     # Create a list of Patch objects with the same colors as the bars in the bar chart
-    legend_elements = [Patch(facecolor=color, label=label) for color, label in zip(colors, full_labels)]
-    # Add a legend to the plot using the given full_labels and colors from the bar chart
-    plt.legend(handles=legend_elements, title="Elements", loc="upper right", bbox_to_anchor=(1, 0, 0.5, 1))
+    legend_elements = [Patch(facecolor=color, label=label) for color, label in zip(colors, legend_labels)]
+    # Add a legend to the plot using the given legend_labels and colors from the bar chart
+    plt.legend(handles=legend_elements, title="Legend", loc="upper right", bbox_to_anchor=(1, 0, 0.5, 1))
     # Get the directory of the current file
     currfile_dir = Path(__file__).parent
     # Replace spaces in title with underscores to create filename for saving figure
@@ -38,11 +38,15 @@ def earth_elements():
     # Labels for each wedge of the pie chart
     labels = ['O', 'Si', 'Al', 'Fe', 'Others']
     # Full labels for legend
-    full_labels = ['Oxygen', 'Silicon', 'Aluminium', 'Iron', 'Others']
+    legend_labels = ['Oxygen', 'Silicon', 'Aluminium', 'Iron', 'Others']
     # Title for plot and filename for saving figure
     title = "Elements in the Earth's Crust barchart"
-    # Call the function to plot the data with given data, labels, title and full_labels
-    plot_bar_chart(data, labels, full_labels, title)
+    # X axis label
+    xlabel = "Element"
+    # Y axis label
+    ylabel = "Percentage of crust (%)"
+    # Call the function to plot the data with given data, labels, legend_labels, title and axis labels.
+    plot_bar_chart(data, labels, legend_labels, title, xlabel, ylabel)
 
 
 if __name__ == '__main__':

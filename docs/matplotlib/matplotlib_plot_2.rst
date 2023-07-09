@@ -10,7 +10,7 @@ Simple Multiple line plot
 --------------------------------
 
 | This is a basic plot for the equations y = 2x - 2, y = -3x + 3, y = (x - 1)\ :sup:`2`\ , y = 0.4(x - 1)\ :sup:`3`\ .
-| It has a grid and X and Y axes.
+| It has X and Y axes.
 
 .. image:: images/Multiple_lines.png
     :width: 300

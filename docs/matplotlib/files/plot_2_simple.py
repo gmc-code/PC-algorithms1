@@ -25,7 +25,7 @@ def plot_line_graph(title, equations, min_x, max_x):
         y = eval(equation)
         # Plot the line graph
         plt.plot(x, y)
-    # Add a x, y axis lines through the origin
+    # Add x, y axis lines through the origin
     plt.axhline(0, color="gray", linestyle="-")
     plt.axvline(0, color="gray", linestyle="-")
     # Add a title (specify font parameters with fontdict)
