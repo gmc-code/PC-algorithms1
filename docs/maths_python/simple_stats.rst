@@ -10,8 +10,8 @@ Simple stats
 Mean
 ---------------------------------
 
-| The mean of a list can be found using the `sum` and `len` functions.
-| The average is found by dividing the `sum` by `len` of the list.
+| The mean of a list can be found using the **`sum`** and **`len`** functions.
+| The average is found by dividing the **`sum`** by **`len`** of the list.
 
 .. code-block:: python
 
