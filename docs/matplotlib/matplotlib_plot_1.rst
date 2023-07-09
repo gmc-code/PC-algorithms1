@@ -9,7 +9,7 @@ Matplotlib plot 1 line
 Simple Linear plot
 --------------------------------
 
-| This is a basic plot for the equation :raw-latex:`$y = \\frac{x}{2} + 1$` y = x/2 + 1.
+| This is a basic plot for the equation :raw-latex:`$y = \\frac{x}{2} + 1$`.
 | It has a grid and X and Y axes.
 
 .. image:: images/Linear_plot.png
