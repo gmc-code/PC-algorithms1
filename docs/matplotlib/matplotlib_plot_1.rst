@@ -9,10 +9,11 @@ Matplotlib plot 1 line
 Simple Linear plot
 --------------------------------
 
-This is a basic plot with a grid and X and Y axes.
+| This is a basic plot for the equation y =x/2 + 1.
+| It has a grid and X and Y axes.
 
 .. image:: images/Linear_plot.png
-    :width: 600
+    :width: 300
     :align: center
 
 ----
@@ -31,7 +32,9 @@ Python code
 Straight line graph to scale
 --------------------------------
 
-This plot has more customizations added.
+| This is a plot for the equation y =2x + 1
+| This plot has more customizations added.
+| It has code to save the plot as a png file.
 
 .. image:: images/Straight_line.png
     :width: 600

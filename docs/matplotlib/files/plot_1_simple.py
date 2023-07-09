@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plot_line_graph(title, equation,min_x, max_x):
+def plot_line_graph(title, equation, min_x, max_x):
     """
     Plots a line graph of the equation y = eval(equation) over the range of x values from min_x to max_x.
     
