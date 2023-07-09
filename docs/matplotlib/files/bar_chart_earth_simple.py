@@ -1,7 +1,4 @@
 import matplotlib.pyplot as plt
-import numpy as np
-from pathlib import Path
-from matplotlib.patches import Patch
 
 
 def plot_bar_chart(data, labels, title, xlabel, ylabel):
@@ -12,14 +9,6 @@ def plot_bar_chart(data, labels, title, xlabel, ylabel):
     plt.ylabel(ylabel)
     # Add a title to the plot
     plt.title(title)
-    # Get the directory of the current file
-    currfile_dir = Path(__file__).parent
-    # Replace spaces in title with underscores to create filename for saving figure
-    filename = title.replace(" ", "_")
-    # build the image file path
-    filepath = currfile_dir / (f"{filename}.png")
-    # Save figure (dpi 300 is good when saving so graph has high resolution)
-    plt.savefig(filepath, dpi=600)
     # Show plot
     plt.show()
 

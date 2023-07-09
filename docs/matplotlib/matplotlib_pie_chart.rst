@@ -10,6 +10,34 @@ Matplotlib pie chart
 
 ----
 
+Simple pie chart
+------------------
+
+| This is a simple pie chart.
+
+.. image:: images/Earth's_Crust.png
+    :width: 600
+    :align: center
+
+----
+
+Python code
+-------------
+
+| The python code is below.
+| The code is commented to indicate what each part is doing.
+
+.. literalinclude:: files/pie_chart_earth_simple.py
+    :linenos:
+
+----
+
+Customized pie chart
+------------------------
+
+| This plot has more customizations added.
+| It has code to save the pie chart as a png file.
+
 .. image:: images/Elements_in_the_Earth's_Crust.png
     :width: 600
     :align: center
