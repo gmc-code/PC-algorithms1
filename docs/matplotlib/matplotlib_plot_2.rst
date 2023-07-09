@@ -1,5 +1,5 @@
 ====================================================
-Matplotlib plot 2 lines
+Matplotlib plot multiple lines
 ====================================================
 
 | Matplotlib can be used to draw a graph with multiple lines.
@@ -9,7 +9,7 @@ Matplotlib plot 2 lines
 Simple Multiple line plot
 --------------------------------
 
-| This is a basic plot for the equations y=2x - 2, y=-3x + 3, y=(x-1)\ :sup:`2`\ , y=0.4(x-1)\ :sup:`3`\ .
+| This is a basic plot for the equations y = 2x - 2, y = -3x + 3, y = (x - 1)\ :sup:`2`\ , y = 0.4(x - 1)\ :sup:`3`\ .
 | It has a grid and X and Y axes.
 
 .. image:: images/Multiple_lines.png
@@ -32,7 +32,7 @@ Python code
 Straight line graph with parabola
 ------------------------------------
 
-| This is a plot for the equation y =2x + 1  and y=(x-1)\ :sup:`2`\ .
+| This is a plot for the equation y = 2x + 1  and y = (x - 1)\ :sup:`2`\ .
 | This plot has more customizations added.
 | It has code to save the plot as a png file.
 
