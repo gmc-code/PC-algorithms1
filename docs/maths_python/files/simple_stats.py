@@ -4,6 +4,7 @@
 from statistics import mean, median, multimode
 
 mylist = [17, 13, 14, 16, 12, 12]
+mylist = [7, 6, 5, 6, 5, 8, 7, 6, 6, 5, 6, 5, 5, 8, 5]
 
 mymean = sum(mylist)/len(mylist)
 print("Mean:", mymean)

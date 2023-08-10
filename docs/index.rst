@@ -73,7 +73,8 @@ PC-algorithms
     maths_python/flow_charts.rst
     maths_python/Sieve_of_Eratosthenes.rst
     maths_python/prime_factors.rst
-    
+    maths_python/primes_as sums_of_squares.rst
+
 
 .. toctree::
     :maxdepth: 2

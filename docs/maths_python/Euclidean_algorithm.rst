@@ -39,7 +39,9 @@ HCF by repeatedly getting remainders from division
 
 | The code below runs the while loop until **b** equals 0.
 | **b** is stored in **t** so b can be calculated, then **a** is set to **t**.
-| An example of **b = a - (a // b) * b** is **b = 48 - (48//19)*18**, which is b = 48 - 36 = 12.
+| An example of **b = a - (a // b) * b** 
+| is **b = 48 - (48//18)*18**, 
+| which is b = 48 - 36 = 12.
 
 .. literalinclude:: files/hcf_div.py
     :linenos:

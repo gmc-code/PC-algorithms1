@@ -42,3 +42,15 @@ Sieve_v2: Primes below 100
     :linenos:
 
 | The output is: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+
+----
+
+Sieve_v3: Primes below 100
+------------------------------
+
+| SLightly different python techniques can be used as illustrated in this code that uses list multiplication, for-loops and list comprehension.
+
+.. literalinclude:: files/Sieve_of_Eratosthenes3.py
+    :linenos:
+
+| The output is: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
