@@ -11,14 +11,14 @@ Pythagorean triples up to a given integer
 ------------------------------------------------
 
 | Euclid's formula for Pythagorean triples is a way to generate sets of three positive integers that satisfy the equation :math:`a^2 + b^2 = c^2`, where a, b and c are the sides of a right-angled triangle. The formula states that if you choose any two positive integers m and n, where m > n, then the following equations will give you a Pythagorean triple:
-| :math: `a = 2mn`
-| :math: `b = m^2 - n^2`
-| :math: `c = m^2 + n^2`
+| :math:`a = 2mn`
+| :math:`b = m^2 - n^2`
+| :math:`c = m^2 + n^2`
 
 | For example, if you choose m = 3 and n = 2, then you get:
-| :math: `a = 2 \times 3 \times 2 = 12`
-| :math: `b = 3^2 - 2^2 = 9 - 4 = 5`
-| :math: `c = 3^2 + 2^2 = 9 + 4 = 13`
+| :math:`a = 2 \times 3 \times 2 = 12`
+| :math:`b = 3^2 - 2^2 = 9 - 4 = 5`
+| :math:`c = 3^2 + 2^2 = 9 + 4 = 13`
 
 
 .. literalinclude:: files/pythagorean_triples.py
