@@ -23,10 +23,8 @@ def pythagorean_triples(num):
     # return the list of triples
     return triples
 
-# print the result for num = 25
-print(pythagorean_triples(25))
+# print the result for num = 50
+print(pythagorean_triples(50))
 
 #Output:
-[[3, 4, 5], [8, 6, 10], [5, 12, 13], [15, 8, 17], [12, 16, 20], [7, 24, 25]]
-
-
+[[3, 4, 5], [8, 6, 10], [5, 12, 13], [15, 8, 17], [12, 16, 20], [7, 24, 25], [24, 10, 26], [21, 20, 29], [16, 30, 34], [9, 40, 41], [35, 12, 37], [32, 24, 40], [27, 36, 45]]
