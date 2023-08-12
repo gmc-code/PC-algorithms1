@@ -11,3 +11,4 @@ def sum_squares(n):
 
 for x in range(2, 11):
     print(x, sum_squares(x), end="; ")
+

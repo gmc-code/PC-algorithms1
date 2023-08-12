@@ -1,5 +1,5 @@
-"""calculate sum of squares
-2 5; 3 14; 4 30; 5 55; 6 91; 7 140; 8 204; 9 285; 10 385;
+"""calculate sum of sum_inverse_cubes
+10 1.197532; 100 1.202007; 1000 1.202056; 1000 1.202056; 10000 1.202057; 
 """
 
 def sum_inverse_cubes(n):

@@ -1,4 +1,5 @@
 """calculate sum of inverse factorials
+0 1.000000; 1 2.000000; 2 2.500000; 3 2.666667; 4 2.708333; 5 2.716667; 6 2.718056; 7 2.718254; 8 2.718279; 9 2.718282; 
 """
 
 def factorial(n):
@@ -15,5 +16,6 @@ def inverse_factorial_sum(n):
     return sum
 
 
-for x in range(50, 52):
+for x in range(0, 10):
     print(x, f'{inverse_factorial_sum(x):7f}', end="; ")
+

@@ -72,15 +72,11 @@ Introduction to maths python
 
 | level 8 Use algorithms and related testing procedures to identify and correct errors (VCMNA282)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA282
-
-	* **Debugging search and sort programs**
-	* **Testing a number for divisibility**
-
 | NEW: https://victoriancurriculum.vcaa.vic.edu.au/vc-maths-v2/level-8.html
 | level 8 Use algorithms and related testing procedures to identify and correct errors (VC2M8A04)
 
-	* debugging search-and-sort programs
-	* testing a number for divisibility
+	* **Debugging search-and-sort programs**
+	* **Testing a number for divisibility**
 
 ----
 
@@ -93,7 +89,7 @@ Introduction to maths python
 | NEW: https://victoriancurriculum.vcaa.vic.edu.au/vc-maths-v2/level-9.html
 | level 9 design, test and refine algorithms involving a sequence of steps and decisions based on geometric constructions and theorems; discuss and evaluate refinements  (VC2M9SP03)
 
-	* creating an algorithm using pseudocode or flow charts to apply the triangle inequality, or an algorithm to generate Pythagorean triples
+	* **creating an algorithm using pseudocode or flow charts to apply the triangle inequality, or an algorithm to generate Pythagorean triples**
 	* creating and testing algorithms designed to construct or bisect angles, using pseudocode or flow charts
 	* developing an algorithm for an animation of a geometric construction, or a visual proof, evaluating the algorithm using test cases
 
@@ -101,26 +97,19 @@ Introduction to maths python
 
 | level 10 Implement algorithms using data structures in a general-purpose programming language (VCMNA334) 
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA334
-
-	* **Using two-dimensional arrays such as matrices to represent and implement sequences of transformations of sets of points in the plane**
-	* **Using pointers in algorithms**
-
 | NEW: https://victoriancurriculum.vcaa.vic.edu.au/vc-maths-v2/level-10.html
 | level 10 implement algorithms that use data structures using pseudocode or a general purpose programming language (VC2M10A06)
 
-	* using two-dimensional arrays such as matrices to represent and implement sequences of transformations of sets of points in the plane
-	* using pointers in algorithms
+	* **Using two-dimensional arrays such as matrices to represent and implement sequences of transformations of sets of points in the plane**
+	* **Using pointers in algorithms**
 
 ----
 
 | level 10A Devise and use algorithms and simulations to solve mathematical problems (VCMNA358)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA358
-
-	* **Applying a systematic guess-check-and-refine algorithm to identify an approximate value for the root of an equation in an interval**
-	* **Developing simulations for counter-intuitive problems in probability such as the Monty Hall problem or derangements**
-
 | NEW: https://victoriancurriculum.vcaa.vic.edu.au/vc-maths-v2/level-9.html
 | level 9 devise and use algorithms and simulations to solve mathematical problems (VC2M10AA02)
 
-	* applying a systematic guess-check-and-refine algorithm to identify an approximate value for the root of an equation in an interval
-	* developing simulations for counterintuitive problems in probability such as the Monty Hall problem or derangements
+	* **Applying a systematic guess-check-and-refine algorithm to identify an approximate value for the root of an equation in an interval**
+	* **Developing simulations for counterintuitive problems in probability such as the Monty Hall problem or derangements**
+
