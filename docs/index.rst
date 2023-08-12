@@ -101,6 +101,7 @@ PC-algorithms
 
     maths_python/selection_sort.rst
     maths_python/population_sampling.rst
+    maths_python/Pythagorean_triples.rst
 
 
 .. toctree::
