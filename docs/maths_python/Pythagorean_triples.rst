@@ -10,6 +10,7 @@ Pythagorean triples
 Pythagorean triples up to a given integer
 ------------------------------------------------
 
+| See: https://en.wikipedia.org/wiki/Pythagorean_triple
 | Euclid's formula for Pythagorean triples is a way to generate sets of three positive integers that satisfy the equation :math:`a^2 + b^2 = c^2`, where a, b and c are the sides of a right-angled triangle. The formula states that if you choose any two positive integers m and n, where m > n, then the following equations will give you a Pythagorean triple:
 | :math:`a = 2mn`
 | :math:`b = m^2 - n^2`
@@ -24,6 +25,15 @@ Pythagorean triples up to a given integer
 .. literalinclude:: files/pythagorean_triples.py
     :linenos:
 
-| Sample output giving lists of Pythagorean triples for numbers up to 50.
-| [[3, 4, 5], [8, 6, 10], [5, 12, 13], [15, 8, 17], [12, 16, 20], [7, 24, 25], [24, 10, 26], [21, 20, 29], [16, 30, 34], [9, 40, 41], [35, 12, 37], [32, 24, 40], [27, 36, 45]]
+| Sample output giving lists of Pythagorean triples for numbers up to 100.
+| [[3, 4, 5], [5, 12, 13], [15, 8, 17], [7, 24, 25], [21, 20, 29], [35, 12, 37], [9, 40, 41], [45, 28, 53], 
+[11, 60, 61], [33, 56, 65], [63, 16, 65], [55, 48, 73], [13, 84, 85], [77, 36, 85], [39, 80, 89], [65, 72, 97]]
+
+
+| A second verions is belwo that uses list comprehension with conditionals:
+
+
+.. literalinclude:: files/pythagorean_triples_2.py
+    :linenos:
+
 
