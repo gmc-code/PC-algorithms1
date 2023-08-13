@@ -15,11 +15,11 @@ Primes 1 mod 4
 
 | Steps:
 
-    * Define the upper limit of the prime numbers to check
-	* Generate the primes using the sieve_of_eratosthenes function
-    * Iterate over the primes and check if they are 1 mod 4 ( have a remainder of 1 when divided by 4) 
-    * Find the sum of squares for each prime:
-    * Print the list of primes with the sums of squares.
+* Define the upper limit of the prime numbers to check
+* Generate the primes using the sieve_of_eratosthenes function
+* Iterate over the primes and check if they are 1 mod 4 (have a remainder of 1 when divided by 4) 
+* Find the sum of squares for each prime:
+* Print the list of primes with the sums of squares.
 
 .. literalinclude:: files/prime_sum_two_squares.py
     :linenos:
