@@ -11,7 +11,7 @@ Primes as sums of squares
 Primes 1 mod 4
 ---------------------
 
-| If a prime number is divided by 4 and its remainder is 1, hten it can be written as the sum of 2 squares.
+| If a prime number is divided by 4 and its remainder is 1, then it can be written as the sum of 2 squares.
 
 | Steps:
 

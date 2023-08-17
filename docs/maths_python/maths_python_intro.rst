@@ -63,8 +63,10 @@ Introduction to maths python
 	* modelling additive situations involving positive and negative quantities; for example, a lift travelling up and down floors in a high-rise apartment where the ground floor is interpreted as zero, or in geography when determining altitude above and below sea level
 	* modelling contexts involving proportion, such as the proportion of students attending the school disco, proportion of the bottle cost to the recycling refund, proportion of the school site that is green space, 55% of Year 7 students attended the end of term function or 23% of the school population voted 'yes' to a change of school uniform; and interpreting and communicating answers in terms of the context of the situation
 	* modelling financial problems involving profit and loss, credits and debits, gains and losses; for example, holding a fundraising sausage sizzle and determining whether the event made a percentage profit or loss
+	
 	* finding the sum of a set of consecutive numbers using a loop structure
 	* constructing geometric patterns such as a honeycomb, using dynamic geometry functionality
+	
 	* using mathematical modelling to investigate the proportion of land mass/area of Aboriginal Peoples' traditional grain belt compared with Australia's current grain belt
 
 
