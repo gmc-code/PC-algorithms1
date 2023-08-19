@@ -2,7 +2,8 @@
 Random walks
 =======================
 
-| VCMNA194: level 5: Follow a mathematical algorithm involving branching and repetition (iteration) 
+| VC2M5N10: level 5: Follow a mathematical algorithm involving branching and repetition (iteration); create and use algorithms involving a sequence of steps and decisions and digital tools to experiment with factors, multiples and divisibility; identify, interpret and describe emerging patterns
+
 
 * simulating a simple random walk
 
