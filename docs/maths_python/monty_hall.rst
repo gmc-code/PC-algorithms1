@@ -2,7 +2,7 @@
 Monty Hall
 =======================
 
-| VCMNA358: level 10A: Devise and use algorithms and simulations to solve mathematical problems
+| VC2M10AA02: level 10A: Devise and use algorithms and simulations to solve mathematical problems
 
 * Developing simulations for counter-intuitive problems in probability such as the Monty Hall problem or derangements
 
