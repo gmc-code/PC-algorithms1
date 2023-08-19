@@ -1,0 +1,59 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} % Set the compatibility mode to the latest version
+
+\newcommand{\yequ}[1]{e^(#1) - 3}
+\newcommand{\ydf}[1]{e^(#1)}
+
+\def\equ{e^x - 3}
+\def\domain{-0.4:4}
+
+\def\xzero{3}
+\pgfmathsetmacro{\yzero}{\yequ{\xzero}}
+
+\pgfmathsetmacro{\tangentm}{\ydf{\xzero}}
+\pgfmathsetmacro{\tangentc}{\yzero-(\tangentm*\xzero)}
+\pgfmathsetmacro{\xone}{-\tangentc/\tangentm}
+\pgfmathsetmacro{\yone}{\yequ{\xone}}
+
+\pgfmathsetmacro{\tangentmone}{\ydf{\xone}}
+\pgfmathsetmacro{\tangentcone}{\yone-(\tangentmone*\xone)}
+\pgfmathsetmacro{\xtwo}{-\tangentcone/\tangentmone}
+\pgfmathsetmacro{\ytwo}{\yequ{\xtwo}}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = $x$,
+    ylabel = {$f(x)$},
+    ymin=-4,
+    ymax=30,
+]
+% Plot function
+\addplot [
+    domain=\domain,
+    samples=100,
+    color=blue,
+]
+{\equ};
+% Plot points
+\addplot[mark=*,only marks,mark size=1pt] coordinates {(\xzero,\yzero) (\xone,\yone)};
+\node[label={180:{f($x_0$)}},circle,fill,inner sep=1pt] at (axis cs:\xzero,\yzero) {};
+\node[label={[red]90:{f($x_1$)}},circle,fill,inner sep=1pt] at (axis cs:\xone,\yone) {};
+% Draw vertical lines
+\draw[dotted] (axis cs:\xzero,\yzero) -- (axis cs:\xzero,0);
+% Draw tangent line
+\addplot [domain=\domain,samples=100,color=red]{\tangentm*x+\tangentc};
+\addplot [domain=\domain,samples=100,color=violet]{\tangentmone*x+\tangentcone};
+% Add labels for x0 and x1
+\node[label={270:{$x_0$}},circle,fill,inner sep=1pt] at (axis cs:\xzero,0) {};
+\node[label={[red]270:{$x_1$}},circle,fill,inner sep=1pt,color=red] at (axis cs:\xone,0) {};
+\node[label={[violet]270:{$x_2$}},circle,fill,inner sep=1pt,color=violet] at (axis cs:\xtwo,0) {};
+% Draw vertical line from x1 to curve
+\draw[dashed,color=red] (axis cs:\xone,\yone) -- (axis cs:\xone,0);
+\draw[thin,color=violet] (axis cs:\xtwo,\ytwo) -- (axis cs:\xtwo,0);
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

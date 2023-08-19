@@ -1,4 +1,4 @@
-"""newton's method
+"""newton's method: cubic
 """
 
 def newton(f, df, x0, max_iter, tol):

@@ -49,8 +49,8 @@ Newton's method
 
 ----
 
-Usage Example
-----------------
+Usage Example - cubic
+-------------------------
 
 .. image:: images/newtons_cubic.png
     :width: 600
@@ -59,24 +59,9 @@ Usage Example
 | 
 | 
 
-.. code-block:: python
+.. literalinclude:: files/newtons_method_cubic.py
+    :linenos:
 
-    def newton(f, df, x0, max_iter, tol):
-        i = 0
-        while i < max_iter:
-            x1 = x0 - f(x0) / df(x0)
-            if abs(x1 - x0) <= tol:
-                return x1
-            x0 = x1
-            i += 1
-        return x1
-
-    f = lambda x: x**3 - 2
-    df = lambda x: 3 * x**2
-
-    result = newton(f, df, 1.5, 100, 1e-6)
-    print(result)
-    # 1.2599210498953948
 
 | 
 | This is an example of how you can use the newton's method 
@@ -88,5 +73,22 @@ Usage Example
 | The code then calls the newton function with f set to the f lambda function, df set to the df lambda function, x0 set to an initial guess of 1.5, max_iter set to 100, and tolerance, tol, set to 1e-6. 
 
 | The output value of 1.2599210498953948 is an approximate root of the function y = x\ :sup:`3` - 2 found using Newton's method with an initial guess of 1.5, a maximum of 100 iterations, and a tolerance of 1e-6.
+
+
+
+Usage Example - exponential
+-----------------------------
+
+.. image:: images/newtons_exponential.png
+    :width: 600
+    :align: center
+    
+| 
+| 
+
+.. literalinclude:: files/newtons_method_exponential.py
+    :linenos:
+
+
 
 
