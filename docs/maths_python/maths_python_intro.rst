@@ -6,11 +6,11 @@ Introduction to maths python
 | Examples of using python to implement mathematical algorithms are illustrated in the following pages.
 | From the list below, those in bold are implemented here.
 
-| NEW: https://victoriancurriculum.vcaa.vic.edu.au/vc-maths-v2/level-5.html
+| NEW: https://victoriancurriculum.vcaa.vic.edu.au/mathematics/mathematics-version-2-0/curriculum/f-10
 
 ----
 
-| NEW: https://victoriancurriculum.vcaa.vic.edu.au/vc-maths-v2/level-5.html
+| NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M5N10
 | level 5 Follow a mathematical algorithm involving branching and repetition (iteration); create and use algorithms involving a sequence of steps and decisions and digital tools to experiment with factors, multiples and divisibility; identify, interpret and describe emerging patterns 
 (VC2M5N10)
 
@@ -29,7 +29,7 @@ Introduction to maths python
 	* **implementing algorithms such as the Euclidean division algorithm**
 	* **devising flowcharts to represent algorithms for a common processes such as adding two fractions**
 
-| NEW: https://victoriancurriculum.vcaa.vic.edu.au/vc-maths-v2/level-6.html
+| NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M6A03
 | level 6 Design and use algorithms involving a sequence of steps and decisions that use rules to generate sets of numbers; identify, interpret and explain emerging patterns (VC2M6A03)
 
 	* using an algorithm to create extended number sequences involving rational numbers, using a rule and digital tools, and explaining any emerging patterns
@@ -45,7 +45,7 @@ Introduction to maths python
 	* **Finding the sum of a set of consecutive numbers using a loop structure**
 	* **Constructing geometric patterns such as a honeycomb, using dynamic geometry functionality**
 
-| NEW: https://victoriancurriculum.vcaa.vic.edu.au/vc-maths-v2/level-7.html
+| NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M7SP04
 | level 7 Design algorithms involving a sequence of steps and decisions that will sort and classify sets of shapes according to their attributes, and describe how the algorithms work (VC2M7SP04)
 
 	* creating a classification scheme for triangles based on sides and angles, using a flow chart that uses sequences and decisions
@@ -68,7 +68,7 @@ Introduction to maths python
 
 | level 8 Use algorithms and related testing procedures to identify and correct errors (VCMNA282)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA282
-| NEW: https://victoriancurriculum.vcaa.vic.edu.au/vc-maths-v2/level-8.html
+| NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M8A04
 | level 8 Use algorithms and related testing procedures to identify and correct errors (VC2M8A04)
 
 	* **Debugging search-and-sort programs**
@@ -82,7 +82,7 @@ Introduction to maths python
 	* **Using a sort algorithm to determine the median of a set of numbers**
 	* **Exploring variation in proportion and means of random samples, drawn from a population**
 
-| NEW: https://victoriancurriculum.vcaa.vic.edu.au/vc-maths-v2/level-9.html
+| NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M9SP03
 | level 9 design, test and refine algorithms involving a sequence of steps and decisions based on geometric constructions and theorems; discuss and evaluate refinements  (VC2M9SP03)
 
 	* **creating an algorithm using pseudocode or flow charts to apply the triangle inequality, or an algorithm to generate Pythagorean triples**
@@ -93,7 +93,7 @@ Introduction to maths python
 
 | level 10 Implement algorithms using data structures in a general-purpose programming language (VCMNA334) 
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA334
-| NEW: https://victoriancurriculum.vcaa.vic.edu.au/vc-maths-v2/level-10.html
+| NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M10A06
 | level 10 implement algorithms that use data structures using pseudocode or a general purpose programming language (VC2M10A06)
 
 	* **Using two-dimensional arrays such as matrices to represent and implement sequences of transformations of sets of points in the plane**
@@ -101,10 +101,10 @@ Introduction to maths python
 
 ----
 
-| level 10A Devise and use algorithms and simulations to solve mathematical problems (VCMNA358)
+| level 10A devise and use algorithms and simulations to solve mathematical problems (VC2M10AA02)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA358
-| NEW: https://victoriancurriculum.vcaa.vic.edu.au/vc-maths-v2/level-9.html
-| level 9 devise and use algorithms and simulations to solve mathematical problems (VC2M10AA02)
+| NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M10AA02
+
 
 	* **Applying a systematic guess-check-and-refine algorithm to identify an approximate value for the root of an equation in an interval**
 	* **Developing simulations for counterintuitive problems in probability such as the Monty Hall problem or derangements**

@@ -12,12 +12,12 @@ Simple rule
 ------------------------
 
 | A time table style generation of multiples of a given number is shown below.
-| When the multiplier is changed, the multiples all chang.
+| When the multiplier is changed, all the multiples update using a formula such as `=$A$2*B2`.
 
 .. image:: images/multiplication_spreadsheet.png
-    :width: 200
+    :width: 600
     :align: center
 
 
-:download:`png<files/multiplication.xlsx>`
+:download:`spreadsheet<files/multiplication.xlsx>`
 

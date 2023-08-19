@@ -2,7 +2,7 @@
 Bisection
 =======================
 
-| VCMNA358: level 10A: Devise and use algorithms and simulations to solve mathematical problems
+| VC2M10AA02: level 10A: Devise and use algorithms and simulations to solve mathematical problems
 
 * Applying a systematic guess-check-and-refine algorithm to identify an approximate value for the root of an equation in an interval
 
