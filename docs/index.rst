@@ -102,6 +102,7 @@ PC-algorithms
 
     maths_python/Pythagorean_triples.rst
     maths_python/angle_bisection.rst
+    maths_python/polygon_construction.rst
 
 
 .. toctree::

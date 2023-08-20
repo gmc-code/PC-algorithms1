@@ -2,20 +2,24 @@ import turtle
 import math
 import random
 
-def label_point(t, label, penc="black"):
+
+def label_point(t, label, deltax=-12, deltay=2, penc="black"):
     """Write a label next to a turtle's position.
 
     Args:
         t (turtle.Turtle): The turtle object.
         label (str): The text to write.
+        deltax (int): The horizontal offset from the turtle's position. Defaults to -12.
+        deltay (int): The vertical offset from the turtle's position. Defaults to 2.
         penc (str): The color of the text. Defaults to "black".
     """
     t.penup()
-    t.setx(t.xcor() - 12)
-    t.sety(t.ycor() + 2)
+    t.setx(t.xcor() + deltax)
+    t.sety(t.ycor() + deltay)
     t.pendown()
     t.pencolor(penc)
     t.write(label, font=("Arial", 12, "normal"))
+
 
 # Define a function to move the turtle to a point (x, y) with the penup
 def move_to(t, point):
@@ -27,6 +31,7 @@ def move_to(t, point):
     """
     t.penup()
     t.goto(point)
+
 
 def move_arc(t, centre=(0, 0), angle=0, radius=10, extent=360):
     """Move the turtle along an arc with a given centre, angle and radius.
@@ -82,110 +87,71 @@ def draw_centered_arc(t, centre=(0, 0), angle=0, radius=10, extent=360, penw=1, 
     t.pd()
     t.seth(angle + 90)
     t.circle(radius, extent=extent)
-    for i in range(int((360-extent)/4)): # Draw a dot at each point on the circle
+    for i in range(int((360 - extent) / 4)):  # Draw a dot at each point on the circle
         t.pd()
         t.circle(radius, extent=1)
         t.pu()
-        t.circle(radius, extent=3)        
+        t.circle(radius, extent=3)
+
+
+# Define a function to construct an equilateral triangle
+def construct_equilateral_triangle(t, L):
+    # Hide the turtle
+    t.hideturtle()
+    # Draw the line segment AB
+    draw_line(t, (-L / 2, 0), L, 0)
+
+    # Label the point A
+    move_to(t, (-L / 2, 0))
+    t.dot(5, "red")
+    label_point(t, "A", deltax=-12, deltay=2, penc="red")
     
-
-def angle_bisector(t, size, angle):
-    # Input: An angle with vertex O and rays OA and OB
-    # Draw the rays OA and OB first
-    ray_length = 1.1*size  # This is the dsdie lengths
-    angle_AOB = angle  # This is the angle between OA and OB=
-    O = (0, 0) 
-    label_point(t, "O", "red")
-    draw_line(t, O, ray_length, 0, penc="black")  # Draw the ray OA
-    label_point(t, "A", "black")
-    draw_line(t, O, ray_length, angle_AOB, penc="black")  # Draw the ray OB
-    label_point(t, "B", "black")
-
-    # Step 1: Set the compass width to any convenient length and place the compass point at O
-    compass_width = int(size/2)
-
-    # Step 2: Draw an arc that intersects both rays OA and OB and label the intersection points as P and Q
-    move_to(t, (compass_width, 0))
-    P = t.pos()
+    # Label the point B
+    move_to(t, (L / 2, 0))
     t.dot(5, "blue")
-    label_point(t, "P", "blue")
+    label_point(t, "B", deltax=12, deltay=2, penc="blue")
 
-    draw_centered_arc(
-        t,
-        centre=O,
-        angle=0,
-        radius=compass_width,
-        extent=angle_AOB,
-        penw=1,
-        penc="red",
-    )
-
-    move_to(t, P)
-    move_arc(t, centre=(0, 0), angle=0, radius=compass_width, extent=angle_AOB)
-    Q = t.pos()
-    t.dot(5, "blue")
-    label_point(t, "Q", "blue")
-
-    # Step 3: Without changing the compass width, place the compass point at P
-    move_to(t, P)
-
-    # Step 4: Draw an arc above the angle
-    draw_centered_arc(
-        t,
-        centre=P,
-        angle=0,
-        radius=compass_width,
-        extent=(1.2*angle_AOB),
-        penw=1,
-        penc="blue",
-    )
-
-    # Step 5: Without changing the compass width, place the compass point at Q
-    move_to(t, Q)
-
-    # Step 6: Draw an arc above the angle that intersects the arc drawn from P at R
-    draw_centered_arc(
-        t,
-        centre=Q,
-        angle=angle_AOB,
-        radius=compass_width,
-        extent=-(1.2*angle_AOB),
-        penw=1,
-        penc="blue",
-    )
-
-    move_to(t, P)
-    move_arc(t, centre=P, angle=0, radius=compass_width, extent=angle_AOB)
-    R = t.pos()
+    # Draw the circle C1 with center A and radius L
+    draw_centered_arc(t, (-L / 2, 0), angle=0, radius=L, extent=0, penw=1, penc="red")
+    # Draw the circle C2 with center B and radius L
+    draw_centered_arc(t, (L / 2, 0), angle=120, radius=L, extent=0, penw=1, penc="blue")
+    # Find the point C where C1 and C2 intersect
+    # This can be done by using some trigonometry
+    # The angle between AB and AC is 60 degrees
+    # The distance from A to C is L
+    # The x-coordinate of C is L * cos(60) = L/2
+    # The y-coordinate of C is L * sin(60) = L * sqrt(3) / 2
+    C = (L / 2, L * math.sqrt(3) / 2)
+    # Draw the line segment AC
+    draw_line(t, (-L / 2, 0), L, 60, penc="red")
+    # Draw the line segment BC
+    draw_line(t, (L / 2, 0), L, 120, penc="blue")
+    # Label the point C
     t.dot(5, "green")
-    label_point(t, "R", "green")
-
-    # Step 7: Use the straightedge to draw a line segment from O through R
-    move_to(t, O)
-    draw_line(t, O, 1.5*t.distance(R[0], R[1]), t.towards(R), penc="green")
-    # Step 8: OR is the angle bisector
+    label_point(t, "C", deltax=0, deltay=5, penc="green")
 
 
 
 def main():
     SCREEN_WIDTH = 800
     SCREEN_HEIGHT = 600
-    SIZE = 220
-    ANGLE = random.randint(40, 90)
+    L = 100
 
     # Set up the turtle screen
     s = turtle.Screen()
     s.bgcolor("white")
-    s.title("angle bisector")
+    s.title("equilateral triangle construction")
     s.setup(width=SCREEN_WIDTH, height=SCREEN_HEIGHT, startx=0, starty=0)
-    s.tracer(0, 0)
+    s.tracer(1, 1)
 
     # Create a turtle object
     t = turtle.Turtle()
-    t.speed(0) # Set the turtle's speed to the fastest
+    t.speed(10) # Set the turtle's speed to the fastest
     t.ht()
 
-    angle_bisector(t, size=SIZE, angle=ANGLE)
+
+    # Call the function to construct the triangle
+    construct_equilateral_triangle(t, L)
 
     s.update()
     s.exitonclick()

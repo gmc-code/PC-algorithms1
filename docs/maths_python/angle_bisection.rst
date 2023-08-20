@@ -26,7 +26,7 @@ Angle bisector
 | Here is a diagram which illustrates the angle bisection.
 
 .. image:: images/angle_bisector.png
-    :width: 200
+    :width: 600
     :align: center
 
 | Here is the python to draw the angle bisection.
