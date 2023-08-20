@@ -66,35 +66,27 @@ Introduction to maths python
 
 ----
 
-| level 8 Use algorithms and related testing procedures to identify and correct errors (VCMNA282)
+| level 8 Use algorithms and related testing procedures to identify and correct errors (VC2M8A04)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA282
 | NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M8A04
-| level 8 Use algorithms and related testing procedures to identify and correct errors (VC2M8A04)
 
 	* **Debugging search-and-sort programs**
 	* **Testing a number for divisibility**
 
 ----
 
-| level 9 Apply set structures to solve real-world problems (VCMNA307)
-| See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA307
-
-	* **Using a sort algorithm to determine the median of a set of numbers**
-	* **Exploring variation in proportion and means of random samples, drawn from a population**
-
 | NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M9SP03
 | level 9 design, test and refine algorithms involving a sequence of steps and decisions based on geometric constructions and theorems; discuss and evaluate refinements  (VC2M9SP03)
 
 	* **creating an algorithm using pseudocode or flow charts to apply the triangle inequality, or an algorithm to generate Pythagorean triples**
-	* creating and testing algorithms designed to construct or bisect angles, using pseudocode or flow charts
+	* **creating and testing algorithms designed to construct or bisect angles, using pseudocode or flow charts**
 	* developing an algorithm for an animation of a geometric construction, or a visual proof, evaluating the algorithm using test cases
 
 ----
 
-| level 10 Implement algorithms using data structures in a general-purpose programming language (VCMNA334) 
+| level 10 implement algorithms that use data structures using pseudocode or a general purpose programming language (VC2M10A06)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA334
 | NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M10A06
-| level 10 implement algorithms that use data structures using pseudocode or a general purpose programming language (VC2M10A06)
 
 	* **Using two-dimensional arrays such as matrices to represent and implement sequences of transformations of sets of points in the plane**
 	* **Using pointers in algorithms**
@@ -109,3 +101,13 @@ Introduction to maths python
 	* **Applying a systematic guess-check-and-refine algorithm to identify an approximate value for the root of an equation in an interval**
 	* **Developing simulations for counterintuitive problems in probability such as the Monty Hall problem or derangements**
 
+----
+
+Previous curricula
+---------------------
+
+| level 9 Apply set structures to solve real-world problems (VCMNA307)
+| See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA307
+
+	* **Using a sort algorithm to determine the median of a set of numbers**
+	* **Exploring variation in proportion and means of random samples, drawn from a population**
