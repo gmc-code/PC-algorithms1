@@ -2,7 +2,7 @@
 Pointers
 =======================
 
-| VCMNA334: level 10: Implement algorithms using data structures in a general-purpose programming language
+| VC2M10A06: level 10: Implement algorithms that use data structures using pseudocode or a general purpose programming language
 
 * Using pointers in algorithms
 

@@ -100,9 +100,8 @@ PC-algorithms
     :caption: Maths python level 9
     :numbered:
 
-    maths_python/selection_sort.rst
-    maths_python/population_sampling.rst
     maths_python/Pythagorean_triples.rst
+    maths_python/angle_bisection.rst
 
 
 .. toctree::
@@ -122,6 +121,15 @@ PC-algorithms
     maths_python/bisection.rst
     maths_python/monty_hall.rst
     maths_python/derangements.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python general
+    :numbered:
+
+    maths_python/selection_sort.rst
+    maths_python/population_sampling.rst
 
 
 .. toctree::

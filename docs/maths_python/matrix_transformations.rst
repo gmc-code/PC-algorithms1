@@ -2,7 +2,7 @@
 Matrix transformations
 =======================
 
-| VCMNA334: level 10: Implement algorithms using data structures in a general-purpose programming language
+| VC2M10A06: level 10: Implement algorithms that use data structures using pseudocode or a general purpose programming language
 
 * Using two-dimensional arrays such as matrices to represent and implement sequences of transformations of sets of points in the plane
 
