@@ -10,8 +10,7 @@ Introduction to maths python
 ----
 
 
-| level 5 Follow a mathematical algorithm involving branching and repetition (iteration); create and use algorithms involving a sequence of steps and decisions and digital tools to experiment with factors, multiples and divisibility; identify, interpret and describe emerging patterns 
-(VC2M5N10)
+| level 5 Follow a mathematical algorithm involving branching and repetition (iteration); create and use algorithms involving a sequence of steps and decisions and digital tools to experiment with factors, multiples and divisibility; identify, interpret and describe emerging patterns (VC2M5N10)
 | See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M5N10
 
 	* **simulating a simple random walk**
