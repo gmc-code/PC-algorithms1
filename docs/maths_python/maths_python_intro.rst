@@ -80,7 +80,7 @@ Introduction to maths python
 
 	* **creating an algorithm using pseudocode or flow charts to apply the triangle inequality, or an algorithm to generate Pythagorean triples**
 	* **creating and testing algorithms designed to construct or bisect angles, using pseudocode or flow charts**
-	* developing an algorithm for an animation of a geometric construction, or a visual proof, evaluating the algorithm using test cases
+	* **developing an algorithm for an animation of a geometric construction, or a visual proof, evaluating the algorithm using test cases**
 
 ----
 

@@ -27,12 +27,54 @@ Equilateral triangle
 | Here is a diagram which illustrates the equilateral triangle construction.
 
 .. image:: images/equilateral_triangle_construction.png
-    :width: 600
+    :width: 400
     :align: center
 
 | Here is the python to draw the equilateral triangle construction.
 
 .. literalinclude:: files/equilateral_triangle_construction.py
+    :linenos:
+
+
+| This python saves the equilateral triangle construction as a gif file.
+
+.. image:: gifs/construct_equilateral_triangle.gif
+    :width: 400
+    :align: center
+
+.. literalinclude:: files/equilateral_triangle_construction_as_gif.py
+    :linenos:
+
+
+----
+
+Hexagon construction
+---------------------
+
+| Here is an algorithm to construct a regular hexagon:
+
+- Input: a radius for the circle.
+- Step 1: Draw a circle with given radius.
+- Step 2: From the left side of the circle draw another circle.
+- Step 3: Form where these 2 circles intersect, draw another circle.
+- Step 4: Repeat in an anitclockwise direction until 6 circles have been drawn over the original circle.
+- Step 5: Mark teh intersection points and connect them.
+
+
+| Here is a diagram which illustrates the hexagon construction.
+
+.. image:: images/hexagon_construction.png
+    :width: 400
+    :align: center
+
+
+| This python saves the hexagon construction as a gif file.
+
+.. image:: gifs/hexagon_construction.gif
+    :width: 400
+    :align: center
+
+.. literalinclude:: files/hexagon_construction_as_gif.py
     :linenos:
 
 
