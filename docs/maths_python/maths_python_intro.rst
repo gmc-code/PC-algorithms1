@@ -10,27 +10,27 @@ Introduction to maths python
 
 ----
 
-| NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M5N10
+
 | level 5 Follow a mathematical algorithm involving branching and repetition (iteration); create and use algorithms involving a sequence of steps and decisions and digital tools to experiment with factors, multiples and divisibility; identify, interpret and describe emerging patterns 
 (VC2M5N10)
+| See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M5N10
 
 	* **simulating a simple random walk**
 	* **manipulating sets of numbers using a given rule, for example, if a number is even, halve it; or if a number is odd, subtract 1 then halve it**
-	
 	* creating algorithms that use multiplication and division facts to determine if a number is a multiple or factor of another number; for example, using a flow chart that determines whether numbers are factors or multiples of other numbers using branching, such as yes/no decisions
 	* identifying lowest common multiples and highest common factors of pairs or triples of natural numbers; for example, the lowest common multiple of {6, 9} is 18, and the highest common factor is 3, and the lowest common multiple of {3, 4, 5} is 60 and the highest common factor is 1
 	* **using the 'fill down' function of a spreadsheet and a multiplication formula to generate a sequence of numbers that represent the multiples of any number you enter into the cell, and describing and explaining the emerging patterns**
 
 ----
 
-| level 6 Design algorithms involving branching and iteration to solve specific classes of mathematical problems (VCMNA221)
-| See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA221
+| previous level 6
 
 	* **implementing algorithms such as the Euclidean division algorithm**
 	* **devising flowcharts to represent algorithms for a common processes such as adding two fractions**
 
-| NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M6A03
+
 | level 6 Design and use algorithms involving a sequence of steps and decisions that use rules to generate sets of numbers; identify, interpret and explain emerging patterns (VC2M6A03)
+| See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M6A03
 
 	* using an algorithm to create extended number sequences involving rational numbers, using a rule and digital tools, and explaining any emerging patterns
 	* designing an algorithm to model operations, using the concept of input and output, describing and explaining relationships and any emerging patterns; for example, using function machines to model operations and recognising and comparing additive and multiplicative relationships
@@ -38,15 +38,8 @@ Introduction to maths python
 
 ----
 
-| level 7 Design and implement mathematical algorithms using a simple general purpose programming language (VCMNA254)
-| See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VCMNA254
-
-
-	* **Finding the sum of a set of consecutive numbers using a loop structure**
-	* **Constructing geometric patterns such as a honeycomb, using dynamic geometry functionality**
-
-| NEW: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M7SP04
 | level 7 Design algorithms involving a sequence of steps and decisions that will sort and classify sets of shapes according to their attributes, and describe how the algorithms work (VC2M7SP04)
+| See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M7SP04
 
 	* creating a classification scheme for triangles based on sides and angles, using a flow chart that uses sequences and decisions
 	* creating a flow chart or hierarchy for quadrilaterals that shows the relationships between trapeziums, parallelograms, rhombuses, rectangles, squares and kites
@@ -58,8 +51,8 @@ Introduction to maths python
 	* modelling contexts involving proportion, such as the proportion of students attending the school disco, proportion of the bottle cost to the recycling refund, proportion of the school site that is green space, 55% of Year 7 students attended the end of term function or 23% of the school population voted 'yes' to a change of school uniform; and interpreting and communicating answers in terms of the context of the situation
 	* modelling financial problems involving profit and loss, credits and debits, gains and losses; for example, holding a fundraising sausage sizzle and determining whether the event made a percentage profit or loss
 	
-	* finding the sum of a set of consecutive numbers using a loop structure
-	* constructing geometric patterns such as a honeycomb, using dynamic geometry functionality
+	* **finding the sum of a set of consecutive numbers using a loop structure**
+	* **constructing geometric patterns such as a honeycomb, using dynamic geometry functionality**
 	
 	* using mathematical modelling to investigate the proportion of land mass/area of Aboriginal Peoples' traditional grain belt compared with Australia's current grain belt
 
