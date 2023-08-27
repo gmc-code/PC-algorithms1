@@ -62,7 +62,7 @@ PC-algorithms
 
     maths_python/random_walks.rst
     maths_python/sets_of_numbers.rst
-    maths_python/spredsheet_fill_down.rst
+    maths_python/spreadsheet_fill_down.rst
 
 
 .. toctree::
