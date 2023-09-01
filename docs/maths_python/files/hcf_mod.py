@@ -8,5 +8,6 @@ def hcf_mod(a, b):
 
 a = 48   #1071
 b = 18   #462
-print(a, b, hcf_mod(a, b))
-# 48 18 6
+
+print(f'HCF({a}, {b}) is {hcf_mod(a, b)}.')
+# HCF(48, 18) is 6.
