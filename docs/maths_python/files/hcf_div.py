@@ -8,5 +8,5 @@ def hcf_div(a, b):
 
 a = 48
 b = 18
-print(a, b, hcf_div(a, b))
-# 48 18 6
+print(f'HCF({a}, {b}) is {hcf_div(a, b)}.')
+# HCF(48, 18) is 6.

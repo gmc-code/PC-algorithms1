@@ -60,6 +60,8 @@ PC-algorithms
     :caption: Maths python level 5
     :numbered:
 
+    maths_python/highest_common_factors.rst
+    maths_python/lowest_common_multiples.rst
     maths_python/random_walks.rst
     maths_python/sets_of_numbers.rst
     maths_python/spreadsheet_fill_down.rst
@@ -70,7 +72,7 @@ PC-algorithms
     :caption: Maths python level 6
     :numbered:
 
-    maths_python/Euclidean_algorithm.rst
+
     maths_python/flow_charts.rst
     maths_python/Sieve_of_Eratosthenes.rst
     maths_python/prime_factors.rst
