@@ -80,6 +80,7 @@ HCF of triples and more by math.gcd
 ---------------------------------------------------
 
 | The code below uses the python math.gcd function for multiple numbers to find their HCF.
+| The code uses error chekcing as well.
 
 .. literalinclude:: files/hcf_multi.py
     :linenos:
