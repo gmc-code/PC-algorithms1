@@ -1,7 +1,15 @@
 import math
 
-# Define a function to find the frequency of each factor in a list
+
 def frequency(lst):
+    """Return a dictionary with the frequency of each factor in lst.
+
+    Args:
+        lst (list): A list of integers.
+
+    Returns:
+        dict: A dictionary with factors as keys and frequencies as values.
+    """
     # Create an empty dictionary to store the frequency
     freq = {}
     # Loop through the list
@@ -15,11 +23,20 @@ def frequency(lst):
     # Return the dictionary
     return freq
 
-# Define a function to find the union of two lists with highest power of each factor
+
 def union_of_highest_powers(lst1, lst2):
+    """Return a list with the union of factors with highest power from lst1 and lst2.
+
+    Args:
+        lst1 (list): A list of integers.
+        lst2 (list): A list of integers.
+
+    Returns:
+        list: A list of integers with factors raised to highest power.
+    """
     # Create an empty list to store the result
     result = []
-    # Find the frequency of each factor in both lists using the frequency function
+    # Count how many times each factor appears in each list
     freq1 = frequency(lst1)
     freq2 = frequency(lst2)
     # Loop through the keys of freq1 (the factors in lst1)
@@ -43,8 +60,16 @@ def union_of_highest_powers(lst1, lst2):
     # Return the result list
     return result
 
-# Define a function to find the product of a list
+
 def product(lst):
+    """Return the product of all elements in lst.
+
+    Args:
+        lst (list): A list of numbers.
+
+    Returns:
+        number: The product of all elements in lst.
+    """
     # Initialize the product to 1
     p = 1
     # Loop through the list and multiply each element with the product
@@ -53,7 +78,23 @@ def product(lst):
     # Return the product
     return p
 
+
 def get_prime_factors(num):
+    """Return a list with the prime factors of num.
+
+    Args:
+        num (int): A positive integer.
+
+    Returns:
+        list: A list of integers with prime factors of num.
+
+    Raises:
+        ValueError: If num is not positive.
+    """
+
+    if num <= 0:
+        raise ValueError("num must be positive")
+
     max_possible = int(math.sqrt(num)) + 1
     prime_factors = list()
     while num % 2 == 0:
@@ -67,24 +108,34 @@ def get_prime_factors(num):
         prime_factors.append(num)
     return prime_factors
 
-# Prompt the user to enter two numbers and convert them to integers
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
 
-# Find the prime factors of each number using the get_prime_factors function
-factors1 = get_prime_factors(num1)
-factors2 = get_prime_factors(num2)
+# Define a main function to run the script
+def main():
+    """Prompt the user to enter two numbers and display their LCM."""
 
-# Find the union of all the prime factors with highest power using the union_of_highest_powers function
-all_factors = union_of_highest_powers(factors1, factors2)
+    # Prompt the user to enter two numbers and convert them to integers
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
 
-# Find the LCM by multiplying all the factors using the product function
-lcm = product(all_factors)
+    # Find the prime factors of each number using the get_prime_factors function
+    factors1 = get_prime_factors(num1)
+    factors2 = get_prime_factors(num2)
 
-# Display the LCM
-print(f'prime factors of {num1} is{factors1}.')
-print(f'prime factors of {num2} is{factors2}.')
-print(f'LCM({num1}, {num2}) is {lcm}; the product of {all_factors}.')
+    # Find the union of all the prime factors with highest power using the union_of_highest_powers function
+    all_factors = union_of_highest_powers(factors1, factors2)
+
+    # Find the LCM by multiplying all the factors using the product function
+    lcm = product(all_factors)
+
+    # Display the LCM
+    print(f"prime factors of {num1} is{factors1}.")
+    print(f"prime factors of {num2} is{factors2}.")
+    print(f"LCM({num1}, {num2}) is {lcm}; the product of {all_factors}.")
+
+
+# Check if the script is run directly and call the main function
+if __name__ == "__main__":
+    main()
 
 '''
 Enter the first number: 12

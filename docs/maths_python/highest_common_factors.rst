@@ -22,6 +22,28 @@ See: https://en.wikipedia.org/wiki/Euclidean_algorithm
 
 ----
 
+
+HCF psudocode
+------------------------------------------------
+
+| The pseudocode to find HCF of two numbers by repeated subtraction is below.
+
+
+| **function** hcf_sub(a, b)
+|     // Repeat until the two numbers are equal
+|     **while** a is not equal to b
+|         // If a is larger than b, subtract b from a
+|         **if** a is greater than b
+|             a ← a minus b
+|         // Otherwise, subtract a from b
+|         **else**
+|             b ← b minus a
+|     // Return either a or b as the HCF
+|     **return** a
+
+
+----
+
 HCF by repeated subtraction
 ------------------------------------------------
 

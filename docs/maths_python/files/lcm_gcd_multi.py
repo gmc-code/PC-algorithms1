@@ -9,9 +9,9 @@ def lcm(*args):
         result = (result * num) // math.gcd(result, num)
     return result
 
-# Prompt the user to enter any number of numbers separated by spaces
+# Prompt the user to enter any number of numbers separated by commas
 nums = input("Enter the numbers separated by spaces: ")
-nums = [int(num) for num in nums.split(" ")]
+nums = [int(num) for num in nums.split(",")]
 
 # Display the LCM
 print(f'The LCM of {", ".join(str(num) for num in nums)} is {lcm(*nums)}.')
