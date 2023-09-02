@@ -15,7 +15,7 @@ Introduction to maths python
 
 	* **simulating a simple random walk**
 	* **manipulating sets of numbers using a given rule, for example, if a number is even, halve it; or if a number is odd, subtract 1 then halve it**
-	* creating algorithms that use multiplication and division facts to determine if a number is a multiple or factor of another number; for example, using a flow chart that determines whether numbers are factors or multiples of other numbers using branching, such as yes/no decisions
+	* **creating algorithms that use multiplication and division facts to determine if a number is a multiple or factor of another number; for example, using a flow chart that determines whether numbers are factors or multiples of other numbers using branching, such as yes/no decisions**
 	* **identifying lowest common multiples and highest common factors of pairs or triples of natural numbers; for example, the lowest common multiple of {6, 9} is 18, and the highest common factor is 3, and the lowest common multiple of {3, 4, 5} is 60 and the highest common factor is 1**
 	* **using the 'fill down' function of a spreadsheet and a multiplication formula to generate a sequence of numbers that represent the multiples of any number you enter into the cell, and describing and explaining the emerging patterns**
 

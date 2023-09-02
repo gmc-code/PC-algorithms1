@@ -23,7 +23,7 @@ See: https://en.wikipedia.org/wiki/Euclidean_algorithm
 ----
 
 
-HCF psudocode
+HCF pseudocode
 ------------------------------------------------
 
 | The pseudocode to find HCF of two numbers by repeated subtraction is below.

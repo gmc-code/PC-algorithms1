@@ -62,6 +62,7 @@ PC-algorithms
 
     maths_python/highest_common_factors.rst
     maths_python/lowest_common_multiples.rst
+    maths_python/multiple_or_factor.rst
     maths_python/random_walks.rst
     maths_python/sets_of_numbers.rst
     maths_python/spreadsheet_fill_down.rst
