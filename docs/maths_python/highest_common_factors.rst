@@ -35,7 +35,10 @@ HCF by repeatedly getting remainders from division
 
 | Instead of repeated subtractions, a division can be used to get the remainder that would occur if all the possible subtractions of that number were to be done at once.
 | Starting with 48 and 18, instead of subtracting 18 from 48, subtract the largest multiple of 18 that is less than 48. 
-| 48 - 2*18 = 12. Note that 48//18 gives 2. **//** is floor division, rounding down to an integer.
+| 48 - (48//18)*18 = 12
+| 48 - 2*18 = 12. 
+| Note that 48//18 gives 2, the largest multiple of 18 that is less than 48. 
+| **//** is floor division, rounding down to an integer.
 
 | The code below runs the while loop until **b** equals 0.
 | **b** is stored in **t** so b can be calculated, then **a** is set to **t**.
@@ -47,18 +50,37 @@ HCF by repeatedly getting remainders from division
     :linenos:
 
 | The line, **b = a - (a // b) * b**, can be replaced by **b = a % b**, which finds the remainder from division.
+| Instead of: 48 - (48//18)*18 = 12
+| use: 48 % 18 = 12
 
 .. literalinclude:: files/hcf_mod.py
     :linenos:
 
 ----
 
-HCF of triples
+HCF of triples and more
 ---------------------------------------------------
 
-| The highest common factors of triples of natural numbers can be found by finding the HCF of two numbers first, then finding the HCF of the result and a third number and so on for all numbers being tested.
+| The highest common factors of triples or more natural numbers can be found by finding the HCF of two numbers first, then finding the HCF of the result and a third number and so on for all numbers being tested.
 | e.g. HCF(168, 180, 192) is 12.
 
+----
+
+HCF of triples and more by repeated subtraction
+---------------------------------------------------
+
+| The code below uses repeated subtraction with multiple numbers to find their HCF.
+
 .. literalinclude:: files/hcf_sub_multi.py
+    :linenos:
+
+----
+
+HCF of triples and more by math.gcd
+---------------------------------------------------
+
+| The code below uses the python math.gcd function for multiple numbers to find their HCF.
+
+.. literalinclude:: files/hcf_multi.py
     :linenos:
 
