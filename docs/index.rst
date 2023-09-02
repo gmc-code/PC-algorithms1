@@ -74,6 +74,7 @@ PC-algorithms
     :numbered:
 
 
+    maths_python/fraction_sequence.rst
     maths_python/flow_charts.rst
     maths_python/Sieve_of_Eratosthenes.rst
     maths_python/prime_factors.rst
