@@ -56,7 +56,7 @@ HCF by repeatedly getting remainders from division
 HCF of triples
 ---------------------------------------------------
 
-| The highest common factors of triples of natural numbers can be found by finding the HCF of two numbers first, then finding the HCF of the result and a third number.
+| The highest common factors of triples of natural numbers can be found by finding the HCF of two numbers first, then finding the HCF of the result and a third number and so on for all numbers being tested.
 | e.g. HCF(168, 180, 192) is 12.
 
 .. literalinclude:: files/hcf_sub_multi.py
