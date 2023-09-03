@@ -20,4 +20,6 @@ Fraction sequence
 
 .. parsed-literal::
 
-   Generated sequence: ['1/3', '2/3', '1', '4/3', '5/3', '2', '7/3', '8/3', '3', '10/3']
+    Generated sequence: ['1/3', '2/3', '1', '4/3', '5/3', '2', '7/3', '8/3', '3', '10/3']
+    The pattern is: Every third number is an integer.
+    
