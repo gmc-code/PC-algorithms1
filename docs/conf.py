@@ -6,7 +6,7 @@ import os
 import sys
 import sphinx_rtd_theme
 project = 'PC-algorithms'
-copyright = '2022-3, GMC'
+copyright = '2022-4, GMC'
 author = 'GMC'
 
 sys.path.insert(0, os.path.abspath('../../'))
