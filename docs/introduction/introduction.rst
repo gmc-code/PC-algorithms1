@@ -3,7 +3,7 @@ Introduction
 ====================================================
 
 | Algorithms are Step-by-step procedures to solve a problem.
-| This section covers some key aspects of algorithms, including control structures and their pseudocode.
+| Key aspects of algorithms include control structures and their pseudocode.
 | There are many examples of using python in maths.
 
 ----
@@ -23,17 +23,16 @@ Control structures
 Home pages:
 --------------------
 
-| **year 7**
+| **year 7-8**
 | microbit: https://pc-microbit-micropython.readthedocs.io/en/latest/index.html
-| bots: https://pc-microbit-extension.readthedocs.io/en/latest/index.html
+| bots, games, classes: https://pc-microbit-extension.readthedocs.io/en/latest/index.html
+
+| **year 8**
+| python: https://pc-python.readthedocs.io/en/latest/index.html
 
 | **year 9-10**
 | algorithms: https://pc-algorithms.readthedocs.io/en/latest/index.html
 | app development: https://pc-app-development.readthedocs.io/en/latest/index.html
-
-| **python**
-| python: https://pc-python.readthedocs.io/en/latest/index.html
-| pillow: https://pc-pillow.readthedocs.io/en/latest/index.html
 
 ----
 
@@ -42,15 +41,15 @@ Key references:
 
 | https://www.w3schools.com/python/
 
-
 ----
 
 Online editors:
 ------------------
 
-| https://www.w3schools.com/python/python_compiler.asp
 | https://replit.com/
-| https://www.online-python.com/
+| https://www.w3schools.com/python/python_compiler.asp
+
+
 
 
 
